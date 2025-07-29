@@ -22,10 +22,10 @@ In this code we are using a light sensor and LED ring to power a beach light tha
 
 ```blocks
 basic.forever(function () {
-    if (fwdSensors.solar1.fwdLightLevel() <= 40) {
-        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+    if (fwdSensors.solar1.lightLevel() <= 40) {
+        fwdLights.ledRing1.setAllPixelsColor(0xff0000)
     } else {
-        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+        fwdLights.ledRing1.setAllPixelsColor(0x000000)
     }
 })
 ```
@@ -41,20 +41,20 @@ input.onButtonPressed(Button.B, function () {
 })
 let IsDrivingEnabled = false
 fwdMotors.setupDriving(
-fwdMotors.leftServo,
-fwdMotors.rightServo,
+fwdBase.leftServo,
+fwdBase.rightServo,
 -35
 )
 basic.forever(function () {
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
+        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             fwdMotors.stop()
             basic.pause(1000)
             fwdMotors.turn(15)
             basic.pause(1000)
-            fwdMotors.drive(fwdMotors.DrivingDirection.Reverse, 100)
+            fwdMotors.drive(fwdEnums.ForwardReverse.Reverse, 100)
         } else {
-            fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
+            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
         }
     } else {
         fwdMotors.stop()
