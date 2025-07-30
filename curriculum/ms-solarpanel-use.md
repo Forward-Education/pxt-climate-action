@@ -1,7 +1,7 @@
 # Solar Panels - Use Tutorial
 
 ```package
-fwd-climate-action=github:forward-education/pxt-climate-action#v1.0.3
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.0.3
 ```
 
 ## Activity 1: Build Your Project @showdialog
@@ -12,55 +12,55 @@ Let's build a solar panel prototype! We are going to do this in 3 parts:
 2. **Add code** to bring it to life
 3. **Use** our solar panel to learn how it works
 
-<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-render.webp" alt="Full solar panel render" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-render.webp" alt="Full solar panel render" style="display: block; width: 60%; margin:auto;">
 
 ## Build Step 1 @showdialog
 
-![solarpanelsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-sbs01.webp)
+![solarpanelsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-sbs01.webp)
 
 ## Build Step 2 @showdialog
 
-![solarpanelsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-sbs02.webp)
+![solarpanelsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-sbs02.webp)
 
 ## Build Step 3 @showdialog
 
-![solarpanelsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-sbs03.webp)
+![solarpanelsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-sbs03.webp)
 
 ## Build Step 4 @showdialog
 
-![solarpanelsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-sbs04.webp)
+![solarpanelsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-sbs04.webp)
 
 ## Build Step 5 @showdialog
 
-![solarpanelsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-sbs05.webp)
+![solarpanelsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-sbs05.webp)
 
 ## Build Step 6 @showdialog
 
-![solarpanelsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-sbs06.webp)
+![solarpanelsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-sbs06.webp)
 
 ## Build Step 7 @showdialog
 
-![solarpanelsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-sbs07.webp)
+![solarpanelsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-sbs07.webp)
 
 ## Build Step 8 @showdialog
 
-![solarpanelsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-sbs08.webp)
+![solarpanelsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-sbs08.webp)
 
 ## Build Step 9 @showdialog
 
-![solarpanelsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-sbs09.webp)
+![solarpanelsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-sbs09.webp)
 
 ## Build Step 10 @showdialog
 
-![solarpanelsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-sbs10.webp)
+![solarpanelsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-sbs10.webp)
 
 ## Build Step 11 @showdialog
 
-![solarpanelsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-sbs11.webp)
+![solarpanelsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-sbs11.webp)
 
 ## Build Step 12 @showdialog
 
-![solarpanelsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-sbs12.webp)
+![solarpanelsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-sbs12.webp)
 
 ## Activity 2: Code Your Project @showdialog
 
@@ -97,13 +97,13 @@ namespace phantomFix {
 
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
 
-<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pluganim.webp" style="display: block; width: 40%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" style="display: block; width: 40%; margin:auto;">
 
 ## Code Step 2 @showdialog
 
 Click the three dots beside the `|Download|` button, then click on _Connect Device_. Follow the steps to pair your micro:bit.
 
-<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pairmicrobitGIF.webp" alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobitGIF.webp" alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
 
 ## Code Step 3
 
@@ -121,7 +121,7 @@ As you go through the next steps:
 2. When you are ready for more information, click **'Tell me more!'**
 3. If you need help with the code, click the lightbulb!
 
-<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/tellmore_hintbox_gif.webp" style="display: block; width: 80%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/tellmore_hintbox_gif.webp" style="display: block; width: 80%; margin:auto;">
 
 ## Use Step 1
 
@@ -176,7 +176,7 @@ Let’s calibrate the starting position of our solar panels. Begin by setting do
 
 Next, set the positional servo motor to '0°' on the simulator. At this position, the solar panels _should point to your left_ as shown in the lightbulb hint. If they don’t, gently detach the corner connector holding the panels and reattach it so they do!
 
-![image](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-render.webp)
+![image](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-render.webp)
 
 ## Use Step 7
 

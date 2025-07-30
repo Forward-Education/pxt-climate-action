@@ -1,7 +1,7 @@
 # Glacier Tracking with Satellites - Use Tutorial
 
 ```package
-fwd-climate-action=github:forward-education/pxt-climate-action#v1.0.3
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.0.3
 datalogger=datalogger
 ```
 
@@ -23,51 +23,51 @@ Let's build a glacier satellite! We are going to do this in three parts:
 
 Before you begin, make sure you have your supplies: white paper, black paper, and yellow paper.
 
-<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr6-glacier-thumbnail-render.webp" alt="Full glacier render" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr6-glacier-thumbnail-render.webp" alt="Full glacier render" style="display: block; width: 60%; margin:auto;">
 
 ## Build Step 1 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr6-glacier-sbs1.webp)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr6-glacier-sbs1.webp)
 
 ## Build Step 2 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr6-glacier-sbs2.webp)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr6-glacier-sbs2.webp)
 
 ## Build Step 3 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr6-glacier-sbs3.webp)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr6-glacier-sbs3.webp)
 
 ## Build Step 4 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr6-glacier-sbs4.webp)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr6-glacier-sbs4.webp)
 
 ## Build Step 5 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr6-glacier-sbs5.webp)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr6-glacier-sbs5.webp)
 
 ## Build Step 6 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr6-glacier-sbs6.webp)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr6-glacier-sbs6.webp)
 
 ## Build Step 7 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr6-glacier-sbs7.webp)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr6-glacier-sbs7.webp)
 
 ## Build Step 8 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr6-glacier-sbs8.webp)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr6-glacier-sbs8.webp)
 
 ## Build Step 9 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr6-glacier-sbs9.webp)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr6-glacier-sbs9.webp)
 
 ## Build Step 10 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr6-glacier-sbs10.webp)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr6-glacier-sbs10.webp)
 
 ## Build Step 11 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr6-glacier-sbs11.webp)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr6-glacier-sbs11.webp)
 
 ## Activity 2: Code Your Project @showdialog
 
@@ -82,7 +82,7 @@ _Note: For now, please leave the breakout board **off**._
 Click the three dots beside the `|Download|` button, then click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
 
-<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
 
 ## Code Step 2
 

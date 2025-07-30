@@ -1,7 +1,7 @@
 # Monitoring Bees and Pollination with a Bug Counter
 
 ```package
-fwd-climate-action=github:forward-education/pxt-climate-action#v1.0.3
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.0.3
 ```
 
 ## Activity 1: Building Your Project @showdialog
@@ -28,13 +28,13 @@ Code our project to make it interactive
 
 Coding Set Up Step 1
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
-![plugin](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pluganim.webp)
+![plugin](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp)
 
 ## Coding Set up Step 2 @showhint
 
 Click three dots beside `|Download|` button, and click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
-![downloadgif](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/DownloadButtonGIF.webp)
+![downloadgif](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/DownloadButtonGIF.webp)
 
 ## Coding Set up Step 3
 

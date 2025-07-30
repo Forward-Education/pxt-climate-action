@@ -1,12 +1,12 @@
 # Smart Garbage Bins - Modify Tutorial
 
 ```package
-fwd-climate-action=github:forward-education/pxt-climate-action#v1.0.3
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.0.3
 ```
 
 ```template
-fwd-climate-action=github:forward-education/pxt-climate-action#v1.0.3
-sonar=github:ssande-fwd/pxt-climate-action-steve
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.0.3
+sonar=github:forward-education/pxt-climate-action
 ```
 
 ```template
@@ -41,20 +41,20 @@ Today, we are building and coding a smart garbage bin!
 
 We'll add some starter code to make sure our garbage bin opens and closes with a button push. Then, we'll modify the code to make it our own!
 
-<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-smartbin-render.webp" alt="Smart garbage bin full build render" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-smartbin-render.webp" alt="Smart garbage bin full build render" style="display: block; width: 60%; margin:auto;">
 
 ## Step 1 @showdialog
 
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
 
-<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 60%; margin:auto;">
 
 ## Step 2 @showdialog
 
 Click the three dots beside the `|Download|` button, then click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
 
-<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
 
 ## Step 3
 

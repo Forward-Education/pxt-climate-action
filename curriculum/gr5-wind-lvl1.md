@@ -1,7 +1,7 @@
 [# Powering The Future with Wind Energy Unit 1
 
 ```package
-fwd-climate-action=github:forward-education/pxt-climate-action#v1.0.3
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.0.3
 ```
 
 ## Activity 1: Building Your Project @showdialog

@@ -1,7 +1,7 @@
 # Autonomous Electric Vehicles of the Future - Use Tutorial
 
 ```package
-fwd-climate-action=github:forward-education/pxt-climate-action#v1.0.3
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.0.3
 ```
 
 ## Activity 1: Build your Project @showdialog
@@ -12,75 +12,75 @@ Let's build an electric vehicle! We are going to complete this in 3 parts:
 2. **Add code** to make it move
 3. **Use** our electric vehicle in different settings to learn how it works
 
-<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr11-electriccar-render.png" alt="Full electric vehicle render" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr11-electriccar-render.png" alt="Full electric vehicle render" style="display: block; width: 60%; margin:auto;">
 
 ## Build Step 1 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr11-electriccar-sbs1edit.png)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr11-electriccar-sbs1edit.png)
 
 ## Build Step 2 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr11-electriccar-sbs2.png)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr11-electriccar-sbs2.png)
 
 ## Build Step 3 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr11-electriccar-sbs3.png)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr11-electriccar-sbs3.png)
 
 ## Build Step 3B @showdialog
 
-![sbs3b](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr11-electriccar-sbs3b.png)
+![sbs3b](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr11-electriccar-sbs3b.png)
 
 ## Build Step 4 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr11-electriccar-sbs4.png)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr11-electriccar-sbs4.png)
 
 ## Build Step 5 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr11-electriccar-sbs5.png)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr11-electriccar-sbs5.png)
 
 ## Build Step 6 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr11-electriccar-sbs6.png)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr11-electriccar-sbs6.png)
 
 ## Build Step 7 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr11-electriccar-sbs7.png)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr11-electriccar-sbs7.png)
 
 ## Build Step 8 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr11-electriccar-sbs8.png)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr11-electriccar-sbs8.png)
 
 ## Build Step 9 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr11-electriccar-sbs9.png)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr11-electriccar-sbs9.png)
 
 ## Build Step 10 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr11-electriccar-sbs10.png)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr11-electriccar-sbs10.png)
 
 ## Build Step 11 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr11-electriccar-sbs11.png)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr11-electriccar-sbs11.png)
 
 ## Build Step 12 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr11-electriccar-sbs12.png)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr11-electriccar-sbs12.png)
 
 ## Build Step 13 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr11-electriccar-sbs13.png)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr11-electriccar-sbs13.png)
 
 ## Build Step 14 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr11-electriccar-sbs14.png)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr11-electriccar-sbs14.png)
 
 ## Build Step 15 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr11-electriccar-sbs15.png)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr11-electriccar-sbs15.png)
 
 ## Build Step 16 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr11-electriccar-sbs16.png)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr11-electriccar-sbs16.png)
 
 ## Activity 2: Code Your Project @showdialog
 
@@ -92,13 +92,13 @@ The code will be the instructions that tell our micro:bit what to do.
 
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
 
-<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pluganim.webp" style="display: block; width: 50%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" style="display: block; width: 50%; margin:auto;">
 
 ## Code Step 2 @showdialog
 
 Click the three dots beside the `|Download|` button, then click on _Connect Device_. Follow the steps to pair your micro:bit.
 
-<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pairmicrobitGIF.webp" alt="Full wildfire render" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobitGIF.webp" alt="Full wildfire render" style="display: block; width: 60%; margin:auto;">
 
 ## Code Step 3
 

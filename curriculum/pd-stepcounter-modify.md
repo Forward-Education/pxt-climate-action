@@ -18,7 +18,7 @@ As you go through the next steps:
 2. When you are ready for more information, click **'Tell me more!'**
 3. If you need help with the code, click the lightbulb!
 
-<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/tellmore_hintbox_gif.webp" style="display: block; width: 70%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/tellmore_hintbox_gif.webp" style="display: block; width: 70%; margin:auto;">
 
 ## Step 0
 

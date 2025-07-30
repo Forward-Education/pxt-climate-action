@@ -1,7 +1,7 @@
 # The Powerful Force of Wind - Modify Tutorial
 
 ```package
-fwd-climate-action=github:forward-education/pxt-climate-action#v1.0.3
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.0.3
 ```
 
 ## Activity 1: Build Your Project @showdialog
@@ -13,39 +13,39 @@ Let's build a wind turbine! We are going to do this in four parts:
 3. **Modify** our code to learn how it works
 4. Complete a small coding **challenge**
 
-<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-simplewind-render.webp" alt="Full wind turbine render" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-simplewind-render.webp" alt="Full wind turbine render" style="display: block; width: 60%; margin:auto;">
 
 ## Build Step 1 @showdialog
 
-![Grab a white long frame. Put a continuous servo motor through the frame's servo hole. Make sure the cord of the servo is closest to the long end of the frame.](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-simplewind-sbs01.webp)
+![Grab a white long frame. Put a continuous servo motor through the frame's servo hole. Make sure the cord of the servo is closest to the long end of the frame.](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-simplewind-sbs01.webp)
 
 ## Build Step 2 @showdialog
 
-![Connect a circle block to the continuous servo motor.](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-simplewind-sbs02.webp)
+![Connect a circle block to the continuous servo motor.](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-simplewind-sbs02.webp)
 
 ## Build Step 3 @showdialog
 
-![Add a cube connector to the bottom of the long frame.](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-simplewind-sbs03.webp).
+![Add a cube connector to the bottom of the long frame.](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-simplewind-sbs03.webp).
 
 ## Build Step 4 @showdialog
 
-![Connect the long frame to the baseplate, so it stands upright like a wind turbine.](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-simplewind-sbs04.webp)
+![Connect the long frame to the baseplate, so it stands upright like a wind turbine.](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-simplewind-sbs04.webp)
 
 ## Build Step 5 @showdialog
 
-![Attach the breakout board to the middle of a long frame building block. Connect the servo motor to the middle motor port.](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-simplewind-sbs05.webp)
+![Attach the breakout board to the middle of a long frame building block. Connect the servo motor to the middle motor port.](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-simplewind-sbs05.webp)
 
 ## Build Step 6 @showdialog
 
-![Grab the dial and a short cable. Connect them. Plug the other end of the cable into a sensor port on the breakout board.](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-simplewind-sbs06.webp)
+![Grab the dial and a short cable. Connect them. Plug the other end of the cable into a sensor port on the breakout board.](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-simplewind-sbs06.webp)
 
 ## Build Step 7 @showdialog
 
-![Connect your micro:bit to the computer via USB port.](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-simplewind-sbs07.webp)
+![Connect your micro:bit to the computer via USB port.](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-simplewind-sbs07.webp)
 
 ## Build Step 8 @showdialog
 
-![Slide the micro:bit into the breakout board.](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-simplewind-sbs08.webp)
+![Slide the micro:bit into the breakout board.](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-simplewind-sbs08.webp)
 
 ## Activity 2: Code Your Project @showdialog
 
@@ -66,13 +66,13 @@ fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, functio
 
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
 
-<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pluganim.webp" style="display: block; width: 45%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" style="display: block; width: 45%; margin:auto;">
 
 ## Code Step 2 @showdialog
 
 Click the three dots beside the `|Download|` button, then click on _Connect Device_. Follow the steps to pair your micro:bit.
 
-<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pairmicrobitGIF.webp" alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobitGIF.webp" alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
 
 ## Code Step 3
 

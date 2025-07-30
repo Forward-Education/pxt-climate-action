@@ -1,7 +1,7 @@
 # Solar Water Disinfection - Modify Tutorial
 
 ```package
-fwd-climate-action=github:forward-education/pxt-climate-action#v1.0.3
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.0.3
 ```
 
 ## Activity 1: Build Your Project @showdialog
@@ -13,11 +13,11 @@ Let's create our SODIS timer! We are going to do this in 4 parts:
 3. **Modify** the timer to better understand how it works
 4. Complete some **challenges** to improve the timer
 
-<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/sodis-prototype.png" alt="Full SODIS prototype" style="display: block; width: 10%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/sodis-prototype.png" alt="Full SODIS prototype" style="display: block; width: 10%; margin:auto;">
 
 ## Build Steps 1-3 @showdialog
 
-<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/sodis-threebottles.webp" style="display: block; width: 75%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/sodis-threebottles.webp" style="display: block; width: 75%; margin:auto;">
 
 ## Activity 2: Code Your Project @showdialog
 
@@ -47,7 +47,7 @@ Plug the micro:bit into your computer.
 
 Click the three dots beside the `|Download|` button, then click on _Connect Device_. Follow the steps to pair your micro:bit.
 
-<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pairmicrobitGIF.webp" alt="Full wildfire render" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobitGIF.webp" alt="Full wildfire render" style="display: block; width: 60%; margin:auto;">
 
 ## Code Step 2
 
@@ -431,7 +431,7 @@ basic.forever(function () {
 
 You've completed the activity! As a next step, you could always test out how the SODIS timer works in the real-world by placing it in a sunny area - like by a window!
 
-<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/sodis-windowbottles.webp" style="display: block; width: 70%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/sodis-windowbottles.webp" style="display: block; width: 70%; margin:auto;">
 
 ## Reflection @showdialog
 

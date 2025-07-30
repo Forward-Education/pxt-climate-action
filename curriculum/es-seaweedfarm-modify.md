@@ -1,7 +1,7 @@
 # Smart Seaweed Farm - Modify Tutorial
 
 ```package
-fwd-climate-action=github:forward-education/pxt-climate-action#v1.0.3
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.0.3
 datalogger=datalogger
 ```
 
@@ -26,51 +26,51 @@ Let's build a smart seaweed farm! We'll do this in four parts:
 3. **Modify** your farm to learn how it works
 4. Complete a **challenge** to make it even better
 
-<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-seaweedfarming-render.webp" alt="Full seaweed farm model render" style="display: block; width: 70%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-seaweedfarming-render.webp" alt="Full seaweed farm model render" style="display: block; width: 70%; margin:auto;">
 
 ## Build Supplies @showdialog
 
-![sbs0A](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-seaweedfarming-sbs0B.webp)
+![sbs0A](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-seaweedfarming-sbs0B.webp)
 
 ## Build Step 1 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-seaweedfarming-sbs01.webp)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-seaweedfarming-sbs01.webp)
 
 ## Build Step 2 @showdialog
 
-![sbs2](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-seaweedfarming-sbs02.webp)
+![sbs2](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-seaweedfarming-sbs02.webp)
 
 ## Build Step 3 @showdialog
 
-![sbs3](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-seaweedfarming-sbs03.webp)
+![sbs3](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-seaweedfarming-sbs03.webp)
 
 ## Build Step 4 @showdialog
 
-![sbs4](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-seaweedfarming-sbs04.webp)
+![sbs4](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-seaweedfarming-sbs04.webp)
 
 ## Build Step 5 @showdialog
 
-![sbs5](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-seaweedfarming-sbs05.webp)
+![sbs5](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-seaweedfarming-sbs05.webp)
 
 ## Build Step 6 @showdialog
 
-![sbs6](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-seaweedfarming-sbs06.webp)
+![sbs6](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-seaweedfarming-sbs06.webp)
 
 ## Build Step 7 @showdialog
 
-![sbs7](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-seaweedfarming-sbs07.webp)
+![sbs7](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-seaweedfarming-sbs07.webp)
 
 ## Build Step 8 @showdialog
 
-![sbs8](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-seaweedfarming-sbs08.webp)
+![sbs8](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-seaweedfarming-sbs08.webp)
 
 ## Build Step 9 @showdialog
 
-![sbs9](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-seaweedfarming-sbs09.webp)
+![sbs9](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-seaweedfarming-sbs09.webp)
 
 ## Build Step 10 (Optional) @showdialog
 
-![sbs10](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-seaweedfarming-sbs10.webp)
+![sbs10](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-seaweedfarming-sbs10.webp)
 
 _Note: If you have the CHARGE for micro:bit, you can use it here!_
 
@@ -83,7 +83,7 @@ Now it’s time to bring your farm model to life with code! The code will be the
 Click the three dots beside the `|Download|` button, then click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
 
-<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
 
 ## Code Step 2
 
@@ -100,7 +100,7 @@ We are now ready to **modify** our seaweed farm!
 3. If you need help with the code, click the **lightbulb**!
 4. After each change, `|Download|` the new code to your micro:bit.
 
-<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/tellmore_hintbox_gif.webp" style="display: block; width: 80%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/tellmore_hintbox_gif.webp" style="display: block; width: 80%; margin:auto;">
 
 ## Modify Step 1
 

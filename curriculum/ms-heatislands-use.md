@@ -1,7 +1,7 @@
 # Urban Heat Islands - Use Tutorial
 
 ```package
-fwd-climate-action=github:forward-education/pxt-climate-action#v1.0.3
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.0.3
 datalogger=datalogger
 ```
 
@@ -25,23 +25,23 @@ Today, we are going to compare how quickly a damp, light model city and a dry, d
 We'll use the micro:bit's temperature sensor to collect data and learn more about how colour and moisture levels impact the urban heat island effect.
 
 <p float="middle">
-  <img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-heatislands-render.webp" alt="Base model city render" width="33%"/>
-  <img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-heatislands-white-render.webp" alt="White model city render" width="33%"/> 
-  <img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-heatislands-black-render.webp" alt="Black model city render" width="33%"/>
+  <img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-heatislands-render.webp" alt="Base model city render" width="33%"/>
+  <img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-heatislands-white-render.webp" alt="White model city render" width="33%"/> 
+  <img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-heatislands-black-render.webp" alt="Black model city render" width="33%"/>
 </p>
 
 ## Step 1 @showdialog
 
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
 
-<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 40%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 40%; margin:auto;">
 
 ## Step 2 @showdialog
 
 Click the three dots beside the `|Download|` button, then click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
 
-<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
 
 ## Step 3
 
