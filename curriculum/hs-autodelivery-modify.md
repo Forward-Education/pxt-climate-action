@@ -1,7 +1,7 @@
 # Forward Education Smart Warehouse Vehicle - Modify Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.0.3
+fwd-climate-action=github:forward-education/pxt-climate-action#v1.0.3
 ```
 
 ```template
@@ -69,79 +69,79 @@ Let's build a smart warehouse vehicle! We are going to do this in four parts:
 3. **Modify** our project to learn about other sensors
 4. Apply what we learned with a small **challenge**
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/hs-autodelivery-render.webp" alt="Full smart warehouse vehicle render" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/refs/heads/main/tutorial-assets/hs-autodelivery-render.webp" alt="Full smart warehouse vehicle render" style="display: block; width: 60%; margin:auto;">
 
 ## Build Step 1 @showdialog
 
-![Build Step 1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/hs-autodelivery-sbs01.webp)
+![Build Step 1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/refs/heads/main/tutorial-assets/hs-autodelivery-sbs01.webp)
 
 ## Build Step 2 @showdialog
 
-![Build Step 2](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/hs-autodelivery-sbs02.webp)
+![Build Step 2](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/refs/heads/main/tutorial-assets/hs-autodelivery-sbs02.webp)
 
 ## Build Step 3 @showdialog
 
-![Build Step 3](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/hs-autodelivery-sbs03.webp)
+![Build Step 3](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/refs/heads/main/tutorial-assets/hs-autodelivery-sbs03.webp)
 
 ## Build Step 4 @showdialog
 
-![Build Step 4](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/hs-autodelivery-sbs04.webp)
+![Build Step 4](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/refs/heads/main/tutorial-assets/hs-autodelivery-sbs04.webp)
 
 ## Build Step 5 @showdialog
 
-![Build Step 5](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/hs-autodelivery-sbs05.webp)
+![Build Step 5](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/refs/heads/main/tutorial-assets/hs-autodelivery-sbs05.webp)
 
 ## Build Step 6 @showdialog
 
-![Build Step 6](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/hs-autodelivery-sbs06.webp)
+![Build Step 6](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/refs/heads/main/tutorial-assets/hs-autodelivery-sbs06.webp)
 
 ## Build Step 7 @showdialog
 
-![Build Step 7](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/hs-autodelivery-sbs07.webp)
+![Build Step 7](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/refs/heads/main/tutorial-assets/hs-autodelivery-sbs07.webp)
 
 ## Build Step 8 @showdialog
 
-![Build Step 8](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/hs-autodelivery-sbs08.webp)
+![Build Step 8](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/refs/heads/main/tutorial-assets/hs-autodelivery-sbs08.webp)
 
 ## Build Step 9 @showdialog
 
-![Build Step 9](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/hs-autodelivery-sbs09.webp)
+![Build Step 9](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/refs/heads/main/tutorial-assets/hs-autodelivery-sbs09.webp)
 
 ## Build Step 10 @showdialog
 
-![Build Step 10](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/hs-autodelivery-sbs10.webp)
+![Build Step 10](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/refs/heads/main/tutorial-assets/hs-autodelivery-sbs10.webp)
 
 ## Build Step 11 @showdialog
 
-![Build Step 11](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/hs-autodelivery-sbs11.webp)
+![Build Step 11](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/refs/heads/main/tutorial-assets/hs-autodelivery-sbs11.webp)
 
 ## Build Step 12 @showdialog
 
-![Build Step 12](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/hs-autodelivery-sbs12.webp)
+![Build Step 12](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/refs/heads/main/tutorial-assets/hs-autodelivery-sbs12.webp)
 
 ## Build Step 13 @showdialog
 
-![Build Step 13](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/hs-autodelivery-sbs13.webp)
+![Build Step 13](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/refs/heads/main/tutorial-assets/hs-autodelivery-sbs13.webp)
 
 ## Build Step 14 @showdialog
 
-![Build Step 14](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/hs-autodelivery-sbs14.webp)
+![Build Step 14](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/refs/heads/main/tutorial-assets/hs-autodelivery-sbs14.webp)
 
 ## Build Step 15 @showdialog
 
-![Build Step 15](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/hs-autodelivery-sbs15.webp)
+![Build Step 15](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/refs/heads/main/tutorial-assets/hs-autodelivery-sbs15.webp)
 
 ## Build Step 16 @showdialog
 
-![Build Step 16](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/hs-autodelivery-sbs16.webp)
+![Build Step 16](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/refs/heads/main/tutorial-assets/hs-autodelivery-sbs16.webp)
 
 ## Build Step 17 @showdialog
 
-![Build Step 17](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/hs-autodelivery-sbs17.webp)
+![Build Step 17](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/refs/heads/main/tutorial-assets/hs-autodelivery-sbs17.webp)
 
 ## Build Step 18 @showdialog
 
-![Build Step 18](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/hs-autodelivery-sbs18.webp)
+![Build Step 18](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/refs/heads/main/tutorial-assets/hs-autodelivery-sbs18.webp)
 
 ## Activity 2: Code Your Project @showdialog
 
@@ -153,14 +153,14 @@ The code will be the instructions that tell our micro:bit what to do.
 
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 60%; margin:auto;">
 
 ## Code Step 2 @showdialog
 
 Click the three dots beside the `|Download|` button, then click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
 
 ## Code Step 3
 

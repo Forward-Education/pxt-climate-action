@@ -1,7 +1,7 @@
 # Turbidity Meters - Use Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.0.3
+fwd-climate-action=github:forward-education/pxt-climate-action#v1.0.3
 datalogger=datalogger
 ```
 
@@ -17,20 +17,20 @@ fwdLights.ledRing1.setAllPixelsColor(0xffffff)
 
 Today, we are going to build our own **NTU sensor** to measure the turbidity of water samples!
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-turbidity-render.webp" alt="Full turbidity meter render" style="display: block; width: 100%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-turbidity-render.webp" alt="Full turbidity meter render" style="display: block; width: 100%; margin:auto;">
 
 ## Step 1 @showdialog
 
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 40%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 40%; margin:auto;">
 
 ## Step 2 @showdialog
 
 Click the three dots beside the `|Download|` button, then click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
 
 ## Step 3
 
@@ -54,7 +54,7 @@ Remember:
 
 hint~
 
-![Light scatter in NTU sensors](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/NTUsensor-cloudysample.png)
+![Light scatter in NTU sensors](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/NTUsensor-cloudysample.png)
 
 ## Step 5
 
@@ -86,7 +86,7 @@ Remember, our lower turbidity sample should be tap water, while the second, high
 
 Place the sample with low turbidity between the LED ring and solar sensor as shown in the lightbulb hint. Ensure the water sample is stable and won't spill.
 
-![Low turbidity sample](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-turbidity-water-render.webp)
+![Low turbidity sample](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-turbidity-water-render.webp)
 
 ## Step 8
 
@@ -98,7 +98,7 @@ Place the high turbidity sample between the LED ring and solar sensor as shown i
 
 How do you predict this sample's reading will differ from the first? Why?
 
-![High turbidity sample](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-turbidity-dirty-render.webp)
+![High turbidity sample](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-turbidity-dirty-render.webp)
 
 ## Step 10
 

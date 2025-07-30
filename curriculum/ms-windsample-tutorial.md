@@ -1,7 +1,7 @@
 # Forward Education Wind Turbine - Sample Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.0.3
+fwd-climate-action=github:forward-education/pxt-climate-action#v1.0.3
 datalogger=datalogger
 ```
 
@@ -28,47 +28,47 @@ Let's build an automated wind turbine. We are going to do this in four parts:
 3. **Use** our wind turbine to learn how it works
 4. **Modify** our project with a small coding challenge
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-render.webp" alt="Full sample wind tubine render" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-render.webp" alt="Full sample wind tubine render" style="display: block; width: 60%; margin:auto;">
 
 ## Build Step 1 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs01.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs01.webp)
 
 ## Build Step 2 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs02.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs02.webp)
 
 ## Build Step 3 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs03.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs03.webp)
 
 ## Build Step 4 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs04.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs04.webp)
 
 ## Build Step 5 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs05.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs05.webp)
 
 ## Build Step 6 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs06.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs06.webp)
 
 ## Build Step 7 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs07.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs07.webp)
 
 ## Build Step 8 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs08.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs08.webp)
 
 ## Build Step 9 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs09.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs09.webp)
 
 ## Build Step 10 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs10.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs10.webp)
 
 ## Activity 2: Code Your Project @showdialog
 
@@ -80,14 +80,14 @@ The code will be the instructions that tell our micro:bit what to do.
 
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 40%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 40%; margin:auto;">
 
 ## Code Step 2 @showdialog
 
 Click the three dots beside the `|Download|` button, then click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
 
 ## Code Step 3
 
@@ -105,7 +105,7 @@ As you go through the next steps:
 -   When you are ready for more information, click **'Tell Me More!'**
 -   If you need help with the code, click the **lightbulb**!
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/tellmore_hintbox_gif.webp" style="display: block; width: 80%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/tellmore_hintbox_gif.webp" style="display: block; width: 80%; margin:auto;">
 
 ## Use Step 1
 

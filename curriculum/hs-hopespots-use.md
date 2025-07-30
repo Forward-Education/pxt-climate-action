@@ -1,7 +1,7 @@
 # Hope Spot Monitoring Station - Use Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.0.3
+fwd-climate-action=github:forward-education/pxt-climate-action#v1.0.3
 datalogger=datalogger
 ```
 
@@ -49,75 +49,75 @@ We are going to do this in three parts:
 2. **Add code** to bring it to life
 3. **Use** and **study** your station to learn how it works
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/hs-hopespots-render.webp" alt="Full Hope Spot station render" style="display: block; width: 75%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/hs-hopespots-render.webp" alt="Full Hope Spot station render" style="display: block; width: 75%; margin:auto;">
 
 ## Build Step 1 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/hs-hopespots-sbs01.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/hs-hopespots-sbs01.webp)
 
 ## Build Step 2 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/hs-hopespots-sbs02.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/hs-hopespots-sbs02.webp)
 
 ## Build Step 3 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/hs-hopespots-sbs03.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/hs-hopespots-sbs03.webp)
 
 ## Build Step 4 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/hs-hopespots-sbs04.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/hs-hopespots-sbs04.webp)
 
 ## Build Step 5 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/hs-hopespots-sbs05.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/hs-hopespots-sbs05.webp)
 
 ## Build Step 6 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/hs-hopespots-sbs06.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/hs-hopespots-sbs06.webp)
 
 ## Build Step 7 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/hs-hopespots-sbs07.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/hs-hopespots-sbs07.webp)
 
 ## Build Step 8 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/hs-hopespots-sbs08.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/hs-hopespots-sbs08.webp)
 
 ## Build Step 9 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/hs-hopespots-sbs09.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/hs-hopespots-sbs09.webp)
 
 ## Build Step 10 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/hs-hopespots-sbs10.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/hs-hopespots-sbs10.webp)
 
 ## Build Step 11 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/hs-hopespots-sbs11.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/hs-hopespots-sbs11.webp)
 
 ## Build Step 12 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/hs-hopespots-sbs12.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/hs-hopespots-sbs12.webp)
 
 ## Build Step 13 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/hs-hopespots-sbs13.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/hs-hopespots-sbs13.webp)
 
 ## Build Step 14 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/hs-hopespots-sbs14.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/hs-hopespots-sbs14.webp)
 
 ## Build Step 15 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/hs-hopespots-sbs15.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/hs-hopespots-sbs15.webp)
 
 ## Build Step 16 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/hs-hopespots-sbs16.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/hs-hopespots-sbs16.webp)
 
 ## Build Step 17 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/hs-hopespots-sbs17.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/hs-hopespots-sbs17.webp)
 
 ## Activity 2: Code Your Project @showdialog
 
@@ -127,13 +127,13 @@ Now that your station is built, let’s connect it to your computer and upload c
 
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is connected to your computer.
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 40%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 40%; margin:auto;">
 
 ## Code Step 2 @showdialog
 
 Click the three dots next to the `|Download|` button, then select _Connect Device_. Follow the instructions to pair your micro:bit.
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
 
 ## Code Step 3
 
@@ -149,7 +149,7 @@ We are now ready to **use** our Hope Spot Monitoring Station!
 2. For more details, click **'Tell me more!'**
 3. If you need help with the code, click the **lightbulb**!
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/tellmore_hintbox_gif.webp" style="display: block; width: 80%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/tellmore_hintbox_gif.webp" style="display: block; width: 80%; margin:auto;">
 
 ## Use Step 1
 
@@ -282,7 +282,7 @@ What additional features could make this station more effective at protecting it
 -   **Data Logging:** Recording each detected ship’s distance and timestamp could help track ship activity trends.
 -   **Radio Alerts:** Radio signals can notify remote teams when a ship is detected.
 
-Check out the [Modify tutorial](https://makecode.microbit.org/#tutorial:https://github.com/forward-education/pxt-climate-action/hs-hopespots-modify) to see how we can edit our program to include some of these functionalities.
+Check out the [Modify tutorial](https://makecode.microbit.org/#tutorial:https://github.com/ssande-fwd/pxt-climate-action-steve/hs-hopespots-modify) to see how we can edit our program to include some of these functionalities.
 hint~
 
 ## Use Step 10

@@ -1,7 +1,7 @@
 # Solar Panels - Modify Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.0.3
+fwd-climate-action=github:forward-education/pxt-climate-action#v1.0.3
 ```
 
 ## Activity 1: Build Your Project @showdialog
@@ -13,55 +13,55 @@ Let's build a solar panel prototype! We are going to do this in 4 parts:
 3. **Modify** the code to learn how it works
 4. Complete a **challenge** to improve the function of our solar panel
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-render.webp" alt="Full solar panel render" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-render.webp" alt="Full solar panel render" style="display: block; width: 60%; margin:auto;">
 
 ## Build Step 1 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-sbs01.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-sbs01.webp)
 
 ## Build Step 2 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-sbs02.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-sbs02.webp)
 
 ## Build Step 3 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-sbs03.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-sbs03.webp)
 
 ## Build Step 4 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-sbs04.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-sbs04.webp)
 
 ## Build Step 5 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-sbs05.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-sbs05.webp)
 
 ## Build Step 6 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-sbs06.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-sbs06.webp)
 
 ## Build Step 7 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-sbs07.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-sbs07.webp)
 
 ## Build Step 8 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-sbs08.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-sbs08.webp)
 
 ## Build Step 9 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-sbs09.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-sbs09.webp)
 
 ## Build Step 10 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-sbs10.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-sbs10.webp)
 
 ## Build Step 11 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-sbs11.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-sbs11.webp)
 
 ## Build Step 12 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-solarpanel-sbs12.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/ms-solarpanel-sbs12.webp)
 
 ## Activity 2: Code Your Project @showdialog
 
@@ -92,13 +92,13 @@ basic.forever(function () {
 
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" style="display: block; width: 40%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pluganim.webp" style="display: block; width: 40%; margin:auto;">
 
 ## Code Step 2 @showdialog
 
 Click the three dots beside the `|Download|` button, then click on _Connect Device_. Follow the steps to pair your micro:bit.
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobitGIF.webp" alt="Full wildfire render" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pairmicrobitGIF.webp" alt="Full wildfire render" style="display: block; width: 60%; margin:auto;">
 
 ## Code Step 3
 
@@ -117,7 +117,7 @@ As you go through the next steps:
 3. If you need help with the code, click the lightbulb!
 4. Remember, you must re-download the code after each change you make.
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/tellmore_hintbox_gif.webp" style="display: block; width: 70%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/tellmore_hintbox_gif.webp" style="display: block; width: 70%; margin:auto;">
 
 ## Modify Step 1
 

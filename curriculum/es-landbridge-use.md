@@ -1,7 +1,7 @@
 # Safe Animal Crossings - Use Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.0.3
+fwd-climate-action=github:forward-education/pxt-climate-action#v1.0.3
 datalogger=datalogger
 ```
 
@@ -29,99 +29,99 @@ Let's build a wildlife crossing that has a bridge and a tunnel! We are going to 
 2. **Add code** to your crossing to bring it to life
 3. **Use** your crossing to learn how it works
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-landbridge-render.webp" alt="Full animal crossing render" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-landbridge-render.webp" alt="Full animal crossing render" style="display: block; width: 60%; margin:auto;">
 
 ## Build Step 1 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-landbridge-sbs01.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-landbridge-sbs01.webp)
 
 ## Build Step 2 @showdialog
 
-![sbs2](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-landbridge-sbs02.webp)
+![sbs2](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-landbridge-sbs02.webp)
 
 ## Build Step 3 @showdialog
 
-![sbs3](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-landbridge-sbs03.webp)
+![sbs3](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-landbridge-sbs03.webp)
 
 ## Build Step 4 @showdialog
 
-![sbs4](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-landbridge-sbs04.webp)
+![sbs4](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-landbridge-sbs04.webp)
 
 ## Build Step 5 @showdialog
 
-![sbs5](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-landbridge-sbs05.webp)
+![sbs5](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-landbridge-sbs05.webp)
 
 ## Build Step 6 @showdialog
 
-![sbs6](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-landbridge-sbs06.webp)
+![sbs6](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-landbridge-sbs06.webp)
 
 ## Build Step 7 @showdialog
 
-![sbs7](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-landbridge-sbs07.webp)
+![sbs7](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-landbridge-sbs07.webp)
 
 ## Build Step 8 @showdialog
 
-![sbs8](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-landbridge-sbs08.webp)
+![sbs8](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-landbridge-sbs08.webp)
 
 ## Build Step 9 @showdialog
 
-![sbs9](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-landbridge-sbs09.webp)
+![sbs9](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-landbridge-sbs09.webp)
 
 ## Build Step 10 @showdialog
 
-![sbs10](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-landbridge-sbs10.webp)
+![sbs10](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-landbridge-sbs10.webp)
 
 ## Build Step 11 @showdialog
 
-![sbs11](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-landbridge-sbs11.webp)
+![sbs11](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-landbridge-sbs11.webp)
 
 ## Build Step 12 @showdialog
 
-![sbs12](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-landbridge-sbs12.webp)
+![sbs12](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-landbridge-sbs12.webp)
 
 ## Build Step 13 @showdialog
 
-![sbs13](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-landbridge-sbs13.webp)
+![sbs13](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-landbridge-sbs13.webp)
 
 ## Build Step 14 @showdialog
 
-![sbs14](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-landbridge-sbs14.webp)
+![sbs14](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-landbridge-sbs14.webp)
 
 ## Build Step 15 @showdialog
 
-![sbs15](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-landbridge-sbs15.webp)
+![sbs15](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-landbridge-sbs15.webp)
 
 ## Build Step 16 @showdialog
 
-![sbs16](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-landbridge-sbs16.webp)
+![sbs16](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-landbridge-sbs16.webp)
 
 ## Build Step 17 @showdialog
 
-![sbs17](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-landbridge-sbs17.webp)
+![sbs17](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-landbridge-sbs17.webp)
 
 ## Build Step 18 @showdialog
 
-![sbs18](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-landbridge-sbs18.webp)
+![sbs18](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-landbridge-sbs18.webp)
 
 ## Build Step 19 @showdialog
 
-![sbs19](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-landbridge-sbs19.webp)
+![sbs19](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-landbridge-sbs19.webp)
 
 ## Build Step 20 @showdialog
 
-![sbs120](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-landbridge-sbs20.webp)
+![sbs120](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-landbridge-sbs20.webp)
 
 ## Build Step 21 @showdialog
 
-![sbs21](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-landbridge-sbs21.webp)
+![sbs21](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-landbridge-sbs21.webp)
 
 ## Build Step 22 @showdialog
 
-![sbs22](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-landbridge-sbs22.webp)
+![sbs22](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-landbridge-sbs22.webp)
 
 ## Build Step 23 @showdialog
 
-![sbs23](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/es-landbridge-sbs23.webp)
+![sbs23](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/es-landbridge-sbs23.webp)
 
 ## Activity 2: Code Your Project @showdialog
 
@@ -134,7 +134,7 @@ The code will be the instructions that tell our micro:bit what to do.
 Click the three dots beside the `|Download|` button, then click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
 
 ## Code Step 2
 
@@ -150,7 +150,7 @@ We are now ready to **use** our wildlife crossing!
 2. When you are ready for more details, click **'Tell me more!'**
 3. If you need help with the code, click the lightbulb!
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/tellmore_hintbox_gif.webp" style="display: block; width: 80%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/tellmore_hintbox_gif.webp" style="display: block; width: 80%; margin:auto;">
 
 ## Use Step 1
 

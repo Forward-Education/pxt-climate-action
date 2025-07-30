@@ -1,7 +1,7 @@
 # Tracking Pollinators with a Bee Counter
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.0.3
+fwd-climate-action=github:forward-education/pxt-climate-action#v1.0.3
 ```
 
 ## Activity 1: Build Your Project @showdialog
@@ -12,67 +12,67 @@ Let's build a bee counter! We are going to do this in three parts:
 2. **Add code** to bring it to life.
 3. **Use** the bee counter to learn how it works.
 
-![projectrender](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr4-bees-projectrender.webp)
+![projectrender](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr4-bees-projectrender.webp)
 
 ## Build Step 1 @showdialog
 
-![beesbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/Gr4-bee-sbs1.png)
+![beesbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/Gr4-bee-sbs1.png)
 
 ## Build Step 2 @showdialog
 
-![beesbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/Gr4-bees-sbs2.png)
+![beesbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/Gr4-bees-sbs2.png)
 
 ## Build Step 3 @showdialog
 
-![beesbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/Gr4-bees-sbs3.png)
+![beesbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/Gr4-bees-sbs3.png)
 
 ## Build Step 4 @showdialog
 
-![beesbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/Gr4-bees-sbs4.png)
+![beesbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/Gr4-bees-sbs4.png)
 
 ## Build Step 5 @showdialog
 
-![beesbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/Gr4-bees-sbs5.png)
+![beesbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/Gr4-bees-sbs5.png)
 
 ## Build Step 6 @showdialog
 
-![beesbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/Gr4-bees-sbs6.png)
+![beesbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/Gr4-bees-sbs6.png)
 
 ## Build Step 7 @showdialog
 
-![beesbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/Gr4-bees-sbs7.png)
+![beesbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/Gr4-bees-sbs7.png)
 
 ## Build Step 8 @showdialog
 
-![beesbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/Gr4-bees-sbs8.png)
+![beesbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/Gr4-bees-sbs8.png)
 
 ## Build Step 9 @showdialog
 
-![beesbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/Gr4-bees-sbs9.png)
+![beesbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/Gr4-bees-sbs9.png)
 
 ## Build Step 10 @showdialog
 
-![beesbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/Gr4-bees-sbs10.png)
+![beesbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/Gr4-bees-sbs10.png)
 
 ## Build Step 11 @showdialog
 
-![beesbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/Gr4-bees-sbs11.png)
+![beesbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/Gr4-bees-sbs11.png)
 
 ## Build Step 12 @showdialog
 
-![beesbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/Gr4-bees-sbs12.png)
+![beesbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/Gr4-bees-sbs12.png)
 
 ## Build Step 13 @showdialog
 
-![beesbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/Gr4-bees-sbs13.png)
+![beesbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/Gr4-bees-sbs13.png)
 
 ## Build Step 14 @showdialog
 
-![beesbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/Gr4-bees-sbs14.png)
+![beesbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/Gr4-bees-sbs14.png)
 
 ## Build Step 15 @showdialog
 
-![beesbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/Gr4-bees-sbs15.png)
+![beesbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/Gr4-bees-sbs15.png)
 
 ## Activity 2: Code Your Project @showdialog
 
@@ -83,7 +83,7 @@ The code will be the instructions that tell our micro: bit what to do.
 ## Code Step 1 @showdialog
 
 Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" width="400">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pluganim.webp" width="400">
 
 ## Code Step 2 @showdialog
 

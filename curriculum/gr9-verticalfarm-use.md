@@ -1,7 +1,7 @@
 # Optimizing Plant Growth with LED Grow Lights - Use Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.0.3
+fwd-climate-action=github:forward-education/pxt-climate-action#v1.0.3
 ```
 
 ## Activity 1: Build Your Project @showdialog
@@ -12,87 +12,87 @@ Let's build a vertical farm prototype! We are going to do this in three parts:
 2. **Add code** to bring it to life
 3. **Use** our vertical farm to learn how it works
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr9-verticalfarm-thumbnail-render.webp" alt="Full vertical farm render" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr9-verticalfarm-thumbnail-render.webp" alt="Full vertical farm render" style="display: block; width: 60%; margin:auto;">
 
 ## Build Step 1 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr9-verticalfarm-sbs01.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr9-verticalfarm-sbs01.webp)
 
 ## Build Step 2 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr9-verticalfarm-sbs02.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr9-verticalfarm-sbs02.webp)
 
 ## Build Step 3 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr9-verticalfarm-sbs03.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr9-verticalfarm-sbs03.webp)
 
 ## Build Step 4 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr9-verticalfarm-sbs04.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr9-verticalfarm-sbs04.webp)
 
 ## Build Step 5 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr9-verticalfarm-sbs05.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr9-verticalfarm-sbs05.webp)
 
 ## Build Step 6 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr9-verticalfarm-sbs06.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr9-verticalfarm-sbs06.webp)
 
 ## Build Step 7 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr9-verticalfarm-sbs07.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr9-verticalfarm-sbs07.webp)
 
 ## Build Step 8 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr9-verticalfarm-sbs08.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr9-verticalfarm-sbs08.webp)
 
 ## Build Step 9 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr9-verticalfarm-sbs09.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr9-verticalfarm-sbs09.webp)
 
 ## Build Step 10 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr9-verticalfarm-sbs10.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr9-verticalfarm-sbs10.webp)
 
 ## Build Step 11 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr9-verticalfarm-sbs11.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr9-verticalfarm-sbs11.webp)
 
 ## Build Step 12 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr9-verticalfarm-sbs12.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr9-verticalfarm-sbs12.webp)
 
 ## Build Steps 13 + 14 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr9-verticalfarm-sbs13.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr9-verticalfarm-sbs13.webp)
 
 ## Build Step 15 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr9-verticalfarm-sbs15.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr9-verticalfarm-sbs15.webp)
 
 ## Build Step 16 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr9-verticalfarm-sbs16.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr9-verticalfarm-sbs16.webp)
 
 ## Build Step 17 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr9-verticalfarm-sbs17.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr9-verticalfarm-sbs17.webp)
 
 ## Build Step 18 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr9-verticalfarm-sbs18.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr9-verticalfarm-sbs18.webp)
 
 ## Build Step 19 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr9-verticalfarm-sbs19.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr9-verticalfarm-sbs19.webp)
 
 ## Build Step 20 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr9-verticalfarm-sbs20.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr9-verticalfarm-sbs20.webp)
 
 ## Build Step 21 @showdialog
 
-![verticalfarmsbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr9-verticalfarm-sbs21.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/gr9-verticalfarm-sbs21.webp)
 
 ## Activity 2: Code Your Project @showdialog
 
@@ -180,13 +180,13 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" alt="Turn on breakout board" style="display: block; width: 40%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pluganim.webp" alt="Turn on breakout board" style="display: block; width: 40%; margin:auto;">
 
 ## Code Step 2 @showdialog
 
 Click the three dots beside the `|Download|` button, then click on _Connect Device_. Next, follow the steps to pair your micro:bit.
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobitGIF.webp" alt="Full wildfire render" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action-steve/main/tutorial-assets/pairmicrobitGIF.webp" alt="Full wildfire render" style="display: block; width: 60%; margin:auto;">
 
 ## Code Step 3
 
