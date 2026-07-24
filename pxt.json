@@ -4,16 +4,16 @@
     "description": "Forward Education's Climate Action Kit BETA extension, micro:bit V2 only.",
     "license": "MIT",
     "dependencies": {
-        "fwd-dial": "github:Forward-Education/pxt-fwd-modules/fwd-dial#v1.0.10",
-        "fwd-led-ring": "github:Forward-Education/pxt-fwd-modules/fwd-led-ring#v1.0.10",
-        "fwd-line": "github:Forward-Education/pxt-fwd-modules/fwd-line#v1.0.10",
-        "fwd-moisture": "github:Forward-Education/pxt-fwd-modules/fwd-moisture#v1.0.10",
-        "fwd-pump": "github:Forward-Education/pxt-fwd-modules/fwd-pump#v1.0.10",
-        "fwd-servo-continuous": "github:Forward-Education/pxt-fwd-modules/fwd-servo-continuous#v1.0.10",
-        "fwd-servo-positional": "github:Forward-Education/pxt-fwd-modules/fwd-servo-positional#v1.0.10",
-        "fwd-solar": "github:Forward-Education/pxt-fwd-modules/fwd-solar#v1.0.10",
-        "fwd-sonar": "github:Forward-Education/pxt-fwd-modules/fwd-sonar#v1.0.10",
-        "fwd-touch": "github:Forward-Education/pxt-fwd-modules/fwd-touch#v1.0.10"
+        "fwd-dial": "github:Forward-Education/pxt-fwd-modules/fwd-dial#v1.1.2",
+        "fwd-led-ring": "github:Forward-Education/pxt-fwd-modules/fwd-led-ring#v1.1.2",
+        "fwd-line": "github:Forward-Education/pxt-fwd-modules/fwd-line#v1.1.2",
+        "fwd-moisture": "github:Forward-Education/pxt-fwd-modules/fwd-moisture#v1.1.2",
+        "fwd-pump": "github:Forward-Education/pxt-fwd-modules/fwd-pump#v1.1.2",
+        "fwd-servo-continuous": "github:Forward-Education/pxt-fwd-modules/fwd-servo-continuous#v1.1.2",
+        "fwd-servo-positional": "github:Forward-Education/pxt-fwd-modules/fwd-servo-positional#v1.1.2",
+        "fwd-solar": "github:Forward-Education/pxt-fwd-modules/fwd-solar#v1.1.2",
+        "fwd-sonar": "github:Forward-Education/pxt-fwd-modules/fwd-sonar#v1.1.2",
+        "fwd-touch": "github:Forward-Education/pxt-fwd-modules/fwd-touch#v1.1.2"
     },
     "files": [
         "README.md",
@@ -24,7 +24,7 @@
     ],
     "public": true,
     "targetVersions": {
-        "target": "8.0.13",
+        "target": "9.0.8",
         "targetId": "microbit"
     },
     "supportedTargets": [
