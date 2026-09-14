@@ -1,17 +1,15 @@
+---
 name: Run All Tests
 
 on:
     push:
-        branches:
-            - main
+        branches: [main]
     pull_request:
-        branches:
-            - main
+        branches: [main]
 
 jobs:
     build:
         runs-on: ubuntu-latest
-
         steps:
             - name: Checkout code
               uses: actions/checkout@v4
@@ -21,7 +19,7 @@ jobs:
               with:
                   python-version: "3.x"
 
-            - name: Install Node.js (if mkc is Node-based)
+            - name: Install Node.js
               uses: actions/setup-node@v4
               with:
                   node-version: "18"
@@ -29,5 +27,20 @@ jobs:
             - name: Install mkc
               run: npm install -g makecode
 
-            - name: Run PXT Test Script
+            # Generated tests are committed so CI compiles exactly what was reviewed.
+            # Regenerating must be a no-op; if it isn't, the markdown changed without
+            # the generated tests being refreshed.
+            - name: Regenerate snippet tests
+              run: python md-to-ts.py
+
+            - name: Fail if generated tests are stale
+              run: |
+                  if ! git diff --quiet -- tests/generated; then
+                      echo "::error::tests/generated is out of date with curriculum/."
+                      echo "Run 'python md-to-ts.py' and commit the result."
+                      git diff --stat -- tests/generated
+                      exit 1
+                  fi
+
+            - name: Compile tutorial snippets
               run: python run-all-tests.py
