@@ -1,7 +1,7 @@
 # Turtle-safe Beach Lights - Modify Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ```template
@@ -90,7 +90,7 @@ IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and you
 
 Click the three dots beside the `|Download|` button, and click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
-![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
+![pair gif](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/DownloadButtonGIF.webp)
 
 ## Code Step 3
 
@@ -187,11 +187,11 @@ What are the _specific rules_ that help the micro:bit decide what to do?
 
 ```block
     if (fwdSensors.solar1.lightLevel() < 40) {
-
+    	
     } else if (fwdSensors.solar1.lightLevel() >= 40 && fwdSensors.solar1.lightLevel() < 80) {
-
+    	
     } else {
-
+    	
     }
 ```
 
@@ -222,7 +222,7 @@ First, click the + symbol at the bottom of `||logic:if then else||` block. This 
         fwdLights.ledRing1.setPixelColor(1, 0xff8000)
         fwdLights.ledRing1.setPixelColor(7, 0xff8000)
     } else if (false) {
-
+    	
     } else {
         fwdLights.ledRing1.setAllPixelsColor(0x000000)
     }
@@ -239,7 +239,7 @@ Next, drag out two `||fwdSensors:solar1 light level %||` blocks from the Sensors
         fwdLights.ledRing1.setPixelColor(1, 0xff8000)
         fwdLights.ledRing1.setPixelColor(7, 0xff8000)
     } else if (fwdSensors.solar1.lightLevel() < 0 && fwdSensors.solar1.lightLevel() < 0) {
-
+    	
     } else {
         fwdLights.ledRing1.setAllPixelsColor(0x000000)
     }
@@ -256,7 +256,7 @@ Change the numbers and comparison operators in your expressions to make sure the
         fwdLights.ledRing1.setPixelColor(1, 0xff8000)
         fwdLights.ledRing1.setPixelColor(7, 0xff8000)
     } else if (fwdSensors.solar1.lightLevel() >= 50 && fwdSensors.solar1.lightLevel() < 75) {
-
+    	
     } else {
         fwdLights.ledRing1.setAllPixelsColor(0x000000)
     }
@@ -308,9 +308,9 @@ We’ll need another conditional statement for this. Drag another `||logic:if th
 ```blocks
 basic.forever(function () {
     if (true) {
-
+    	
     } else {
-
+    	
     }
 })
 ```
@@ -322,10 +322,10 @@ Drag a `||logic:0 < 0||` block from the Logic category. Add a `||fwdSensors:sona
 
 ```blocks
 basic.forever(function () {
-    if (fwdSensors.sonar1.fwdDistance() < 0.1){
-
+    if (fwdSensors.sonar1.distance() < 0.1){
+    	
     } else {
-
+    	
     }
 })
 ```
@@ -336,8 +336,8 @@ The lights should be off if there are no people on the beach. To do this, add a 
 
 ```blocks
 basic.forever(function () {
-    if (fwdSensors.sonar1.fwdDistance() < 0.1) {
-
+    if (fwdSensors.sonar1.distance() < 0.1) {
+    	
     } else {
         fwdLights.ledRing1.setAllPixelsColor(0x000000)
     }
@@ -358,7 +358,7 @@ We’ve already done this! We can drag our original conditional statements insid
 
 ```blocks
 basic.forever(function () {
-    if (fwdSensors.sonar1.fwdDistance() < 0.1) {
+    if (fwdSensors.sonar1.distance() < 0.1) {
         // @highlight
         if (fwdSensors.solar1.lightLevel() < 25) {
             fwdLights.ledRing1.setAllPixelsColor(0xff8000)

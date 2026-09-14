@@ -1,13 +1,13 @@
 # Advanced Agriculture
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ## Step 1 @showdialog
 
 Welcome to Advanced Agriculture Coding Tutorial
-![built project](https://forward-education.github.io/pxt-climate-action/tutorial-assets/project-advagri-200.png)
+![built project](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/project-advagri-200.png)
 
 ## Step 2 @showdialog
 
@@ -16,12 +16,12 @@ In this coding tutorial we will build a moisture level indicator using the LED R
 ## Step 3 @showdialog
 
 Turn on the Climate Action Kit board.
-![breakout board](https://forward-education.github.io/pxt-climate-action/tutorial-assets/breakout-turn-on.png)
+![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-turn-on.png)
 
 ## Step 4 @showhint
 
 Click three dots besides `|Download|` button, and click on _Connect Device_. Next, follow the steps to pair your micro:bit.
-![pair gif](https://forward-education.github.io/pxt-climate-action/tutorial-assets/pairmicrobit-280x203.gif)
+![pair gif](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobit-280x203.gif)
 
 ## Step 5 @showhint
 
@@ -30,7 +30,7 @@ Next, click the `|Download|` button to download the blank project to start-up th
 ## Step 6 @showhint
 
 Look below the @boardname@ simulator to see the Climate Action Board and the connected sensors. Try holding the Moisture Sensor or dipping it in a glass of water. See how the virtual simulators react.
-![moisture](https://forward-education.github.io/pxt-climate-action/tutorial-assets/simulator-4-moisture.gif)
+![moisture](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-4-moisture.gif)
 
 ## Step 7
 
@@ -40,10 +40,12 @@ block inside `||Basic:forever||` block.
 ```blocks
 basic.forever(function () {
     if (true) {
+          	
           }
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 8
@@ -54,10 +56,12 @@ to replace `||logic:true||` condition of `||logic:if then else||` block.
 ```blocks
 basic.forever(function () {
     if (fwdSensors.moisture1.isPastThreshold(5, fwdEnums.OverUnder.Over)) {
+          	
           }
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 9
@@ -70,8 +74,9 @@ basic.forever(function () {
     if (fwdSensors.moisture1.isPastThreshold(5, fwdEnums.OverUnder.Over)) {
           basic.showIcon(IconNames.Happy)}
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 10
@@ -85,7 +90,7 @@ basic.forever(function () {
           basic.showIcon(IconNames.Happy)}
     else {
         basic.showIcon(IconNames.Sad)}
-        )}
+        })
 ```
 
 ## Step 11
@@ -156,12 +161,16 @@ basic.forever(function () {
         basic.clearScreen()
     }
     if(true){
+    	
     }
     if(true){
+    	
     }
     if (true){
+    	
     }
     if (true){
+    	
     }
 })
 ```
@@ -182,12 +191,16 @@ basic.forever(function () {
         basic.clearScreen()
     }
     if(fwdSensors.moisture1.isPastThreshold(5, fwdEnums.OverUnder.Over)){
+    	
     }
     if(fwdSensors.moisture1.isPastThreshold(5, fwdEnums.OverUnder.Over)){
+    	
     }
     if(fwdSensors.moisture1.isPastThreshold(5, fwdEnums.OverUnder.Over)){
+    	
     }
     if(fwdSensors.moisture1.isPastThreshold(5, fwdEnums.OverUnder.Over)){
+    	
     }
 })
 ```
@@ -211,10 +224,13 @@ basic.forever(function () {
      fwdLights.ledRing1.setAllPixelsColor(0xff0000)
     }
     if(fwdSensors.moisture1.isPastThreshold(5, fwdEnums.OverUnder.Over)){
+    	
     }
     if(fwdSensors.moisture1.isPastThreshold(5, fwdEnums.OverUnder.Over)){
+    	
     }
     if(fwdSensors.moisture1.isPastThreshold(5, fwdEnums.OverUnder.Over)){
+    	
     }
 })
 ```
@@ -366,7 +382,7 @@ basic.forever(function () {
 
 `|Download|` and test your code. Click the bulb icon to see how
 the simulator shows the components working.
-![moisture-pump](https://forward-education.github.io/pxt-climate-action/tutorial-assets/simulator-11-Moisture-pump.gif)
+![moisture-pump](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-11-Moisture-pump.gif)
 
 ## Step 22 @showdialog
 

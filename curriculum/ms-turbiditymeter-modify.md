@@ -1,7 +1,7 @@
 # Turbidity Meters - Modify Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 datalogger=datalogger
 ```
 
@@ -130,6 +130,7 @@ input.onButtonPressed(Button.A, function () {
     basic.showNumber(Math.round(fwdSensors.solar1.lightLevel()))
     // @highlight
     if (true) {
+    	
     }
 })
 ```
@@ -143,7 +144,7 @@ input.onButtonPressed(Button.A, function () {
     basic.showNumber(Math.round(fwdSensors.solar1.lightLevel()))
     // @highlight
     if (0 <= 0) {
-
+    	
     }
 })
 ```
@@ -157,7 +158,7 @@ input.onButtonPressed(Button.A, function () {
     basic.showNumber(Math.round(fwdSensors.solar1.lightLevel()))
     // @highlight
     if (fwdSensors.solar1.lightLevel() <= 70) {
-
+    	
     }
 })
 ```

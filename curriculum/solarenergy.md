@@ -1,13 +1,13 @@
 # Harnessing the Sun's Energy with Solar Panels
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ## Step 1 @showdialog
 
 Welcome to Harnessing the Sun's Energy with Solar Panels Coding Tutorial
-![built project](https://forward-education.github.io/pxt-climate-action/tutorial-assets/project-solar-200.png)
+![built project](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/project-solar-200.png)
 
 ## Step 2 @showdialog
 
@@ -16,13 +16,13 @@ In this coding tutorial we will move the solar panel using the positional servo 
 ## Step 3 @showdialog
 
 Turn on the Climate Action Kit board.
-![breakout board](https://forward-education.github.io/pxt-climate-action/tutorial-assets/breakout-turn-on.png)
+![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-turn-on.png)
 
 ## Step 4 @showhint
 
 Click three dots besides `|Download|` button, and click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
-![pair gif](https://forward-education.github.io/pxt-climate-action/tutorial-assets/pairmicrobit-280x203.gif)
+![pair gif](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobit-280x203.gif)
 
 ## Step 5 @showhint
 
@@ -31,7 +31,7 @@ Next, click the `|Download|` button to download the blank project to start-up th
 ## Step 6 @showhint
 
 Look below the @boardname@ simulator to see the Climate Action Board and the connected sensors. Try interacting with the Solar Sensor on your project. Cover and uncover the sensor to see the light percentage change on your virtual simulator.
-![solar](https://forward-education.github.io/pxt-climate-action/tutorial-assets/simulator-8-Solar.gif)
+![solar](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-8-Solar.gif)
 
 ## Step 7
 
@@ -53,6 +53,7 @@ Change `||Variables:0||` to `||Variables:-90||`.
 ```blocks
 let position = -90
 basic.forever(function(){
+	
 })
 ```
 
@@ -65,8 +66,10 @@ block inside the `||basic:forever||` loop.
 let position = -90
 basic.forever(function(){
     if(true){
+    	
     }
     else{
+    	
     }
 })
 ```
@@ -82,8 +85,10 @@ Change `||Logic:<||` to `||Logic:>||`.
 let position = -90
 basic.forever(function(){
     if(0>0){
+    	
     }
     else{
+    	
     }
 })
 ```
@@ -97,8 +102,10 @@ block to replace `||0||` on left side of the `||logic:comparison||` block.
 let position = -90
 basic.forever(function(){
     if(fwdSensors.solar1.lightLevel() > 0){
+    	
     }
     else{
+    	
     }
 })
 ```
@@ -112,8 +119,10 @@ Change `||0||` to `||75||`.
 let position = -90
 basic.forever(function(){
     if(fwdSensors.solar1.lightLevel() > 75){
+    	
     }
     else{
+    	
     }
 })
 ```
@@ -145,7 +154,7 @@ let position = -90
 basic.forever(function () {
     if (fwdSensors.solar1.lightLevel() > 75) {
     basic.showIcon(IconNames.Target)
-    fwdMotors.conSetEnabled(fwdBase.leftServo, false)
+    fwdBase.leftServo.setEnabled(false)
     }
     else {}
 })
@@ -162,7 +171,7 @@ let position = -90
 basic.forever(function () {
     if (fwdSensors.solar1.lightLevel() > 75) {
         basic.showIcon(IconNames.Target)
-        fwdMotors.conSetEnabled(fwdBase.leftServo, false)
+        fwdBase.leftServo.setEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
         }
@@ -180,7 +189,7 @@ let position = -90
 basic.forever(function () {
     if (fwdSensors.solar1.lightLevel() > 75) {
         basic.showIcon(IconNames.Target)
-        fwdMotors.conSetEnabled(fwdBase.leftServo, false)
+        fwdBase.leftServo.setEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
         position += 1
@@ -197,7 +206,7 @@ let position = -90
 basic.forever(function () {
     if (fwdSensors.solar1.lightLevel() > 75) {
         basic.showIcon(IconNames.Target)
-        fwdMotors.conSetEnabled(fwdBase.leftServo, false)
+        fwdBase.leftServo.setEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
         position += 10
@@ -215,11 +224,12 @@ let position = -90
 basic.forever(function () {
     if (fwdSensors.solar1.lightLevel() > 75) {
         basic.showIcon(IconNames.Target)
-        fwdMotors.conSetEnabled(fwdBase.leftServo, false)
+        fwdBase.leftServo.setEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
         position += 10
         if (true) {
+            	
             }
         }
 })
@@ -236,11 +246,12 @@ let position = -90
 basic.forever(function () {
     if (fwdSensors.solar1.lightLevel() > 75) {
         basic.showIcon(IconNames.Target)
-        fwdMotors.conSetEnabled(fwdBase.leftServo, false)
+        fwdBase.leftServo.setEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
         position += 10
         if (0 > 0) {
+                	
                 }
 
     }
@@ -258,11 +269,12 @@ let position = -90
 basic.forever(function () {
     if (fwdSensors.solar1.lightLevel() > 75) {
         basic.showIcon(IconNames.Target)
-        fwdMotors.conSetEnabled(fwdBase.leftServo, false)
+        fwdBase.leftServo.setEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
         position += 10
         if (position > 0) {
+        	
         }
 
     }
@@ -279,11 +291,12 @@ let position = -90
 basic.forever(function () {
     if (fwdSensors.solar1.lightLevel() > 75) {
         basic.showIcon(IconNames.Target)
-        fwdMotors.conSetEnabled(fwdBase.leftServo, false)
+        fwdBase.leftServo.setEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
         position += 10
         if (position > 90) {
+        	
         }
 
     }
@@ -300,7 +313,7 @@ let position = -90
 basic.forever(function () {
     if (fwdSensors.solar1.lightLevel() > 75) {
         basic.showIcon(IconNames.Target)
-        fwdMotors.conSetEnabled(fwdBase.leftServo, false)
+        fwdBase.leftServo.setEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
         position += 10
@@ -322,7 +335,7 @@ let position = -90
 basic.forever(function () {
     if (fwdSensors.solar1.lightLevel() > 75) {
         basic.showIcon(IconNames.Target)
-        fwdMotors.conSetEnabled(fwdBase.leftServo, false)
+        fwdBase.leftServo.setEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
         position += 10
@@ -344,7 +357,7 @@ let position = -90
 basic.forever(function () {
     if (fwdSensors.solar1.lightLevel() > 75) {
         basic.showIcon(IconNames.Target)
-        fwdMotors.conSetEnabled(fwdBase.leftServo, false)
+        fwdBase.leftServo.setEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
         position += 10
@@ -367,7 +380,7 @@ let position = -90
 basic.forever(function () {
     if (fwdSensors.solar1.lightLevel() > 75) {
         basic.showIcon(IconNames.Target)
-        fwdMotors.conSetEnabled(fwdBase.leftServo, false)
+        fwdBase.leftServo.setEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
         position += 10
@@ -384,7 +397,7 @@ basic.forever(function () {
 
 `|Download|` and test your code. Click the bulb icon to see how
 the simulator shows the components working.
-![solar-servo](https://forward-education.github.io/pxt-climate-action/tutorial-assets/simulator-14-solar-array.gif)
+![solar-servo](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-14-solar-array.gif)
 
 ## Step 28 @showdialog
 

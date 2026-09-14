@@ -1,13 +1,13 @@
 # Wind Turbine Energy Storage - Modify Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 datalogger=datalogger
 ```
 
 ```template
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
-    fwdBase.middleServo.fwdSetEnabled(false)
+    fwdBase.middleServo.setEnabled(false)
 })
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, function () {
     fwdBase.middleServo.setSpeed(50)
@@ -20,7 +20,7 @@ input.onButtonPressed(Button.A, function () {
 })
 batteryLevel = 0
 basic.forever(function () {
-    if (fwdBase.middleServo.isEnabled() == true) {
+    if (fwdBase.middleServo.enabled() == true) {
         basic.showLeds(`
             . . # . .
             . # . # .
@@ -141,7 +141,7 @@ Take a moment to review the starter code. Look for the following:
 
 ```blocks
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
-    fwdBase.middleServo.fwdSetEnabled(false)
+    fwdBase.middleServo.setEnabled(false)
 })
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, function () {
     fwdBase.middleServo.setSpeed(50)
@@ -152,7 +152,7 @@ fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, functio
 
 basic.forever(function () {
     // @highlight
-    if (fwdBase.middleServo.isEnabled() == true) {
+    if (fwdBase.middleServo.enabled() == true) {
         basic.showLeds(`
             . . # . .
             . # . # .
@@ -186,7 +186,7 @@ input.onButtonPressed(Button.A, function () {
 // @highlight
 batteryLevel = 0
 basic.forever(function () {
-    if (fwdBase.middleServo.isEnabled() == true) {
+    if (fwdBase.middleServo.enabled() == true) {
         // @highlight
         batteryLevel += 1
         // @highlight
@@ -230,7 +230,7 @@ Right now, the battery charges by 1% every 2 seconds. How could we make charging
     hint~
 
 ```block
-    if (fwdBase.middleServo.isEnabled() == true) {
+    if (fwdBase.middleServo.enabled() == true) {
         basic.showLeds(`
             . . # . .
             . # . # .
@@ -272,7 +272,7 @@ How might we write another conditional statement to tell the micro:bit to do thi
 We can expand our existing conditional statement by pressing the '+' icon at the bottom. This will add an **else if** statement which will only run when the wind turbine is off!
 
 ```block
- if (fwdBase.middleServo.isEnabled() == true) {
+ if (fwdBase.middleServo.enabled() == true) {
         basic.showLeds(`
             . . # . .
             . # . # .
@@ -287,7 +287,7 @@ We can expand our existing conditional statement by pressing the '+' icon at the
         }
         basic.pause(500)
     } else if (false) {
-
+    	
     } else {
         basic.showLeds(`
             . . . . .
@@ -311,7 +311,7 @@ Drag a `||variables:batteryLevel||` block and a `||logic:>||` block into the wor
     hint~
 
 ```block
-if (fwdBase.middleServo.isEnabled() == true) {
+if (fwdBase.middleServo.enabled() == true) {
         basic.showLeds(`
             . . # . .
             . # . # .
@@ -326,7 +326,7 @@ if (fwdBase.middleServo.isEnabled() == true) {
         }
         basic.pause(500)
     } else if (batteryLevel > 0) {
-
+    	
     } else {
         basic.showLeds(`
             . . . . .
@@ -343,7 +343,7 @@ if (fwdBase.middleServo.isEnabled() == true) {
 Right click the `||basic:show LEDs||` block and duplicate it. Add the new block inside the new conditional.
 
 ```block
-if (fwdBase.middleServo.isEnabled() == true) {
+if (fwdBase.middleServo.enabled() == true) {
         basic.showLeds(`
             . . # . .
             . # . # .
@@ -390,7 +390,7 @@ We've used the `||variables:change batteryLevel by||` block to _increase_ the ba
     hint~
 
 ```block
-if (fwdBase.middleServo.isEnabled() == true) {
+if (fwdBase.middleServo.enabled() == true) {
         basic.showLeds(`
             . . # . .
             . # . # .
@@ -454,7 +454,7 @@ To add an alert when the battery reaches 0%, add a `||music:play tone||` block i
 Change the note so it is different than the note that is played when the battery is full!
 
 ```block
-if (fwdBase.middleServo.isEnabled() == true) {
+if (fwdBase.middleServo.enabled() == true) {
         basic.showLeds(`
             . . # . .
             . # . # .
@@ -499,7 +499,7 @@ Finally, to adjust the rate the battery drains, change the numbers inside the `|
 Try adjusting these numbers so the battery charges twice as fast as it drains.
 
 ```block
-if (fwdBase.middleServo.isEnabled() == true) {
+if (fwdBase.middleServo.enabled() == true) {
         basic.showLeds(`
             . . # . .
             . # . # .

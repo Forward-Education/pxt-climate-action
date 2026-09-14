@@ -1,7 +1,7 @@
 # Safe Animal Crossings - Modify Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ```template
@@ -20,7 +20,9 @@ basic.forever(function () {
 })
 basic.forever(function () {
     if (fwdSensors.solar1.isPastThreshold(70, fwdEnums.OverUnder.Under)) {
+    	
     } else {
+    	
     }
 })
 ```
@@ -294,7 +296,7 @@ Check the lightbulb for the answer!
 basic.forever(function () {
     basic.showNumber(animalCount)
     // @highlight
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.1, fwdEnums.OverUnder.Under)) {
+    if (fwdSensors.sonar1.isPastThreshold(0.1, fwdEnums.OverUnder.Under)) {
         animalCount += 1
     }
 })
@@ -315,7 +317,7 @@ This will stop the sensor from counting the same animal twice.
 ```blocks
 basic.forever(function () {
     basic.showNumber(animalCount)
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.1, fwdEnums.OverUnder.Under)) {
+    if (fwdSensors.sonar1.isPastThreshold(0.1, fwdEnums.OverUnder.Under)) {
         animalCount += 1
         // @highlight
         basic.pause(1000)

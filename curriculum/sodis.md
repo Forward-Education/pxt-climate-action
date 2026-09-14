@@ -3,12 +3,12 @@
 ## Step 1 @showdialog
 
 Welcome to Solar Disinfection Coding Tutorial
-![built-project-image](https://forward-education.github.io/pxt-climate-action/tutorial-assets/sodis-prototype.png)
+![built-project-image](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/sodis-prototype.png)
 
 ## Step 2 @showdialog
 
 Plug your USB cable into the micro:bit.
-![breakout board](https://forward-education.github.io/pxt-climate-action/tutorial-assets/connect-microbit.gif)
+![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/connect-microbit.gif)
 
 ## Step 3
 
@@ -19,10 +19,12 @@ block inside `||basic:forever||` loop.
 basic.forever(function () {
 
     if (true) {
+          	
           }
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 4
@@ -35,10 +37,12 @@ to replace `||Logic:true||` condition of `||Logic:If true then||` block. Change
 basic.forever(function () {
 
     if (0>0) {
+          	
           }
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 5
@@ -51,10 +55,12 @@ Change `||Logic:0||` on the right side to `||Logic:128||`.
 basic.forever(function () {
 
     if (input.lightLevel()>128) {
+          	
           }
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 6
@@ -77,8 +83,9 @@ basic.forever(function () {
     totalLightExposure += 1
           }
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 8
@@ -93,8 +100,9 @@ basic.forever(function () {
     totalLightExposure += (0-0)
           }
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 9
@@ -109,8 +117,9 @@ basic.forever(function () {
     totalLightExposure += (input.runningTime()-0)
           }
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 10
@@ -125,8 +134,9 @@ basic.forever(function () {
     totalLightExposure += (input.runningTime()- exposure_start_time)
           }
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 11
@@ -142,8 +152,9 @@ basic.forever(function () {
     exposure_start_time = 0
           }
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 12
@@ -159,8 +170,9 @@ basic.forever(function () {
     exposure_start_time = input.runningTime()
           }
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 13
@@ -174,11 +186,13 @@ basic.forever(function () {
     totalLightExposure += (input.runningTime()- exposure_start_time)
     exposure_start_time = input.runningTime()
     if(true){
+    	
     }
           }
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 14
@@ -192,11 +206,13 @@ basic.forever(function () {
     totalLightExposure += (input.runningTime()- exposure_start_time)
     exposure_start_time = input.runningTime()
     if(0>0){
+    	
     }
           }
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 15
@@ -210,11 +226,13 @@ basic.forever(function () {
     totalLightExposure += (input.runningTime()- exposure_start_time)
     exposure_start_time = input.runningTime()
     if(totalLightExposure>0){
+    	
     }
           }
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 16
@@ -228,11 +246,13 @@ basic.forever(function () {
     totalLightExposure += (input.runningTime()- exposure_start_time)
     exposure_start_time = input.runningTime()
     if(totalLightExposure > (0 * 0)){
+    	
     }
           }
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 17
@@ -246,11 +266,13 @@ basic.forever(function () {
     totalLightExposure += (input.runningTime()- exposure_start_time)
     exposure_start_time = input.runningTime()
     if(totalLightExposure > ((0 * 0) * 0)){
+    	
     }
           }
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 18
@@ -263,11 +285,13 @@ basic.forever(function () {
     totalLightExposure += (input.runningTime()- exposure_start_time)
     exposure_start_time = input.runningTime()
     if(totalLightExposure > ((6 * 3600) * 1000)){
+    	
     }
           }
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 19
@@ -286,8 +310,9 @@ basic.forever(function () {
     }
           }
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 20
@@ -306,8 +331,9 @@ basic.forever(function () {
     }
           }
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 21
@@ -328,7 +354,7 @@ basic.forever(function () {
     else {
     basic.showString("Not Safe")
         }
-        )}
+        })
 ```
 
 ## Step 22

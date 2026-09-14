@@ -1,7 +1,7 @@
 # Wildfire Detection with Autonomous Vehicles - Use
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ## Activity 1: Build Your Project @showdialog
@@ -16,75 +16,75 @@ Let's build a wildfire detection vehicle! We are going to do this in 3 parts:
 
 ## Build Step 1 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs1.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs1.png)
 
 ## Build Step 2 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs2.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs2.png)
 
 ## Build Step 3 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs3.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs3.png)
 
 ## Build Step 4 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs4.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs4.png)
 
 ## Build Step 5 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs5.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs5.png)
 
 ## Build Step 6 @showdialog
 
-![wildfiresb](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs6.png?raw=true)
+![wildfiresb](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs6.png)
 
 ## Build Step 7 @showdialog
 
-![wildfiresb](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs7.png?raw=true)
+![wildfiresb](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs7.png)
 
 ## Build Step 8 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs8.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs8.png)
 
 ## Build Step 9 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs9.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs9.png)
 
 ## Build Step 10 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs10.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs10.png)
 
 ## Build Step 11 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs11.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs11.png)
 
 ## Build Step 12 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs12.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs12.png)
 
 ## Build Step 13 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs13.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs13.png)
 
 ## Build Step 14 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs14.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs14.png)
 
 ## Build Step 15 & 16 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs15.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs15.png)
 
 ## Build Step 17 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs17.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs17.png)
 
 ## Build Step 18 @showdialog
 
-![wildfiresb](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs18.png?raw=true)
+![wildfiresb](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs18.png)
 
 ## Build Step 19 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs19.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs19.png)
 
 ## Activity 2: Code Your Project @showdialog
 
@@ -110,14 +110,15 @@ fwdBase.leftServo
 
 basic.forever(function () {
     if (isDrivingEnabled) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+        fwdMotors.drive(50, -50, 1000)
         if (input.lightLevel() > 200) {
-            fwdMotors.stop()
+            fwdMotors.drive(0, 0, 0)
             music.playTone(262, music.beat(BeatFraction.Breve))
-            fwdMotors.turn(15)
+            // TODO: calibrate duration -- was turn(15) degrees in place
+            fwdMotors.drive(50, 50, 1000)
         }
     } else {
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
     }
 })
 ```
@@ -184,9 +185,9 @@ Can you identify the blocks of code that allow the A button to act like our gas 
 ```block
     // @highlight
     if (isDrivingEnabled) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+        fwdMotors.drive(50, -50, 1000)
     } else {
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
     }
 
 let isDrivingEnabled = false
@@ -217,8 +218,7 @@ Take a look at the code below. What part do you think is responsible for monitor
 
 ```block
         if (input.lightLevel() > 200) {
-
-
+        	
         }
 ```
 
@@ -237,9 +237,10 @@ Start your car, then use a flashlight to simulate different light conditions. Ob
 
 ```block
         if (input.lightLevel() > 200) {
-            fwdMotors.stop()
+            fwdMotors.drive(0, 0, 0)
             music.playTone(262, music.beat(BeatFraction.Breve))
-            fwdMotors.turn(15)
+            // TODO: calibrate duration -- was turn(15) degrees in place
+            fwdMotors.drive(50, 50, 1000)
         }
 ```
 

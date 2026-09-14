@@ -1,13 +1,13 @@
 # Powering the Future with Wind Energy
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ## Step 1 @showdialog
 
 Welcome to Powering the Future with Wind Energy Coding Tutorial.
-![built project](https://forward-education.github.io/pxt-climate-action/tutorial-assets/project-windturbine-200.png)
+![built project](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/project-windturbine-200.png)
 
 ## Step 2 @showdialog
 
@@ -17,13 +17,13 @@ Use the Dial's button function to stop the wind turbine.
 ## Step 3 @showdialog
 
 Turn on the Climate Action Kit board.
-![breakout board](https://forward-education.github.io/pxt-climate-action/tutorial-assets/breakout-turn-on.png)
+![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-turn-on.png)
 
 ## Step 4 @showhint
 
 Click three dots besides `|Download|` button, and click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
-![pair gif](https://forward-education.github.io/pxt-climate-action/tutorial-assets/pairmicrobit-280x203.gif)
+![pair gif](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobit-280x203.gif)
 
 ## Step 5 @showhint
 
@@ -33,13 +33,13 @@ Next, click the `|Download|` button to download the blank project to start-up th
 
 This is how the simulators should look after a successful download. You can see the Dial,
 the Touch and the Servo Motors along side the Pump.
-![initial-dowload-gif](https://forward-education.github.io/pxt-climate-action/tutorial-assets/initial-download.gif)
+![initial-dowload-gif](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/initial-download.gif)
 
 ## Step 7 @showhint
 
 Look below the @boardname@ simulator to see the Climate Action Board and the connected sensors.
 Try turning the Dial on your project, the virtual simulator will react to it.
-![wind](https://forward-education.github.io/pxt-climate-action/tutorial-assets/simulator-6-Dial.gif)
+![wind](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-6-Dial.gif)
 
 ## Step 8
 
@@ -48,23 +48,26 @@ Click `||fwdSensors:Sensors||` drag and drop
 
 ```blocks
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, function () {
+    	
     })
 ```
 
 ## Step 9
 
 Right click `||fwdSensors:on dial1 turned difference||` block and duplicate. _Note: New block will be grey._
-![greyed out example](https://forward-education.github.io/pxt-climate-action/tutorial-assets/dial-greyed-out-demo.png)
+![greyed out example](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/dial-greyed-out-demo.png)
 
 ## Step 10
 
 Change the direction arrow of the greyed out `||fwdSensors:on dial1 turned difference||` block. _Note: Greyed out block will turn green._
-![dial direction](https://forward-education.github.io/pxt-climate-action/tutorial-assets/dial-direction-switch.gif)
+![dial direction](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/dial-direction-switch.gif)
 
 ```blocks
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, function () {
+    	
     })
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, function () {
+    	
     })
 ```
 
@@ -75,10 +78,13 @@ Click `||fwdSensors:Sensors||` drag and drop
 
 ```blocks
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
+    	
     })
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, function () {
+    	
     })
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, function () {
+    	
     })
 ```
 
@@ -91,11 +97,13 @@ Change `||fwdMotors:leftServo||` to `||fwdMotors:middleServo||`.
 
 ```blocks
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
+    	
     })
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, function () {
     fwdBase.middleServo.setSpeed(50)
 })
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, function () {
+    	
     })
 ```
 
@@ -106,6 +114,7 @@ Drag and drop inside the second `||fwdSensors:on dial1 turned difference||` bloc
 
 ```blocks
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
+    	
     })
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, function () {
     fwdBase.middleServo.setSpeed(50)
@@ -121,6 +130,7 @@ Click `||fwdSensors:Sensors||`. Drag `||fwdSensors:dial1 absolute position||` ov
 
 ```blocks
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
+	
 })
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, function () {
     fwdBase.middleServo.setSpeed(fwdButtons.dial1.position())
@@ -138,6 +148,7 @@ the second `||fwdMotors:set middleServo 50 %||` replace `||fwdMotors:50 %||` of 
 
 ```blocks
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
+	
 })
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, function () {
     fwdBase.middleServo.setSpeed(fwdButtons.dial1.position())
@@ -184,18 +195,18 @@ fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, 
 
 `|Download|` and test your code. Click the bulb icon to see how
 the simulator shows the components working.
-![dial-middleServo](https://forward-education.github.io/pxt-climate-action/tutorial-assets/dial-middleServo.gif)
+![dial-middleServo](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/dial-middleServo.gif)
 
 ## Step 19 @showdialog
 
 If after `|Downloading|` your project does not work please refer to the
 image and make sure your components are assigned correctly.
-![correct-assignment](https://forward-education.github.io/pxt-climate-action/tutorial-assets/correct-assignment.png)
+![correct-assignment](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/correct-assignment.png)
 
 ## Step 20 @showdialog
 
 Need help in assigning the right components to their simulators. Watch the video.
-![final-download](https://forward-education.github.io/pxt-climate-action/tutorial-assets/final-download.gif)
+![final-download](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/final-download.gif)
 
 ## Step 21 @showdialog
 

@@ -1,7 +1,7 @@
 # Autonomous Electric Vehicles of the Future - Modify Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ## Activity 1: Build Your Project @showdialog
@@ -128,23 +128,19 @@ input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = false
 })
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
--35
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
-            fwdMotors.turn(15)
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+            // TODO: calibrate duration -- was turn(15) degrees in place
+            fwdMotors.drive(50, 50, 1000)
         } else {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
         }
     } else {
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
     }
 })
-
 ```
 
 ## Modify Step 1
@@ -163,19 +159,19 @@ Take a look at the code in the workspace below. What do you think will happen wh
 basic.forever(function () {
     let IsDrivingEnabled = 0
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             // @highlight
-            fwdMotors.turn(15)
+            // TODO: calibrate duration -- was turn(15) degrees in place
+            fwdMotors.drive(50, 50, 1000)
         } else {
             // @highlight
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
         }
     } else {
         // @highlight
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
     }
 })
-
 ```
 
 ## Modify Step 2
@@ -202,10 +198,11 @@ Let’s test this out: unplug your electric vehicle from your computer, place it
     hint~
 
 ```block
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
-            fwdMotors.turn(10)
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+            // TODO: calibrate duration -- was turn(10) degrees in place
+            fwdMotors.drive(50, 50, 1000)
         } else {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
         }
 ```
 
@@ -226,10 +223,11 @@ Try it out! Change the value in `||fwdSensors:sonar1 distance is under 0.5 m||` 
 
 ```block
 // @highlight
-if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdEnums.OverUnder.Under)) {
-            fwdMotors.turn(10)
+if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
+            // TODO: calibrate duration -- was turn(10) degrees in place
+            fwdMotors.drive(50, 50, 1000)
         } else {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
         }
 ```
 
@@ -286,12 +284,13 @@ Open the `||basic:Basic||` category, drag and drop the `||Basic:pause (ms) 100||
     hint~
 
 ```block
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             // @highlight
             basic.pause(1000)
-            fwdMotors.turn(15)
+            // TODO: calibrate duration -- was turn(15) degrees in place
+            fwdMotors.drive(50, 50, 1000)
         } else {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
         }
 ```
 
@@ -309,13 +308,14 @@ Click on `||basic:Basic||` , drag and drop another `||basic:pause (ms) 100||` ju
     hint~
 
 ```block
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             basic.pause(1000)
-            fwdMotors.turn(15)
+            // TODO: calibrate duration -- was turn(15) degrees in place
+            fwdMotors.drive(50, 50, 1000)
             // @highlight
             basic.pause(1000)
         } else {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
         }
 ```
 
@@ -332,14 +332,15 @@ Click on `||fwdMotors:Motors||` drag and drop the `||fwdMotors:drive forward at 
     hint~
 
 ```block
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             basic.pause(1000)
-            fwdMotors.turn(15)
+            // TODO: calibrate duration -- was turn(15) degrees in place
+            fwdMotors.drive(50, 50, 1000)
             basic.pause(1000)
             // @highlight
-            fwdMotors.drive(fwdEnums.ForwardReverse.Reverse, 50)
+            fwdMotors.drive(-50, 50, 1000)
         } else {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
         }
 ```
 
@@ -357,15 +358,16 @@ For an extra challenge, click on `||fwdMotors:Motors||` and drag the `||fwdMotor
     hint~
 
 ```block
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             // @highlight
-            fwdMotors.stop()
+            fwdMotors.drive(0, 0, 0)
             basic.pause(1000)
-            fwdMotors.turn(15)
+            // TODO: calibrate duration -- was turn(15) degrees in place
+            fwdMotors.drive(50, 50, 1000)
             basic.pause(1000)
-            fwdMotors.drive(fwdEnums.ForwardReverse.Reverse, 50)
+            fwdMotors.drive(-50, 50, 1000)
         } else {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
         }
 ```
 

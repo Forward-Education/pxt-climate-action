@@ -1,47 +1,47 @@
 # Powering the Future with Wind Energy
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ## Activity 1: Building Your Project @showdialog
 
 Welcome to Powering the Future with Wind Energy Level 1. For this project, we will use the Dial to trigger different symbols to show on the micro:bit LEDs. Here's what it will look like.
 
-![Step by step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1ProjectRender.webp)
+![Step by step](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr3-wind-lvl1ProjectRender.webp)
 
 ## Build Step 1 @showdialog
 
-![Step by step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1sbs1.png)
+![Step by step](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr3-wind-lvl1sbs1.png)
 
 ## Build Step 2 @showdialog
 
-![Step by step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1sbs2.png)
+![Step by step](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr3-wind-lvl1sbs2.png)
 
 ## Build Step 3 @showdialog
 
-![Step by step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1sbs3.png)
+![Step by step](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr3-wind-lvl1sbs3.png)
 
 ## Build Step 4 @showdialog
 
-![Step byStep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1sbs4.png)
+![Step byStep](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr3-wind-lvl1sbs4.png)
 
 ## Build Step 5 @showdialog
 
-![Step by Step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1sbs5.png)
+![Step by Step](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr3-wind-lvl1sbs5.png)
 
 ## Activity 2 Coding Set up @showdialog
 
 ## Step 1
 
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
-![breakout board](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
+![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
 
 ## Step 2 @showhint
 
 Click three dots besides `|Download|` button, and click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
-![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
+![pair gif](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/DownloadButtonGIF.webp)
 
 ## Step 3
 
@@ -50,13 +50,13 @@ Next, click the `|Download|` button to download the blank project to start-up th
 ## Step 4 @showdialog
 
 This is how the simulators should look after a successful download. You can see the Dial, and the Servo Motors along side the Pump.
-![initial-dowload-gif](https://forward-education.github.io/pxt-climate-action/tutorial-assets/initial-download.gif)
+![initial-dowload-gif](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/initial-download.gif)
 
 ## Step 5 @showhint
 
 Look below the @boardname@ simulator to see the Climate Action kit Breakout Board and the connected sensors.
 Try turning the Dial on your project, the virtual simulator will react to it.
-![wind](https://forward-education.github.io/pxt-climate-action/tutorial-assets/simulator-6-Dial.gif)
+![wind](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-6-Dial.gif)
 
 ## Step 6 @showhint
 

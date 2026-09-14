@@ -1,7 +1,8 @@
 # Forward Education Designing Sustainable Smart Homes - Modify Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
+radio=radio
 ```
 
 ```template
@@ -295,8 +296,10 @@ basic.forever(function () {
     basic.showNumber(Temperature)
     // @highlight
     if (true) {
+    	
     } else if (true){}
     else {
+    	
     }
 })
 ```
@@ -326,6 +329,7 @@ hint~
     }
     else if(true) {}
     else {
+    	
     }
 ```
 
@@ -361,6 +365,7 @@ hint~
         // @highlight
         fwdLights.ledRing1.setPixelColor(3, 0xffffff)
     } else {
+    	
     }
 ```
 

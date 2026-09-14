@@ -1,13 +1,13 @@
 # Monitoring Glaciers
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ## Step 1 @showdialog
 
 Welcome to Monitoring Glaciers
-![built project](https://forward-education.github.io/pxt-climate-action/tutorial-assets/glacier-comb-resized.png)
+![built project](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/glacier-comb-resized.png)
 
 ## Step 2 @showdialog
 
@@ -16,12 +16,12 @@ In this coding tutorial the device continuously measures distances to its left a
 ## Step 3 @showdialog
 
 Turn on the Climate Action Kit board.
-![breakout board](https://forward-education.github.io/pxt-climate-action/tutorial-assets/breakout-turn-on.png)
+![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-turn-on.png)
 
 ## Step 4 @showhint
 
 Click three dots besides `|Download|` button, and click on _Connect Device_. Next, follow the steps to pair your micro:bit.
-![pair gif](https://forward-education.github.io/pxt-climate-action/tutorial-assets/pairmicrobit-280x203.gif)
+![pair gif](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobit-280x203.gif)
 
 ## Step 5 @showhint
 
@@ -31,13 +31,13 @@ Next, click the `|Download|` button to download the blank project to start-up th
 
 This is how the simulators should look after a successful download. You can see
 the Servo Motors along side the Pump.
-![initial-dowload-gif](https://forward-education.github.io/pxt-climate-action/tutorial-assets/board-no-sensors.png)
+![initial-dowload-gif](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/board-no-sensors.png)
 
 ## Step 7 @showhint
 
 Look below the @boardname@ simulator to see the Climate Action Board and the connected devices. Try to turn the motors on and off using
 the simulator and observe the changes.
-![servo-nocode](https://forward-education.github.io/pxt-climate-action/tutorial-assets/initial-sim-tree.gif)
+![servo-nocode](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/initial-sim-tree.gif)
 
 ## Step 8
 
@@ -47,6 +47,7 @@ inside `||Basic:on start||` block. Change `||fwdMotors:leftServo||` to `||fwdMot
 ```blocks
 fwdMotors.setAngle(fwdBase.middleServo, 0)
 basic.forever(function () {
+    	
     })
 ```
 
@@ -109,7 +110,7 @@ fwdMotors.setAngle(fwdBase.middleServo, 0)
 basic.forever(function () {
     fwdMotors.setAngle(fwdBase.middleServo, 90)
     basic.pause(2000)
-    RightDistance = fwdSensors.sonar1.fwdDistance()
+    RightDistance = fwdSensors.sonar1.distance()
     })
 ```
 
@@ -124,7 +125,7 @@ fwdMotors.setAngle(fwdBase.middleServo, 0)
 basic.forever(function () {
     fwdMotors.setAngle(fwdBase.middleServo, 90)
     basic.pause(2000)
-    RightDistance = fwdSensors.sonar1.fwdDistance()
+    RightDistance = fwdSensors.sonar1.distance()
     basic.pause(2000)
    })
 ```
@@ -140,7 +141,7 @@ fwdMotors.setAngle(fwdBase.middleServo, 0)
 basic.forever(function () {
     fwdMotors.setAngle(fwdBase.middleServo, 90)
     basic.pause(2000)
-    RightDistance = fwdSensors.sonar1.fwdDistance()
+    RightDistance = fwdSensors.sonar1.distance()
     basic.pause(2000)
     fwdMotors.setAngle(fwdBase.middleServo, -90)
     })
@@ -157,7 +158,7 @@ fwdMotors.setAngle(fwdBase.middleServo, 0)
 basic.forever(function () {
     fwdMotors.setAngle(fwdBase.middleServo, 90)
     basic.pause(2000)
-    RightDistance = fwdSensors.sonar1.fwdDistance()
+    RightDistance = fwdSensors.sonar1.distance()
     basic.pause(2000)
     fwdMotors.setAngle(fwdBase.middleServo, -90)
     basic.pause(2000)
@@ -174,7 +175,7 @@ fwdMotors.setAngle(fwdBase.middleServo, 0)
 basic.forever(function () {
     fwdMotors.setAngle(fwdBase.middleServo, 90)
     basic.pause(2000)
-    RightDistance = fwdSensors.sonar1.fwdDistance()
+    RightDistance = fwdSensors.sonar1.distance()
     basic.pause(2000)
     fwdMotors.setAngle(fwdBase.middleServo, -90)
     basic.pause(2000)
@@ -192,11 +193,11 @@ fwdMotors.setAngle(fwdBase.middleServo, 0)
 basic.forever(function () {
     fwdMotors.setAngle(fwdBase.middleServo, 90)
     basic.pause(2000)
-    RightDistance = fwdSensors.sonar1.fwdDistance()
+    RightDistance = fwdSensors.sonar1.distance()
     basic.pause(2000)
     fwdMotors.setAngle(fwdBase.middleServo, -90)
     basic.pause(2000)
-    LeftDistance = fwdSensors.sonar1.fwdDistance()
+    LeftDistance = fwdSensors.sonar1.distance()
     })
 ```
 
@@ -211,11 +212,11 @@ fwdMotors.setAngle(fwdBase.middleServo, 0)
 basic.forever(function () {
     fwdMotors.setAngle(fwdBase.middleServo, 90)
     basic.pause(2000)
-    RightDistance = fwdSensors.sonar1.fwdDistance()
+    RightDistance = fwdSensors.sonar1.distance()
     basic.pause(2000)
     fwdMotors.setAngle(fwdBase.middleServo, -90)
     basic.pause(2000)
-    LeftDistance = fwdSensors.sonar1.fwdDistance()
+    LeftDistance = fwdSensors.sonar1.distance()
     basic.pause(2000)
   })
 ```
@@ -230,14 +231,16 @@ fwdMotors.setAngle(fwdBase.middleServo, 0)
 basic.forever(function () {
     fwdMotors.setAngle(fwdBase.middleServo, 90)
     basic.pause(2000)
-    RightDistance = fwdSensors.sonar1.fwdDistance()
+    RightDistance = fwdSensors.sonar1.distance()
     basic.pause(2000)
     fwdMotors.setAngle(fwdBase.middleServo, -90)
     basic.pause(2000)
-    LeftDistance = fwdSensors.sonar1.fwdDistance()
+    LeftDistance = fwdSensors.sonar1.distance()
     basic.pause(2000)
     if (true) {
+      	
       } else {
+        	
         }
     })
 ```
@@ -251,14 +254,16 @@ fwdMotors.setAngle(fwdBase.middleServo, 0)
 basic.forever(function () {
     fwdMotors.setAngle(fwdBase.middleServo, 90)
     basic.pause(2000)
-    RightDistance = fwdSensors.sonar1.fwdDistance()
+    RightDistance = fwdSensors.sonar1.distance()
     basic.pause(2000)
     fwdMotors.setAngle(fwdBase.middleServo, -90)
     basic.pause(2000)
-    LeftDistance = fwdSensors.sonar1.fwdDistance()
+    LeftDistance = fwdSensors.sonar1.distance()
     basic.pause(2000)
     if (0 < 0) {
+        	
         } else {
+        	
         }
     })
 ```
@@ -275,14 +280,16 @@ fwdMotors.setAngle(fwdBase.middleServo, 0)
 basic.forever(function () {
     fwdMotors.setAngle(fwdBase.middleServo, 90)
     basic.pause(2000)
-    RightDistance = fwdSensors.sonar1.fwdDistance()
+    RightDistance = fwdSensors.sonar1.distance()
     basic.pause(2000)
     fwdMotors.setAngle(fwdBase.middleServo, -90)
     basic.pause(2000)
-    LeftDistance = fwdSensors.sonar1.fwdDistance()
+    LeftDistance = fwdSensors.sonar1.distance()
     basic.pause(2000)
     if (RightDistance < LeftDistance) {
+        	
         } else {
+        	
         }
     })
 ```
@@ -297,15 +304,16 @@ fwdMotors.setAngle(fwdBase.middleServo, 0)
 basic.forever(function () {
     fwdMotors.setAngle(fwdBase.middleServo, 90)
     basic.pause(2000)
-    RightDistance = fwdSensors.sonar1.fwdDistance()
+    RightDistance = fwdSensors.sonar1.distance()
     basic.pause(2000)
     fwdMotors.setAngle(fwdBase.middleServo, -90)
     basic.pause(2000)
-    LeftDistance = fwdSensors.sonar1.fwdDistance()
+    LeftDistance = fwdSensors.sonar1.distance()
     basic.pause(2000)
     if (RightDistance < LeftDistance) {
         basic.showString("Go Left")
         } else {
+        	
         }
     })
 ```
@@ -320,16 +328,17 @@ fwdMotors.setAngle(fwdBase.middleServo, 0)
 basic.forever(function () {
     fwdMotors.setAngle(fwdBase.middleServo, 90)
     basic.pause(2000)
-    RightDistance = fwdSensors.sonar1.fwdDistance()
+    RightDistance = fwdSensors.sonar1.distance()
     basic.pause(2000)
     fwdMotors.setAngle(fwdBase.middleServo, -90)
     basic.pause(2000)
-    LeftDistance = fwdSensors.sonar1.fwdDistance()
+    LeftDistance = fwdSensors.sonar1.distance()
     basic.pause(2000)
     if (RightDistance < LeftDistance) {
         basic.showString("Go Left")
         basic.clearScreen()
     } else {
+    	
     }
 })
 ```
@@ -344,11 +353,11 @@ fwdMotors.setAngle(fwdBase.middleServo, 0)
 basic.forever(function () {
     fwdMotors.setAngle(fwdBase.middleServo, 90)
     basic.pause(2000)
-    RightDistance = fwdSensors.sonar1.fwdDistance()
+    RightDistance = fwdSensors.sonar1.distance()
     basic.pause(2000)
     fwdMotors.setAngle(fwdBase.middleServo, -90)
     basic.pause(2000)
-    LeftDistance = fwdSensors.sonar1.fwdDistance()
+    LeftDistance = fwdSensors.sonar1.distance()
     basic.pause(2000)
     if (RightDistance < LeftDistance) {
         basic.showString("Go Left")
@@ -369,11 +378,11 @@ fwdMotors.setAngle(fwdBase.middleServo, 0)
 basic.forever(function () {
     fwdMotors.setAngle(fwdBase.middleServo, 90)
     basic.pause(2000)
-    RightDistance = fwdSensors.sonar1.fwdDistance()
+    RightDistance = fwdSensors.sonar1.distance()
     basic.pause(2000)
     fwdMotors.setAngle(fwdBase.middleServo, -90)
     basic.pause(2000)
-    LeftDistance = fwdSensors.sonar1.fwdDistance()
+    LeftDistance = fwdSensors.sonar1.distance()
     basic.pause(2000)
     if (RightDistance < LeftDistance) {
         basic.showString("Go Left")
@@ -395,11 +404,11 @@ fwdMotors.setAngle(fwdBase.middleServo, 0)
 basic.forever(function () {
     fwdMotors.setAngle(fwdBase.middleServo, 90)
     basic.pause(2000)
-    RightDistance = fwdSensors.sonar1.fwdDistance()
+    RightDistance = fwdSensors.sonar1.distance()
     basic.pause(2000)
     fwdMotors.setAngle(fwdBase.middleServo, -90)
     basic.pause(2000)
-    LeftDistance = fwdSensors.sonar1.fwdDistance()
+    LeftDistance = fwdSensors.sonar1.distance()
     basic.pause(2000)
     if (RightDistance < LeftDistance) {
         basic.showString("Go Left")
@@ -422,11 +431,11 @@ fwdMotors.setAngle(fwdBase.middleServo, 0)
 basic.forever(function () {
     fwdMotors.setAngle(fwdBase.middleServo, 90)
     basic.pause(2000)
-    RightDistance = fwdSensors.sonar1.fwdDistance()
+    RightDistance = fwdSensors.sonar1.distance()
     basic.pause(2000)
     fwdMotors.setAngle(fwdBase.middleServo, -90)
     basic.pause(2000)
-    LeftDistance = fwdSensors.sonar1.fwdDistance()
+    LeftDistance = fwdSensors.sonar1.distance()
     basic.pause(2000)
     if (RightDistance < LeftDistance) {
         basic.showString("Go Left")
@@ -443,24 +452,24 @@ basic.forever(function () {
 
 `|Download|` and test your code. Click the bulb icon to see how
 the simulator shows the components working.
-![sonar-servos](https://forward-education.github.io/pxt-climate-action/tutorial-assets/simulator-17-ev-obstacle.gif)
+![sonar-servos](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-17-ev-obstacle.gif)
 
 ## Step 30 @showhint
 
 `|Download|` and test your code. Click the bulb icon to see how
 the simulator shows the components working.
-![servos](https://forward-education.github.io/pxt-climate-action/tutorial-assets/final-sim-tree.gif)
+![servos](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/final-sim-tree.gif)
 
 ## Step 31 @showdialog
 
 If after `|Downloading|` your project does not work please refer to the
 image and make sure your components are assigned correctly.
-![correct-assignment](https://forward-education.github.io/pxt-climate-action/tutorial-assets/correct-assignment-tree.png)
+![correct-assignment](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/correct-assignment-tree.png)
 
 ## Step 32 @showdialog
 
 Need help in assigning the right components to their simulators. Watch the video.
-![final-download](https://forward-education.github.io/pxt-climate-action/tutorial-assets/servo-assign.gif)
+![final-download](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/servo-assign.gif)
 
 ## Step 33 @showdialog
 

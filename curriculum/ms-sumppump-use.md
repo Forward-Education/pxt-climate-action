@@ -1,12 +1,12 @@
 # Sump Pump - Use Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ```template
 input.onButtonPressed(Button.AB, function () {
-    fwdMotors.pump.fwdSetActive(false)
+    fwdMotors.pump.setActive(false)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     fwdMotors.pump.timedRun(500)
@@ -114,8 +114,8 @@ hint~
 basic.forever(function () {
 // @highlight
     if (fwdSensors.moisture1.isPastThreshold(20, fwdEnums.OverUnder.Over)) {
+        	
         }
-    }
 })
 ```
 
@@ -136,6 +136,8 @@ basic.forever(function () {
     if (fwdSensors.moisture1.isPastThreshold(20, fwdEnums.OverUnder.Over)) {
 // @highlight
  fwdMotors.pump.timedRun(500)
+}
+})
 ```
 
 ## Step 9
@@ -161,7 +163,6 @@ basic.forever(function () {
         }
     }
 })
-
 ```
 
 ## Step 10 @showdialog

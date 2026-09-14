@@ -1,7 +1,7 @@
 # Smart Garbage Bins - Use Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ```template
@@ -18,7 +18,7 @@ basic.forever(function () {
     fillLevel,
     100
     )
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.03, fwdEnums.OverUnder.Under)) {
+    if (fwdSensors.sonar1.isPastThreshold(0.03, fwdEnums.OverUnder.Under)) {
         fwdLights.ledRing1.setAllPixelsColor(0xff0000)
         fillLevel = 75
         basic.pause(500)
@@ -110,13 +110,13 @@ hint~
 
 ```blocks
 basic.forever(function () {
-      if (fwdSensors.sonar1.fwdDistancePastThreshold(0.03, fwdEnums.OverUnder.Under)) {
+      if (fwdSensors.sonar1.isPastThreshold(0.03, fwdEnums.OverUnder.Under)) {
         fwdLights.ledRing1.setAllPixelsColor(0xff0000)
         //@highlight
         fillLevel = 75
         basic.pause(500)
       }
-
+})
 ```
 
 ## Step 7
@@ -139,7 +139,7 @@ led.plotBarGraph(
     fillLevel,
     100
     )
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.03, fwdEnums.OverUnder.Under)) {
+    if (fwdSensors.sonar1.isPastThreshold(0.03, fwdEnums.OverUnder.Under)) {
 // @highlight
   fwdLights.ledRing1.setAllPixelsColor(0xff0000)
   fillLevel = 75

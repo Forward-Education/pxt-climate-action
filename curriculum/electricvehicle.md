@@ -1,33 +1,33 @@
 # Electric Vehicle Prototype
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ## Step 1 @showdialog
 
 Welcome to Electric Vehicle Coding Tutorial
-![built project](https://forward-education.github.io/pxt-climate-action/tutorial-assets/project-electriccar-400.png)
+![built project](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/project-electriccar-400.png)
 
 ## Step 2 @showdialog
 
 Plug your USB cable into the micro:bit.
-![breakout board](https://forward-education.github.io/pxt-climate-action/tutorial-assets/connect-microbit.gif)
+![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/connect-microbit.gif)
 
 ## Step 3 @showdialog
 
 Insert it into the Climate Action Kit board.
-![breakout board](https://forward-education.github.io/pxt-climate-action/tutorial-assets/breakout-resized.png)
+![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-resized.png)
 
 ## Step 4 @showhint
 
 Click three dots besides `|Download|` button and follow the steps to pair your micro:bit.
-![pair gif](https://forward-education.github.io/pxt-climate-action/tutorial-assets/pairmicrobit-280x203.gif)
+![pair gif](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobit-280x203.gif)
 
 ## Step 5 @showhint
 
 Look below the @boardname@ simulator to see the Climate Action Board and the connected sensors. Try to interact with your sensor and the simulator will react to it.
-![line](https://forward-education.github.io/pxt-climate-action/tutorial-assets/simulator-5-Line.gif)
+![line](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-5-Line.gif)
 
 ## Step 6
 
@@ -63,6 +63,7 @@ fwdBase.middleServo,
 )
 basic.forever(function () {
     if (true) {
+            	
             }
     })
 ```
@@ -78,8 +79,10 @@ fwdBase.middleServo,
 )
 basic.forever(function () {
     if (true) {
+            	
             }
     if (true) {
+            	
             }
 })
 ```
@@ -95,10 +98,13 @@ fwdBase.middleServo,
 )
 basic.forever(function () {
     if (true) {
+            	
             }
     if (true) {
+            	
             }
     if (true) {
+            	
             }
 })
 ```
@@ -114,10 +120,13 @@ fwdBase.middleServo,
 )
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
+        	
         }
     if (true) {
+        	
         }
     if (true) {
+        	
         }
 })
 ```
@@ -133,10 +142,13 @@ fwdBase.middleServo,
 )
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
+        	
         }
     if (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.Off)) {
+        	
         }
     if (true) {
+        	
         }
 })
 ```
@@ -152,10 +164,13 @@ fwdBase.middleServo,
 )
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
+        	
         }
     if (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.Off)) {
+        	
         }
     if (fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On)) {
+        	
         }
 })
 ```
@@ -172,12 +187,15 @@ fwdBase.middleServo,
 )
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-        fwdMotors.turn(0)
+        fwdMotors.drive(0, 0, 0)
         }
     if (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.Off)) {
+            	
             }
     if (fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On)) {
-        })
+        	
+        }
+})
 ```
 
 ## Step 15
@@ -191,12 +209,16 @@ fwdBase.middleServo,
 )
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-        fwdMotors.turn(5)
+        // TODO: calibrate duration -- was turn(5) degrees in place
+        fwdMotors.drive(50, 50, 1000)
         }
     if (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.Off)) {
+            	
             }
     if (fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On)) {
-        })
+        	
+        }
+})
 ```
 
 ## Step 16
@@ -212,12 +234,14 @@ fwdBase.middleServo,
 )
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-        fwdMotors.turn(5)
+        // TODO: calibrate duration -- was turn(5) degrees in place
+        fwdMotors.drive(50, 50, 1000)
             }
     if (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.Off)) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 20)
+        fwdMotors.drive(20, -20, 1000)
         }
     if (fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On)) {
+        	
         }
 })
 ```
@@ -235,13 +259,15 @@ fwdBase.middleServo,
 )
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-        fwdMotors.turn(5)
+        // TODO: calibrate duration -- was turn(5) degrees in place
+        fwdMotors.drive(50, 50, 1000)
             }
     if (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.Off)) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 20)
+        fwdMotors.drive(20, -20, 1000)
         }
     if (fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On)) {
-        fwdMotors.turn(-5)
+        // TODO: calibrate duration -- was turn(-5) degrees in place
+        fwdMotors.drive(-50, -50, 1000)
         }
 })
 ```
@@ -257,14 +283,16 @@ fwdBase.middleServo,
 )
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-        fwdMotors.turn(5)
+        // TODO: calibrate duration -- was turn(5) degrees in place
+        fwdMotors.drive(50, 50, 1000)
         basic.pause(100)
     }
     if (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.Off)) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 20)
+        fwdMotors.drive(20, -20, 1000)
         }
     if (fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On)) {
-        fwdMotors.turn(-5)
+        // TODO: calibrate duration -- was turn(-5) degrees in place
+        fwdMotors.drive(-50, -50, 1000)
         }
 })
 ```
@@ -281,15 +309,17 @@ fwdBase.middleServo,
 )
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-        fwdMotors.turn(5)
+        // TODO: calibrate duration -- was turn(5) degrees in place
+        fwdMotors.drive(50, 50, 1000)
         basic.pause(100)
     }
     if (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.Off)) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 20)
+        fwdMotors.drive(20, -20, 1000)
         basic.pause(100)
     }
     if (fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On)) {
-        fwdMotors.turn(-5)
+        // TODO: calibrate duration -- was turn(-5) degrees in place
+        fwdMotors.drive(-50, -50, 1000)
     }
 })
 ```
@@ -306,15 +336,17 @@ fwdBase.middleServo,
 )
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-        fwdMotors.turn(5)
+        // TODO: calibrate duration -- was turn(5) degrees in place
+        fwdMotors.drive(50, 50, 1000)
         basic.pause(100)
     }
     if (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.Off)) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 20)
+        fwdMotors.drive(20, -20, 1000)
         basic.pause(100)
     }
     if (fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On)) {
-        fwdMotors.turn(-5)
+        // TODO: calibrate duration -- was turn(-5) degrees in place
+        fwdMotors.drive(-50, -50, 1000)
         basic.pause(100)
     }
 })
@@ -328,22 +360,20 @@ Change `||basic:pause (ms) 100||` to `||basic:500||` for all
 `||basic:pause||` blocks.
 
 ```blocks
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.middleServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.middleServo)
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-        fwdMotors.turn(5)
+        // TODO: calibrate duration -- was turn(5) degrees in place
+        fwdMotors.drive(50, 50, 1000)
         basic.pause(500)
     }
     if (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.Off)) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 20)
+        fwdMotors.drive(20, -20, 1000)
         basic.pause(500)
     }
     if (fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On)) {
-        fwdMotors.turn(-5)
+        // TODO: calibrate duration -- was turn(-5) degrees in place
+        fwdMotors.drive(-50, -50, 1000)
         basic.pause(500)
     }
 })
@@ -353,4 +383,4 @@ basic.forever(function () {
 
 `|Download|` and test your code. The simulator shows how it should work.
 Congratulations on completing your Electric Vehicle Prototype! - Go back to the lesson for more activities and extensions.
-![line-servos](https://forward-education.github.io/pxt-climate-action/tutorial-assets/simulator-16-ev-line.gif)
+![line-servos](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-16-ev-line.gif)

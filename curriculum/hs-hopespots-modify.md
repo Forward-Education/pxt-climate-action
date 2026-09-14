@@ -1,8 +1,9 @@
 # Hope Spot Monitoring Station - Modify Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 datalogger=datalogger
+radio=radio
 ```
 
 ```template
@@ -36,7 +37,7 @@ basic.forever(function () {
     // The rest of the code only runs if the stationOn variable is TRUE. This is how we turn the station off and on with the buttons.
     if (stationOn == true) {
         // Check if no object is nearby (distance > 0.1m)
-        if (fwdSensors.sonar1.fwdDistance() > 0.1) {
+        if (fwdSensors.sonar1.distance() > 0.1) {
             fwdLights.ledRing1.setAllPixelsColor(0x000000) // Turn off LED ring (safe zone)
             rotateSensor() // Call rotateSensor function to continue scanning the area
         } else {
@@ -44,7 +45,7 @@ basic.forever(function () {
         }
         basic.pause(100)
     } else {
-        fwdBase.rightServo.fwdSetEnabled(false) // Disable the servo if the station is off
+        fwdBase.rightServo.setEnabled(false) // Disable the servo if the station is off
     }
 })
 ```
@@ -251,7 +252,7 @@ function rotateSensor () {
 }
 
         // @highlight
-        if (fwdSensors.sonar1.fwdDistance() > .3) {
+        if (fwdSensors.sonar1.distance() > .3) {
             fwdLights.ledRing1.setAllPixelsColor(0x000000)
             rotateSensor()
         } else {
@@ -291,7 +292,7 @@ function logShip () {
     radio.sendString("ALERT")
     datalogger.log(
     datalogger.createCV("Angle", angle),
-    datalogger.createCV("Distance", fwdSensors.sonar1.fwdDistance())
+    datalogger.createCV("Distance", fwdSensors.sonar1.distance())
     )
     basic.pause(5000)
 }
@@ -306,10 +307,10 @@ function rotateSensor () {
     }
 }
 
-        if (fwdSensors.sonar1.fwdDistance() > 1) {
+        if (fwdSensors.sonar1.distance() > 1) {
             fwdLights.ledRing1.setAllPixelsColor(0x000000)
             rotateSensor()
-        } else if (fwdSensors.sonar1.fwdDistance() > .1 && fwdSensors.sonar1.fwdDistance() <= 1) {
+        } else if (fwdSensors.sonar1.distance() > .1 && fwdSensors.sonar1.distance() <= 1) {
             fwdLights.ledRing1.setAllPixelsColor(0xffff00)
             rotateSensor()
         } else {
@@ -343,10 +344,10 @@ function rotateSensor () {
         angle = 0
     }
 }
-        if (fwdSensors.sonar1.fwdDistance() > 1) {
+        if (fwdSensors.sonar1.distance() > 1) {
             fwdLights.ledRing1.setAllPixelsColor(0x000000)
             rotateSensor()
-        } else if (fwdSensors.sonar1.fwdDistance() > .1 && fwdSensors.sonar1.fwdDistance() <= 1) {
+        } else if (fwdSensors.sonar1.distance() > .1 && fwdSensors.sonar1.distance() <= 1) {
             fwdLights.ledRing1.setAllPixelsColor(0xffff00)
             rotateSensor()
         } else {
@@ -354,7 +355,7 @@ function rotateSensor () {
             // @highlight
             datalogger.log(
             datalogger.createCV("Angle", angle),
-            datalogger.createCV("Distance", fwdSensors.sonar1.fwdDistance())
+            datalogger.createCV("Distance", fwdSensors.sonar1.distance())
             )
         }
 ```
@@ -372,17 +373,17 @@ function rotateSensor () {
         angle = 0
     }
 }
-        if (fwdSensors.sonar1.fwdDistance() > 1) {
+        if (fwdSensors.sonar1.distance() > 1) {
             fwdLights.ledRing1.setAllPixelsColor(0x000000)
             rotateSensor()
-        } else if (fwdSensors.sonar1.fwdDistance() > .1 && fwdSensors.sonar1.fwdDistance() <= 1) {
+        } else if (fwdSensors.sonar1.distance() > .1 && fwdSensors.sonar1.distance() <= 1) {
             fwdLights.ledRing1.setAllPixelsColor(0xffff00)
             rotateSensor()
         } else {
             fwdLights.ledRing1.setAllPixelsColor(0xff0000)
             datalogger.log(
             datalogger.createCV("Angle", angle),
-            datalogger.createCV("Distance", fwdSensors.sonar1.fwdDistance())
+            datalogger.createCV("Distance", fwdSensors.sonar1.distance())
             )
             // @highlight
             basic.pause(5000)
@@ -408,17 +409,17 @@ function rotateSensor () {
 function logShip () {
     datalogger.log(
     datalogger.createCV("Angle", angle),
-    datalogger.createCV("Distance", fwdSensors.sonar1.fwdDistance())
+    datalogger.createCV("Distance", fwdSensors.sonar1.distance())
     )
     basic.pause(5000)
 }
 
 basic.forever(function () {
     if (stationOn == true) {
-        if (fwdSensors.sonar1.fwdDistance() > 1) {
+        if (fwdSensors.sonar1.distance() > 1) {
             fwdLights.ledRing1.setAllPixelsColor(0x000000)
             rotateSensor()
-        } else if (fwdSensors.sonar1.fwdDistance() > .1 && fwdSensors.sonar1.fwdDistance() <= 1) {
+        } else if (fwdSensors.sonar1.distance() > .1 && fwdSensors.sonar1.distance() <= 1) {
             fwdLights.ledRing1.setAllPixelsColor(0xffff00)
             rotateSensor()
         } else {
@@ -428,7 +429,7 @@ basic.forever(function () {
         }
         basic.pause(100)
     } else {
-        fwdBase.rightServo.fwdSetEnabled(false)
+        fwdBase.rightServo.setEnabled(false)
     }
 })
 ```

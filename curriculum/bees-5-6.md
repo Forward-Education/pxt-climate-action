@@ -1,13 +1,13 @@
 # Bees
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ## Step 1 @showdialog
 
 Welcome to Bees Coding Tutorial.
-![built project](https://forward-education.github.io/pxt-climate-action/tutorial-assets/project-beetouch-200.png)
+![built project](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/project-beetouch-200.png)
 
 ## Step 2 @showdialog
 
@@ -16,12 +16,12 @@ In this coding tutorial we will count the number of pollinators visiting your ga
 ## Step 3 @showdialog
 
 Turn on the Climate Action Kit board.
-![breakout board](https://forward-education.github.io/pxt-climate-action/tutorial-assets/breakout-turn-on.png)
+![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-turn-on.png)
 
 ## Step 4 @showhint
 
 Click three dots besides `|Download|` button, and click on _Connect Device_. Next, follow the steps to pair your micro:bit.
-![pair gif](https://forward-education.github.io/pxt-climate-action/tutorial-assets/pairmicrobit-280x203.gif)
+![pair gif](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobit-280x203.gif)
 
 ## Step 5 @showhint
 
@@ -30,7 +30,7 @@ Next, click the `|Download|` button to download the blank project to start-up th
 ## Step 6 @showhint
 
 Look below the @boardname@ simulator to see the Climate Action Board’s simulator of the connected components. Try touching the Touch Sensor on your project. The virtual simulators will react to it.
-![touch](https://forward-education.github.io/pxt-climate-action/tutorial-assets/simulator-7-Touch.gif)
+![touch](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-7-Touch.gif)
 
 ## Step 7
 
@@ -50,6 +50,7 @@ inside `||basic:on start||` block.
 ```blocks
 let bugVisits = 0
 basic.forever(function (){
+	
 })
 ```
 
@@ -62,6 +63,7 @@ conditional block inside `||basic:forever||` loop.
 let bugVisits = 0
 basic.forever(function (){
  if (true){
+ 	
  }
 })
 ```
@@ -74,6 +76,7 @@ Click `||fwdSensors:Sensors||` drag and drop `||fwdSensors:touch pressed||` bloc
 let bugVisits = 0
 basic.forever(function () {
     if (fwdButtons.touch1.isPressed()) {
+            	
             }
 })
 ```
@@ -202,6 +205,7 @@ on the workspace.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
+	
 })
 let bugVisits = 0
 bugVisits = 0
@@ -300,7 +304,7 @@ basic.forever(function () {
 ## Step 23 @showhint
 
 `|Download|` and test your code. Click the bulb icon to see how the simulator shows the components working.
-![touch-led](https://forward-education.github.io/pxt-climate-action/tutorial-assets/simulator-10-LED-bee.gif)
+![touch-led](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-10-LED-bee.gif)
 
 ## Step 24 @showdialog
 

@@ -1,13 +1,13 @@
 # Wind Turbine Energy Storage - Use Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 datalogger=datalogger
 ```
 
 ```template
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
-    fwdBase.middleServo.fwdSetEnabled(false)
+    fwdBase.middleServo.setEnabled(false)
 })
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, function () {
     fwdBase.middleServo.setSpeed(50)
@@ -20,7 +20,7 @@ input.onButtonPressed(Button.A, function () {
 })
 batteryLevel = 0
 basic.forever(function () {
-    if (fwdBase.middleServo.isEnabled() == true) {
+    if (fwdBase.middleServo.enabled() == true) {
         basic.showLeds(`
             . . # . .
             . # . # .
@@ -178,7 +178,7 @@ fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, functio
 })
 
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
-    fwdBase.middleServo.fwdSetEnabled(false)
+    fwdBase.middleServo.setEnabled(false)
 })
 ```
 
@@ -195,7 +195,7 @@ Can you find the conditional statement in our code?
     hint~
 
 ```block
-if (fwdBase.middleServo.isEnabled() == true) {
+if (fwdBase.middleServo.enabled() == true) {
         basic.showLeds(`
             . . # . .
             . # . # .
@@ -256,7 +256,7 @@ We've created a **variable** in our program to track battery charge. At the star
 // @highlight
 batteryLevel = 0
 basic.forever(function () {
-    if (fwdBase.middleServo.isEnabled() == true) {
+    if (fwdBase.middleServo.enabled() == true) {
         basic.showLeds(`
             . . # . .
             . # . # .

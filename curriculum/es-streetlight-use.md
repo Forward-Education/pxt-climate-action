@@ -1,7 +1,7 @@
 # Smart Streetlights - Use Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 datalogger=datalogger
 ```
 
@@ -11,7 +11,7 @@ basic.forever(function () {
     basic.pause(100)
 })
 basic.forever(function () {
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdEnums.OverUnder.Under)) {
+    if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
         fwdLights.ledRing1.setAllPixelsColor(0xffffff)
     } else {
         fwdLights.ledRing1.setAllPixelsColor(0x000000)
@@ -94,7 +94,7 @@ Can you identify the conditional statement in our code?
     hint~
 
 ```block
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdEnums.OverUnder.Under)) {
+    if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
         fwdLights.ledRing1.setAllPixelsColor(0xffffff)
     } else {
         fwdLights.ledRing1.setAllPixelsColor(0x000000)

@@ -1,28 +1,28 @@
 # Mission on the Moon - Sonar Avoidance
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ## Step 1 @showdialog
 
 Welcome to Mission on the Moon - Sonar Avoidance
-![built project](https://forward-education.github.io/pxt-climate-action/tutorial-assets/project-electriccar-400.png)
+![built project](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/project-electriccar-400.png)
 
 ## Step 2 @showdialog
 
 Plug your USB cable into the micro:bit.
-![breakout board](https://forward-education.github.io/pxt-climate-action/tutorial-assets/connect-microbit.gif)
+![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/connect-microbit.gif)
 
 ## Step 3 @showdialog
 
 Insert it into the Climate Action Kit board.
-![breakout board](https://forward-education.github.io/pxt-climate-action/tutorial-assets/breakout-resized.png)
+![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-resized.png)
 
 ## Step 4 @showhint
 
 Click three dots besides `|Download|` button and follow the steps to pair your micro:bit.
-![pair gif](https://forward-education.github.io/pxt-climate-action/tutorial-assets/pairmicrobit-280x203.gif)
+![pair gif](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobit-280x203.gif)
 
 ## Step 5
 
@@ -73,10 +73,10 @@ fwdBase.leftServo,
 fwdBase.rightServo,
 )
 basic.forever(function () {
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0, fwdEnums.OverUnder.Over)) {
-
+    if (fwdSensors.sonar1.isPastThreshold(0, fwdEnums.OverUnder.Over)) {
+    	
     } else {
-
+    	
     }
 })
 ```
@@ -92,9 +92,11 @@ fwdBase.leftServo,
 fwdBase.rightServo,
 )
 basic.forever(function () {
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdEnums.OverUnder.Under)) {
+    if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
+        	
         }
     else {
+        	
         }
 })
 ```
@@ -110,10 +112,11 @@ fwdBase.leftServo,
 fwdBase.rightServo,
 )
 basic.forever(function () {
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdEnums.OverUnder.Under)) {
-        fwdMotors.stop()
+    if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
+        fwdMotors.drive(0, 0, 0)
             }
         else {
+        	
         }
 })
 ```
@@ -129,11 +132,12 @@ fwdBase.leftServo,
 fwdBase.rightServo,
 )
 basic.forever(function () {
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdEnums.OverUnder.Under)) {
-        fwdMotors.stop()
+    if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
+        fwdMotors.drive(0, 0, 0)
         basic.pause(1000)
         }
     else {
+        	
         }
 })
 ```
@@ -150,12 +154,13 @@ fwdBase.leftServo,
 fwdBase.rightServo,
 )
 basic.forever(function () {
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdEnums.OverUnder.Under)) {
-        fwdMotors.stop()
+    if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
+        fwdMotors.drive(0, 0, 0)
         basic.pause(1000)
-        fwdMotors.drive(fwdEnums.ForwardReverse.Reverse, 50)
+        fwdMotors.drive(-50, 50, 1000)
         }
     else {
+        	
         }
 })
 ```
@@ -171,13 +176,14 @@ fwdBase.leftServo,
 fwdBase.rightServo,
 )
 basic.forever(function () {
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdEnums.OverUnder.Under)) {
-        fwdMotors.stop()
+    if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
+        fwdMotors.drive(0, 0, 0)
         basic.pause(1000)
-        fwdMotors.drive(fwdEnums.ForwardReverse.Reverse, 50)
+        fwdMotors.drive(-50, 50, 1000)
         basic.pause(1000)
     }
     else {
+            	
             }
 })
 ```
@@ -194,14 +200,16 @@ fwdBase.leftServo,
 fwdBase.rightServo,
 )
 basic.forever(function () {
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdEnums.OverUnder.Under)) {
-        fwdMotors.stop()
+    if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
+        fwdMotors.drive(0, 0, 0)
         basic.pause(1000)
-        fwdMotors.drive(fwdEnums.ForwardReverse.Reverse, 50)
+        fwdMotors.drive(-50, 50, 1000)
         basic.pause(1000)
-        fwdMotors.turn(25)
+        // TODO: calibrate duration -- was turn(25) degrees in place
+        fwdMotors.drive(50, 50, 1000)
     }
     else {
+    	
     }
 })
 ```
@@ -217,14 +225,16 @@ fwdBase.leftServo,
 fwdBase.rightServo,
 )
 basic.forever(function () {
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdEnums.OverUnder.Under)) {
-        fwdMotors.stop()
+    if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
+        fwdMotors.drive(0, 0, 0)
         basic.pause(1000)
-        fwdMotors.drive(fwdEnums.ForwardReverse.Reverse, 50)
+        fwdMotors.drive(-50, 50, 1000)
         basic.pause(1000)
-        fwdMotors.turn(25)
+        // TODO: calibrate duration -- was turn(25) degrees in place
+        fwdMotors.drive(50, 50, 1000)
         basic.pause(1000)
     } else {
+        	
         }
 })
 ```
@@ -240,15 +250,16 @@ fwdBase.leftServo,
 fwdBase.rightServo,
 )
 basic.forever(function () {
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdEnums.OverUnder.Under)) {
-        fwdMotors.stop()
+    if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
+        fwdMotors.drive(0, 0, 0)
         basic.pause(1000)
-        fwdMotors.drive(fwdEnums.ForwardReverse.Reverse, 50)
+        fwdMotors.drive(-50, 50, 1000)
         basic.pause(1000)
-        fwdMotors.turn(25)
+        // TODO: calibrate duration -- was turn(25) degrees in place
+        fwdMotors.drive(50, 50, 1000)
         basic.pause(1000)
     } else {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+        fwdMotors.drive(50, -50, 1000)
     }
 })
 ```
@@ -259,21 +270,18 @@ Click `||fwdMotors:+||` on `||fwdMotors:Setup Driving||`
 block inside `||basic:on start||` block. Set bias to `||fwdMotors: 0||`.
 
 ```blocks
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdEnums.OverUnder.Under)) {
-        fwdMotors.stop()
+    if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
+        fwdMotors.drive(0, 0, 0)
         basic.pause(1000)
-        fwdMotors.drive(fwdEnums.ForwardReverse.Reverse, 50)
+        fwdMotors.drive(-50, 50, 1000)
         basic.pause(1000)
-        fwdMotors.turn(25)
+        // TODO: calibrate duration -- was turn(25) degrees in place
+        fwdMotors.drive(50, 50, 1000)
         basic.pause(1000)
     } else {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+        fwdMotors.drive(50, -50, 1000)
     }
 })
 ```

@@ -1,29 +1,25 @@
 # Replanting Our Forests with Automated Tree Seeders - Use Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 datalogger=datalogger
 ```
 
 ```template
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+        fwdMotors.drive(50, -50, 1000)
         basic.pause(1000)
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
         fwdMotors.setAngle(fwdBase.middleServo, 45)
         basic.pause(250)
     }
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 fwdMotors.setAngle(fwdBase.middleServo, 45)
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-10
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 ```
 
 ## Activity 1: Build Your Project @showdialog
@@ -207,23 +203,19 @@ Given what you just learned and observed, can you guess which block(s) are makin
 ```blocks
 fwdMotors.setAngle(fwdBase.middleServo, 45)
 // @highlight
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-10
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
     // @highlight
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+        fwdMotors.drive(50, -50, 1000)
         basic.pause(1000)
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
         fwdMotors.setAngle(fwdBase.middleServo, 45)
         basic.pause(250)
     }
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 ```
 
@@ -239,16 +231,12 @@ Can you guess which block(s) are responsible for dropping or planting the seed?
 ```blocks
 // @highlight
 fwdMotors.setAngle(fwdBase.middleServo, 45)
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-10
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+        fwdMotors.drive(50, -50, 1000)
         basic.pause(1000)
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
         // @highlight
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
@@ -256,7 +244,7 @@ input.onButtonPressed(Button.A, function () {
         fwdMotors.setAngle(fwdBase.middleServo, 45)
         basic.pause(250)
     }
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 ```
 
@@ -288,10 +276,10 @@ In this program, we have 3 `||basic:pause||` blocks which add up to 1500 millise
 
 ```block
     for (let index = 0; index < 4; index++) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+        fwdMotors.drive(50, -50, 1000)
         // @highlight
         basic.pause(1000)
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         // @highlight
         basic.pause(250)
@@ -299,7 +287,7 @@ In this program, we have 3 `||basic:pause||` blocks which add up to 1500 millise
         // @highlight
         basic.pause(250)
     }
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 ```
 
 ## Solution 1 Continued

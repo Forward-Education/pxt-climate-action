@@ -1,7 +1,7 @@
 # Autonomous Electric Vehicles of the Future - Use Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ## Activity 1: Build your Project @showdialog
@@ -112,22 +112,19 @@ input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = false
 })
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
--35
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             basic.pause(1000)
-            fwdMotors.drive(fwdEnums.ForwardReverse.Reverse, 50)
-            fwdMotors.turn(10)
+            fwdMotors.drive(-50, 50, 1000)
+            // TODO: calibrate duration -- was turn(10) degrees in place
+            fwdMotors.drive(50, 50, 1000)
         } else {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
         }
     } else {
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
     }
 })
 ```
@@ -206,15 +203,16 @@ Once you've made a guess, unplug your project from the computer, place it on the
 ```blocks
 basic.forever(function () {
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             basic.pause(1000)
-            fwdMotors.drive(fwdEnums.ForwardReverse.Reverse, 50)
-            fwdMotors.turn(10)
+            fwdMotors.drive(-50, 50, 1000)
+            // TODO: calibrate duration -- was turn(10) degrees in place
+            fwdMotors.drive(50, 50, 1000)
         } else {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
         }
     } else {
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
     }
 })
 ```
@@ -233,12 +231,13 @@ Take a look at the second conditional in your code. What do you think `||fwdSens
     hint~
 
 ```block
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             basic.pause(1000)
-            fwdMotors.drive(fwdEnums.ForwardReverse.Reverse, 50)
-            fwdMotors.turn(10)
+            fwdMotors.drive(-50, 50, 1000)
+            // TODO: calibrate duration -- was turn(10) degrees in place
+            fwdMotors.drive(50, 50, 1000)
         } else {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
         }
 ```
 
@@ -255,15 +254,16 @@ When something blocks your vehicle's path, it triggers a sequence of actions:
    hint~
 
 ```block
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             // @highlight
             basic.pause(1000)
             // @highlight
-            fwdMotors.drive(fwdEnums.ForwardReverse.Reverse, 50)
+            fwdMotors.drive(-50, 50, 1000)
             // @highlight
-            fwdMotors.turn(10)
+            // TODO: calibrate duration -- was turn(10) degrees in place
+            fwdMotors.drive(50, 50, 1000)
         } else {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
         }
 ```
 

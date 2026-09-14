@@ -1,7 +1,7 @@
 # Hope Spot Monitoring Station - Use Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 datalogger=datalogger
 ```
 
@@ -26,7 +26,7 @@ angle = 0
 fwdLights.ledRing1.setAllPixelsColor(0x000000)
 basic.forever(function () {
     if (stationOn == true) {
-        if (fwdSensors.sonar1.fwdDistance() > 0.1) {
+        if (fwdSensors.sonar1.distance() > 0.1) {
             fwdLights.ledRing1.setAllPixelsColor(0x000000)
             rotateSensor()
         } else {
@@ -34,7 +34,7 @@ basic.forever(function () {
         }
         basic.pause(100)
     } else {
-        fwdBase.rightServo.fwdSetEnabled(false)
+        fwdBase.rightServo.setEnabled(false)
     }
 })
 ```
@@ -223,7 +223,7 @@ function rotateSensor () {
     }
 }
 
-if (fwdSensors.sonar1.fwdDistance() > 0.1) {
+if (fwdSensors.sonar1.distance() > 0.1) {
             fwdLights.ledRing1.setAllPixelsColor(0x000000)
             // @highlight
             rotateSensor()
@@ -264,7 +264,7 @@ function rotateSensor () {
     }
 }
 
-if (fwdSensors.sonar1.fwdDistance() > 0.1) {
+if (fwdSensors.sonar1.distance() > 0.1) {
             fwdLights.ledRing1.setAllPixelsColor(0x000000)
             rotateSensor()
         } else {

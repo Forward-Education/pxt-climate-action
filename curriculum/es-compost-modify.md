@@ -1,16 +1,16 @@
 # Solar-Powered Compost Tumbler - Modify Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 datalogger=datalogger
 ```
 
 ```template
 basic.forever(function () {
     while (fwdSensors.solar1.isPastThreshold(95, fwdEnums.OverUnder.Over)) {
-        fwdMotors.conSetEnabled(fwdBase.leftServo, true)
+        fwdBase.leftServo.setEnabled(true)
         basic.pause(2000)
-        fwdMotors.conSetEnabled(fwdBase.leftServo, false)
+        fwdBase.leftServo.setEnabled(false)
         basic.pause(5000)
     }
 })
@@ -152,9 +152,9 @@ hint~
     // @highlight
     while (fwdSensors.solar1.isPastThreshold(95, fwdEnums.OverUnder.Over)) {
         // @highlight
-        fwdMotors.conSetEnabled(fwdBase.leftServo, true)
+        fwdBase.leftServo.setEnabled(true)
         basic.pause(2000)
-        fwdMotors.conSetEnabled(fwdBase.leftServo, false)
+        fwdBase.leftServo.setEnabled(false)
         basic.pause(5000)
     }
 ```
@@ -174,7 +174,7 @@ Change the number in the `||fwdSensors:solar1 light level over||` block to a low
 ```block
     // @highlight
     while (fwdSensors.solar1.isPastThreshold(50, fwdEnums.OverUnder.Over)) {
-
+    	
     }
 ```
 
@@ -185,7 +185,7 @@ Change the threshold back to 95%.
 ```block
     // @highlight
     while (fwdSensors.solar1.isPastThreshold(95, fwdEnums.OverUnder.Over)) {
-
+    	
     }
 ```
 
@@ -204,10 +204,10 @@ hint~
 ```block
     while (fwdSensors.solar1.isPastThreshold(95, fwdEnums.OverUnder.Over)) {
         // @highlight
-        fwdMotors.conSetEnabled(fwdBase.leftServo, true)
+        fwdBase.leftServo.setEnabled(true)
         basic.pause(2000)
         // @highlight
-        fwdMotors.conSetEnabled(fwdBase.leftServo, false)
+        fwdBase.leftServo.setEnabled(false)
         basic.pause(5000)
     }
 ```
@@ -227,8 +227,8 @@ Try removing them and see what happens!
 ```blocks
 basic.forever(function () {
     while (fwdSensors.solar1.isPastThreshold(95, fwdEnums.OverUnder.Over)) {
-        fwdMotors.conSetEnabled(fwdBase.leftServo, true)
-        fwdMotors.conSetEnabled(fwdBase.leftServo, false)
+        fwdBase.leftServo.setEnabled(true)
+        fwdBase.leftServo.setEnabled(false)
     }
 })
 ```
@@ -239,10 +239,10 @@ Add the `||basic:pause||` blocks back into the code.
 
 ```block
     while (fwdSensors.solar1.isPastThreshold(95, fwdEnums.OverUnder.Over)) {
-        fwdMotors.conSetEnabled(fwdBase.leftServo, true)
+        fwdBase.leftServo.setEnabled(true)
         // @highlight
         basic.pause(2000)
-        fwdMotors.conSetEnabled(fwdBase.leftServo, false)
+        fwdBase.leftServo.setEnabled(false)
         // @highlight
         basic.pause(5000)
     }
@@ -272,7 +272,7 @@ hint~
 
 ```block
     while (fwdSensors.solar1.isPastThreshold(95, fwdEnums.OverUnder.Over)) {
-        fwdMotors.conSetEnabled(fwdBase.leftServo, true)
+        fwdBase.leftServo.setEnabled(true)
         // @highlight
         basic.showLeds(`
             . . . . .
@@ -282,7 +282,7 @@ hint~
             . . . . .
             `)
         basic.pause(2000)
-        fwdMotors.conSetEnabled(fwdBase.leftServo, false)
+        fwdBase.leftServo.setEnabled(false)
         // @highlight
         basic.clearScreen()
         basic.pause(5000)
@@ -297,7 +297,7 @@ You could make a spinning wheel, a happy face, or something else. Get creative a
 
 ```block
     while (fwdSensors.solar1.isPastThreshold(95, fwdEnums.OverUnder.Over)) {
-        fwdMotors.conSetEnabled(fwdBase.leftServo, true)
+        fwdBase.leftServo.setEnabled(true)
         // @highlight
         basic.showLeds(`
             . # # # .
@@ -307,7 +307,7 @@ You could make a spinning wheel, a happy face, or something else. Get creative a
             . # # # .
             `)
         basic.pause(2000)
-        fwdMotors.conSetEnabled(fwdBase.leftServo, false)
+        fwdBase.leftServo.setEnabled(false)
         basic.clearScreen()
         basic.pause(5000)
     }
@@ -321,7 +321,7 @@ Try for yourself and then check the lightbulb for our solution!
 
 ```block
     while (fwdSensors.solar1.isPastThreshold(95, fwdEnums.OverUnder.Over)) {
-        fwdMotors.conSetEnabled(fwdBase.leftServo, true)
+        fwdBase.leftServo.setEnabled(true)
         basic.showLeds(`
             . # # # .
             # . . . #
@@ -330,7 +330,7 @@ Try for yourself and then check the lightbulb for our solution!
             . # # # .
             `)
         basic.pause(2000)
-        fwdMotors.conSetEnabled(fwdBase.leftServo, false)
+        fwdBase.leftServo.setEnabled(false)
         // @highlight
         basic.showLeds(`
             . . . . .
