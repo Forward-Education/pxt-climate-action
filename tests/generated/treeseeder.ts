@@ -3,23 +3,35 @@
 
 // treeseeder.md :: ```blocks fence #1
 namespace treeseeder_blocks01 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.leftServo,
+)
 }
 
 // treeseeder.md :: ```blocks fence #2
 namespace treeseeder_blocks02 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.rightServo,
+)
 }
 
 // treeseeder.md :: ```blocks fence #3
 namespace treeseeder_blocks03 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.rightServo,
+)
 fwdMotors.setAngle(fwdBase.middleServo, 0)
 }
 
 // treeseeder.md :: ```blocks fence #4
 namespace treeseeder_blocks04 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.rightServo,
+)
 fwdMotors.setAngle(fwdBase.middleServo, 0)
 input.onButtonPressed(Button.A, function () {
     	
@@ -28,7 +40,10 @@ input.onButtonPressed(Button.A, function () {
 
 // treeseeder.md :: ```blocks fence #5
 namespace treeseeder_blocks05 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.rightServo,
+)
 fwdMotors.setAngle(fwdBase.middleServo, 0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {}
@@ -37,7 +52,10 @@ input.onButtonPressed(Button.A, function () {
 
 // treeseeder.md :: ```blocks fence #6
 namespace treeseeder_blocks06 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.rightServo,
+)
 fwdMotors.setAngle(fwdBase.middleServo, 0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
@@ -48,7 +66,10 @@ input.onButtonPressed(Button.A, function () {
 
 // treeseeder.md :: ```blocks fence #7
 namespace treeseeder_blocks07 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.rightServo,
+)
 fwdMotors.setAngle(fwdBase.middleServo, 0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
@@ -60,7 +81,10 @@ input.onButtonPressed(Button.A, function () {
 
 // treeseeder.md :: ```blocks fence #8
 namespace treeseeder_blocks08 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.rightServo,
+)
 fwdMotors.setAngle(fwdBase.middleServo, 0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
@@ -72,7 +96,10 @@ input.onButtonPressed(Button.A, function () {
 
 // treeseeder.md :: ```blocks fence #9
 namespace treeseeder_blocks09 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.rightServo,
+)
 fwdMotors.setAngle(fwdBase.middleServo, 0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
@@ -85,7 +112,10 @@ input.onButtonPressed(Button.A, function () {
 
 // treeseeder.md :: ```blocks fence #10
 namespace treeseeder_blocks10 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.rightServo,
+)
 fwdMotors.setAngle(fwdBase.middleServo, 0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
@@ -98,7 +128,10 @@ input.onButtonPressed(Button.A, function () {
 
 // treeseeder.md :: ```blocks fence #11
 namespace treeseeder_blocks11 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.rightServo,
+)
 fwdMotors.setAngle(fwdBase.middleServo, 0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
@@ -112,7 +145,10 @@ input.onButtonPressed(Button.A, function () {
 
 // treeseeder.md :: ```blocks fence #12
 namespace treeseeder_blocks12 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.rightServo,
+)
 fwdMotors.setAngle(fwdBase.middleServo, 0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
@@ -127,7 +163,10 @@ input.onButtonPressed(Button.A, function () {
 
 // treeseeder.md :: ```blocks fence #13
 namespace treeseeder_blocks13 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.rightServo,
+)
 fwdMotors.setAngle(fwdBase.leftServo, 0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {

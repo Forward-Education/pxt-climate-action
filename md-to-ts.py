@@ -14,6 +14,7 @@ Usage:
 """
 
 import argparse
+import json
 import os
 import re
 import sys
@@ -152,36 +153,43 @@ def split_args(args: str):
     return parts
 
 
-def fill_blank_slots(code: str, answers: dict) -> str:
+def fill_blank_slots(code: str, fills: dict) -> str:
     """Fill a tutorial's deliberately empty argument slots for the test build only.
 
-    A step that asks the student to drag a value into a socket renders as `showNumber()`
-    or `setAngle(servo, )`, which cannot compile. The value is not invented: a later
-    step shows the same call completed, and that argument list is reused here. The
-    markdown keeps its blank, so the tutorial still poses the question.
+    A step that asks the student to drag a value into a socket renders as
+    `showNumber()` or `setAngle(servo, )`, which cannot compile. `fills` maps a callee
+    to the argument list to substitute; it is read from tests/blank-fills.json, where
+    each value is the answer the tutorial shows in a later step. The markdown keeps its
+    blank, so the tutorial still poses the question.
 
-    A call with no completed counterpart -- `clearScreen()`, `dial1.position()` -- is
-    genuinely zero-argument and is left alone.
+    A marker comment in the fence would not work for this: pxt strips only @hide,
+    @highlight, @collapsed and @validate-*, so anything else is rendered onto the block
+    and would show the student the answer.
     """
     for start, end, callee, args in sorted(find_calls(code), reverse=True):
-        if callee not in answers:
+        if callee not in fills:
             continue
-        blank = not args.strip() or any(not p.strip() for p in split_args(args))
-        if blank:
-            code = code[:start] + f"{callee}({answers[callee]})" + code[end:]
+        # Blank either way: no arguments at all, or a socket left empty inside an
+        # otherwise-populated call such as `setAngle(servo, )`.
+        if args.strip() and all(p.strip() for p in split_args(args)):
+            continue
+        code = code[:start] + f"{callee}({fills[callee]})" + code[end:]
     return code
 
 
-def collect_answers(all_code: str) -> dict:
-    """Map each callee to a fully-specified argument list seen somewhere in the tutorial."""
-    answers = {}
-    for _, _, callee, args in find_calls(all_code):
-        if args.strip() and all(p.strip() for p in split_args(args)):
-            answers.setdefault(callee, args)
-    return answers
+BLANK_FILLS_PATH = os.path.join("tests", "blank-fills.json")
 
 
-def extract(path: str):
+def load_blank_fills(path: str = BLANK_FILLS_PATH) -> dict:
+    """Load the per-tutorial map of deliberately empty argument sockets."""
+    if not os.path.exists(path):
+        return {}
+    with open(path, encoding="utf-8") as f:
+        data = json.load(f)
+    return {k: v for k, v in data.items() if not k.startswith("//")}
+
+
+def extract(path: str, fills: dict = None):
     """Return (snippets, needs_extra_deps) for one markdown file.
 
     Each snippet is (kind, index, code). Fences are numbered per kind so that the
@@ -228,7 +236,6 @@ def extract(path: str):
         if re.search(rf"^\s*{re.escape(name)}\s*=\s*(true|false)\b", all_code, re.M):
             shared[name] = "false"
 
-    answers = collect_answers(all_code)
     # A `0` sitting in a boolean socket is the editor's default numeric shadow, not a
     # value the author chose; the variable's real type comes from the assignments.
     booleans = {n for n, v in shared.items() if v == "false"}
@@ -238,7 +245,7 @@ def extract(path: str):
     for kind, code in fences:
         counters[kind] = counters.get(kind, 0) + 1
         if kind not in RAW_FENCES:
-            code = fill_blank_slots(code, answers)
+            code = fill_blank_slots(code, fills or {})
             for name in booleans:
                 code = re.sub(rf"^(\s*)(let\s+)?{re.escape(name)}\s*=\s*0\s*$",
                               rf"\g<1>\g<2>{name} = false", code, flags=re.M)
@@ -289,6 +296,7 @@ def main() -> int:
             if stale.endswith(".ts"):
                 os.remove(os.path.join(directory, stale))
 
+    blank_fills = load_blank_fills()
     md_files = sorted(f for f in os.listdir(args.src) if f.lower().endswith(".md"))
     total_snippets = 0
     extra_files = []
@@ -296,7 +304,8 @@ def main() -> int:
 
     for name in md_files:
         slug = os.path.splitext(name)[0]
-        snippets, needs_extra = extract(os.path.join(args.src, name))
+        snippets, needs_extra = extract(os.path.join(args.src, name),
+                                        blank_fills.get(name, {}))
 
         if not snippets:
             if name not in NO_SNIPPETS_EXPECTED:

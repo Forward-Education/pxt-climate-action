@@ -1,0 +1,29 @@
+{
+    "//": [
+        "Some tutorial steps deliberately leave an argument socket empty for the student",
+        "to drag a value into -- `basic.showNumber()`, `fwdMotors.setAngle(servo, )`.",
+        "Those snippets cannot compile, so md-to-ts.py substitutes a value HERE, in the",
+        "generated test only. The markdown keeps its blank and still poses the question.",
+        "",
+        "Each value is the answer the tutorial itself shows in a later step -- not an",
+        "invented one. Keyed by tutorial file, then by the callee whose arguments are",
+        "missing; the value is the full argument list.",
+        "",
+        "A blank with no entry here fails the build, which is the intended behaviour:",
+        "someone has to decide what the answer is rather than have it guessed."
+    ],
+
+    "hs-fishways-modify.md": {
+        "fwdMotors.setAngle": "fwdBase.rightServo, fwdButtons.dial1.position()",
+        "fwdSensors.sonar1.isPastThreshold": "0.2, fwdEnums.OverUnder.Over"
+    },
+
+    "ms-habitatmonitoring-modify.md": {
+        "basic.showNumber": "Math.round(fwdSensors.moisture1.moistureLevel())",
+        "Math.round": "fwdSensors.moisture1.moistureLevel()"
+    },
+
+    "ms-smarthome-modify.md": {
+        "fwdSensors.solar1.isPastThreshold": "25, fwdEnums.OverUnder.Under"
+    }
+}

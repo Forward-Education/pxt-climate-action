@@ -3,17 +3,26 @@
 
 // electricvehicle.md :: ```blocks fence #1
 namespace electricvehicle_blocks01 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.middleServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.leftServo,
+)
 }
 
 // electricvehicle.md :: ```blocks fence #2
 namespace electricvehicle_blocks02 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.middleServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.middleServo,
+)
 }
 
 // electricvehicle.md :: ```blocks fence #3
 namespace electricvehicle_blocks03 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.middleServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.middleServo,
+)
 basic.forever(function () {
     if (true) {
             	
@@ -23,7 +32,10 @@ basic.forever(function () {
 
 // electricvehicle.md :: ```blocks fence #4
 namespace electricvehicle_blocks04 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.middleServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.middleServo,
+)
 basic.forever(function () {
     if (true) {
             	
@@ -36,7 +48,10 @@ basic.forever(function () {
 
 // electricvehicle.md :: ```blocks fence #5
 namespace electricvehicle_blocks05 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.middleServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.middleServo,
+)
 basic.forever(function () {
     if (true) {
             	
@@ -52,7 +67,10 @@ basic.forever(function () {
 
 // electricvehicle.md :: ```blocks fence #6
 namespace electricvehicle_blocks06 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.middleServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.middleServo,
+)
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         	
@@ -68,7 +86,10 @@ basic.forever(function () {
 
 // electricvehicle.md :: ```blocks fence #7
 namespace electricvehicle_blocks07 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.middleServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.middleServo,
+)
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         	
@@ -84,7 +105,10 @@ basic.forever(function () {
 
 // electricvehicle.md :: ```blocks fence #8
 namespace electricvehicle_blocks08 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.middleServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.middleServo,
+)
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         	
@@ -100,7 +124,10 @@ basic.forever(function () {
 
 // electricvehicle.md :: ```blocks fence #9
 namespace electricvehicle_blocks09 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.middleServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.middleServo,
+)
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         fwdMotors.drive(0, 0, 0)
@@ -116,7 +143,10 @@ basic.forever(function () {
 
 // electricvehicle.md :: ```blocks fence #10
 namespace electricvehicle_blocks10 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.middleServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.middleServo,
+)
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         // TODO: calibrate duration -- was turn(5) degrees in place
@@ -133,7 +163,10 @@ basic.forever(function () {
 
 // electricvehicle.md :: ```blocks fence #11
 namespace electricvehicle_blocks11 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.middleServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.middleServo,
+)
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         // TODO: calibrate duration -- was turn(5) degrees in place
@@ -150,7 +183,10 @@ basic.forever(function () {
 
 // electricvehicle.md :: ```blocks fence #12
 namespace electricvehicle_blocks12 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.middleServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.middleServo,
+)
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         // TODO: calibrate duration -- was turn(5) degrees in place
@@ -168,7 +204,10 @@ basic.forever(function () {
 
 // electricvehicle.md :: ```blocks fence #13
 namespace electricvehicle_blocks13 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.middleServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.middleServo,
+)
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         // TODO: calibrate duration -- was turn(5) degrees in place
@@ -187,7 +226,10 @@ basic.forever(function () {
 
 // electricvehicle.md :: ```blocks fence #14
 namespace electricvehicle_blocks14 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.middleServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.middleServo,
+)
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         // TODO: calibrate duration -- was turn(5) degrees in place
@@ -207,7 +249,10 @@ basic.forever(function () {
 
 // electricvehicle.md :: ```blocks fence #15
 namespace electricvehicle_blocks15 {
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.middleServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.middleServo,
+)
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         // TODO: calibrate duration -- was turn(5) degrees in place

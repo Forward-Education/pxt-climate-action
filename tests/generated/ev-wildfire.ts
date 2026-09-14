@@ -6,7 +6,10 @@ namespace ev_wildfire_blocks01 {
 let IsDrivingEnabled = false
 let lightThreshold = 100
 let temperatureThreshold = 25
-fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
+fwdMotors.setupDriving(
+fwdBase.leftServo,
+fwdBase.leftServo,
+)
 }
 
 // ev-wildfire.md :: ```blocks fence #2
