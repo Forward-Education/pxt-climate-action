@@ -3,9 +3,9 @@
 
 // ms-heatislands-modify.md :: ```template fence #1
 namespace ms_heatislands_modify_template01 {
-let maxTemp = input.temperature()
-let minTemp = input.temperature()
-let tempThreshold = 0
+let maxTemp = 0
+let minTemp = 0
+let tempThreshold = 30
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     datalogger.deleteLog()
 })
@@ -20,9 +20,9 @@ basic.forever(function () {
 
 // ms-heatislands-modify.md :: ```block fence #1
 namespace ms_heatislands_modify_block01 {
-let maxTemp = input.temperature()
-let minTemp = input.temperature()
-let tempThreshold = 0
+let maxTemp = 0
+let minTemp = 0
+let tempThreshold = 30
 loops.everyInterval(60000, function () {
     datalogger.log(datalogger.createCV("Temperature", input.temperature()))
 })
@@ -30,7 +30,7 @@ loops.everyInterval(60000, function () {
 
 // ms-heatislands-modify.md :: ```blocks fence #1
 namespace ms_heatislands_modify_blocks01 {
-let tempThreshold = 0
+let tempThreshold = 30
 let minTemp = 0
 let maxTemp = 0
 maxTemp = input.temperature()
@@ -39,9 +39,9 @@ minTemp = input.temperature()
 
 // ms-heatislands-modify.md :: ```blocks fence #2
 namespace ms_heatislands_modify_blocks02 {
-let maxTemp = input.temperature()
-let minTemp = input.temperature()
-let tempThreshold = 0
+let maxTemp = 0
+let minTemp = 0
+let tempThreshold = 30
 loops.everyInterval(60000, function () {
     datalogger.log(datalogger.createCV("Temperature", input.temperature()))
     // @highlight
@@ -54,9 +54,9 @@ loops.everyInterval(60000, function () {
 
 // ms-heatislands-modify.md :: ```blocks fence #3
 namespace ms_heatislands_modify_blocks03 {
-let maxTemp = input.temperature()
-let minTemp = input.temperature()
-let tempThreshold = 0
+let maxTemp = 0
+let minTemp = 0
+let tempThreshold = 30
 loops.everyInterval(60000, function () {
     datalogger.log(datalogger.createCV("Temperature", input.temperature()))
     basic.showNumber(input.temperature())
@@ -73,9 +73,9 @@ loops.everyInterval(60000, function () {
 
 // ms-heatislands-modify.md :: ```block fence #2
 namespace ms_heatislands_modify_block02 {
-let maxTemp = input.temperature()
-let minTemp = input.temperature()
-let tempThreshold = 0
+let maxTemp = 0
+let minTemp = 0
+let tempThreshold = 30
 input.onButtonPressed(Button.A, function () {
     basic.showNumber(minTemp)
 })

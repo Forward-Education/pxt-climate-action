@@ -52,6 +52,7 @@ basic.forever(function () {
 // ms-smarthome-modify.md :: ```blocks fence #1
 namespace ms_smarthome_modify_blocks01 {
 let Temperature = 0
+let openDoor = ""
 // @highlight
 radio.setGroup(1)
 
@@ -79,6 +80,7 @@ radio.onReceivedNumber(function (receivedNumber) {
 // ms-smarthome-modify.md :: ```blocks fence #2
 namespace ms_smarthome_modify_blocks02 {
 let Temperature = 0
+let openDoor = ""
 input.onButtonPressed(Button.A, function () {
     Temperature += -1
     basic.showArrow(ArrowNames.South)
@@ -108,6 +110,7 @@ basic.forever(function () {
 // ms-smarthome-modify.md :: ```blocks fence #3
 namespace ms_smarthome_modify_blocks03 {
 let Temperature = 0
+let openDoor = ""
 input.onButtonPressed(Button.A, function () {
     // @highlight
     Temperature += -5
@@ -138,6 +141,7 @@ radio.onReceivedNumber(function (receivedNumber) {
 // ms-smarthome-modify.md :: ```blocks fence #4
 namespace ms_smarthome_modify_blocks04 {
 let Temperature = 0
+let openDoor = ""
 input.onButtonPressed(Button.AB, function () {
     basic.showIcon(IconNames.House)
     radio.sendString(openDoor)
@@ -156,12 +160,14 @@ radio.onReceivedString(function (receivedString) {
 // ms-smarthome-modify.md :: ```block fence #1
 namespace ms_smarthome_modify_block01 {
 let Temperature = 0
-fwdSensors.solar1.isPastThreshold(,fwdEnums.OverUnder.Under)
+let openDoor = ""
+fwdSensors.solar1.isPastThreshold(25, fwdEnums.OverUnder.Under)
 }
 
 // ms-smarthome-modify.md :: ```blocks fence #5
 namespace ms_smarthome_modify_blocks05 {
 let Temperature = 0
+let openDoor = ""
 basic.forever(function () {
     basic.showNumber(Temperature)
     // @highlight
@@ -177,6 +183,7 @@ basic.forever(function () {
 // ms-smarthome-modify.md :: ```blocks fence #6
 namespace ms_smarthome_modify_blocks06 {
 let Temperature = 0
+let openDoor = ""
 if (fwdSensors.solar1.isPastThreshold(25, fwdEnums.OverUnder.Under)) {
         // @highlight
         fwdLights.ledRing1.setAllPixelsColor(0xffffff)
@@ -190,6 +197,7 @@ if (fwdSensors.solar1.isPastThreshold(25, fwdEnums.OverUnder.Under)) {
 // ms-smarthome-modify.md :: ```blocks fence #7
 namespace ms_smarthome_modify_blocks07 {
 let Temperature = 0
+let openDoor = ""
 if (fwdSensors.solar1.isPastThreshold(25, fwdEnums.OverUnder.Under)) {
         fwdLights.ledRing1.setAllPixelsColor(0xffffff)
     }
@@ -210,6 +218,7 @@ if (fwdSensors.solar1.isPastThreshold(25, fwdEnums.OverUnder.Under)) {
 // ms-smarthome-modify.md :: ```blocks fence #8
 namespace ms_smarthome_modify_blocks08 {
 let Temperature = 0
+let openDoor = ""
 if (fwdSensors.solar1.isPastThreshold(25, fwdEnums.OverUnder.Under)) {
         fwdLights.ledRing1.setAllPixelsColor(0xffffff)
     } else if (fwdSensors.solar1.isPastThreshold(50, fwdEnums.OverUnder.Under)) {

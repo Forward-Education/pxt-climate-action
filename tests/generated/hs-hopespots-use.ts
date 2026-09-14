@@ -39,6 +39,7 @@ basic.forever(function () {
 // hs-hopespots-use.md :: ```blocks fence #1
 namespace hs_hopespots_use_blocks01 {
 let angle = 0
+let stationOn = false
 function rotateSensor () {
     fwdBase.rightServo.setAngleAndWait(angle)
     angle += 10
@@ -51,6 +52,7 @@ function rotateSensor () {
 // hs-hopespots-use.md :: ```block fence #1
 namespace hs_hopespots_use_block01 {
 let angle = 0
+let stationOn = false
 // @hide
 function rotateSensor () {
     fwdBase.rightServo.setAngleAndWait(angle)
@@ -72,6 +74,7 @@ if (fwdSensors.sonar1.distance() > 0.1) {
 // hs-hopespots-use.md :: ```block fence #2
 namespace hs_hopespots_use_block02 {
 let angle = 0
+let stationOn = false
 // @hide
 function rotateSensor () {
     fwdBase.rightServo.setAngleAndWait(angle)

@@ -35,14 +35,14 @@ basic.forever(function () {
 
 // gr7-wildfire-use.md :: ```block fence #1
 namespace gr7_wildfire_use_block01 {
-// @highlight
+let isDrivingEnabled = false
+    // @highlight
     if (isDrivingEnabled) {
         fwdMotors.drive(50, -50, 1000)
     } else {
         fwdMotors.drive(0, 0, 0)
     }
 
-let isDrivingEnabled = false
 input.onButtonPressed(Button.A, function () {
     isDrivingEnabled = true
 })

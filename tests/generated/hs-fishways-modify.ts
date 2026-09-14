@@ -24,11 +24,11 @@ namespace hs_fishways_modify_blocks01 {
 let FishCount = 0
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, function () {
     // @highlight
-    fwdMotors.setAngle(fwdBase.rightServo, )
+    fwdMotors.setAngle(fwdBase.rightServo, fwdButtons.dial1.position())
 })
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, function () {
     // @highlight
-    fwdMotors.setAngle(fwdBase.rightServo, )
+    fwdMotors.setAngle(fwdBase.rightServo, fwdButtons.dial1.position())
 })
 }
 
@@ -58,7 +58,7 @@ fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, functio
 // hs-fishways-modify.md :: ```block fence #1
 namespace hs_fishways_modify_block01 {
 let FishCount = 0
-fwdSensors.sonar1.isPastThreshold()
+fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Over)
 }
 
 // hs-fishways-modify.md :: ```blocks fence #4

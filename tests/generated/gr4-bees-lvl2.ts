@@ -3,6 +3,7 @@
 
 // gr4-bees-lvl2.md :: ```template fence #1
 namespace gr4_bees_lvl2_template01 {
+let bugvisits = 0
 basic.showNumber(0)
 basic.forever(function () {
     if (fwdButtons.touch1.isPressed()) {
@@ -15,6 +16,7 @@ basic.forever(function () {
 
 // gr4-bees-lvl2.md :: ```blocks fence #1
 namespace gr4_bees_lvl2_blocks01 {
+let bugvisits = 0
 basic.showNumber(0)
 basic.forever(function () {
     if (fwdButtons.touch1.isPressed()) {
@@ -27,6 +29,7 @@ basic.forever(function () {
 
 // gr4-bees-lvl2.md :: ```blocks fence #2
 namespace gr4_bees_lvl2_blocks02 {
+let bugvisits = 0
 basic.showNumber(0)
 basic.forever(function () {
     if (fwdButtons.touch1.isPressed()) {
@@ -39,6 +42,7 @@ basic.forever(function () {
 
 // gr4-bees-lvl2.md :: ```blocks fence #3
 namespace gr4_bees_lvl2_blocks03 {
+let bugvisits = 0
 basic.showNumber(0)
 basic.forever(function () {
     if (fwdButtons.touch1.isPressed()) {
@@ -51,6 +55,7 @@ basic.forever(function () {
 
 // gr4-bees-lvl2.md :: ```blocks fence #4
 namespace gr4_bees_lvl2_blocks04 {
+let bugvisits = 0
 basic.showNumber(0)
 basic.forever(function () {
     if (fwdButtons.touch1.isPressed()) {

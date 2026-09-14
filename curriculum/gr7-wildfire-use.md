@@ -183,6 +183,7 @@ Can you identify the blocks of code that allow the A button to act like our gas 
     hint~
 
 ```block
+let isDrivingEnabled = false
     // @highlight
     if (isDrivingEnabled) {
         fwdMotors.drive(50, -50, 1000)
@@ -190,7 +191,6 @@ Can you identify the blocks of code that allow the A button to act like our gas 
         fwdMotors.drive(0, 0, 0)
     }
 
-let isDrivingEnabled = false
 input.onButtonPressed(Button.A, function () {
     isDrivingEnabled = true
 })

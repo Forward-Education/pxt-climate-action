@@ -3,9 +3,9 @@
 
 // ms-sodis-modify.md :: ```template fence #1
 namespace ms_sodis_modify_template01 {
-let exposureThreshold = 48
+let exposureThreshold = 0
 let exposure_sec = 0
-let lightThreshold = 100
+let lightThreshold = 0
 exposure_sec = 0
 
 input.onButtonPressed(Button.A, function () {
@@ -23,9 +23,9 @@ basic.forever(function () {
 
 // ms-sodis-modify.md :: ```block fence #1
 namespace ms_sodis_modify_block01 {
-let exposureThreshold = 48
+let exposureThreshold = 0
 let exposure_sec = 0
-let lightThreshold = 100
+let lightThreshold = 0
 // @highlight
     if (input.lightLevel() > 200) {
         basic.pause(1000)
@@ -36,9 +36,9 @@ let lightThreshold = 100
 
 // ms-sodis-modify.md :: ```block fence #2
 namespace ms_sodis_modify_block02 {
-let exposureThreshold = 48
+let exposureThreshold = 0
 let exposure_sec = 0
-let lightThreshold = 100
+let lightThreshold = 0
 if (input.lightLevel() > 200) {
         basic.pause(1000)
         // @highlight
@@ -48,9 +48,9 @@ if (input.lightLevel() > 200) {
 
 // ms-sodis-modify.md :: ```block fence #3
 namespace ms_sodis_modify_block03 {
-let exposureThreshold = 48
+let exposureThreshold = 0
 let exposure_sec = 0
-let lightThreshold = 100
+let lightThreshold = 0
 if (input.lightLevel() > 200) {
         // @highlight
         basic.pause(3000)
@@ -60,9 +60,9 @@ if (input.lightLevel() > 200) {
 
 // ms-sodis-modify.md :: ```block fence #4
 namespace ms_sodis_modify_block04 {
-let exposureThreshold = 48
+let exposureThreshold = 0
 let exposure_sec = 0
-let lightThreshold = 100
+let lightThreshold = 0
 if (input.lightLevel() > 200) {
         // @highlight
         basic.pause(1000)
@@ -73,9 +73,9 @@ if (input.lightLevel() > 200) {
 
 // ms-sodis-modify.md :: ```block fence #5
 namespace ms_sodis_modify_block05 {
-let exposureThreshold = 48
+let exposureThreshold = 0
 let exposure_sec = 0
-let lightThreshold = 100
+let lightThreshold = 0
 // @highlight
     if (input.lightLevel() > 200) {
         basic.pause(1000)
@@ -85,9 +85,9 @@ let lightThreshold = 100
 
 // ms-sodis-modify.md :: ```block fence #6
 namespace ms_sodis_modify_block06 {
-let exposureThreshold = 48
+let exposureThreshold = 0
 let exposure_sec = 0
-let lightThreshold = 100
+let lightThreshold = 0
 // @highlight
     if (input.lightLevel() > 100) {
         basic.pause(1000)
@@ -97,9 +97,9 @@ let lightThreshold = 100
 
 // ms-sodis-modify.md :: ```block fence #7
 namespace ms_sodis_modify_block07 {
-let exposureThreshold = 48
+let exposureThreshold = 0
 let exposure_sec = 0
-let lightThreshold = 100
+let lightThreshold = 0
 // @highlight
     if (input.lightLevel() > 200) {
         basic.pause(1000)
@@ -109,9 +109,9 @@ let lightThreshold = 100
 
 // ms-sodis-modify.md :: ```block fence #8
 namespace ms_sodis_modify_block08 {
-let exposureThreshold = 48
+let exposureThreshold = 0
 let exposure_sec = 0
-let lightThreshold = 100
+let lightThreshold = 0
 if (exposure_sec >= 6) {
     basic.showIcon(IconNames.Happy)
 }
@@ -119,9 +119,9 @@ if (exposure_sec >= 6) {
 
 // ms-sodis-modify.md :: ```block fence #9
 namespace ms_sodis_modify_block09 {
-let exposureThreshold = 48
+let exposureThreshold = 0
 let exposure_sec = 0
-let lightThreshold = 100
+let lightThreshold = 0
 if (input.lightLevel() > 200) {
         basic.pause(1000)
         exposure_sec += 1
@@ -134,9 +134,9 @@ if (input.lightLevel() > 200) {
 
 // ms-sodis-modify.md :: ```block fence #10
 namespace ms_sodis_modify_block10 {
-let exposureThreshold = 48
+let exposureThreshold = 0
 let exposure_sec = 0
-let lightThreshold = 100
+let lightThreshold = 0
 // @highlight
 if (input.lightLevel() > 200) {
 
@@ -149,9 +149,9 @@ if (input.lightLevel() > 200) {
 
 // ms-sodis-modify.md :: ```block fence #11
 namespace ms_sodis_modify_block11 {
-let exposureThreshold = 48
+let exposureThreshold = 0
 let exposure_sec = 0
-let lightThreshold = 100
+let lightThreshold = 0
 // @highlight
 if (input.lightLevel() > lightThreshold) {
         basic.pause(1000)
@@ -164,7 +164,7 @@ if (input.lightLevel() > lightThreshold) {
 
 // ms-sodis-modify.md :: ```blocks fence #1
 namespace ms_sodis_modify_blocks01 {
-let exposureThreshold = 48
+let exposureThreshold = 0
 let exposure_sec = 0
 let lightThreshold = 0
 exposure_sec = 0
@@ -197,9 +197,9 @@ basic.forever(function () {
 
 // ms-sodis-modify.md :: ```blocks fence #3
 namespace ms_sodis_modify_blocks03 {
-let exposureThreshold = 48
+let exposureThreshold = 0
 let exposure_sec = 0
-let lightThreshold = 100
+let lightThreshold = 0
 input.onButtonPressed(Button.B, function () {
     lightThreshold = 100
     exposureThreshold = 48

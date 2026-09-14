@@ -37,7 +37,7 @@ basic.forever(function () {
 // ms-risingsea-modify.md :: ```blocks fence #1
 namespace ms_risingsea_modify_blocks01 {
 let Logging = false
-let WaterLevel = fwdSensors.sonar1.distance()
+let WaterLevel = 0
 basic.forever(function () {
     WaterLevel = fwdSensors.sonar1.distance()
     basic.pause(1000)
@@ -52,7 +52,7 @@ basic.forever(function () {
 // ms-risingsea-modify.md :: ```blocks fence #2
 namespace ms_risingsea_modify_blocks02 {
 let Logging = false
-let WaterLevel = fwdSensors.sonar1.distance()
+let WaterLevel = 0
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
     // @highlight
     Logging = true
@@ -69,7 +69,7 @@ input.onButtonPressed(Button.AB, function () {
 // ms-risingsea-modify.md :: ```blocks fence #3
 namespace ms_risingsea_modify_blocks03 {
 let Logging = false
-let WaterLevel = fwdSensors.sonar1.distance()
+let WaterLevel = 0
 loops.everyInterval(1000, function () {
     if (Logging == true) {
     // @highlight
@@ -81,7 +81,7 @@ loops.everyInterval(1000, function () {
 // ms-risingsea-modify.md :: ```blocks fence #4
 namespace ms_risingsea_modify_blocks04 {
 let Logging = false
-let WaterLevel = fwdSensors.sonar1.distance()
+let WaterLevel = 0
 // @highlight
     loops.everyInterval(60000, function () {
        datalogger.log(datalogger.createCV("Water Level", WaterLevel))

@@ -263,7 +263,7 @@ hint~
 
 ```blocks
 basic.forever(function () {
-   else if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off) && fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.On) || fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off) && fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On)) {
+   if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off) && fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.On) || fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off) && fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On)) {
            basic.showLeds(`
                . . # . .
                . . . # .

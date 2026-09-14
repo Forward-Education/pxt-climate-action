@@ -81,7 +81,7 @@ fwdMotors.drive(40, -40, 1000)
 namespace hs_autodelivery_modify_blocks02 {
 let IsDrivingEnabled = false
 basic.forever(function () {
-   else if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off) && fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.On) || fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off) && fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On)) {
+   if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off) && fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.On) || fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off) && fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On)) {
            basic.showLeds(`
                . . # . .
                . . . # .

@@ -3,26 +3,17 @@
 
 // motm-line.md :: ```blocks fence #1
 namespace motm_line_blocks01 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.leftServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 }
 
 // motm-line.md :: ```blocks fence #2
 namespace motm_line_blocks02 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 }
 
 // motm-line.md :: ```blocks fence #3
 namespace motm_line_blocks03 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (true) {
             	
@@ -32,10 +23,7 @@ basic.forever(function () {
 
 // motm-line.md :: ```blocks fence #4
 namespace motm_line_blocks04 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (true) {
             	
@@ -48,10 +36,7 @@ basic.forever(function () {
 
 // motm-line.md :: ```blocks fence #5
 namespace motm_line_blocks05 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (true) {
             	
@@ -67,10 +52,7 @@ basic.forever(function () {
 
 // motm-line.md :: ```blocks fence #6
 namespace motm_line_blocks06 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         	
@@ -86,10 +68,7 @@ basic.forever(function () {
 
 // motm-line.md :: ```blocks fence #7
 namespace motm_line_blocks07 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         	
@@ -105,10 +84,7 @@ basic.forever(function () {
 
 // motm-line.md :: ```blocks fence #8
 namespace motm_line_blocks08 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         	
@@ -124,10 +100,7 @@ basic.forever(function () {
 
 // motm-line.md :: ```blocks fence #9
 namespace motm_line_blocks09 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         fwdMotors.drive(0, 0, 0)
@@ -143,10 +116,7 @@ basic.forever(function () {
 
 // motm-line.md :: ```blocks fence #10
 namespace motm_line_blocks10 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         // TODO: calibrate duration -- was turn(5) degrees in place
@@ -163,10 +133,7 @@ basic.forever(function () {
 
 // motm-line.md :: ```blocks fence #11
 namespace motm_line_blocks11 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         // TODO: calibrate duration -- was turn(5) degrees in place
@@ -183,10 +150,7 @@ basic.forever(function () {
 
 // motm-line.md :: ```blocks fence #12
 namespace motm_line_blocks12 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         // TODO: calibrate duration -- was turn(5) degrees in place
@@ -204,10 +168,7 @@ basic.forever(function () {
 
 // motm-line.md :: ```blocks fence #13
 namespace motm_line_blocks13 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         // TODO: calibrate duration -- was turn(5) degrees in place
@@ -226,10 +187,7 @@ basic.forever(function () {
 
 // motm-line.md :: ```blocks fence #14
 namespace motm_line_blocks14 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         // TODO: calibrate duration -- was turn(5) degrees in place
@@ -249,10 +207,7 @@ basic.forever(function () {
 
 // motm-line.md :: ```blocks fence #15
 namespace motm_line_blocks15 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         // TODO: calibrate duration -- was turn(5) degrees in place

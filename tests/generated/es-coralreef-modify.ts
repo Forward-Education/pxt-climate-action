@@ -42,6 +42,7 @@ basic.forever(function () {
 
 // es-coralreef-modify.md :: ```block fence #2
 namespace es_coralreef_modify_block02 {
+let temperature = 28
 // @highlight
     if (temperature > 32) {
         fwdLights.ledRing1.setAllPixelsColor(0xffffff)
@@ -52,6 +53,7 @@ namespace es_coralreef_modify_block02 {
 
 // es-coralreef-modify.md :: ```block fence #3
 namespace es_coralreef_modify_block03 {
+let temperature = 28
 // @highlight
     if (temperature > 30) {
         fwdLights.ledRing1.setAllPixelsColor(0xffffff)
@@ -62,6 +64,7 @@ namespace es_coralreef_modify_block03 {
 
 // es-coralreef-modify.md :: ```block fence #4
 namespace es_coralreef_modify_block04 {
+let temperature = 28
 if (temperature > 30) {
         fwdLights.ledRing1.setAllPixelsColor(0xffffff)
     } else {
@@ -72,6 +75,7 @@ if (temperature > 30) {
 
 // es-coralreef-modify.md :: ```block fence #5
 namespace es_coralreef_modify_block05 {
+let temperature = 28
 basic.forever(function () {
     if (temperature > 30) {
         fwdLights.ledRing1.setAllPixelsColor(0xffffff)
@@ -86,6 +90,7 @@ basic.forever(function () {
 
 // es-coralreef-modify.md :: ```block fence #6
 namespace es_coralreef_modify_block06 {
+let temperature = 28
 basic.forever(function () {
     if (temperature > 30) {
         fwdLights.ledRing1.setAllPixelsColor(0xffffff)
@@ -100,6 +105,7 @@ basic.forever(function () {
 
 // es-coralreef-modify.md :: ```block fence #7
 namespace es_coralreef_modify_block07 {
+let temperature = 28
 basic.forever(function () {
     if (temperature > 30) {
         fwdLights.ledRing1.setAllPixelsColor(0xffffff)
@@ -129,6 +135,7 @@ basic.forever(function () {
 
 // es-coralreef-modify.md :: ```block fence #8
 namespace es_coralreef_modify_block08 {
+let temperature = 28
 basic.forever(function () {
     if (temperature > 30) {
         fwdLights.ledRing1.setAllPixelsColor(0xffffff)
@@ -158,6 +165,7 @@ basic.forever(function () {
 
 // es-coralreef-modify.md :: ```block fence #9
 namespace es_coralreef_modify_block09 {
+let temperature = 28
 basic.forever(function () {
     if (temperature > 30) {
         fwdLights.ledRing1.setAllPixelsColor(0xffffff)
@@ -187,6 +195,7 @@ basic.forever(function () {
 
 // es-coralreef-modify.md :: ```block fence #10
 namespace es_coralreef_modify_block10 {
+let temperature = 28
 basic.forever(function () {
     if (temperature > 30) {
         fwdLights.ledRing1.setAllPixelsColor(0xffffff)

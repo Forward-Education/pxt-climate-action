@@ -3,6 +3,8 @@
 
 // wind-gr-6-lesson.md :: ```blocks fence #1
 namespace wind_gr_6_lesson_blocks01 {
+let RPM = 0
+let revolutions = 0
 let start_time = 0
 let stop_time = 0
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, function () {
@@ -12,6 +14,8 @@ fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, functio
 
 // wind-gr-6-lesson.md :: ```blocks fence #2
 namespace wind_gr_6_lesson_blocks02 {
+let RPM = 0
+let revolutions = 0
 let start_time = 0
 let stop_time = 0
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, function () {
@@ -24,6 +28,8 @@ fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, 
 
 // wind-gr-6-lesson.md :: ```blocks fence #3
 namespace wind_gr_6_lesson_blocks03 {
+let RPM = 0
+let revolutions = 0
 let start_time = 0
 let stop_time = 0
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
@@ -39,6 +45,8 @@ fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, 
 
 // wind-gr-6-lesson.md :: ```blocks fence #4
 namespace wind_gr_6_lesson_blocks04 {
+let RPM = 0
+let revolutions = 0
 let start_time = 0
 let stop_time = 0
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
@@ -54,6 +62,8 @@ fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, 
 
 // wind-gr-6-lesson.md :: ```blocks fence #5
 namespace wind_gr_6_lesson_blocks05 {
+let RPM = 0
+let revolutions = 0
 let start_time = 0
 let stop_time = 0
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
@@ -69,6 +79,8 @@ fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, 
 
 // wind-gr-6-lesson.md :: ```blocks fence #6
 namespace wind_gr_6_lesson_blocks06 {
+let RPM = 0
+let revolutions = 0
 let start_time = 0
 let stop_time = 0
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
@@ -84,6 +96,8 @@ fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, 
 
 // wind-gr-6-lesson.md :: ```blocks fence #7
 namespace wind_gr_6_lesson_blocks07 {
+let RPM = 0
+let revolutions = 0
 let start_time = 0
 let stop_time = 0
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
@@ -99,6 +113,8 @@ fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, 
 
 // wind-gr-6-lesson.md :: ```blocks fence #8
 namespace wind_gr_6_lesson_blocks08 {
+let RPM = 0
+let revolutions = 0
 let start_time = 0
 let stop_time = 0
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
@@ -114,6 +130,8 @@ fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, 
 
 // wind-gr-6-lesson.md :: ```blocks fence #9
 namespace wind_gr_6_lesson_blocks09 {
+let RPM = 0
+let revolutions = 0
 let start_time = 0
 let stop_time = 0
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
@@ -129,6 +147,8 @@ fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, 
 
 // wind-gr-6-lesson.md :: ```blocks fence #10
 namespace wind_gr_6_lesson_blocks10 {
+let RPM = 0
+let revolutions = 0
 let start_time = 0
 let stop_time = 0
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
@@ -144,6 +164,8 @@ fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, functio
 
 // wind-gr-6-lesson.md :: ```blocks fence #11
 namespace wind_gr_6_lesson_blocks11 {
+let RPM = 0
+let revolutions = 0
 let stop_time = 0
 let start_time = 0
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
@@ -159,6 +181,8 @@ fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, functio
 
 // wind-gr-6-lesson.md :: ```blocks fence #12
 namespace wind_gr_6_lesson_blocks12 {
+let RPM = 0
+let revolutions = 0
 let stop_time = 0
 let start_time = 0
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
@@ -177,6 +201,8 @@ input.onButtonPressed(Button.A, function () {
 
 // wind-gr-6-lesson.md :: ```blocks fence #13
 namespace wind_gr_6_lesson_blocks13 {
+let RPM = 0
+let revolutions = 0
 let stop_time = 0
 let start_time = 0
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
@@ -198,6 +224,8 @@ input.onButtonPressed(Button.B, function () {
 
 // wind-gr-6-lesson.md :: ```blocks fence #14
 namespace wind_gr_6_lesson_blocks14 {
+let RPM = 0
+let revolutions = 0
 let stop_time = 0
 let start_time = 0
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
@@ -219,6 +247,8 @@ input.onButtonPressed(Button.B, function () {
 
 // wind-gr-6-lesson.md :: ```blocks fence #15
 namespace wind_gr_6_lesson_blocks15 {
+let RPM = 0
+let revolutions = 0
 let stop_time = 0
 let start_time = 0
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
@@ -240,6 +270,8 @@ stop_time = 0
 
 // wind-gr-6-lesson.md :: ```blocks fence #16
 namespace wind_gr_6_lesson_blocks16 {
+let RPM = 0
+let revolutions = 0
 let stop_time = 0
 let start_time = 0
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
@@ -262,6 +294,8 @@ basic.showNumber(0)
 
 // wind-gr-6-lesson.md :: ```blocks fence #17
 namespace wind_gr_6_lesson_blocks17 {
+let RPM = 0
+let revolutions = 0
 let stop_time = 0
 let start_time = 0
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
@@ -284,6 +318,8 @@ basic.showNumber(0/1000)
 
 // wind-gr-6-lesson.md :: ```blocks fence #18
 namespace wind_gr_6_lesson_blocks18 {
+let RPM = 0
+let revolutions = 0
 let stop_time = 0
 let start_time = 0
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
@@ -330,6 +366,8 @@ basic.showNumber((stop_time - start_time)/1000)
 
 // wind-gr-6-lesson.md :: ```blocks fence #20
 namespace wind_gr_6_lesson_blocks20 {
+let RPM = 0
+let revolutions = 0
 let stop_time = 0
 let start_time = 0
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {

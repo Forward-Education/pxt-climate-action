@@ -4,27 +4,24 @@
 // ev-wildfire.md :: ```blocks fence #1
 namespace ev_wildfire_blocks01 {
 let IsDrivingEnabled = false
-let lightThreshold = 0
-let temperatureThreshold = 0
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.leftServo,
-)
+let lightThreshold = 100
+let temperatureThreshold = 25
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 }
 
 // ev-wildfire.md :: ```blocks fence #2
 namespace ev_wildfire_blocks02 {
 let IsDrivingEnabled = false
-let lightThreshold = 0
-let temperatureThreshold = 0
+let lightThreshold = 100
+let temperatureThreshold = 25
 fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 }
 
 // ev-wildfire.md :: ```blocks fence #3
 namespace ev_wildfire_blocks03 {
 let IsDrivingEnabled = false
-let lightThreshold = 0
-let temperatureThreshold = 0
+let lightThreshold = 100
+let temperatureThreshold = 25
 input.onButtonPressed(Button.A, function () {
 	
 })
@@ -40,13 +37,13 @@ basic.forever(function () {
 // ev-wildfire.md :: ```blocks fence #4
 namespace ev_wildfire_blocks04 {
 let IsDrivingEnabled = false
-let lightThreshold = 0
-let temperatureThreshold = 0
+let lightThreshold = 100
+let temperatureThreshold = 25
 input.onButtonPressed(Button.A, function () {
-    IsDrivingEnabled = 0
+    IsDrivingEnabled = false
 })
 input.onButtonPressed(Button.B, function () {
-    IsDrivingEnabled = 0
+    IsDrivingEnabled = false
 })
 
 fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
@@ -58,13 +55,13 @@ basic.forever(function () {
 // ev-wildfire.md :: ```blocks fence #5
 namespace ev_wildfire_blocks05 {
 let IsDrivingEnabled = false
-let lightThreshold = 0
-let temperatureThreshold = 0
+let lightThreshold = 100
+let temperatureThreshold = 25
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = true
 })
 input.onButtonPressed(Button.B, function () {
-    IsDrivingEnabled = 0
+    IsDrivingEnabled = false
 })
 fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
@@ -75,8 +72,8 @@ basic.forever(function () {
 // ev-wildfire.md :: ```blocks fence #6
 namespace ev_wildfire_blocks06 {
 let IsDrivingEnabled = false
-let lightThreshold = 0
-let temperatureThreshold = 0
+let lightThreshold = 100
+let temperatureThreshold = 25
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = true
 })
@@ -93,8 +90,8 @@ basic.forever(function () {
 // ev-wildfire.md :: ```blocks fence #7
 namespace ev_wildfire_blocks07 {
 let IsDrivingEnabled = false
-let lightThreshold = 0
-let temperatureThreshold = 0
+let lightThreshold = 100
+let temperatureThreshold = 25
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = true
 })
@@ -115,8 +112,8 @@ basic.forever(function () {
 // ev-wildfire.md :: ```blocks fence #8
 namespace ev_wildfire_blocks08 {
 let IsDrivingEnabled = false
-let lightThreshold = 0
-let temperatureThreshold = 0
+let lightThreshold = 100
+let temperatureThreshold = 25
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = true
 })
@@ -140,8 +137,8 @@ basic.forever(function () {
 
 // ev-wildfire.md :: ```blocks fence #9
 namespace ev_wildfire_blocks09 {
-let lightThreshold = 0
-let temperatureThreshold = 0
+let lightThreshold = 100
+let temperatureThreshold = 25
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = true
 })
@@ -168,8 +165,8 @@ basic.forever(function () {
 
 // ev-wildfire.md :: ```blocks fence #10
 namespace ev_wildfire_blocks10 {
-let lightThreshold = 0
-let temperatureThreshold = 0
+let lightThreshold = 100
+let temperatureThreshold = 25
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = true
 })
@@ -196,8 +193,8 @@ basic.forever(function () {
 
 // ev-wildfire.md :: ```blocks fence #11
 namespace ev_wildfire_blocks11 {
-let lightThreshold = 0
-let temperatureThreshold = 0
+let lightThreshold = 100
+let temperatureThreshold = 25
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = true
 })
@@ -224,8 +221,8 @@ basic.forever(function () {
 
 // ev-wildfire.md :: ```blocks fence #12
 namespace ev_wildfire_blocks12 {
-let lightThreshold = 0
-let temperatureThreshold = 0
+let lightThreshold = 100
+let temperatureThreshold = 25
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = true
 })
@@ -255,8 +252,8 @@ basic.forever(function () {
 
 // ev-wildfire.md :: ```blocks fence #13
 namespace ev_wildfire_blocks13 {
-let lightThreshold = 0
-let temperatureThreshold = 0
+let lightThreshold = 100
+let temperatureThreshold = 25
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = true
 })
@@ -287,8 +284,8 @@ basic.forever(function () {
 
 // ev-wildfire.md :: ```blocks fence #14
 namespace ev_wildfire_blocks14 {
-let lightThreshold = 0
-let temperatureThreshold = 0
+let lightThreshold = 100
+let temperatureThreshold = 25
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = true
 })
@@ -321,8 +318,8 @@ basic.forever(function () {
 
 // ev-wildfire.md :: ```blocks fence #15
 namespace ev_wildfire_blocks15 {
-let lightThreshold = 0
-let temperatureThreshold = 0
+let lightThreshold = 100
+let temperatureThreshold = 25
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = true
 })
@@ -355,8 +352,8 @@ basic.forever(function () {
 
 // ev-wildfire.md :: ```blocks fence #16
 namespace ev_wildfire_blocks16 {
-let lightThreshold = 0
-let temperatureThreshold = 0
+let lightThreshold = 100
+let temperatureThreshold = 25
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = true
 })
@@ -389,8 +386,8 @@ basic.forever(function () {
 
 // ev-wildfire.md :: ```blocks fence #17
 namespace ev_wildfire_blocks17 {
-let lightThreshold = 0
-let temperatureThreshold = 0
+let lightThreshold = 100
+let temperatureThreshold = 25
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = true
 })
@@ -423,8 +420,8 @@ basic.forever(function () {
 
 // ev-wildfire.md :: ```blocks fence #18
 namespace ev_wildfire_blocks18 {
-let lightThreshold = 0
-let temperatureThreshold = 0
+let lightThreshold = 100
+let temperatureThreshold = 25
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = true
 })
@@ -457,8 +454,8 @@ basic.forever(function () {
 
 // ev-wildfire.md :: ```blocks fence #19
 namespace ev_wildfire_blocks19 {
-let lightThreshold = 0
-let temperatureThreshold = 0
+let lightThreshold = 100
+let temperatureThreshold = 25
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = true
 })
@@ -491,8 +488,8 @@ basic.forever(function () {
 
 // ev-wildfire.md :: ```blocks fence #20
 namespace ev_wildfire_blocks20 {
-let lightThreshold = 0
-let temperatureThreshold = 0
+let lightThreshold = 100
+let temperatureThreshold = 25
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = true
 })
@@ -525,8 +522,8 @@ basic.forever(function () {
 
 // ev-wildfire.md :: ```blocks fence #21
 namespace ev_wildfire_blocks21 {
-let lightThreshold = 0
-let temperatureThreshold = 0
+let lightThreshold = 100
+let temperatureThreshold = 25
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = true
 })
@@ -559,8 +556,8 @@ basic.forever(function () {
 
 // ev-wildfire.md :: ```blocks fence #22
 namespace ev_wildfire_blocks22 {
-let lightThreshold = 0
-let temperatureThreshold = 0
+let lightThreshold = 100
+let temperatureThreshold = 25
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = true
 })
@@ -593,8 +590,8 @@ basic.forever(function () {
 
 // ev-wildfire.md :: ```blocks fence #23
 namespace ev_wildfire_blocks23 {
-let lightThreshold = 0
-let temperatureThreshold = 0
+let lightThreshold = 100
+let temperatureThreshold = 25
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = true
 })

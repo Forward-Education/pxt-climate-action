@@ -4,43 +4,30 @@
 // robo-delivery-11-12.md :: ```blocks fence #1
 namespace robo_delivery_11_12_blocks01 {
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.leftServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 }
 
 // robo-delivery-11-12.md :: ```blocks fence #2
 namespace robo_delivery_11_12_blocks02 {
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 }
 
 // robo-delivery-11-12.md :: ```blocks fence #3
 namespace robo_delivery_11_12_blocks03 {
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (true) {
             	
             }
     })
-`
 }
 
 // robo-delivery-11-12.md :: ```blocks fence #4
 namespace robo_delivery_11_12_blocks04 {
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
             	
@@ -55,10 +42,7 @@ input.onButtonPressed(Button.A, function () {
 	
 })
 
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
             	
@@ -75,10 +59,7 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
 	
 })
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
             	
@@ -89,12 +70,12 @@ basic.forever(function () {
 // robo-delivery-11-12.md :: ```blocks fence #7
 namespace robo_delivery_11_12_blocks07 {
 input.onButtonPressed(Button.A, function () {
-    IsDrivingEnabled = 0
+    IsDrivingEnabled = false
 })
 input.onButtonPressed(Button.B, function () {
 	
 })
-let IsDrivingEnabled = 0
+let IsDrivingEnabled = false
 fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {

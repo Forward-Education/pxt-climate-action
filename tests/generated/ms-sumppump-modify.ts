@@ -31,7 +31,7 @@ basic.forever(function () {
 
 // ms-sumppump-modify.md :: ```blocks fence #1
 namespace ms_sumppump_modify_blocks01 {
-let threshold = 0
+let threshold = 25
 basic.forever(function () {
 // @highlight
     if (fwdSensors.moisture1.isPastThreshold(20, fwdEnums.OverUnder.Over)) {
@@ -54,7 +54,7 @@ basic.forever(function () {
 
 // ms-sumppump-modify.md :: ```blocks fence #3
 namespace ms_sumppump_modify_blocks03 {
-let threshold = 0
+let threshold = 25
 input.onButtonPressed(Button.A, function () {
 // @highlight
 threshold += -5
@@ -63,7 +63,7 @@ threshold += -5
 
 // ms-sumppump-modify.md :: ```blocks fence #4
 namespace ms_sumppump_modify_blocks04 {
-let threshold = 0
+let threshold = 25
 input.onButtonPressed(Button.A, function () {
     threshold += -5
 // @highlight
@@ -77,7 +77,7 @@ basic.pause(1000)
 
 // ms-sumppump-modify.md :: ```blocks fence #5
 namespace ms_sumppump_modify_blocks05 {
-let threshold = 0
+let threshold = 25
 input.onButtonPressed(Button.B, function () {
 // @highlight
    threshold += 5
@@ -89,7 +89,7 @@ basic.clearScreen()
 
 // ms-sumppump-modify.md :: ```blocks fence #6
 namespace ms_sumppump_modify_blocks06 {
-let threshold = 0
+let threshold = 25
 basic.forever(function () {
     if (fwdSensors.moisture1.isPastThreshold(threshold, fwdEnums.OverUnder.Over)) {
 // @highlight
@@ -100,7 +100,7 @@ basic.forever(function () {
 
 // ms-sumppump-modify.md :: ```blocks fence #7
 namespace ms_sumppump_modify_blocks07 {
-let threshold = 0
+let threshold = 25
 basic.forever(function () {
     if (fwdSensors.moisture1.isPastThreshold(threshold, fwdEnums.OverUnder.Over)) {
 // @highlight

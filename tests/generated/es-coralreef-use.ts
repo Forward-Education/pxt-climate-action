@@ -42,6 +42,7 @@ basic.forever(function () {
 
 // es-coralreef-use.md :: ```block fence #2
 namespace es_coralreef_use_block02 {
+let temperature = 28
 if (temperature > 30) {
         fwdLights.ledRing1.setAllPixelsColor(0xffffff)
     } else {

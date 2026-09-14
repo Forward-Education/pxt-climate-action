@@ -30,7 +30,7 @@ basic.forever(function () {
 
 // ms-smartbin-modify.md :: ```blocks fence #1
 namespace ms_smartbin_modify_blocks01 {
-let fillLevel = 75
+let fillLevel = 0
 input.onButtonPressed(Button.B, function () {
 // @highlight
  fwdMotors.setAngle(fwdBase.rightServo, 45)
@@ -39,7 +39,7 @@ input.onButtonPressed(Button.B, function () {
 
 // ms-smartbin-modify.md :: ```blocks fence #2
 namespace ms_smartbin_modify_blocks02 {
-let fillLevel = 75
+let fillLevel = 0
 basic.forever(function () {
       if (fwdSensors.sonar1.isPastThreshold(0.03, fwdEnums.OverUnder.Under)) {
         fwdLights.ledRing1.setAllPixelsColor(0xff0000)
@@ -52,7 +52,7 @@ basic.forever(function () {
 
 // ms-smartbin-modify.md :: ```blocks fence #3
 namespace ms_smartbin_modify_blocks03 {
-let fillLevel = 75
+let fillLevel = 0
 basic.forever(function () {
     if (fwdSensors.sonar1.isPastThreshold(0.03, fwdEnums.OverUnder.Under)) {
         fwdLights.ledRing1.setAllPixelsColor(0xff0000)
@@ -72,8 +72,8 @@ else {
 
 // ms-smartbin-modify.md :: ```blocks fence #4
 namespace ms_smartbin_modify_blocks04 {
-let fillLevel = 75
-{
+let fillLevel = 0
+basic.forever(function () {
     if (fwdSensors.sonar1.isPastThreshold(0.03, fwdEnums.OverUnder.Under)) {
         fwdLights.ledRing1.setAllPixelsColor(0xff0000)
         fillLevel = 75
@@ -85,9 +85,9 @@ let fillLevel = 75
         fillLevel = 25
         // @highlight
         basic.pause(500)
-    }
     } else {
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fillLevel = 0
     }
+})
 }

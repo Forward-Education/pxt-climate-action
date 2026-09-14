@@ -54,6 +54,7 @@ basic.forever(function () {
 // ms-smarthome-use.md :: ```blocks fence #1
 namespace ms_smarthome_use_blocks01 {
 let Temperature = 0
+let openDoor = ""
 // @highlight
 radio.setGroup(1)
 
@@ -81,6 +82,7 @@ radio.onReceivedNumber(function (receivedNumber) {
 // ms-smarthome-use.md :: ```blocks fence #2
 namespace ms_smarthome_use_blocks02 {
 let Temperature = 0
+let openDoor = ""
 input.onButtonPressed(Button.A, function () {
     Temperature += -1
     basic.showArrow(ArrowNames.South)
@@ -103,6 +105,7 @@ basic.forever(function () {
 // ms-smarthome-use.md :: ```blocks fence #3
 namespace ms_smarthome_use_blocks03 {
 let Temperature = 0
+let openDoor = ""
 input.onButtonPressed(Button.B, function () {
     Temperature += 1
     basic.showArrow(ArrowNames.North)
@@ -125,6 +128,7 @@ basic.forever(function () {
 // ms-smarthome-use.md :: ```blocks fence #4
 namespace ms_smarthome_use_blocks04 {
 let Temperature = 0
+let openDoor = ""
 input.onButtonPressed(Button.B, function () {
     Temperature += 1
     basic.showArrow(ArrowNames.North)
@@ -147,6 +151,7 @@ basic.forever(function () {
 // ms-smarthome-use.md :: ```blocks fence #5
 namespace ms_smarthome_use_blocks05 {
 let Temperature = 0
+let openDoor = ""
 input.onButtonPressed(Button.AB, function () {
     basic.showIcon(IconNames.House)
     // @highlight
@@ -170,6 +175,7 @@ radio.onReceivedString(function (receivedString) {
 // ms-smarthome-use.md :: ```blocks fence #6
 namespace ms_smarthome_use_blocks06 {
 let Temperature = 0
+let openDoor = ""
 input.onButtonPressed(Button.AB, function () {
     basic.showIcon(IconNames.House)
     // @highlight

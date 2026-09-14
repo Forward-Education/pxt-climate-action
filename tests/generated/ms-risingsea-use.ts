@@ -17,7 +17,7 @@ basic.forever(function () {
 
 // ms-risingsea-use.md :: ```blocks fence #1
 namespace ms_risingsea_use_blocks01 {
-let WaterLevel = fwdSensors.sonar1.distance()
+let WaterLevel = 0
 basic.forever(function () {
     WaterLevel = fwdSensors.sonar1.distance()
     basic.pause(1000)

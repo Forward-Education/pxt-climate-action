@@ -104,7 +104,6 @@ basic.forever(function () {
             	
             }
     })
-`
 ```
 
 ## Step 10

@@ -28,7 +28,7 @@ basic.forever(function () {
 // gr11-electriccar-modify.md :: ```blocks fence #1
 namespace gr11_electriccar_modify_blocks01 {
 basic.forever(function () {
-    let IsDrivingEnabled = 0
+    let IsDrivingEnabled = false
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             // @highlight
@@ -47,6 +47,7 @@ basic.forever(function () {
 
 // gr11-electriccar-modify.md :: ```block fence #1
 namespace gr11_electriccar_modify_block01 {
+let IsDrivingEnabled = false
 if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             // TODO: calibrate duration -- was turn(10) degrees in place
             fwdMotors.drive(50, 50, 1000)
@@ -57,6 +58,7 @@ if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
 
 // gr11-electriccar-modify.md :: ```block fence #2
 namespace gr11_electriccar_modify_block02 {
+let IsDrivingEnabled = false
 // @highlight
 if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
             // TODO: calibrate duration -- was turn(10) degrees in place
@@ -68,6 +70,7 @@ if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
 
 // gr11-electriccar-modify.md :: ```block fence #3
 namespace gr11_electriccar_modify_block03 {
+let IsDrivingEnabled = false
 if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             // @highlight
             basic.pause(1000)
@@ -80,6 +83,7 @@ if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
 
 // gr11-electriccar-modify.md :: ```block fence #4
 namespace gr11_electriccar_modify_block04 {
+let IsDrivingEnabled = false
 if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             basic.pause(1000)
             // TODO: calibrate duration -- was turn(15) degrees in place
@@ -93,6 +97,7 @@ if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
 
 // gr11-electriccar-modify.md :: ```block fence #5
 namespace gr11_electriccar_modify_block05 {
+let IsDrivingEnabled = false
 if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             basic.pause(1000)
             // TODO: calibrate duration -- was turn(15) degrees in place
@@ -107,6 +112,7 @@ if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
 
 // gr11-electriccar-modify.md :: ```block fence #6
 namespace gr11_electriccar_modify_block06 {
+let IsDrivingEnabled = false
 if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             // @highlight
             fwdMotors.drive(0, 0, 0)

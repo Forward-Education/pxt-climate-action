@@ -151,7 +151,7 @@ input.onButtonPressed(Button.AB, function () {
         // @highlight
     basic.clearScreen()
    // @highlight
-    basic.showNumber()
+    basic.showNumber(Math.round(fwdSensors.moisture1.moistureLevel()))
 })
 }
 
@@ -167,7 +167,7 @@ input.onButtonPressed(Button.AB, function () {
         `)
     basic.clearScreen()
     //@highlight
-    basic.showNumber(Math.round())
+    basic.showNumber(Math.round(fwdSensors.moisture1.moistureLevel()))
 })
 }
 

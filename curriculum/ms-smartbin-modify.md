@@ -184,7 +184,7 @@ What code blocks should we use to tell a Waste Management Specialist when our bi
 hint~
 
 ```blocks
-{
+basic.forever(function () {
     if (fwdSensors.sonar1.isPastThreshold(0.03, fwdEnums.OverUnder.Under)) {
         fwdLights.ledRing1.setAllPixelsColor(0xff0000)
         fillLevel = 75
@@ -196,11 +196,11 @@ hint~
         fillLevel = 25
         // @highlight
         basic.pause(500)
-    }
     } else {
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fillLevel = 0
     }
+})
 ```
 
 ## Step 10

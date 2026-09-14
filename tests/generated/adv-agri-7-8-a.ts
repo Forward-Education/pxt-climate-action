@@ -3,8 +3,8 @@
 
 // adv-agri-7-8-a.md :: ```blocks fence #1
 namespace adv_agri_7_8_a_blocks01 {
-let plant_A = 0
-let plant_B = 0
+let plant_A = 5000
+let plant_B = 2000
 let run_pump_count = 0
 let timer_start = 0
 let timer_stop = 0
@@ -21,8 +21,8 @@ basic.forever(function () {
 
 // adv-agri-7-8-a.md :: ```blocks fence #2
 namespace adv_agri_7_8_a_blocks02 {
-let plant_A = 0
-let plant_B = 0
+let plant_A = 5000
+let plant_B = 2000
 let run_pump_count = 0
 let timer_start = 0
 let timer_stop = 0
@@ -39,8 +39,8 @@ basic.forever(function () {
 
 // adv-agri-7-8-a.md :: ```blocks fence #3
 namespace adv_agri_7_8_a_blocks03 {
-let plant_A = 0
-let plant_B = 0
+let plant_A = 5000
+let plant_B = 2000
 let run_pump_count = 0
 let timer_start = 0
 let timer_stop = 0
@@ -56,8 +56,8 @@ basic.forever(function () {
 
 // adv-agri-7-8-a.md :: ```blocks fence #4
 namespace adv_agri_7_8_a_blocks04 {
-let plant_A = 0
-let plant_B = 0
+let plant_A = 5000
+let plant_B = 2000
 let run_pump_count = 0
 let timer_start = 0
 let timer_stop = 0
@@ -72,8 +72,8 @@ basic.forever(function () {
 
 // adv-agri-7-8-a.md :: ```blocks fence #5
 namespace adv_agri_7_8_a_blocks05 {
-let plant_A = 0
-let plant_B = 0
+let plant_A = 5000
+let plant_B = 2000
 let run_pump_count = 0
 let timer_start = 0
 let timer_stop = 0
@@ -90,8 +90,8 @@ basic.forever(function () {
 
 // adv-agri-7-8-a.md :: ```blocks fence #6
 namespace adv_agri_7_8_a_blocks06 {
-let plant_A = 0
-let plant_B = 0
+let plant_A = 5000
+let plant_B = 2000
 let run_pump_count = 0
 let timer_start = 0
 let timer_stop = 0
@@ -110,8 +110,8 @@ basic.forever(function () {
 
 // adv-agri-7-8-a.md :: ```blocks fence #7
 namespace adv_agri_7_8_a_blocks07 {
-let plant_A = 0
-let plant_B = 0
+let plant_A = 5000
+let plant_B = 2000
 let run_pump_count = 0
 let timer_start = 0
 let timer_stop = 0
@@ -130,8 +130,8 @@ basic.forever(function () {
 
 // adv-agri-7-8-a.md :: ```blocks fence #8
 namespace adv_agri_7_8_a_blocks08 {
-let plant_A = 0
-let plant_B = 0
+let plant_A = 5000
+let plant_B = 2000
 let run_pump_count = 0
 let timer_start = 0
 let timer_stop = 0
@@ -149,7 +149,7 @@ basic.forever(function () {
 
 // adv-agri-7-8-a.md :: ```blocks fence #9
 namespace adv_agri_7_8_a_blocks09 {
-let plant_B = 0
+let plant_B = 2000
 let run_pump_count = 0
 let timer_start = 0
 let timer_stop = 0

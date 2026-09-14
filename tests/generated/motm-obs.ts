@@ -3,26 +3,17 @@
 
 // motm-obs.md :: ```blocks fence #1
 namespace motm_obs_blocks01 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.leftServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 }
 
 // motm-obs.md :: ```blocks fence #2
 namespace motm_obs_blocks02 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 }
 
 // motm-obs.md :: ```blocks fence #3
 namespace motm_obs_blocks03 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (true) {}
     else{}
@@ -31,10 +22,7 @@ basic.forever(function () {
 
 // motm-obs.md :: ```blocks fence #4
 namespace motm_obs_blocks04 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (fwdSensors.sonar1.isPastThreshold(0, fwdEnums.OverUnder.Over)) {
     	
@@ -46,10 +34,7 @@ basic.forever(function () {
 
 // motm-obs.md :: ```blocks fence #5
 namespace motm_obs_blocks05 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
         	
@@ -62,10 +47,7 @@ basic.forever(function () {
 
 // motm-obs.md :: ```blocks fence #6
 namespace motm_obs_blocks06 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
         fwdMotors.drive(0, 0, 0)
@@ -78,10 +60,7 @@ basic.forever(function () {
 
 // motm-obs.md :: ```blocks fence #7
 namespace motm_obs_blocks07 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
         fwdMotors.drive(0, 0, 0)
@@ -95,10 +74,7 @@ basic.forever(function () {
 
 // motm-obs.md :: ```blocks fence #8
 namespace motm_obs_blocks08 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
         fwdMotors.drive(0, 0, 0)
@@ -113,10 +89,7 @@ basic.forever(function () {
 
 // motm-obs.md :: ```blocks fence #9
 namespace motm_obs_blocks09 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
         fwdMotors.drive(0, 0, 0)
@@ -132,10 +105,7 @@ basic.forever(function () {
 
 // motm-obs.md :: ```blocks fence #10
 namespace motm_obs_blocks10 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
         fwdMotors.drive(0, 0, 0)
@@ -153,10 +123,7 @@ basic.forever(function () {
 
 // motm-obs.md :: ```blocks fence #11
 namespace motm_obs_blocks11 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
         fwdMotors.drive(0, 0, 0)
@@ -174,10 +141,7 @@ basic.forever(function () {
 
 // motm-obs.md :: ```blocks fence #12
 namespace motm_obs_blocks12 {
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
         fwdMotors.drive(0, 0, 0)

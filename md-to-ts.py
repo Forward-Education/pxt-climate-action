@@ -123,6 +123,63 @@ def namespace_for(slug: str, kind: str, index: int) -> str:
 # ||variables:set list to|| are ignored rather than guessed at.
 VARIABLE_MACRO_RE = re.compile(r"\|\|[Vv]ariables:([A-Za-z_$][\w$]*)\|\|")
 
+# A tutorial declares a variable once, in the step that introduces it, and later steps
+# show excerpts that use it without repeating the declaration. Those excerpts are still
+# valid inside the student's whole program, so the declaration is carried across.
+EXPLICIT_DECL_RE = re.compile(r"^[ \t]*let[ \t]+([A-Za-z_$][\w$]*)[ \t]*=[ \t]*([^\n]+)$", re.M)
+
+
+def find_calls(code: str):
+    """Yield (start, end, callee, args) for every call, matching nested parens."""
+    for m in re.finditer(r"\b([A-Za-z_$][\w$.]*)\(", code):
+        depth, i = 1, m.end()
+        while i < len(code) and depth:
+            depth += (code[i] == "(") - (code[i] == ")")
+            i += 1
+        if not depth:
+            yield m.start(), i, m.group(1), code[m.end():i - 1]
+
+
+def split_args(args: str):
+    """Split an argument list on top-level commas only."""
+    parts, depth, cur = [], 0, ""
+    for ch in args:
+        if ch == "," and depth == 0:
+            parts.append(cur); cur = ""; continue
+        depth += (ch in "([{") - (ch in ")]}")
+        cur += ch
+    parts.append(cur)
+    return parts
+
+
+def fill_blank_slots(code: str, answers: dict) -> str:
+    """Fill a tutorial's deliberately empty argument slots for the test build only.
+
+    A step that asks the student to drag a value into a socket renders as `showNumber()`
+    or `setAngle(servo, )`, which cannot compile. The value is not invented: a later
+    step shows the same call completed, and that argument list is reused here. The
+    markdown keeps its blank, so the tutorial still poses the question.
+
+    A call with no completed counterpart -- `clearScreen()`, `dial1.position()` -- is
+    genuinely zero-argument and is left alone.
+    """
+    for start, end, callee, args in sorted(find_calls(code), reverse=True):
+        if callee not in answers:
+            continue
+        blank = not args.strip() or any(not p.strip() for p in split_args(args))
+        if blank:
+            code = code[:start] + f"{callee}({answers[callee]})" + code[end:]
+    return code
+
+
+def collect_answers(all_code: str) -> dict:
+    """Map each callee to a fully-specified argument list seen somewhere in the tutorial."""
+    answers = {}
+    for _, _, callee, args in find_calls(all_code):
+        if args.strip() and all(p.strip() for p in split_args(args)):
+            answers.setdefault(callee, args)
+    return answers
+
 
 def extract(path: str):
     """Return (snippets, needs_extra_deps) for one markdown file.
@@ -143,9 +200,18 @@ def extract(path: str):
             for name, value in implicit_variables(code).items():
                 shared.setdefault(name, value)
 
+    all_code = "\n".join(c for k, c in fences if k not in RAW_FENCES)
+
+    # An explicit `let` anywhere in the tutorial is authoritative: it beats any value
+    # guessed from a bare assignment, and it covers later excerpts that use the
+    # variable without repeating its declaration.
+    for name, value in EXPLICIT_DECL_RE.findall(all_code):
+        value = value.strip()
+        balanced = all(value.count(a) == value.count(b) for a, b in ("()", "[]", "{}"))
+        shared[name] = value if balanced else "0"
+
     # Variables the snippets only ever read are invisible to the assignment scan, so
     # fall back to the names the tutorial prose declares.
-    all_code = "\n".join(c for k, c in fences if k not in RAW_FENCES)
     for name in VARIABLE_MACRO_RE.findall(content):
         if re.search(rf"\b{re.escape(name)}\b", all_code):
             shared.setdefault(name, "0")
@@ -162,11 +228,20 @@ def extract(path: str):
         if re.search(rf"^\s*{re.escape(name)}\s*=\s*(true|false)\b", all_code, re.M):
             shared[name] = "false"
 
+    answers = collect_answers(all_code)
+    # A `0` sitting in a boolean socket is the editor's default numeric shadow, not a
+    # value the author chose; the variable's real type comes from the assignments.
+    booleans = {n for n, v in shared.items() if v == "false"}
+
     snippets = []
     counters = {}
     for kind, code in fences:
         counters[kind] = counters.get(kind, 0) + 1
         if kind not in RAW_FENCES:
+            code = fill_blank_slots(code, answers)
+            for name in booleans:
+                code = re.sub(rf"^(\s*)(let\s+)?{re.escape(name)}\s*=\s*0\s*$",
+                              rf"\g<1>\g<2>{name} = false", code, flags=re.M)
             code = declare_implicit_variables(code, shared)
         snippets.append((kind, counters[kind], code))
 

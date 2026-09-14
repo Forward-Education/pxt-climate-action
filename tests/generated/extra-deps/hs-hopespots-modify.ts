@@ -49,6 +49,7 @@ basic.forever(function () {
 // hs-hopespots-modify.md :: ```block fence #1
 namespace hs_hopespots_modify_block01 {
 let angle = 0
+let stationOn = false
 function rotateSensor () {
     fwdBase.rightServo.setAngleAndWait(angle)
     // @highlight
@@ -62,6 +63,7 @@ function rotateSensor () {
 // hs-hopespots-modify.md :: ```block fence #2
 namespace hs_hopespots_modify_block02 {
 let angle = 0
+let stationOn = false
 function rotateSensor () {
     fwdBase.rightServo.setAngleAndWait(angle)
     angle += 20
@@ -75,6 +77,7 @@ function rotateSensor () {
 // hs-hopespots-modify.md :: ```block fence #3
 namespace hs_hopespots_modify_block03 {
 let angle = 0
+let stationOn = false
 // @hide
 function rotateSensor () {
     fwdBase.rightServo.setAngleAndWait(angle)
@@ -97,6 +100,7 @@ function rotateSensor () {
 // hs-hopespots-modify.md :: ```block fence #4
 namespace hs_hopespots_modify_block04 {
 let angle = 0
+let stationOn = false
 // @hide
 function logShip () {
     radio.sendString("ALERT")
@@ -131,6 +135,7 @@ function rotateSensor () {
 // hs-hopespots-modify.md :: ```block fence #5
 namespace hs_hopespots_modify_block05 {
 let angle = 0
+let stationOn = false
 // @hide
 function rotateSensor () {
     fwdBase.rightServo.setAngleAndWait(angle)
@@ -159,6 +164,7 @@ function rotateSensor () {
 // hs-hopespots-modify.md :: ```block fence #6
 namespace hs_hopespots_modify_block06 {
 let angle = 0
+let stationOn = false
 // @hide
 function rotateSensor () {
     fwdBase.rightServo.setAngleAndWait(angle)
@@ -187,6 +193,7 @@ function rotateSensor () {
 // hs-hopespots-modify.md :: ```blocks fence #1
 namespace hs_hopespots_modify_blocks01 {
 let angle = 0
+let stationOn = false
 // @hide
 function rotateSensor () {
     fwdBase.rightServo.setAngleAndWait(angle)
@@ -227,6 +234,7 @@ basic.forever(function () {
 // hs-hopespots-modify.md :: ```blocks fence #2
 namespace hs_hopespots_modify_blocks02 {
 let angle = 0
+let stationOn = false
 input.onButtonPressed(Button.AB, function () {
     datalogger.deleteLog()
 })
