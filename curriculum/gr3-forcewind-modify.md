@@ -1,7 +1,7 @@
 # The Powerful Force of Wind - Modify Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ## Activity 1: Build Your Project @showdialog
@@ -200,7 +200,7 @@ The new block is hashed because we haven't told the micro:bit _when_ it should r
 
 ```block
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, function () {
-
+	
 })
 ```
 

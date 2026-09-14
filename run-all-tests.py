@@ -1,216 +1,168 @@
-import os
-import json
-import subprocess
+"""Compile every tutorial snippet to catch breakage from dependency changes.
+
+Strategy: one batched `mkc build -j` over all generated snippet files rather than a
+build per file. The JS target runs the same pxt TypeScript frontend as the native
+build -- identical type checking and API resolution -- but skips ARM codegen and the
+CODAL link, which is what makes batching viable at all. Batching ~730 snippets into
+one native binary would overflow micro:bit flash and fail for reasons that have
+nothing to do with the tutorials.
+
+To keep the coverage the JS target cannot give (flash size, C++ shim linkage), the
+hand-written API smoke test in tests/test.ts is additionally built natively, on its own.
+
+When a batch fails, it is bisected to attribute the error to a single tutorial.
+
+Usage:
+    python run-all-tests.py
+"""
+
+import copy
 import glob
+import json
+import os
 import shutil
-import sys # Import the sys module to exit with a status code
+import signal
+import subprocess
+import sys
+import tempfile
 
-# --- Configuration ---
-PXT_JSON_PATH = 'pxt.json'  # Path to your pxt.json file
-TESTS_DIR = 'tests'         # Directory containing your test TypeScript files
-MKC_COMMAND = 'mkc'         # The command to execute (e.g., 'mkc', 'npm run build', etc.)
+PXT_JSON = "pxt.json"
+SMOKE_TEST = "tests/test.ts"
+GENERATED_DIR = "tests/generated"
+EXTRA_DEPS_DIR = "tests/generated/extra-deps"
 
-def find_ts_files(directory):
-    """
-    Recursively finds all TypeScript files (.ts) in the given directory.
+# Tutorials that reach outside this extension's dependency set compile only with
+# these added. The overlay is applied to a temporary pxt.json and never committed,
+# so what users install is unchanged.
+EXTRA_DEPS_OVERLAY = {"datalogger": "*", "radio": "*", "microphone": "*"}
 
-    Args:
-        directory (str): The path to the directory to search.
+_original_pxt_json = None
 
-    Returns:
-        list: A list of absolute paths to .ts files.
-    """
-    ts_files = []
-    # Use glob to find all .ts files recursively
-    # os.path.join is used to ensure cross-platform compatibility for paths
-    search_pattern = os.path.join(directory, '**', '*.ts')
-    for file_path in glob.glob(search_pattern, recursive=True):
-        ts_files.append(file_path)
-    return ts_files
 
-def read_pxt_json(file_path):
-    """
-    Reads the pxt.json file.
+def restore_pxt_json(*_args):
+    """Put pxt.json back. Registered for normal exit and for signals."""
+    if _original_pxt_json is not None:
+        with open(PXT_JSON, "w", encoding="utf-8") as f:
+            json.dump(_original_pxt_json, f, indent=4)
+            f.write("\n")
 
-    Args:
-        file_path (str): The path to the pxt.json file.
 
-    Returns:
-        dict: The parsed JSON content of the pxt.json file.
+def _signal_handler(signum, frame):
+    restore_pxt_json()
+    sys.exit(130)
 
-    Raises:
-        FileNotFoundError: If pxt.json does not exist.
-        json.JSONDecodeError: If pxt.json is not valid JSON.
-    """
-    if not os.path.exists(file_path):
-        raise FileNotFoundError(f"Error: {file_path} not found.")
-    try:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            return json.load(f)
-    except json.JSONDecodeError as e:
-        raise json.JSONDecodeError(f"Error parsing {file_path}: {e}", e.doc, e.pos)
 
-def write_pxt_json(file_path, data):
-    """
-    Writes the given data back to the pxt.json file.
+def ts_files(directory, recursive=False):
+    pattern = os.path.join(directory, "**", "*.ts") if recursive else os.path.join(directory, "*.ts")
+    return sorted(p.replace(os.path.sep, "/") for p in glob.glob(pattern, recursive=recursive))
 
-    Args:
-        file_path (str): The path to the pxt.json file.
-        data (dict): The dictionary to write as JSON.
-    """
-    with open(file_path, 'w', encoding='utf-8') as f:
-        json.dump(data, f, indent=4)
-        f.write('\n') # Ensure the file ends with a newline
 
-def run_mkc_command():
-    """
-    Executes the mkc command in the current working directory.
-    Uses shell=True to allow the system's PATH to be used, which can resolve
-    "command not found" issues if the command is accessible in the terminal
-    but not directly in the script's environment.
-    """
-    print(f"\n--- Running command: {MKC_COMMAND} ---")
-    sys.stdout.flush() # Flush print buffer
-    try:
-        # Using subprocess.run for better control over output and error handling
-        # capture_output=True captures stdout and stderr
-        # text=True decodes stdout/stderr as text
-        # check=True raises CalledProcessError if the command returns a non-zero exit code
-        # shell=True allows the command to be executed through the shell,
-        # which can help find commands in the system's PATH.
-        result = subprocess.run(
-            MKC_COMMAND, # Pass command as a single string when shell=True
-            capture_output=True,
-            text=True,
-            check=True,
-            shell=True # Key change: Run through the shell
-        )
-        print("Command output:")
-        print(result.stdout)
-        if result.stderr:
-            print("Command errors (stderr):")
-            print(result.stderr)
-        print("Command executed successfully.")
-        sys.stdout.flush() # Flush print buffer
-        return True
-    except FileNotFoundError:
-        print(f"Error: Command '{MKC_COMMAND}' not found. "
-              "Please ensure it's installed and in your system's PATH.")
-        sys.stdout.flush() # Flush print buffer
-        return False
-    except subprocess.CalledProcessError as e:
-        print(f"Error: Command '{MKC_COMMAND}' failed with exit code {e.returncode}")
-        print("STDOUT:")
-        print(e.stdout)
-        print("STDERR:")
-        print(e.stderr)
-        sys.stdout.flush() # Flush print buffer
-        return False
-    except Exception as e:
-        print(f"An unexpected error occurred while running '{MKC_COMMAND}': {e}")
-        sys.stdout.flush() # Flush print buffer
-        return False
+def build(test_files, native=False, extra_deps=None):
+    """Set testFiles, run mkc, return (ok, combined_output)."""
+    config = copy.deepcopy(_original_pxt_json)
+    config["testFiles"] = test_files
+    if extra_deps:
+        config["dependencies"] = {**config["dependencies"], **extra_deps}
+
+    with open(PXT_JSON, "w", encoding="utf-8") as f:
+        json.dump(config, f, indent=4)
+        f.write("\n")
+
+    cmd = ["mkc", "build"] + ([] if native else ["-j"])
+    result = subprocess.run(cmd, capture_output=True, text=True, shell=True)
+    return result.returncode == 0, (result.stdout or "") + (result.stderr or "")
+
+
+def bisect(test_files, extra_deps=None):
+    """Narrow a failing batch down to the individual files that fail."""
+    if len(test_files) == 1:
+        return test_files
+
+    mid = len(test_files) // 2
+    halves = [test_files[:mid], test_files[mid:]]
+    culprits = []
+    for half in halves:
+        ok, _ = build(half, extra_deps=extra_deps)
+        if not ok:
+            culprits.extend(bisect(half, extra_deps=extra_deps))
+
+    # Both halves passing individually means the failure needs the whole set --
+    # a cross-file collision rather than one bad snippet.
+    return culprits or test_files
+
+
+def run_pass(label, test_files, extra_deps=None):
+    """Run one batched pass; bisect and report on failure. Returns list of failures."""
+    if not test_files:
+        print(f"[{label}] no test files; skipping")
+        return []
+
+    print(f"[{label}] building {len(test_files)} file(s)...")
+    ok, output = build(test_files, extra_deps=extra_deps)
+    if ok:
+        print(f"[{label}] OK")
+        return []
+
+    print(f"[{label}] FAILED -- bisecting to attribute the error")
+    culprits = bisect(test_files, extra_deps=extra_deps)
+    for culprit in culprits:
+        _, detail = build([culprit], extra_deps=extra_deps)
+        print(f"\n--- {culprit} ---")
+        print(detail.strip())
+    return culprits
+
 
 def main():
-    """
-    Main function to orchestrate the test execution.
-    """
-    print("Script started.") # Initial print to confirm script execution
-    sys.stdout.flush() # Flush print buffer immediately
+    global _original_pxt_json
 
-    original_pxt_content = None
-    failed_tests = [] # List to store paths of tests that fail mkc command
+    if not os.path.exists(PXT_JSON):
+        print(f"error: {PXT_JSON} not found; run from the repo root", file=sys.stderr)
+        return 1
+
+    with open(PXT_JSON, encoding="utf-8") as f:
+        _original_pxt_json = json.load(f)
+
+    signal.signal(signal.SIGINT, _signal_handler)
+    signal.signal(signal.SIGTERM, _signal_handler)
+
+    generated = ts_files(GENERATED_DIR)
+    extra_deps = ts_files(EXTRA_DEPS_DIR)
+
+    if not generated and not extra_deps:
+        print("error: no generated tests found; run `python md-to-ts.py` first", file=sys.stderr)
+        return 1
+
+    failures = []
     try:
-        # 1. Read and backup the original pxt.json content
-        print(f"Reading original {PXT_JSON_PATH}...")
-        sys.stdout.flush() # Flush print buffer
-        original_pxt_content = read_pxt_json(PXT_JSON_PATH)
-        print("Original pxt.json backed up.")
-        sys.stdout.flush() # Flush print buffer
+        # Pass 1: every snippet that compiles against the shipped dependency set,
+        # alongside the hand-written smoke test.
+        failures += run_pass("snippets", [SMOKE_TEST] + generated)
 
-        # 2. Find all TypeScript test files
-        print(f"Searching for .ts files in '{TESTS_DIR}' directory...")
-        sys.stdout.flush() # Flush print buffer
-        ts_files = find_ts_files(TESTS_DIR)
+        # Pass 2: tutorials needing datalogger/radio, under a temporary overlay.
+        failures += run_pass("extra-deps", extra_deps, extra_deps=EXTRA_DEPS_OVERLAY)
 
-        if not ts_files:
-            print(f"No .ts files found in '{TESTS_DIR}'. Exiting with success.")
-            sys.stdout.flush() # Flush print buffer
-            sys.exit(0) # Explicitly exit with success if no tests found
-
-        print(f"Found {len(ts_files)} TypeScript test files:")
-        sys.stdout.flush() # Flush print buffer
-        for ts_file in ts_files:
-            print(f"  - {ts_file}")
-            sys.stdout.flush() # Flush print buffer
-
-        # 3. Process each test file
-        for i, test_file_path in enumerate(ts_files):
-            print(f"\n--- Processing test file {i+1}/{len(ts_files)}: {test_file_path} ---")
-            sys.stdout.flush() # Flush print buffer
-
-            # Get the relative path for pxt.json
-            # This logic assumes pxt.json is in the current working directory,
-            # and test files are relative to it.
-            relative_test_path = os.path.relpath(test_file_path, os.path.dirname(PXT_JSON_PATH))
-            # Normalize path separators to forward slashes for consistency with JSON/web paths
-            relative_test_path = relative_test_path.replace(os.path.sep, '/')
-
-            # Modify pxt.json
-            current_pxt_content = original_pxt_content.copy() # Make a copy to avoid modifying backup
-            current_pxt_content['testFiles'] = [relative_test_path]
-            print(f"Updating '{PXT_JSON_PATH}' with testFiles: {current_pxt_content['testFiles']}")
-            sys.stdout.flush() # Flush print buffer
-            write_pxt_json(PXT_JSON_PATH, current_pxt_content)
-
-            # Run mkc command
-            success = run_mkc_command()
-            if not success:
-                print(f"Warning: Command '{MKC_COMMAND}' failed for {test_file_path}. Continuing to next test.")
-                failed_tests.append(test_file_path) # Add to failed list
-            else:
-                print(f"Successfully ran '{MKC_COMMAND}' for {test_file_path}.")
-            sys.stdout.flush() # Flush print buffer
-
-        # 4. Report summary of failed tests
-        if failed_tests:
-            print("\n--- Summary of Failed Tests ---")
-            sys.stdout.flush() # Flush print buffer
-            for failed_test in failed_tests:
-                print(f"  - {failed_test}")
-                sys.stdout.flush() # Flush print buffer
-            print("-------------------------------\n")
-            sys.stdout.flush() # Flush print buffer
-            sys.exit(1) # Exit with a non-zero status code to indicate failure to GitHub Actions
+        # Pass 3: native build of the smoke test only, for link-step coverage that
+        # the JS target cannot provide.
+        print("[native] building smoke test natively...")
+        ok, output = build([SMOKE_TEST], native=True)
+        if ok:
+            print("[native] OK")
         else:
-            print("\nAll tests passed successfully (mkc returned 'Build OK').")
-            sys.stdout.flush() # Flush print buffer
-            sys.exit(0) # Exit with a zero status code to indicate success to GitHub Actions
-
-
-    except FileNotFoundError as e:
-        print(f"Critical Error: {e}") # Changed message for critical errors
-        sys.stdout.flush() # Flush print buffer
-        sys.exit(1) # Exit with error code if critical file not found
-    except json.JSONDecodeError as e:
-        print(f"Critical Error parsing {PXT_JSON_PATH}: {e}") # Changed message
-        sys.stdout.flush() # Flush print buffer
-        sys.exit(1) # Exit with error code if JSON parsing fails
-    except Exception as e:
-        print(f"An unexpected critical error occurred: {e}") # Changed message
-        sys.stdout.flush() # Flush print buffer
-        sys.exit(1) # Exit with error code for any other unexpected exception
+            print("[native] FAILED")
+            print(output.strip())
+            failures.append(SMOKE_TEST + " (native)")
     finally:
-        # 5. Restore the original pxt.json
-        if original_pxt_content:
-            print(f"\nRestoring original {PXT_JSON_PATH}...")
-            sys.stdout.flush() # Flush print buffer
-            write_pxt_json(PXT_JSON_PATH, original_pxt_content)
-            print("Original pxt.json restored successfully.")
-            sys.stdout.flush() # Flush print buffer
-        else:
-            print("\nNo original pxt.json content to restore (might be initial error or no pxt.json).")
-            sys.stdout.flush() # Flush print buffer
+        restore_pxt_json()
+
+    if failures:
+        print("\n=== FAILED ===")
+        for failure in failures:
+            print(f"  {failure}")
+        return 1
+
+    print("\nAll passes succeeded.")
+    return 0
+
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

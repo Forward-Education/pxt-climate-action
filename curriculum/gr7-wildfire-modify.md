@@ -1,7 +1,8 @@
 # Wildfire Detection with Autonomous Vehicles - Modify
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
+microphone=microphone
 ```
 
 ## Activity 1: Build Your Project @showdialog
@@ -17,75 +18,75 @@ Let's build a wildfire detection vehicle! We are going to do this in 4 parts:
 
 ## Build Step 1 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs1.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs1.png)
 
 ## Build Step 2 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs2.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs2.png)
 
 ## Build Step 3 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs3.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs3.png)
 
 ## Build Step 4 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs4.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs4.png)
 
 ## Build Step 5 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs5.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs5.png)
 
 ## Build Step 6 @showdialog
 
-![wildfiresb](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs6.png?raw=true)
+![wildfiresb](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs6.png)
 
 ## Build Step 7 @showdialog
 
-![wildfiresb](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs7.png?raw=true)
+![wildfiresb](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs7.png)
 
 ## Build Step 8 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs8.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs8.png)
 
 ## Build Step 9 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs9.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs9.png)
 
 ## Build Step 10 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs10.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs10.png)
 
 ## Build Step 11 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs11.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs11.png)
 
 ## Build Step 12 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs12.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs12.png)
 
 ## Build Step 13 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs13.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs13.png)
 
 ## Build Step 14 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs14.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs14.png)
 
 ## Build Step 15 & 16 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs15.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs15.png)
 
 ## Build Step 17 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs17.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs17.png)
 
 ## Build Step 18 @showdialog
 
-![wildfiresb](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs18.png?raw=true)
+![wildfiresb](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs18.png)
 
 ## Build Step 19 @showdialog
 
-![wildfiresbs](https://github.com/forward-education/pxt-climate-action/blob/main/tutorial-assets/gr8-wildfires-sbs19.png?raw=true)
+![wildfiresbs](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr8-wildfires-sbs19.png)
 
 ## Activity 2: Code Your Project @showdialog
 
@@ -96,14 +97,15 @@ The code will be the instructions that tell our micro:bit what to do.
 ```template
 basic.forever(function () {
     if (isDrivingEnabled) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+        fwdMotors.drive(50, -50, 1000)
         if (input.lightLevel() > 135) {
-            fwdMotors.stop()
+            fwdMotors.drive(0, 0, 0)
             music.playTone(262, music.beat(BeatFraction.Breve))
-            fwdMotors.turn(15)
+            // TODO: calibrate duration -- was turn(15) degrees in place
+            fwdMotors.drive(50, 50, 1000)
         }
     } else {
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
     }
 })
 
@@ -180,11 +182,12 @@ The vehicle:
 
 ```block
 if (isDrivingEnabled) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+        fwdMotors.drive(50, -50, 1000)
         if (input.lightLevel() > 135) {
-            fwdMotors.stop()
+            fwdMotors.drive(0, 0, 0)
             music.playTone(262, music.beat(BeatFraction.Breve))
-            fwdMotors.turn(15)
+            // TODO: calibrate duration -- was turn(15) degrees in place
+            fwdMotors.drive(50, 50, 1000)
         }
     }
 ```
@@ -205,9 +208,10 @@ Try changing the threshold value to something dramatically lower like ‘1’. R
 
 ```block
         if (input.lightLevel() > 1) {
-            fwdMotors.stop()
+            fwdMotors.drive(0, 0, 0)
             music.playTone(262, music.beat(BeatFraction.Breve))
-            fwdMotors.turn(15)
+            // TODO: calibrate duration -- was turn(15) degrees in place
+            fwdMotors.drive(50, 50, 1000)
         }
 ```
 
@@ -228,9 +232,10 @@ Shine a light onto the micro:bit's LEDs. How does this affect the vehicle's beha
 
 ```block
         if (input.lightLevel() > 250) {
-            fwdMotors.stop()
+            fwdMotors.drive(0, 0, 0)
             music.playTone(262, music.beat(BeatFraction.Breve))
-            fwdMotors.turn(15)
+            // TODO: calibrate duration -- was turn(15) degrees in place
+            fwdMotors.drive(50, 50, 1000)
         }
 ```
 
@@ -240,9 +245,10 @@ Change your threshold back to '135'.
 
 ```block
         if (input.lightLevel() > 135) {
-            fwdMotors.stop()
+            fwdMotors.drive(0, 0, 0)
             music.playTone(262, music.beat(BeatFraction.Breve))
-            fwdMotors.turn(15)
+            // TODO: calibrate duration -- was turn(15) degrees in place
+            fwdMotors.drive(50, 50, 1000)
         }
 ```
 
@@ -278,6 +284,7 @@ Right click on the `||input:light level||` `||logic:> 135||` expression and sele
 
 ```block
 if (input.soundLevel() > 135) {
+	
 }
 ```
 
@@ -308,9 +315,10 @@ Notice the shape of this block and the shape of the blank spaces. How can we use
 
 ```block
 if (input.lightLevel() > 135 || input.soundLevel() > 135) {
-            fwdMotors.stop()
+            fwdMotors.drive(0, 0, 0)
             music.playTone(262, music.beat(BeatFraction.Breve))
-            fwdMotors.turn(15)
+            // TODO: calibrate duration -- was turn(15) degrees in place
+            fwdMotors.drive(50, 50, 1000)
         }
 ```
 
@@ -328,9 +336,10 @@ What happens when you shine the light on the LEDs or when you make a loud noise 
 
 ```block
 if (input.lightLevel() > 135 || input.soundLevel() > 135) {
-            fwdMotors.stop()
+            fwdMotors.drive(0, 0, 0)
             music.playTone(262, music.beat(BeatFraction.Breve))
-            fwdMotors.turn(15)
+            // TODO: calibrate duration -- was turn(15) degrees in place
+            fwdMotors.drive(50, 50, 1000)
         }
 ```
 
@@ -349,9 +358,10 @@ Test out your new code. What happens when you shine the light on the LEDs or whe
 
 ```block
 if (input.lightLevel() > 135 && input.soundLevel() > 135) {
-            fwdMotors.stop()
+            fwdMotors.drive(0, 0, 0)
             music.playTone(262, music.beat(BeatFraction.Breve))
-            fwdMotors.turn(15)
+            // TODO: calibrate duration -- was turn(15) degrees in place
+            fwdMotors.drive(50, 50, 1000)
         }
 ```
 
@@ -378,14 +388,15 @@ Check the lightbulb for one possible solution! Did you do something different?
 
 ```block
 if (input.lightLevel() > 135 && input.soundLevel() > 135) {
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
     for (let index = 0; index < 4; index++) {
         music.playTone(262, music.beat(BeatFraction.Double))
         basic.pause(100)
         music.playTone(523, music.beat(BeatFraction.Double))
         basic.pause(100)
     }
-    fwdMotors.turn(15)
+    // TODO: calibrate duration -- was turn(15) degrees in place
+    fwdMotors.drive(50, 50, 1000)
 }
 ```
 

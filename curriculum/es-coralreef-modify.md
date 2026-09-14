@@ -1,7 +1,7 @@
 # Coral Reef Model - Modify Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 datalogger=datalogger
 ```
 
@@ -222,7 +222,7 @@ basic.forever(function () {
     if (temperature > 30) {
         fwdLights.ledRing1.setAllPixelsColor(0xffffff)
     } else if (false) {
-
+    	
     } else {
         fwdLights.ledRing1.setAllPixelsColor(0xff8000)
     }
@@ -245,7 +245,7 @@ basic.forever(function () {
     if (temperature > 30) {
         fwdLights.ledRing1.setAllPixelsColor(0xffffff)
     } else if (temperature == 30) {
-
+    	
     } else {
         fwdLights.ledRing1.setAllPixelsColor(0xff8000)
     }

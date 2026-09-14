@@ -1,7 +1,7 @@
 # Solar Water Disinfection - Modify Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ## Activity 1: Build Your Project @showdialog
@@ -286,7 +286,7 @@ if (input.lightLevel() > 200) {
 
         // @highlight
         if (exposure_sec >= 6) {
-
+        	
         }
     }
 ```
@@ -359,7 +359,6 @@ basic.forever(function () {
         }
     }
 })
-
 ```
 
 ## Challenge Step 11
@@ -378,7 +377,7 @@ When 'B' is pressed, we want to set `||variables:lightThreshold||` and `||variab
 input.onButtonPressed(Button.B, function () {
     lightThreshold = 100
     exposureThreshold = 48
-}
+})
 ```
 
 ## Challenge Step 12

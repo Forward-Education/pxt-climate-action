@@ -1,7 +1,7 @@
 # Forward Education Sea Level Rise Satellite - Modify Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 datalogger=datalogger
 ```
 
@@ -24,10 +24,11 @@ datalogger.setColumnTitles("Water Level")
 Logging = false
 loops.everyInterval(1000, function () {
     if (Logging == true) {
+    	
     }
 })
 basic.forever(function () {
-    WaterLevel = fwdSensors.sonar1.fwdDistance()
+    WaterLevel = fwdSensors.sonar1.distance()
     basic.pause(1000)
     led.plotBarGraph(
     WaterLevel,
@@ -45,83 +46,83 @@ Let's build a satellite to monitor sea level change! We are going to do this in 
 3. **Modify** our project to learn about other sensors
 4. Apply what we learned with a small **experiment**
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/ms-risingsea-render.webp" alt="Full rising sea satellite render" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-risingsea-render.webp" alt="Full rising sea satellite render" style="display: block; width: 60%; margin:auto;">
 
 ## Electronics Required @showdialog
 
-![Electronic Pieces Required](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/ms-risingsea-sbs0A.webp)
+![Electronic Pieces Required](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-risingsea-sbs0A.webp)
 
 ## Building Blocks Required @showdialog
 
-![Building Blocks Required](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/ms-risingsea-sbs0B.webp)
+![Building Blocks Required](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-risingsea-sbs0B.webp)
 
 ## Additional Craft Materials @showdialog
 
-![Additional Craft Materials](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/ms-risingsea-sbs0C.webp)
+![Additional Craft Materials](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-risingsea-sbs0C.webp)
 
 ## Build Step 1 @showdialog
 
-![Build Step 1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/ms-risingsea-sbs01.webp)
+![Build Step 1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-risingsea-sbs01.webp)
 
 ## Build Step 2 @showdialog
 
-![Build Step 2](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/ms-risingsea-sbs02.webp)
+![Build Step 2](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-risingsea-sbs02.webp)
 
 ## Build Step 3 @showdialog
 
-![Build Step 3](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/ms-risingsea-sbs03.webp)
+![Build Step 3](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-risingsea-sbs03.webp)
 
 ## Build Step 4 @showdialog
 
-![Build Step 4](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/ms-risingsea-sbs04.webp)
+![Build Step 4](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-risingsea-sbs04.webp)
 
 ## Build Step 5 @showdialog
 
-![Build Step 5](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/ms-risingsea-sbs05.webp)
+![Build Step 5](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-risingsea-sbs05.webp)
 
 ## Build Step 6 @showdialog
 
-![Build Step 6](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/ms-risingsea-sbs06.webp)
+![Build Step 6](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-risingsea-sbs06.webp)
 
 ## Build Step 7 @showdialog
 
-![Build Step 7](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/ms-risingsea-sbs07.webp)
+![Build Step 7](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-risingsea-sbs07.webp)
 
 ## Build Step 8 @showdialog
 
-![Build Step 8](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/ms-risingsea-sbs08.webp)
+![Build Step 8](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-risingsea-sbs08.webp)
 
 ## Build Step 9 @showdialog
 
-![Build Step 9](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/ms-risingsea-sbs09.webp)
+![Build Step 9](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-risingsea-sbs09.webp)
 
 ## Build Step 10 @showdialog
 
-![Build Step 10](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/ms-risingsea-sbs10.webp)
+![Build Step 10](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-risingsea-sbs10.webp)
 
 ## Build Step 11 @showdialog
 
-![Build Step 11](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/ms-risingsea-sbs11.webp)
+![Build Step 11](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-risingsea-sbs11.webp)
 
 ## Build Step 12 @showdialog
 
-![Build Step 12](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/ms-risingsea-sbs12.webp)
+![Build Step 12](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-risingsea-sbs12.webp)
 
 ## Build Step 13 @showdialog
 
-![Build Step 13](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/ms-risingsea-sbs13.webp)
+![Build Step 13](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-risingsea-sbs13.webp)
 
 ## Build Step 14 @showdialog
 
-![Build Step 14](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/ms-risingsea-sbs14.webp)
+![Build Step 14](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-risingsea-sbs14.webp)
 
 ## Build Step 15 @showdialog
 
-![Build Step 15](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/ms-risingsea-sbs15.webp)
+![Build Step 15](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-risingsea-sbs15.webp)
 
 ## Build Step 16 @showdialog
 
-![Build Step 16](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/ms-risingsea-sbs16.webp)
+![Build Step 16](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-risingsea-sbs16.webp)
 
 ## Activity 2: Code Your Project @showdialog
 
@@ -184,7 +185,7 @@ hint~
 
 ```blocks
 basic.forever(function () {
-    WaterLevel = fwdSensors.sonar1.fwdDistance()
+    WaterLevel = fwdSensors.sonar1.distance()
     basic.pause(1000)
    //@highlight
    led.plotBarGraph(
@@ -246,7 +247,7 @@ hint~
 ```blocks
 // @highlight
     loops.everyInterval(60000, function () {
-       datalogger.log(datalogger.createCV("Water Level", WaterLevel)
+       datalogger.log(datalogger.createCV("Water Level", WaterLevel))
 })
 ```
 
@@ -278,7 +279,7 @@ When we build a **shelf of land** for our ice to sit on, we can see how a **glac
 
 To help your green circular building block float in water, wrap it with plastic wrap.
 
-![Build Step 17](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/ms-risingsea-sbs17.webp)
+![Build Step 17](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-risingsea-sbs17.webp)
 
 ## Build Step 18 @showdialog
 
@@ -286,7 +287,7 @@ Place your model in a water tight container filled 1/4 full with **cold water.**
 
 Be careful not to drop any electronic components into the water.
 
-![Build Step 18](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/ms-risingsea-sbs18.webp)
+![Build Step 18](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-risingsea-sbs18.webp)
 
 ## Build Step 19 @showdialog
 
@@ -294,7 +295,7 @@ Fill one side of your container full of ice on top of the shelf of land that you
 
 The large green rectangular building block should stop the ice from getting to the other side of the container.
 
-![Build Step 19](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/ms-risingsea-sbs19.webp)
+![Build Step 19](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-risingsea-sbs19.webp)
 
 ## Build Step 20 @showdialog
 
@@ -302,7 +303,7 @@ Place your green circular building block on the opposite side of the container.
 
 The circular block is like **our hand**, it should sit in the container underneath the sonar sensor.
 
-![Build Step 20](https://raw.githubusercontent.com/forward-education/pxt-climate-action/refs/heads/main/tutorial-assets/ms-risingsea-sbs20.webp)
+![Build Step 20](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-risingsea-sbs20.webp)
 
 ## Experiment Step 2
 

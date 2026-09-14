@@ -1,13 +1,13 @@
 # How Wind Turbines Capture Kinetic Energy
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ## Step 1 @showdialog
 
 Welcome to How Wind Turbines Capture Kinetic Energy Coding Tutorial.
-![built project](https://forward-education.github.io/pxt-climate-action/tutorial-assets/project-windturbine-200.png)
+![built project](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/project-windturbine-200.png)
 
 ## Step 2 @showdialog
 
@@ -17,13 +17,13 @@ find the (RPM) of the Wind Turbine.
 ## Step 3 @showdialog
 
 Turn on the Climate Action Kit board.
-![breakout board](https://forward-education.github.io/pxt-climate-action/tutorial-assets/breakout-turn-on.png)
+![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-turn-on.png)
 
 ## Step 4 @showhint
 
 Click three dots besides `|Download|` button, and click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
-![pair gif](https://forward-education.github.io/pxt-climate-action/tutorial-assets/pairmicrobit-280x203.gif)
+![pair gif](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobit-280x203.gif)
 
 ## Step 5 @showhint
 
@@ -32,7 +32,7 @@ Next, click the `|Download|` button to download the blank project to start-up th
 ## Step 6 @showhint
 
 Look below the @boardname@ simulator to see the Climate Action Board and the connected sensors. Try turning the Dial on your project, the virtual simulator will react to it.
-![wind](https://forward-education.github.io/pxt-climate-action/tutorial-assets/simulator-6-Dial.gif)
+![wind](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-6-Dial.gif)
 
 ## Step 7
 
@@ -41,23 +41,26 @@ Click `||fwdSensors:Sensors||` drag and drop
 
 ```blocks
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, function () {
+    	
     })
 ```
 
 ## Step 8
 
 Right click `||fwdSensors:on dial1 turned difference||` block and duplicate. _Note: New block will be grey._
-![greyed out example](https://forward-education.github.io/pxt-climate-action/tutorial-assets/dial-greyed-out-demo.png)
+![greyed out example](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/dial-greyed-out-demo.png)
 
 ## Step 9
 
 Change the direction arrow of the greyed out `||fwdSensors:on dial1 turned difference||` block. _Note: Greyed out block will turn green._
-![dial direction](https://forward-education.github.io/pxt-climate-action/tutorial-assets/dial-direction-switch.gif)
+![dial direction](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/dial-direction-switch.gif)
 
 ```blocks
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, function () {
+    	
     })
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, function () {
+    	
     })
 ```
 
@@ -68,10 +71,13 @@ Click `||fwdSensors:Sensors||` drag and drop
 
 ```blocks
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
+    	
     })
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, function () {
+    	
     })
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, function () {
+    	
     })
 ```
 
@@ -84,11 +90,13 @@ to `||fwdMotors:middleServo||`.
 
 ```blocks
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
+    	
     })
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, function () {
     fwdBase.middleServo.setSpeed(50)
 })
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, function () {
+    	
     })
 ```
 
@@ -99,6 +107,7 @@ Drag and drop inside the second `||fwdSensors:on dial1 turned difference||` bloc
 
 ```blocks
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
+    	
     })
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, function () {
     fwdBase.middleServo.setSpeed(50)
@@ -114,6 +123,7 @@ Click `||fwdSensors:Sensors||`. Drag `||fwdSensors:dial1 absolute position||` ov
 
 ```blocks
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
+	
 })
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, function () {
     fwdBase.middleServo.setSpeed(fwdButtons.dial1.position())
@@ -131,6 +141,7 @@ Drag `||fwdSensors:dial1 absolute position||` oval block close to the other
 
 ```blocks
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
+	
 })
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, function () {
     fwdBase.middleServo.setSpeed(fwdButtons.dial1.position())
@@ -229,6 +240,7 @@ fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, functio
     fwdBase.middleServo.setSpeed(fwdButtons.dial1.position())
 })
 input.onButtonPressed(Button.A, function () {
+	
 })
 ```
 
@@ -250,8 +262,10 @@ fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, functio
     fwdBase.middleServo.setSpeed(fwdButtons.dial1.position())
 })
 input.onButtonPressed(Button.A, function () {
+	
 })
 input.onButtonPressed(Button.B, function () {
+	
 })
 ```
 
@@ -276,6 +290,7 @@ input.onButtonPressed(Button.A, function () {
 start_time = 0
 })
 input.onButtonPressed(Button.B, function () {
+	
 })
 ```
 
@@ -446,7 +461,7 @@ basic.showNumber((stop_time - start_time)/1000)
 
 `|Download|` and test your code. Click the bulb icon to see how
 the simulator shows the components working.
-![dial-servo](https://forward-education.github.io/pxt-climate-action/tutorial-assets/simulator-13-wind.gif)
+![dial-servo](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-13-wind.gif)
 
 ## Step 29 @showdialog
 

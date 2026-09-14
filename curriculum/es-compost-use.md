@@ -1,16 +1,16 @@
 # Solar-Powered Compost Tumbler - Use Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 datalogger=datalogger
 ```
 
 ```template
 basic.forever(function () {
     while (fwdSensors.solar1.isPastThreshold(95, fwdEnums.OverUnder.Over)) {
-        fwdMotors.conSetEnabled(fwdBase.leftServo, true)
+        fwdBase.leftServo.setEnabled(true)
         basic.pause(2000)
-        fwdMotors.conSetEnabled(fwdBase.leftServo, false)
+        fwdBase.leftServo.setEnabled(false)
         basic.pause(5000)
     }
 })
@@ -158,9 +158,9 @@ Test it out! Were you right?
     // @highlight
     while (fwdSensors.solar1.isPastThreshold(95, fwdEnums.OverUnder.Over)) {
         // @highlight
-        fwdMotors.conSetEnabled(fwdBase.leftServo, true)
+        fwdBase.leftServo.setEnabled(true)
         basic.pause(2000)
-        fwdMotors.conSetEnabled(fwdBase.leftServo, false)
+        fwdBase.leftServo.setEnabled(false)
         basic.pause(5000)
     }
 ```
@@ -186,9 +186,9 @@ hint~
 basic.forever(function () {
     // @highlight
     while (fwdSensors.solar1.isPastThreshold(95, fwdEnums.OverUnder.Over)) {
-        fwdMotors.conSetEnabled(fwdBase.leftServo, true)
+        fwdBase.leftServo.setEnabled(true)
         basic.pause(2000)
-        fwdMotors.conSetEnabled(fwdBase.leftServo, false)
+        fwdBase.leftServo.setEnabled(false)
         basic.pause(5000)
     }
 })

@@ -1,8 +1,9 @@
 # Smart Seaweed Farm - Modify Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 datalogger=datalogger
+radio=radio
 ```
 
 ```template
@@ -196,7 +197,7 @@ Now, add a second event that tells the farmer's micro:bit what to do when an 'AL
 
 ```block
 radio.onReceivedString(function (receivedString) {
-
+	
 })
 ```
 

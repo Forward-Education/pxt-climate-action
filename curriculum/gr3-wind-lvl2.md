@@ -1,7 +1,7 @@
 # Powering the Future with Wind Energy
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ## Activity 1: Building your Protoype @showdialog
@@ -14,61 +14,64 @@ Code our project to make it interactive
 
 ## Build Step 1 @showdialog
 
-![wind](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs1.png)
+![wind](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr3-wind1-lvl2-sbs1.png)
 
 ## Build Step 2 @showdialog
 
-![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs2.png)
+![stepbystep](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr3-wind1-lvl2-sbs2.png)
 
 ## Build Step 3 @showdialog
 
-![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs3.png).
+![stepbystep](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr3-wind1-lvl2-sbs3.png).
 
 ## Build Step 4 @showdialog
 
-![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs4.png)
+![stepbystep](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr3-wind1-lvl2-sbs4.png)
 
 ## Build Step 5 @showdialog
 
-![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs5.png)
+![stepbystep](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr3-wind1-lvl2-sbs5.png)
 
 ## Build Step 6 @showdialog
 
-![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs6.png)
+![stepbystep](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr3-wind1-lvl2-sbs6.png)
 
 ## Build Step 7 @showdialog
 
-![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs7.png)
+![stepbystep](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr3-wind1-lvl2-sbs7.png)
 
 ## Build Step 8 @showdialog
 
-![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs8.png)
+![stepbystep](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr3-wind1-lvl2-sbs8.png)
 
 ## Build Step 9 @showdialog
 
-![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs9.png)
+![stepbystep](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr3-wind1-lvl2-sbs9.png)
 
 ## Build Step 10 @showdialog
 
-![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs10.png)
+![stepbystep](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr3-wind1-lvl2-sbs10.png)
 
 ## Build Step 11 @showdialog
 
-![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs11.png)
+![stepbystep](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr3-wind1-lvl2-sbs11.png)
 
 ## Activity 2: Coding set up @showdialog
 
 Step 1
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
 
-![plugin](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
+![plugin](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
 
 ```template
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
+		
 	})
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, function () {
+		
 	})
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, function () {
+		
 	})
 ```
 
@@ -84,13 +87,13 @@ Next, click the `|Download|` button to download the blank project to start-up th
 ## Step 4 @showdialog
 
 This is how the simulators should look after a successful download. You can see the Dial, and the Servo Motors along side the Pump.
-![initial-dowload-gif](https://forward-education.github.io/pxt-climate-action/tutorial-assets/initial-download.gif)
+![initial-dowload-gif](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/initial-download.gif)
 
 ## Step 5 @showhint
 
 Look below the @boardname @simulator to see the Climate Action kit Breakout Board and the connected sensors.
 Try turning the Dial on your project, the virtual simulator will react to it.
-![wind](https://forward-education.github.io/pxt-climate-action/tutorial-assets/simulator-6-Dial.gif)
+![wind](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-6-Dial.gif)
 
 ## Step 6 @showhint
 
@@ -133,13 +136,13 @@ Place the `||fwdMotors:set leftServo to 50 %||` block inside of the first `||fwd
 
 ```blocks
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
-
+	
 })
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, function () {
     fwdBase.leftServo.setSpeed(50)
 })
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, function () {
-
+	
 })
 ```
 
@@ -149,7 +152,7 @@ Repeat the previous step to add a `||fwdMotors:set leftServo to 50 %||` block in
 
 ```blocks
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
-
+	
 })
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, function () {
     fwdBase.leftServo.setSpeed(50)
@@ -171,7 +174,7 @@ Change the speed of last `||fwdMotors:set leftServo to 50 %||` to to be - 50%
 
 ```blocks
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
-
+	
 })
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, function () {
     fwdBase.leftServo.setSpeed(50)
@@ -226,7 +229,7 @@ fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, functio
 ## Coding Step 9
 
 Click the `|Download|` button to download the code for your project.
-![download](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
+![download](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/DownloadButtonGIF.webp)
 
 ## Coding Step 10 @showdialog
 

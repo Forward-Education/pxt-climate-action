@@ -1,13 +1,13 @@
 # Smart Farming with Hydroponics & Grow Lights
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ## Step 1 @showdialog
 
 Welcome to the Smart Farming with Hydroponics & Grow Lights Coding Tutorial
-![built project](https://forward-education.github.io/pxt-climate-action/tutorial-assets/project-advagri-200.png)
+![built project](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/project-advagri-200.png)
 
 ## Step 2 @showdialog
 
@@ -16,12 +16,12 @@ In this coding tutorial we will control LED color and timing, count the number o
 ## Step 3 @showdialog
 
 Turn on the Climate Action Kit board.
-![breakout board](https://forward-education.github.io/pxt-climate-action/tutorial-assets/breakout-turn-on.png)
+![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-turn-on.png)
 
 ## Step 4 @showhint
 
 Click three dots besides `|Download|` button, and click on _Connect Device_. Next, follow the steps to pair your micro:bit.
-![pair gif](https://forward-education.github.io/pxt-climate-action/tutorial-assets/pairmicrobit-280x203.gif)
+![pair gif](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobit-280x203.gif)
 
 ## Step 5 @showhint
 
@@ -30,7 +30,7 @@ Next, click the `|Download|` button to download the blank project to start-up th
 ## Step 6 @showhint
 
 Look below the @boardname@ simulator to see the Climate Action Board and the connected sensors. Try holding the Moisture Sensor or dipping it in a glass of water. See how the virtual simulators react.
-![moisture](https://forward-education.github.io/pxt-climate-action/tutorial-assets/simulator-4-moisture.gif)
+![moisture](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-4-moisture.gif)
 
 ## Step 7
 
@@ -41,10 +41,12 @@ block inside `||basic:forever||` loop.
 basic.forever(function () {
 
     if (true) {
+          	
           }
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 8
@@ -56,10 +58,12 @@ to replace `||logic:true||` condition of `||logic:if then else||` block.
 basic.forever(function () {
 
     if (fwdSensors.moisture1.isPastThreshold(5, fwdEnums.OverUnder.Over)) {
+          	
           }
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 9
@@ -73,8 +77,9 @@ basic.forever(function () {
     if (fwdSensors.moisture1.isPastThreshold(5, fwdEnums.OverUnder.Over)) {
           basic.showIcon(IconNames.Happy)}
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 10
@@ -89,7 +94,7 @@ basic.forever(function () {
           basic.showIcon(IconNames.Happy)}
     else {
         basic.showIcon(IconNames.Sad)}
-        )}
+        })
 ```
 
 ## Step 11
@@ -271,8 +276,9 @@ basic.forever(function () {
 let plant_B = 2000
 let plant_A = 5000
 let run_pump_count = 0
-input.onButtonPressed(Button.A, function()){
-}
+input.onButtonPressed(Button.A, function () {
+	
+})
 ```
 
 ## Step 20
@@ -295,12 +301,15 @@ basic.forever(function () {
 let plant_B = 2000
 let plant_A = 5000
 let run_pump_count = 0
-input.onButtonPressed(Button.A, function()){
-}
-input.onButtonPressed(Button.B, function()){
-}
-input.onButtonPressed(Button.AB, function()){
-}
+input.onButtonPressed(Button.A, function () {
+	
+})
+input.onButtonPressed(Button.B, function () {
+	
+})
+input.onButtonPressed(Button.AB, function () {
+	
+})
 ```
 
 ## Step 21
@@ -322,14 +331,18 @@ basic.forever(function () {
 let plant_B = 2000
 let plant_A = 5000
 let run_pump_count = 0
-input.onButtonPressed(Button.A, function()){
-}
-input.onButtonPressed(Button.B, function()){
-}
-input.onButtonPressed(Button.AB, function()){
-}
-input.onLogoEvent(TouchButtonEvent.Pressed, function()){
-}
+input.onButtonPressed(Button.A, function () {
+	
+})
+input.onButtonPressed(Button.B, function () {
+	
+})
+input.onButtonPressed(Button.AB, function () {
+	
+})
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+	
+})
 ```
 
 ## Step 22
@@ -365,6 +378,7 @@ input.onButtonPressed(Button.AB, function(){
 fwdLights.ledRing1.setAllPixelsColor(0xff0000)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function(){
+	
 })
 ```
 
@@ -402,6 +416,7 @@ input.onButtonPressed(Button.AB, function(){
 fwdLights.ledRing1.setAllPixelsColor(0xff0000)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function(){
+	
 })
 ```
 
@@ -441,6 +456,7 @@ input.onButtonPressed(Button.AB, function(){
 fwdLights.ledRing1.setAllPixelsColor(0xff0000)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function(){
+	
 })
 ```
 
@@ -479,6 +495,7 @@ input.onButtonPressed(Button.AB, function(){
 fwdLights.ledRing1.setAllPixelsColor(0x000000)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function(){
+	
 })
 ```
 
@@ -516,6 +533,7 @@ input.onButtonPressed(Button.AB, function(){
 fwdLights.ledRing1.setAllPixelsColor(0x000000)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function(){
+	
 })
 ```
 
@@ -552,6 +570,7 @@ input.onButtonPressed(Button.AB, function(){
 fwdLights.ledRing1.setAllPixelsColor(0x000000)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function(){
+	
 })
 ```
 
@@ -588,6 +607,7 @@ input.onButtonPressed(Button.AB, function(){
 fwdLights.ledRing1.setAllPixelsColor(0x000000)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function(){
+	
 })
 ```
 
@@ -633,6 +653,7 @@ input.onButtonPressed(Button.AB, function(){
 fwdLights.ledRing1.setAllPixelsColor(0x000000)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function(){
+	
 })
 ```
 
@@ -671,6 +692,7 @@ input.onButtonPressed(Button.AB, function(){
 fwdLights.ledRing1.setAllPixelsColor(0x000000)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function(){
+	
 })
 ```
 
@@ -712,7 +734,8 @@ input.onButtonPressed(Button.AB, function(){
 fwdLights.ledRing1.setAllPixelsColor(0x000000)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function(){
-)}
+	
+})
 ```
 
 ## Step 33
@@ -751,7 +774,8 @@ input.onButtonPressed(Button.AB, function(){
 fwdLights.ledRing1.setAllPixelsColor(0x000000)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function(){
-)}
+	
+})
 ```
 
 ## Step 34
@@ -791,7 +815,7 @@ fwdLights.ledRing1.setAllPixelsColor(0x000000)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function(){
 basic.showNumber(0)
-)}
+})
 ```
 
 ## Step 35
@@ -921,7 +945,7 @@ basic.showNumber(timer_stop-timer_start/60000)
 
 `|Download|` and test your code. Click the bulb icon to see how
 the simulator shows the components working.
-![moisture-pump](https://forward-education.github.io/pxt-climate-action/tutorial-assets/simulator-11-Moisture-pump.gif)
+![moisture-pump](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-11-Moisture-pump.gif)
 
 ## Step 39 @showdialog
 

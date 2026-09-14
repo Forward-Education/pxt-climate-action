@@ -1,7 +1,7 @@
 # Forward Education Wind Turbine - Sample Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 datalogger=datalogger
 ```
 
@@ -15,7 +15,7 @@ fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, functio
 })
 
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, function () {
-
+	
 })
 ```
 
@@ -28,47 +28,47 @@ Let's build an automated wind turbine. We are going to do this in four parts:
 3. **Use** our wind turbine to learn how it works
 4. **Modify** our project with a small coding challenge
 
-<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-render.webp" alt="Full sample wind tubine render" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-windsample-render.webp" alt="Full sample wind tubine render" style="display: block; width: 60%; margin:auto;">
 
 ## Build Step 1 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs01.webp)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-windsample-sbs01.webp)
 
 ## Build Step 2 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs02.webp)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-windsample-sbs02.webp)
 
 ## Build Step 3 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs03.webp)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-windsample-sbs03.webp)
 
 ## Build Step 4 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs04.webp)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-windsample-sbs04.webp)
 
 ## Build Step 5 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs05.webp)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-windsample-sbs05.webp)
 
 ## Build Step 6 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs06.webp)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-windsample-sbs06.webp)
 
 ## Build Step 7 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs07.webp)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-windsample-sbs07.webp)
 
 ## Build Step 8 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs08.webp)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-windsample-sbs08.webp)
 
 ## Build Step 9 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs09.webp)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-windsample-sbs09.webp)
 
 ## Build Step 10 @showdialog
 
-![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/add3c3f5d4b963f2cba276ba9760a9f8c463b77c/tutorial-assets/ms-windsample-sbs10.webp)
+![sbs1](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/ms-windsample-sbs10.webp)
 
 ## Activity 2: Code Your Project @showdialog
 
@@ -159,6 +159,7 @@ In the workspace, there is an `||fwdSensors:on dial1 turned difference||` event 
 
 ```blocks
 fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, function () {
+	
 })
 ```
 

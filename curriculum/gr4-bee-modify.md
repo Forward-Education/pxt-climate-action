@@ -1,7 +1,7 @@
 # Tracking Pollinators with a Bee Counter
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ## Activity 1: Build Your Project @showdialog
@@ -90,7 +90,6 @@ basic.forever(function () {
         basic.showNumber(bugVisits)
     }
 })
-
 ```
 
 ## Code Step 1 @showdialog
@@ -101,7 +100,7 @@ Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit
 ## Code Step 2 @showdialog
 
 Click the three dots beside the `|Download|` button, then click on _Connect Device_. Next, follow the steps to pair your micro:bit.
-![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
+![pair gif](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/DownloadButtonGIF.webp)
 
 ## Code Step 3
 

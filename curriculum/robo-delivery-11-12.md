@@ -1,28 +1,28 @@
 # Warehouse Efficiency using Autonomous Delivery Robots and AI
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ## Step 1 @showdialog
 
 Welcome to Automating Deivery: Integrating AI with Electric Vehichles
-![built project](https://forward-education.github.io/pxt-climate-action/tutorial-assets/project-electriccar-400.png)
+![built project](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/project-electriccar-400.png)
 
 ## Step 2 @showdialog
 
 Plug your USB cable into the micro:bit.
-![breakout board](https://forward-education.github.io/pxt-climate-action/tutorial-assets/connect-microbit.gif)
+![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/connect-microbit.gif)
 
 ## Step 3 @showdialog
 
 Insert it into the Climate Action Kit board.
-![breakout board](https://forward-education.github.io/pxt-climate-action/tutorial-assets/breakout-resized.png)
+![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-resized.png)
 
 ## Step 4 @showhint
 
 Click three dots besides `|Download|` button and follow the steps to pair your micro:bit.
-![pair gif](https://forward-education.github.io/pxt-climate-action/tutorial-assets/pairmicrobit-280x203.gif)
+![pair gif](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobit-280x203.gif)
 
 ## Step 5 @showhint
 
@@ -101,9 +101,10 @@ fwdBase.rightServo,
 )
 basic.forever(function () {
     if (true) {
+            	
             }
     })
-````
+```
 
 ## Step 10
 
@@ -123,6 +124,7 @@ fwdBase.rightServo,
 )
 basic.forever(function () {
     if (IsDrivingEnabled) {
+            	
             }
     })
 ```
@@ -140,7 +142,7 @@ on workspace.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
-
+	
 })
 
 fwdMotors.setupDriving(
@@ -149,6 +151,7 @@ fwdBase.rightServo,
 )
 basic.forever(function () {
     if (IsDrivingEnabled) {
+            	
             }
     })
 ```
@@ -166,10 +169,10 @@ Change `||Input:A||` to `||Input:B||`.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
-
+	
 })
 input.onButtonPressed(Button.B, function () {
-
+	
 })
 fwdMotors.setupDriving(
 fwdBase.leftServo,
@@ -177,6 +180,7 @@ fwdBase.rightServo,
 )
 basic.forever(function () {
     if (IsDrivingEnabled) {
+            	
             }
     })
 ```
@@ -196,17 +200,13 @@ input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = 0
 })
 input.onButtonPressed(Button.B, function () {
-
+	
 })
 let IsDrivingEnabled = 0
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
-
+    	
     }
 })
 ```
@@ -226,17 +226,13 @@ input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
 })
 input.onButtonPressed(Button.B, function () {
-
+	
 })
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
-
+    	
     }
 })
 ```
@@ -254,23 +250,19 @@ Click `||Logic:Logic||` drag and drop `||logic:true|` to replace 0 in `||Variabl
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
-
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        	
         } else {
-
+        	
         }
     }
 })
@@ -289,20 +281,16 @@ Click `||fwdMotors:Motors||` drag and drop `||fwdMotors:Stop||` under `||Variabl
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
-
+    	
     }
 })
 ```
@@ -320,7 +308,7 @@ Click `||logic:Logic||` drag and drop `||logic:if true then else||` block inside
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -328,17 +316,13 @@ input.onButtonPressed(Button.B, function () {
 
 
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
         if (true) {
-
+        	
         } else {
-
+        	
         }
     }
 })
@@ -357,27 +341,22 @@ Click `||fwdSensors:Sensors||` drag and drop `||fwdSensors:sonar1 distance is un
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
-
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        	
         } else {
-
+        	
         }
     }
 })
-
 ```
 
 ## Step 19
@@ -394,24 +373,20 @@ Click `||music:Music||` drag and drop `||Music:music.ringTone||` block within `|
 ```block
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
 
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             music.ringTone(494)
         } else {
-
+        	
         }
     }
 })
@@ -430,24 +405,20 @@ Click `||basic:Basic||` drag and drop `||basic:pause (ms) 100||` block under `||
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             music.ringTone(262)
             basic.pause(500)
         } else {
-
+        	
         }
     }
 })
@@ -466,25 +437,21 @@ Click `||music:Music||` drag and drop `||Music:stopall||` block under `||basic:p
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             music.ringTone(262)
             basic.pause(500)
             music.stopAllSounds()
         } else {
-
+        	
         }
     }
 })
@@ -505,26 +472,22 @@ Click `||logic:Logic||` drag and drop `||logic:if true then||` block inside bloc
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
 
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             music.ringTone(494)
-            fwdMotors.drive(fwdEnums.ForwardReverse.Reverse, 20)
+            fwdMotors.drive(-20, 20, 1000)
         } else {
             if (true) {
-
+            	
             }
         }
     }
@@ -545,26 +508,22 @@ Click `||logic:Logic||` drag and drop `||logic:if true then||` block under the 1
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             music.ringTone(262)
             basic.pause(500)
             music.stopAllSounds()
         } else {
             if (true) {
-
+            	
             }
         }
     }
@@ -585,32 +544,28 @@ Click `||logic:Logic||` drag and drop `||logic:if true then||` block under the 2
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             music.ringTone(262)
             basic.pause(500)
             music.stopAllSounds()
         } else {
             if (true) {
-
+            	
             }
             if (true) {
-
+            	
             }
             if (true) {
-
+            	
             }
         }
     }
@@ -631,32 +586,28 @@ Click `||fwdSensors:Sensors||` drag and drop `||fwdSensors: line1 state is •||
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             music.ringTone(262)
             basic.pause(500)
             music.stopAllSounds()
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-
+            	
             }
             if (true) {
-
+            	
             }
             if (true) {
-
+            	
             }
         }
     }
@@ -677,32 +628,28 @@ Click `||fwdSensors:Sensors||` drag and drop `||fwdSensors: line2 state is o||` 
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             music.ringTone(262)
             basic.pause(500)
             music.stopAllSounds()
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-
+            	
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off)) {
-
+            	
             }
             if (true) {
-
+            	
             }
         }
     }
@@ -723,32 +670,28 @@ Click `||fwdSensors:Sensors||` drag and drop `||fwdSensors: line3 state is •||
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             music.ringTone(262)
             basic.pause(500)
             music.stopAllSounds()
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-
+            	
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off)) {
-
+            	
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-
+            	
             }
         }
     }
@@ -769,37 +712,32 @@ Click `||fwdMotors: Motors||` drag and drop `||fwdMotors: Turn 0 in place||` blo
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
 
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             music.ringTone(494)
-            fwdMotors.drive(fwdEnums.ForwardReverse.Reverse, 20)
+            fwdMotors.drive(-20, 20, 1000)
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-                fwdMotors.turn(0)
+                fwdMotors.drive(0, 0, 0)
             }
             if (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.Off)) {
-
+            	
             }
             if (fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On)) {
-
+            	
             }
         }
     }
 })
-
 ```
 
 ## Step 29
@@ -815,32 +753,29 @@ Change `||fwdMotors:Turn 0||` to `||fwdMotors:5||`
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             music.ringTone(262)
             basic.pause(500)
             music.stopAllSounds()
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-                fwdMotors.turn(5)
+                // TODO: calibrate duration -- was turn(5) degrees in place
+                fwdMotors.drive(50, 50, 1000)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off)) {
-
+            	
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-
+            	
             }
         }
     }
@@ -863,32 +798,29 @@ Change the `||fwdMotors:Drive forward 50||` to `||fwdMotors:20||`
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             music.ringTone(262)
             basic.pause(500)
             music.stopAllSounds()
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-                fwdMotors.turn(5)
+                // TODO: calibrate duration -- was turn(5) degrees in place
+                fwdMotors.drive(50, 50, 1000)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off)) {
-                fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 20)
+                fwdMotors.drive(20, -20, 1000)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-
+            	
             }
         }
     }
@@ -911,32 +843,30 @@ hint~
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             music.ringTone(262)
             basic.pause(500)
             music.stopAllSounds()
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-                fwdMotors.turn(5)
+                // TODO: calibrate duration -- was turn(5) degrees in place
+                fwdMotors.drive(50, 50, 1000)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off)) {
-                fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 20)
+                fwdMotors.drive(20, -20, 1000)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-                fwdMotors.turn(-5)
+                // TODO: calibrate duration -- was turn(-5) degrees in place
+                fwdMotors.drive(-50, -50, 1000)
             }
         }
     }
@@ -956,33 +886,31 @@ Click `||basic:Basic||` drag and drop `||basic:pause (ms) 100||` block under `||
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             music.ringTone(262)
             basic.pause(500)
             music.stopAllSounds()
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-                fwdMotors.turn(5)
+                // TODO: calibrate duration -- was turn(5) degrees in place
+                fwdMotors.drive(50, 50, 1000)
                 basic.pause(100)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off)) {
-                fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 20)
+                fwdMotors.drive(20, -20, 1000)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-                fwdMotors.turn(-5)
+                // TODO: calibrate duration -- was turn(-5) degrees in place
+                fwdMotors.drive(-50, -50, 1000)
             }
         }
     }
@@ -1003,34 +931,32 @@ block under `||fwdMotors:Drive Forward at 20||` block.
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             music.ringTone(262)
             basic.pause(500)
             music.stopAllSounds()
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-                fwdMotors.turn(5)
+                // TODO: calibrate duration -- was turn(5) degrees in place
+                fwdMotors.drive(50, 50, 1000)
                 basic.pause(100)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off)) {
-                fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 20)
+                fwdMotors.drive(20, -20, 1000)
                 basic.pause(100)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-                fwdMotors.turn(-5)
+                // TODO: calibrate duration -- was turn(-5) degrees in place
+                fwdMotors.drive(-50, -50, 1000)
             }
         }
     }
@@ -1051,34 +977,32 @@ block under `||fwdMotors:Turn -5 in place||` block.
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             music.ringTone(262)
             basic.pause(500)
             music.stopAllSounds()
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-                fwdMotors.turn(5)
+                // TODO: calibrate duration -- was turn(5) degrees in place
+                fwdMotors.drive(50, 50, 1000)
                 basic.pause(100)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off)) {
-                fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 20)
+                fwdMotors.drive(20, -20, 1000)
                 basic.pause(100)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-                fwdMotors.turn(-5)
+                // TODO: calibrate duration -- was turn(-5) degrees in place
+                fwdMotors.drive(-50, -50, 1000)
                 basic.pause(100)
             }
         }
@@ -1101,34 +1025,32 @@ Change `||basic:pause (ms) 100||` to `||basic:500||` for all
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
+        if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             music.ringTone(262)
             basic.pause(500)
             music.stopAllSounds()
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-                fwdMotors.turn(5)
+                // TODO: calibrate duration -- was turn(5) degrees in place
+                fwdMotors.drive(50, 50, 1000)
                 basic.pause(500)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off)) {
-                fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 20)
+                fwdMotors.drive(20, -20, 1000)
                 basic.pause(500)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-                fwdMotors.turn(-5)
+                // TODO: calibrate duration -- was turn(-5) degrees in place
+                fwdMotors.drive(-50, -50, 1000)
                 basic.pause(500)
             }
         }

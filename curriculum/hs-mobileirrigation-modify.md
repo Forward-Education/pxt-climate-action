@@ -1,16 +1,16 @@
 # Mobile Irrigation System - Modify Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 datalogger=datalogger
 ```
 
 ```template
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
     for (let index = 0; index < 4; index++) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 25)
+        fwdMotors.drive(25, -25, 1000)
         basic.pause(3000)
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fwdMotors.pump.timedRun(1500)
         basic.pause(3000)
@@ -18,16 +18,12 @@ fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
     }
 })
 fwdLights.ledRing1.setAllPixelsColor(0xff0000)
-fwdMotors.setupDriving(
-fwdBase.rightServo,
-fwdBase.leftServo,
-45
-)
+fwdMotors.setupDriving(fwdBase.rightServo, fwdBase.leftServo)
 basic.forever(function () {
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.075, fwdEnums.OverUnder.Over)) {
-
+    if (fwdSensors.sonar1.isPastThreshold(0.075, fwdEnums.OverUnder.Over)) {
+    	
     } else {
-
+    	
     }
 })
 ```
@@ -184,9 +180,9 @@ hint~
 ```blocks
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
     for (let index = 0; index < 4; index++) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 25)
+        fwdMotors.drive(25, -25, 1000)
         basic.pause(3000)
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fwdMotors.pump.timedRun(1500)
         basic.pause(3000)
@@ -208,10 +204,10 @@ Change the pause duration in one block, `|Download|` the new code and observe ho
 ```block
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
     for (let index = 0; index < 4; index++) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 25)
+        fwdMotors.drive(25, -25, 1000)
         // @highlight
         basic.pause(10000)
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fwdMotors.pump.timedRun(1500)
         // @highlight
@@ -234,10 +230,10 @@ How do these changes influence the vehicle's watering output? What happens when 
 ```block
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
     for (let index = 0; index < 4; index++) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 25)
+        fwdMotors.drive(25, -25, 1000)
         // @highlight
         basic.pause(10000)
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fwdMotors.pump.timedRun(1500)
         // @highlight
@@ -269,10 +265,10 @@ What condition is being evaluated? How can this help us detect plants?
 
 ```block
 basic.forever(function () {
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.075, fwdEnums.OverUnder.Over)) {
-
+    if (fwdSensors.sonar1.isPastThreshold(0.075, fwdEnums.OverUnder.Over)) {
+    	
     } else {
-
+    	
     }
 })
 ```
@@ -294,13 +290,13 @@ In other words, what should happen when _no plant is present_?
 
 ```block
 basic.forever(function () {
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.075, fwdEnums.OverUnder.Over)) {
+    if (fwdSensors.sonar1.isPastThreshold(0.075, fwdEnums.OverUnder.Over)) {
         // @highlight
         fwdLights.ledRing1.setAllPixelsColor(0xff0000)
         // @highlight
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 25)
+        fwdMotors.drive(25, -25, 1000)
     } else {
-
+    	
     }
 })
 ```
@@ -317,13 +313,13 @@ Now, think about which blocks inside the loop should be executed when there _is 
 
 ```block
 basic.forever(function () {
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.075, fwdEnums.OverUnder.Over)) {
-
+    if (fwdSensors.sonar1.isPastThreshold(0.075, fwdEnums.OverUnder.Over)) {
+    	
     } else {
         // @highlight
         basic.pause(2000)
         // @highlight
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
         // @highlight
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         // @highlight
@@ -347,12 +343,12 @@ How far is the top of your "plant" from the sonar sensor? Experiment with differ
 ```block
 basic.forever(function () {
     // @highlight
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.06, fwdEnums.OverUnder.Over)) {
+    if (fwdSensors.sonar1.isPastThreshold(0.06, fwdEnums.OverUnder.Over)) {
         fwdLights.ledRing1.setAllPixelsColor(0xff0000)
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 25)
+        fwdMotors.drive(25, -25, 1000)
     } else {
         basic.pause(2000)
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fwdMotors.pump.timedRun(1500)
         basic.pause(3000)
@@ -369,13 +365,13 @@ Adjust how long the vehicle drives after it detects a plant. Experiment with the
 ```block
 basic.forever(function () {
     // @hightlight
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.075, fwdEnums.OverUnder.Over)) {
+    if (fwdSensors.sonar1.isPastThreshold(0.075, fwdEnums.OverUnder.Over)) {
         fwdLights.ledRing1.setAllPixelsColor(0xff0000)
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 25)
+        fwdMotors.drive(25, -25, 1000)
     } else {
         // @highlight
         basic.pause(2000)
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fwdMotors.pump.timedRun(1500)
         basic.pause(3000)

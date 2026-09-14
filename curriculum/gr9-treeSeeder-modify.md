@@ -1,22 +1,22 @@
 # Replanting Our Forests with Automated Tree Seeders - Modify Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 datalogger=datalogger
 ```
 
 ```template
 input.onButtonPressed(Button.A, function () {
     for (let index2 = 0; index2 < 4; index2++) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+        fwdMotors.drive(50, -50, 1000)
         basic.pause(1000)
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
         fwdMotors.setAngle(fwdBase.middleServo, 45)
         basic.pause(250)
     }
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 // @collapsed
 input.onButtonPressed(Button.B, function () {
@@ -29,11 +29,7 @@ input.onButtonPressed(Button.B, function () {
 let index = 0
 index = 0
 fwdMotors.setAngle(fwdBase.middleServo, 45)
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-10
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 // @collapsed
 basic.forever(function () {
     basic.showNumber(index)
@@ -203,9 +199,9 @@ Can you identify the blocks of code below that are responsible for this swinging
 ```blocks
 input.onButtonPressed(Button.A, function () {
     for (let index2 = 0; index2 < 4; index2++) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+        fwdMotors.drive(50, -50, 1000)
         basic.pause(1000)
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
         // @highlight
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
@@ -213,17 +209,13 @@ input.onButtonPressed(Button.A, function () {
         fwdMotors.setAngle(fwdBase.middleServo, 45)
         basic.pause(250)
     }
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 let index = 0
 index = 0
 // @highlight
 fwdMotors.setAngle(fwdBase.middleServo, 45)
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-10
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 ```
 
 ## Modify Step 4
@@ -240,9 +232,9 @@ Download your code and test it out. What happened?
 
 ```block
     for (let index2 = 0; index2 < 4; index2++) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+        fwdMotors.drive(50, -50, 1000)
         basic.pause(1000)
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
         // @highlight
         fwdMotors.setAngle(fwdBase.middleServo, 100)
         basic.pause(250)
@@ -257,9 +249,9 @@ Reset your value to ‘0 degrees’.
 
 ```block
     for (let index2 = 0; index2 < 4; index2++) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+        fwdMotors.drive(50, -50, 1000)
         basic.pause(1000)
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
         // @highlight
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
@@ -282,15 +274,15 @@ What do you think will happen if you modify the number in the `||loops:repeat 4 
 input.onButtonPressed(Button.A, function () {
     // @highlight
     for (let index2 = 0; index2 < 5; index2++) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+        fwdMotors.drive(50, -50, 1000)
         basic.pause(1000)
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
         fwdMotors.setAngle(fwdBase.middleServo, 45)
         basic.pause(250)
     }
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
 })
 ```
 
@@ -309,10 +301,10 @@ What did you observe?
 
 ```block
     for (let index2 = 0; index2 < 5; index2++) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+        fwdMotors.drive(50, -50, 1000)
         // @highlight
         basic.pause(200)
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
         fwdMotors.setAngle(fwdBase.middleServo, 45)
@@ -354,11 +346,7 @@ let seedDensity = [
 1
 ]
 fwdMotors.setAngle(fwdBase.middleServo, 45)
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-10
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 ```
 
 ## Challenge Step 4
@@ -383,11 +371,7 @@ let seedDensity = [
 200
 ]
 fwdMotors.setAngle(fwdBase.middleServo, 45)
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-10
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 ```
 
 ## Challenge Step 5
@@ -462,10 +446,10 @@ Be sure to change `||variables:list||` to `||variables:seedDensity||`.
 ```block
     for (let index2 = 0; index2 < 4; index2++) {
         let seedDensity: number[] = []
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+        fwdMotors.drive(50, -50, 1000)
         // @highlight
         basic.pause(seedDensity[0])
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
         fwdMotors.setAngle(fwdBase.middleServo, 45)
@@ -486,10 +470,10 @@ Go to the `||variables:Variables||` category and replace the ‘0’ value with 
 
 ```block
 for (let index2 = 0; index2 < 4; index2++) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+        fwdMotors.drive(50, -50, 1000)
         // @highlight
         basic.pause(seedDensity[index])
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
         fwdMotors.setAngle(fwdBase.middleServo, 45)

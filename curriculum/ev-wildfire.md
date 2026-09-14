@@ -1,13 +1,13 @@
 # Wildfire Tracking with Autonomous Vehicles
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ## Step 1 @showdialog
 
 Welcome to Wildfire Tracking with Autonomous Vehicles
-![built project](https://forward-education.github.io/pxt-climate-action/tutorial-assets/wildfire-iso-resized.png)
+![built project](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/wildfire-iso-resized.png)
 
 ## Step 2 @showdialog
 
@@ -17,12 +17,12 @@ a check on Light and Temperature. Press the button A and B to start and stop mov
 ## Step 3 @showdialog
 
 Turn on the Climate Action Kit board.
-![breakout board](https://forward-education.github.io/pxt-climate-action/tutorial-assets/breakout-turn-on.png)
+![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-turn-on.png)
 
 ## Step 4 @showhint
 
 Click three dots besides `|Download|` button, and click on _Connect Device_. Next, follow the steps to pair your micro:bit.
-![pair gif](https://forward-education.github.io/pxt-climate-action/tutorial-assets/pairmicrobit-280x203.gif)
+![pair gif](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobit-280x203.gif)
 
 ## Step 5 @showhint
 
@@ -32,13 +32,13 @@ Next, click the `|Download|` button to download the blank project to start-up th
 
 This is how the simulators should look after a successful download. You can see
 the Servo Motors along side the Pump.
-![initial-dowload-gif](https://forward-education.github.io/pxt-climate-action/tutorial-assets/board-no-sensors.png)
+![initial-dowload-gif](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/board-no-sensors.png)
 
 ## Step 7 @showhint
 
 Look below the @boardname@ simulator to see the Climate Action Board and the connected devices. Try to turn the motors on and off using
 the simulator and observe the changes.
-![servo-nocode](https://forward-education.github.io/pxt-climate-action/tutorial-assets/initial-sim-tree.gif)
+![servo-nocode](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/initial-sim-tree.gif)
 
 ## Step 8
 
@@ -58,11 +58,7 @@ Change the `||fwdMotors:right motor to rightServo||`.
 Keep the `||fwdMotors: left motor to leftServo||`.
 
 ```blocks
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 ```
 
 ## Step 10
@@ -82,15 +78,14 @@ Change `||Input:A||` to `||Input:B||` for the greyed `||Input:on button A presse
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
+	
 })
 input.onButtonPressed(Button.B, function () {
+	
 })
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
+	
 })
 ```
 
@@ -108,12 +103,9 @@ input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = 0
 })
 
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
+	
 })
 ```
 
@@ -130,12 +122,9 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = 0
 })
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
+	
 })
 ```
 
@@ -152,13 +141,10 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = false
 })
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 IsDrivingEnabled = false
 basic.forever(function () {
+	
 })
 ```
 
@@ -174,15 +160,13 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = false
 })
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (true) {
+    	
     }
     else {
+    	
     }
 })
 ```
@@ -206,8 +190,10 @@ fwdBase.rightServo
 basic.forever(function () {
     if (true) {
         for (let index = 0; index < 4; index++) {
+    	
     }
     } else {
+    	
     }
 })
 ```
@@ -225,20 +211,19 @@ input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = false
 })
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (true) {
     for (let index = 0; index < 4; index++){
         if (true) {
+    	
     }
     else {
+    	
     }
     } }
     else {
+    	
     }
 })
 ```
@@ -256,20 +241,19 @@ input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = false
 })
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
     for (let index = 0; index < 4; index++){
         if (true) {
+    	
     }
     else {
+    	
     }
     }
     }else {
+    	
     }
 })
 ```
@@ -287,21 +271,19 @@ input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = false
 })
 let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdBase.leftServo,
-fwdBase.rightServo,
-0
-)
+fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (IsDrivingEnabled) {
     for (let index = 0; index < 4; index++){
         if (true) {
+    	
     }
     else {
+    	
     }
     }
     }else {
-    fwdMotors.stop()
+    fwdMotors.drive(0, 0, 0)
     }
 })
 ```
@@ -325,13 +307,15 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
            if (true) {
+            	
             } else {
+            	
             }
         }
     } else {
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
     }
 })
 ```
@@ -357,14 +341,16 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
             basic.pause(5000)
            if (true) {
+            	
             } else {
+            	
             }
         }
     } else {
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
     }
 })
 ```
@@ -389,15 +375,18 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
             basic.pause(5000)
-            fwdMotors.turn(25)
+            // TODO: calibrate duration -- was turn(25) degrees in place
+            fwdMotors.drive(50, 50, 1000)
            if (true) {
+            	
             } else {
+            	
             }
         }
     } else {
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
     }
 })
 ```
@@ -423,15 +412,18 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
             basic.pause(5000)
-            fwdMotors.turn(25)
+            // TODO: calibrate duration -- was turn(25) degrees in place
+            fwdMotors.drive(50, 50, 1000)
            if (0 || 0) {
+            	
             } else {
+            	
             }
         }
     } else {
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
     }
 })
 ```
@@ -456,15 +448,18 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
             basic.pause(5000)
-            fwdMotors.turn(25)
+            // TODO: calibrate duration -- was turn(25) degrees in place
+            fwdMotors.drive(50, 50, 1000)
            if (0 || 0 || 0) {
+            	
             } else {
+            	
             }
         }
     } else {
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
     }
 })
 ```
@@ -489,15 +484,18 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
             basic.pause(5000)
-            fwdMotors.turn(25)
+            // TODO: calibrate duration -- was turn(25) degrees in place
+            fwdMotors.drive(50, 50, 1000)
            if (0 < 0  || 0 || 0) {
+            	
             } else {
+            	
             }
         }
     } else {
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
     }
 })
 ```
@@ -522,15 +520,18 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
             basic.pause(5000)
-            fwdMotors.turn(25)
+            // TODO: calibrate duration -- was turn(25) degrees in place
+            fwdMotors.drive(50, 50, 1000)
            if (0 < 0  || 0 < 0 || 0) {
+            	
             } else {
+            	
             }
         }
     } else {
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
     }
 })
 ```
@@ -555,15 +556,18 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
             basic.pause(5000)
-            fwdMotors.turn(25)
+            // TODO: calibrate duration -- was turn(25) degrees in place
+            fwdMotors.drive(50, 50, 1000)
            if (0 < 0  || 0 < 0 || 0 < 0) {
+            	
             } else {
+            	
             }
         }
     } else {
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
     }
 })
 ```
@@ -588,15 +592,18 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
             basic.pause(5000)
-            fwdMotors.turn(25)
+            // TODO: calibrate duration -- was turn(25) degrees in place
+            fwdMotors.drive(50, 50, 1000)
            if (lightThreshold < 0  || 0 < 0 || 0 < 0) {
+            	
             } else {
+            	
             }
         }
     } else {
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
     }
 })
 ```
@@ -621,15 +628,18 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
             basic.pause(5000)
-            fwdMotors.turn(25)
+            // TODO: calibrate duration -- was turn(25) degrees in place
+            fwdMotors.drive(50, 50, 1000)
            if (lightThreshold < 0  || temperatureThreshold < 0 || 0 < 0) {
+            	
             } else {
+            	
             }
         }
     } else {
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
     }
 })
 ```
@@ -655,15 +665,18 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
             basic.pause(5000)
-            fwdMotors.turn(25)
+            // TODO: calibrate duration -- was turn(25) degrees in place
+            fwdMotors.drive(50, 50, 1000)
            if (lightThreshold < input.lightLevel()  || temperatureThreshold < 0) {
+            	
             } else {
+            	
             }
         }
     } else {
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
     }
 })
 ```
@@ -689,15 +702,18 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
             basic.pause(5000)
-            fwdMotors.turn(25)
+            // TODO: calibrate duration -- was turn(25) degrees in place
+            fwdMotors.drive(50, 50, 1000)
            if (lightThreshold < input.lightLevel()  || temperatureThreshold < input.temperature()) {
+            	
             } else {
+            	
             }
         }
     } else {
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
     }
 })
 ```
@@ -730,15 +746,18 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
             basic.pause(5000)
-            fwdMotors.turn(25)
+            // TODO: calibrate duration -- was turn(25) degrees in place
+            fwdMotors.drive(50, 50, 1000)
            if (lightThreshold < input.lightLevel()  || temperatureThreshold < input.temperature()) {
+            	
             } else {
+            	
             }
         }
     } else {
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
     }
 })
 ```
@@ -765,17 +784,20 @@ let temperatureThreshold = 25
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
             basic.pause(5000)
-            fwdMotors.turn(25)
+            // TODO: calibrate duration -- was turn(25) degrees in place
+            fwdMotors.drive(50, 50, 1000)
             if (input.lightLevel() > lightThreshold || input.temperature() > temperatureThreshold) {
                 for (let index = 0; index < 4; index++) {
+                    	
                     }
             } else {
+            	
             }
         }
     } else {
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
     }
 })
 ```
@@ -802,19 +824,21 @@ let temperatureThreshold = 25
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
             basic.pause(5000)
-            fwdMotors.turn(25)
+            // TODO: calibrate duration -- was turn(25) degrees in place
+            fwdMotors.drive(50, 50, 1000)
             if (input.lightLevel() > lightThreshold || input.temperature() > temperatureThreshold) {
                 for (let index = 0; index < 4; index++) {
                     music.playTone(262, music.beat(BeatFraction.Whole))
                     music.playTone(262, music.beat(BeatFraction.Whole))
                 }
             } else {
+            	
             }
         }
     } else {
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
     }
 })
 ```
@@ -841,9 +865,10 @@ let temperatureThreshold = 25
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
             basic.pause(5000)
-            fwdMotors.turn(25)
+            // TODO: calibrate duration -- was turn(25) degrees in place
+            fwdMotors.drive(50, 50, 1000)
             if (input.lightLevel() > lightThreshold || input.temperature() > temperatureThreshold) {
                 for (let index = 0; index < 4; index++) {
                     music.playTone(262, music.beat(BeatFraction.Whole))
@@ -854,7 +879,7 @@ basic.forever(function () {
             }
         }
     } else {
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
     }
 })
 ```
@@ -881,9 +906,10 @@ let temperatureThreshold = 25
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50, 1000)
             basic.pause(5000)
-            fwdMotors.turn(25)
+            // TODO: calibrate duration -- was turn(25) degrees in place
+            fwdMotors.drive(50, 50, 1000)
             if (input.lightLevel() > lightThreshold || input.temperature() > temperatureThreshold) {
                 for (let index = 0; index < 4; index++) {
                     music.playTone(262, music.beat(BeatFraction.Whole))
@@ -895,7 +921,7 @@ basic.forever(function () {
             basic.pause(1000)
         }
     } else {
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
     }
 })
 ```
@@ -904,24 +930,24 @@ basic.forever(function () {
 
 `|Download|` and test your code. Click the bulb icon to see how
 the simulator shows the components working.
-![sonar-servos](https://forward-education.github.io/pxt-climate-action/tutorial-assets/simulator-17-ev-obstacle.gif)
+![sonar-servos](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-17-ev-obstacle.gif)
 
 ## Step 38 @showhint
 
 `|Download|` and test your code. Click the bulb icon to see how
 the simulator shows the components working.
-![servos](https://forward-education.github.io/pxt-climate-action/tutorial-assets/final-sim-tree.gif)
+![servos](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/final-sim-tree.gif)
 
 ## Step 39 @showdialog
 
 If after `|Downloading|` your project does not work please refer to the
 image and make sure your components are assigned correctly.
-![correct-assignment](https://forward-education.github.io/pxt-climate-action/tutorial-assets/correct-assignment-tree.png)
+![correct-assignment](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/correct-assignment-tree.png)
 
 ## Step 40 @showdialog
 
 Need help in assigning the right components to their simulators. Watch the video.
-![final-download](https://forward-education.github.io/pxt-climate-action/tutorial-assets/servo-assign.gif)
+![final-download](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/servo-assign.gif)
 
 ## Step 41 @showdialog
 

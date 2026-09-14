@@ -1,13 +1,13 @@
 # Smart Farming with Automated Watering
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ## Step 1 @showdialog
 
 Welcome to Smart Farming with Automated Watering Coding Tutorial
-![built project](https://forward-education.github.io/pxt-climate-action/tutorial-assets/project-advagri-200.png)
+![built project](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/project-advagri-200.png)
 
 ## Step 2 @showdialog
 
@@ -16,12 +16,12 @@ In this coding tutorial we will use the moisture sensor to measure the moisture 
 ## Step 3 @showdialog
 
 Turn on the Climate Action Kit board.
-![breakout board](https://forward-education.github.io/pxt-climate-action/tutorial-assets/breakout-turn-on.png)
+![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-turn-on.png)
 
 ## Step 4 @showhint
 
 Click three dots besides `|Download|` button, and click on _Connect Device_. Next, follow the steps to pair your micro:bit.
-![pair gif](https://forward-education.github.io/pxt-climate-action/tutorial-assets/pairmicrobit-280x203.gif)
+![pair gif](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pairmicrobit-280x203.gif)
 
 ## Step 5 @showhint
 
@@ -30,7 +30,7 @@ Next, click the `|Download|` button to download the blank project to start-up th
 ## Step 6 @showhint
 
 Look below the @boardname@ simulator to see the Climate Action Board and the connected sensors. Try holding the Moisture Sensor or dipping it in a glass of water. See how the virtual simulators react.
-![moisture](https://forward-education.github.io/pxt-climate-action/tutorial-assets/simulator-4-moisture.gif)
+![moisture](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-4-moisture.gif)
 
 ## Step 7
 
@@ -39,7 +39,7 @@ Click `||fwdSensors:Sensors||` drag and drop `||fwdSensors:set all ledRing LEDs 
 ```blocks
 basic.forever(function () {
     fwdLights.ledRing1.setAllPixelsColor(0xff0000)
-    )}
+    })
 ```
 
 ## Step 8
@@ -51,10 +51,12 @@ block under `||fwdSensors:set all ledRing LEDs to||` block.
 basic.forever(function () {
     fwdLights.ledRing1.setAllPixelsColor(0xff0000)
     if (true) {
+          	
           }
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 9
@@ -67,10 +69,12 @@ Change `||fwdSensors:5% to 50%||`.
 basic.forever(function () {
     fwdLights.ledRing1.setAllPixelsColor(0xff0000)
     if (fwdSensors.moisture1.isPastThreshold(50, fwdEnums.OverUnder.Over)) {
+          	
           }
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 10
@@ -84,8 +88,9 @@ basic.forever(function () {
     if (fwdSensors.moisture1.isPastThreshold(50, fwdEnums.OverUnder.Over)) {
           basic.showIcon(IconNames.Happy)}
     else {
+        	
         }
-        )}
+        })
 ```
 
 ## Step 11
@@ -100,7 +105,7 @@ basic.forever(function () {
           basic.showIcon(IconNames.Happy)}
     else {
         basic.showIcon(IconNames.Sad)}
-        )}
+        })
 ```
 
 ## Step 12
@@ -162,7 +167,7 @@ basic.forever(function () {
 
 `|Download|` and test your code. Click the bulb icon to see how
 the simulator shows the components working.
-![moisture-pump](https://forward-education.github.io/pxt-climate-action/tutorial-assets/simulator-11-Moisture-pump.gif)
+![moisture-pump](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-11-Moisture-pump.gif)
 
 ## Step 16 @showdialog
 

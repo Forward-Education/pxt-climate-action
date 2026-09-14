@@ -100,7 +100,6 @@ Can you find an **event** block in the `||input:Input||` category that we can us
 input.onGesture(Gesture.Shake, function () {
     steps += 1
 })
-
 ```
 
 ## Step 8

@@ -1,12 +1,7 @@
 # Smart Garbage Bins - Modify Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
-```
-
-```template
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
-sonar=github:forward-education/pxt-climate-action
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ```template
@@ -23,7 +18,7 @@ basic.forever(function () {
     fillLevel,
     100
     )
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.03, fwdEnums.OverUnder.Under)) {
+    if (fwdSensors.sonar1.isPastThreshold(0.03, fwdEnums.OverUnder.Under)) {
         fwdLights.ledRing1.setAllPixelsColor(0xff0000)
         fillLevel = 75
         basic.pause(500)
@@ -115,13 +110,13 @@ hint~
 
 ```blocks
 basic.forever(function () {
-      if (fwdSensors.sonar1.fwdDistancePastThreshold(0.03, fwdEnums.OverUnder.Under)) {
+      if (fwdSensors.sonar1.isPastThreshold(0.03, fwdEnums.OverUnder.Under)) {
         fwdLights.ledRing1.setAllPixelsColor(0xff0000)
         //@highlight
         fillLevel = 75
         basic.pause(500)
       }
-
+})
 ```
 
 ## Step 7
@@ -142,18 +137,20 @@ hint~
 
 ```blocks
 basic.forever(function () {
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.03, fwdEnums.OverUnder.Under)) {
+    if (fwdSensors.sonar1.isPastThreshold(0.03, fwdEnums.OverUnder.Under)) {
         fwdLights.ledRing1.setAllPixelsColor(0xff0000)
         fillLevel = 75
         basic.pause(500)
     }
 // @highlight
 else if (false) {
+    	
     }
 else {
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fillLevel = 0
     }
+})
 ```
 
 ## Step 8
@@ -187,23 +184,23 @@ What code blocks should we use to tell a Waste Management Specialist when our bi
 hint~
 
 ```blocks
-{
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.03, fwdEnums.OverUnder.Under)) {
+basic.forever(function () {
+    if (fwdSensors.sonar1.isPastThreshold(0.03, fwdEnums.OverUnder.Under)) {
         fwdLights.ledRing1.setAllPixelsColor(0xff0000)
         fillLevel = 75
         basic.pause(500)
-    } else if (fwdSensors.sonar1.fwdDistancePastThreshold(0.07, fwdEnums.OverUnder.Under)) {
+    } else if (fwdSensors.sonar1.isPastThreshold(0.07, fwdEnums.OverUnder.Under)) {
 // @highlight
         fwdLights.ledRing1.setAllPixelsColor(0xffff00)
 // @highlight
         fillLevel = 25
         // @highlight
         basic.pause(500)
-    }
     } else {
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fillLevel = 0
     }
+})
 ```
 
 ## Step 10

@@ -1,11 +1,7 @@
 # Habitat Monitoring - Modify Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
-```
-
-```template
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ```template
@@ -24,6 +20,7 @@ input.onButtonPressed(Button.A, function () {
     basic.pause(1000)
 })
 input.onButtonPressed(Button.AB, function () {
+	
 })
 input.onButtonPressed(Button.B, function () {
     basic.showLeds(`
@@ -81,7 +78,6 @@ basic.forever(function () {
         `)
     basic.pause(100)
 })
-
 ```
 
 ## Habitat Monitoring - Modify Tutorial @showdialog
@@ -204,7 +200,7 @@ hint~
 ```blocks
 // @highlight
 input.onButtonPressed(Button.AB, function () {
-
+	
 })
 ```
 

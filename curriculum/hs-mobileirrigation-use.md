@@ -1,27 +1,23 @@
 # Mobile Irrigation System - Use Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 datalogger=datalogger
 ```
 
 ```template
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
     for (let index = 0; index < 4; index++) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 25)
+        fwdMotors.drive(25, -25, 1000)
         basic.pause(3000)
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fwdMotors.pump.timedRun(1500)
         basic.pause(3000)
         fwdLights.ledRing1.setAllPixelsColor(0xff0000)
     }
 })
-fwdMotors.setupDriving(
-fwdBase.rightServo,
-fwdBase.leftServo,
-45
-)
+fwdMotors.setupDriving(fwdBase.rightServo, fwdBase.leftServo)
 fwdLights.ledRing1.setAllPixelsColor(0xff0000)
 ```
 
@@ -204,9 +200,9 @@ hint~
 ```blocks
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
     for (let index = 0; index < 4; index++) {
-        fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 25)
+        fwdMotors.drive(25, -25, 1000)
         basic.pause(3000)
-        fwdMotors.stop()
+        fwdMotors.drive(0, 0, 0)
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fwdMotors.pump.timedRun(1500)
         basic.pause(3000)

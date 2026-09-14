@@ -1,7 +1,7 @@
 # Monitoring Bees and Pollination with a Bug Counter
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ## Activity 1: Building Your Project @showdialog
@@ -43,13 +43,13 @@ Next, click the `|Download|` button to download the blank project to start up th
 ## Coding Set up Step 4 @showdialog
 
 This is how the simulators should look after a successful download. You can see the Dial, and the Servo Motors alongside the Pump.
-![initialdownload](https://forward-education.github.io/pxt-climate-action/tutorial-assets/initial-download.gif)
+![initialdownload](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/initial-download.gif)
 
 ## Coding Set up Step 5 @showhint
 
 Look below the @boardname @simulator to see the Climate Action kit Breakout Board and the connected sensors.
 Try turning the Dial on your project, the virtual simulator will react to it.
-![simulator](https://forward-education.github.io/pxt-climate-action/tutorial-assets/simulator-6-Dial.gif)
+![simulator](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-6-Dial.gif)
 
 ## Coding Set up Step 6 @showhint
 
@@ -259,7 +259,7 @@ basic.forever(function () {
 ## Coding Step 11
 
 Click the `|download|` button to download the code for your project.
-![downloadbuttongif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
+![downloadbuttongif](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/DownloadButtonGIF.webp)
 
 ## Coding 12 @showdialog
 

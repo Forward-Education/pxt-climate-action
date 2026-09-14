@@ -1,7 +1,7 @@
 # Sump Pumps - Modify Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v1.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 ```
 
 ```template
@@ -9,11 +9,11 @@ let threshold = 0
 threshold = 25
 
 input.onButtonPressed(Button.A, function () {
-
+   	
    })
 
 input.onButtonPressed(Button.AB, function () {
-    fwdMotors.pump.fwdSetActive(false)
+    fwdMotors.pump.setActive(false)
 })
 
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
@@ -86,8 +86,8 @@ hint~
 basic.forever(function () {
 // @highlight
     if (fwdSensors.moisture1.isPastThreshold(20, fwdEnums.OverUnder.Over)) {
+        	
         }
-    }
 })
 ```
 
@@ -113,6 +113,9 @@ let threshold = 25
 basic.forever(function () {
  // @highlight
   if (fwdSensors.moisture1.isPastThreshold(threshold, fwdEnums.OverUnder.Over)) {
+	
+}
+})
 ```
 
 ## Step 7
@@ -215,6 +218,8 @@ basic.forever(function () {
     if (fwdSensors.moisture1.isPastThreshold(threshold, fwdEnums.OverUnder.Over)) {
 // @highlight
  fwdMotors.pump.timedRun(500)
+}
+})
 ```
 
 ## Step 11
@@ -238,6 +243,8 @@ basic.forever(function () {
     if (fwdSensors.moisture1.isPastThreshold(threshold, fwdEnums.OverUnder.Over)) {
 // @highlight
  fwdMotors.pump.timedRun(1000)
+}
+})
 ```
 
 ## Step 12 @showdialog
