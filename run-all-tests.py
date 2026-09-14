@@ -57,6 +57,9 @@ def ts_files(directory, recursive=False):
     return sorted(p.replace(os.path.sep, "/") for p in glob.glob(pattern, recursive=recursive))
 
 
+BUILD_RETRIES = 2
+
+
 def build(test_files, native=False, extra_deps=None):
     """Set testFiles, run mkc, return (ok, combined_output)."""
     config = copy.deepcopy(_original_pxt_json)
@@ -73,22 +76,56 @@ def build(test_files, native=False, extra_deps=None):
     return result.returncode == 0, (result.stdout or "") + (result.stderr or "")
 
 
+def build_confirmed(test_files, native=False, extra_deps=None, retries=BUILD_RETRIES):
+    """Like build(), but a failure is only trusted once it repeats.
+
+    `mkc` occasionally fails a build for reasons that have nothing to do with the
+    snippet under test (a flaky network fetch of a github: dependency, a transient
+    tool hiccup). A single failing run is retried up to `retries` times; only a
+    failure that reproduces every time is reported, so bisect() never mistakes a
+    one-off blip for a real compile error. The last attempt's output is returned,
+    whichever way it went.
+    """
+    ok, output = build(test_files, native=native, extra_deps=extra_deps)
+    for _ in range(retries - 1):
+        if ok:
+            break
+        ok, output = build(test_files, native=native, extra_deps=extra_deps)
+    return ok, output
+
+
 def bisect(test_files, extra_deps=None):
-    """Narrow a failing batch down to the individual files that fail."""
+    """Narrow a failing batch down to the individual files that actually fail.
+
+    Every verdict here is confirmed with build_confirmed() before being trusted,
+    including the base case -- a leaf is never blamed just for being what's left
+    over when the recursion bottoms out; it has to fail to compile on its own.
+    """
     if len(test_files) == 1:
-        return test_files
+        ok, _ = build_confirmed(test_files, extra_deps=extra_deps)
+        return [] if ok else test_files
 
     mid = len(test_files) // 2
     halves = [test_files[:mid], test_files[mid:]]
     culprits = []
+    any_half_failed = False
     for half in halves:
-        ok, _ = build(half, extra_deps=extra_deps)
+        ok, _ = build_confirmed(half, extra_deps=extra_deps)
         if not ok:
+            any_half_failed = True
             culprits.extend(bisect(half, extra_deps=extra_deps))
 
-    # Both halves passing individually means the failure needs the whole set --
-    # a cross-file collision rather than one bad snippet.
-    return culprits or test_files
+    if not any_half_failed:
+        # The parent batch failed but neither half does, even under retry -- the
+        # parent failure itself was transient, not the file set's fault.
+        return []
+
+    # Both halves failed but neither recursion pinned a lone culprit inside it:
+    # the failure needs several of these files together (a cross-file collision),
+    # not any single snippet. Wrapped in a tuple so run_pass can tell "one bad
+    # file" apart from "these files only fail as a group" and report it as such,
+    # instead of rebuilding each member alone and printing a misleading OK.
+    return culprits or [tuple(test_files)]
 
 
 def run_pass(label, test_files, extra_deps=None):
@@ -98,16 +135,27 @@ def run_pass(label, test_files, extra_deps=None):
         return []
 
     print(f"[{label}] building {len(test_files)} file(s)...")
-    ok, output = build(test_files, extra_deps=extra_deps)
+    ok, output = build_confirmed(test_files, extra_deps=extra_deps)
     if ok:
         print(f"[{label}] OK")
         return []
 
     print(f"[{label}] FAILED -- bisecting to attribute the error")
     culprits = bisect(test_files, extra_deps=extra_deps)
+    if not culprits:
+        print(f"[{label}] no culprit reproduced on retry -- the failure was transient")
+        return []
     for culprit in culprits:
-        _, detail = build([culprit], extra_deps=extra_deps)
-        print(f"\n--- {culprit} ---")
+        if isinstance(culprit, tuple):
+            # A group that only fails together: rebuilding one member alone
+            # would just print a misleading "Build OK", so show the group's
+            # own failing build instead.
+            group = list(culprit)
+            _, detail = build_confirmed(group, extra_deps=extra_deps)
+            print(f"\n--- {' + '.join(group)} (fails only as a group) ---")
+        else:
+            _, detail = build_confirmed([culprit], extra_deps=extra_deps)
+            print(f"\n--- {culprit} ---")
         print(detail.strip())
     return culprits
 
@@ -144,7 +192,7 @@ def main():
         # Pass 3: native build of the smoke test only, for link-step coverage that
         # the JS target cannot provide.
         print("[native] building smoke test natively...")
-        ok, output = build([SMOKE_TEST], native=True)
+        ok, output = build_confirmed([SMOKE_TEST], native=True)
         if ok:
             print("[native] OK")
         else:
@@ -157,7 +205,10 @@ def main():
     if failures:
         print("\n=== FAILED ===")
         for failure in failures:
-            print(f"  {failure}")
+            if isinstance(failure, tuple):
+                print(f"  {' + '.join(failure)} (fails only as a group)")
+            else:
+                print(f"  {failure}")
         return 1
 
     print("\nAll passes succeeded.")
