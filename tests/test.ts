@@ -35,7 +35,7 @@ if (fwdMotors.pump.isOn()) {
 fwdMotors.setSpeed(fwdBase.leftServo, 0)
 basic.showNumber(fwdMotors.getSpeed(fwdBase.leftServo))
 fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.leftServo)
-fwdMotors.drive(50, -50, 1000)
+fwdMotors.driveTimed(50, -50, 1000)
 fwdMotors.setAngle(
     fwdBase.leftServo,
     45
