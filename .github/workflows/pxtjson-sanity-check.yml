@@ -47,23 +47,38 @@ jobs:
                     }
 
     pin_in_sync:
-        name: "Tutorial dependency pin matches pxt.json version"
+        name: "Tutorial dependency pin matches pxt.json major version"
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
 
-            # Tutorials pin the extension they teach. A version bump that does not
-            # update the pin leaves every tutorial loading an older extension.
-            - name: Pinned version equals .version
+            # Tutorials pin the extension they teach. Only the major version must
+            # match, so tutorial-only fixes can ship without moving the pin. Note
+            # the snippet tests compile against local source, not the pinned tag:
+            # a tutorial using a block newer than its pin will not be caught here.
+            - name: Pins agree, exist, and share .version's major
               run: |
                   set -euo pipefail
                   version=$(jq -er '.version' pxt.json)
-                  expected="pxt-climate-action#v${version}"
                   found=$(grep -ho 'pxt-climate-action#v[0-9.]*' curriculum/*.md | sort -u)
-                  if [ "$found" != "$expected" ]; then
-                      echo "::error file=pxt.json::pxt.json is v${version} but curriculum pins:"
+                  fix="Run: sed -i \"s|pxt-climate-action#v[0-9.]*|pxt-climate-action#v${version}|g\" curriculum/*.md"
+                  if [ "$(wc -l <<< "$found")" -ne 1 ]; then
+                      echo "::error::curriculum pins more than one version:"
                       echo "$found"
-                      echo "Run: sed -i \"s|pxt-climate-action#v[0-9.]*|${expected}|g\" curriculum/*.md"
+                      echo "$fix"
                       exit 1
                   fi
-                  echo "All tutorials pin ${expected}"
+                  pinned=${found#*#v}
+                  if [ "${pinned%%.*}" != "${version%%.*}" ]; then
+                      echo "::error file=pxt.json::pxt.json is v${version} but curriculum pins v${pinned} (major differs)"
+                      echo "$fix"
+                      exit 1
+                  fi
+                  if [ -z "$(git ls-remote --tags origin "refs/tags/v${pinned}")" ]; then
+                      echo "::error::curriculum pins v${pinned}, which is not a tag on origin"
+                      exit 1
+                  fi
+                  if [ "$pinned" != "$version" ]; then
+                      echo "::warning::curriculum pins v${pinned}, pxt.json is v${version}. Fine for tutorial-only changes."
+                  fi
+                  echo "All tutorials pin v${pinned}"
