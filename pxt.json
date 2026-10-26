@@ -1,6 +1,6 @@
 {
     "name": "fwd-climate-action",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "description": "Forward Education's Climate Action Kit BETA extension, micro:bit V2 only.",
     "license": "MIT",
     "dependencies": {
