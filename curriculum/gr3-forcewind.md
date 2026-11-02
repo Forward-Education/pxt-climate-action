@@ -1,7 +1,7 @@
 # The Powerful Force of Wind
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.1.0
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.1.1
 ```
 
 ```template
