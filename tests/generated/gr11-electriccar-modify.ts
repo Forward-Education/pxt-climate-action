@@ -15,12 +15,12 @@ basic.forever(function () {
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         } else {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 }
@@ -33,14 +33,14 @@ basic.forever(function () {
         if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             // @highlight
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         } else {
             // @highlight
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
         }
     } else {
         // @highlight
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 }
@@ -50,9 +50,9 @@ namespace gr11_electriccar_modify_block01 {
 let IsDrivingEnabled = false
 if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             // TODO: calibrate duration -- was turn(10) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 333)
         } else {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
         }
 }
 
@@ -62,9 +62,9 @@ let IsDrivingEnabled = false
 // @highlight
 if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
             // TODO: calibrate duration -- was turn(10) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 333)
         } else {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
         }
 }
 
@@ -75,9 +75,9 @@ if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             // @highlight
             basic.pause(1000)
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         } else {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
         }
 }
 
@@ -87,11 +87,11 @@ let IsDrivingEnabled = false
 if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             basic.pause(1000)
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
             // @highlight
             basic.pause(1000)
         } else {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
         }
 }
 
@@ -101,12 +101,12 @@ let IsDrivingEnabled = false
 if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             basic.pause(1000)
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
             basic.pause(1000)
             // @highlight
-            fwdMotors.drive(-50, 50, 1000)
+            fwdMotors.drive(-50, 50)
         } else {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
         }
 }
 
@@ -115,13 +115,13 @@ namespace gr11_electriccar_modify_block06 {
 let IsDrivingEnabled = false
 if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             // @highlight
-            fwdMotors.drive(0, 0, 0)
+            fwdMotors.stop()
             basic.pause(1000)
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
             basic.pause(1000)
-            fwdMotors.drive(-50, 50, 1000)
+            fwdMotors.drive(-50, 50)
         } else {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
         }
 }

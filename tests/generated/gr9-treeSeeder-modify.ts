@@ -6,15 +6,15 @@ namespace gr9_treeSeeder_modify_template01 {
 let seedDensity = [0]
 input.onButtonPressed(Button.A, function () {
     for (let index2 = 0; index2 < 4; index2++) {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         basic.pause(1000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
         fwdMotors.setAngle(fwdBase.middleServo, 45)
         basic.pause(250)
     }
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 // @collapsed
 input.onButtonPressed(Button.B, function () {
@@ -39,9 +39,9 @@ namespace gr9_treeSeeder_modify_blocks01 {
 let seedDensity = [0]
 input.onButtonPressed(Button.A, function () {
     for (let index2 = 0; index2 < 4; index2++) {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         basic.pause(1000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         // @highlight
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
@@ -49,7 +49,7 @@ input.onButtonPressed(Button.A, function () {
         fwdMotors.setAngle(fwdBase.middleServo, 45)
         basic.pause(250)
     }
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 let index = 0
 index = 0
@@ -63,9 +63,9 @@ namespace gr9_treeSeeder_modify_block01 {
 let index = 0
 let seedDensity = [0]
 for (let index2 = 0; index2 < 4; index2++) {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         basic.pause(1000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         // @highlight
         fwdMotors.setAngle(fwdBase.middleServo, 100)
         basic.pause(250)
@@ -79,9 +79,9 @@ namespace gr9_treeSeeder_modify_block02 {
 let index = 0
 let seedDensity = [0]
 for (let index2 = 0; index2 < 4; index2++) {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         basic.pause(1000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         // @highlight
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
@@ -97,15 +97,15 @@ let seedDensity = [0]
 input.onButtonPressed(Button.A, function () {
     // @highlight
     for (let index2 = 0; index2 < 5; index2++) {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         basic.pause(1000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
         fwdMotors.setAngle(fwdBase.middleServo, 45)
         basic.pause(250)
     }
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 }
 
@@ -114,10 +114,10 @@ namespace gr9_treeSeeder_modify_block03 {
 let index = 0
 let seedDensity = [0]
 for (let index2 = 0; index2 < 5; index2++) {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         // @highlight
         basic.pause(200)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
         fwdMotors.setAngle(fwdBase.middleServo, 45)
@@ -175,10 +175,10 @@ namespace gr9_treeSeeder_modify_block04 {
 let index = 0
 for (let index2 = 0; index2 < 4; index2++) {
         let seedDensity: number[] = []
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         // @highlight
         basic.pause(seedDensity[0])
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
         fwdMotors.setAngle(fwdBase.middleServo, 45)
@@ -191,10 +191,10 @@ namespace gr9_treeSeeder_modify_block05 {
 let index = 0
 let seedDensity = [0]
 for (let index2 = 0; index2 < 4; index2++) {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         // @highlight
         basic.pause(seedDensity[index])
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
         fwdMotors.setAngle(fwdBase.middleServo, 45)

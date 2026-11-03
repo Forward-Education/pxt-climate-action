@@ -1,7 +1,7 @@
 # Autonomous Electric Vehicles of the Future - Use Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.1.1
 ```
 
 ## Activity 1: Build your Project @showdialog
@@ -117,14 +117,14 @@ basic.forever(function () {
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             basic.pause(1000)
-            fwdMotors.drive(-50, 50, 1000)
+            fwdMotors.drive(-50, 50)
             // TODO: calibrate duration -- was turn(10) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 333)
         } else {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 ```
@@ -205,14 +205,14 @@ basic.forever(function () {
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             basic.pause(1000)
-            fwdMotors.drive(-50, 50, 1000)
+            fwdMotors.drive(-50, 50)
             // TODO: calibrate duration -- was turn(10) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 333)
         } else {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 ```
@@ -233,11 +233,11 @@ Take a look at the second conditional in your code. What do you think `||fwdSens
 ```block
         if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             basic.pause(1000)
-            fwdMotors.drive(-50, 50, 1000)
+            fwdMotors.drive(-50, 50)
             // TODO: calibrate duration -- was turn(10) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 333)
         } else {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
         }
 ```
 
@@ -258,12 +258,12 @@ When something blocks your vehicle's path, it triggers a sequence of actions:
             // @highlight
             basic.pause(1000)
             // @highlight
-            fwdMotors.drive(-50, 50, 1000)
+            fwdMotors.drive(-50, 50)
             // @highlight
             // TODO: calibrate duration -- was turn(10) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 333)
         } else {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
         }
 ```
 

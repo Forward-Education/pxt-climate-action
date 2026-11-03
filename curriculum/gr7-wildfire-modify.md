@@ -1,7 +1,7 @@
 # Wildfire Detection with Autonomous Vehicles - Modify
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.1.1
 microphone=microphone
 ```
 
@@ -97,15 +97,15 @@ The code will be the instructions that tell our micro:bit what to do.
 ```template
 basic.forever(function () {
     if (isDrivingEnabled) {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         if (input.lightLevel() > 135) {
-            fwdMotors.drive(0, 0, 0)
+            fwdMotors.stop()
             music.playTone(262, music.beat(BeatFraction.Breve))
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 
@@ -182,12 +182,12 @@ The vehicle:
 
 ```block
 if (isDrivingEnabled) {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         if (input.lightLevel() > 135) {
-            fwdMotors.drive(0, 0, 0)
+            fwdMotors.stop()
             music.playTone(262, music.beat(BeatFraction.Breve))
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         }
     }
 ```
@@ -208,10 +208,10 @@ Try changing the threshold value to something dramatically lower like ‘1’. R
 
 ```block
         if (input.lightLevel() > 1) {
-            fwdMotors.drive(0, 0, 0)
+            fwdMotors.stop()
             music.playTone(262, music.beat(BeatFraction.Breve))
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         }
 ```
 
@@ -232,10 +232,10 @@ Shine a light onto the micro:bit's LEDs. How does this affect the vehicle's beha
 
 ```block
         if (input.lightLevel() > 250) {
-            fwdMotors.drive(0, 0, 0)
+            fwdMotors.stop()
             music.playTone(262, music.beat(BeatFraction.Breve))
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         }
 ```
 
@@ -245,10 +245,10 @@ Change your threshold back to '135'.
 
 ```block
         if (input.lightLevel() > 135) {
-            fwdMotors.drive(0, 0, 0)
+            fwdMotors.stop()
             music.playTone(262, music.beat(BeatFraction.Breve))
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         }
 ```
 
@@ -315,10 +315,10 @@ Notice the shape of this block and the shape of the blank spaces. How can we use
 
 ```block
 if (input.lightLevel() > 135 || input.soundLevel() > 135) {
-            fwdMotors.drive(0, 0, 0)
+            fwdMotors.stop()
             music.playTone(262, music.beat(BeatFraction.Breve))
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         }
 ```
 
@@ -336,10 +336,10 @@ What happens when you shine the light on the LEDs or when you make a loud noise 
 
 ```block
 if (input.lightLevel() > 135 || input.soundLevel() > 135) {
-            fwdMotors.drive(0, 0, 0)
+            fwdMotors.stop()
             music.playTone(262, music.beat(BeatFraction.Breve))
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         }
 ```
 
@@ -358,10 +358,10 @@ Test out your new code. What happens when you shine the light on the LEDs or whe
 
 ```block
 if (input.lightLevel() > 135 && input.soundLevel() > 135) {
-            fwdMotors.drive(0, 0, 0)
+            fwdMotors.stop()
             music.playTone(262, music.beat(BeatFraction.Breve))
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         }
 ```
 
@@ -388,7 +388,7 @@ Check the lightbulb for one possible solution! Did you do something different?
 
 ```block
 if (input.lightLevel() > 135 && input.soundLevel() > 135) {
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
     for (let index = 0; index < 4; index++) {
         music.playTone(262, music.beat(BeatFraction.Double))
         basic.pause(100)
@@ -396,7 +396,7 @@ if (input.lightLevel() > 135 && input.soundLevel() > 135) {
         basic.pause(100)
     }
     // TODO: calibrate duration -- was turn(15) degrees in place
-    fwdMotors.drive(50, 50, 1000)
+    fwdMotors.driveTimed(60, 60, 500)
 }
 ```
 

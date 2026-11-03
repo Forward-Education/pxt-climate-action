@@ -1,7 +1,7 @@
 # Mission on the Moon - Sonar Avoidance
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.1.1
 ```
 
 ## Step 1 @showdialog
@@ -113,7 +113,7 @@ fwdBase.rightServo,
 )
 basic.forever(function () {
     if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
             }
         else {
         	
@@ -133,7 +133,7 @@ fwdBase.rightServo,
 )
 basic.forever(function () {
     if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         basic.pause(1000)
         }
     else {
@@ -155,9 +155,9 @@ fwdBase.rightServo,
 )
 basic.forever(function () {
     if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         basic.pause(1000)
-        fwdMotors.drive(-50, 50, 1000)
+        fwdMotors.drive(-50, 50)
         }
     else {
         	
@@ -177,9 +177,9 @@ fwdBase.rightServo,
 )
 basic.forever(function () {
     if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         basic.pause(1000)
-        fwdMotors.drive(-50, 50, 1000)
+        fwdMotors.drive(-50, 50)
         basic.pause(1000)
     }
     else {
@@ -201,12 +201,12 @@ fwdBase.rightServo,
 )
 basic.forever(function () {
     if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         basic.pause(1000)
-        fwdMotors.drive(-50, 50, 1000)
+        fwdMotors.drive(-50, 50)
         basic.pause(1000)
         // TODO: calibrate duration -- was turn(25) degrees in place
-        fwdMotors.drive(50, 50, 1000)
+        fwdMotors.driveTimed(60, 60, 833)
     }
     else {
     	
@@ -226,12 +226,12 @@ fwdBase.rightServo,
 )
 basic.forever(function () {
     if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         basic.pause(1000)
-        fwdMotors.drive(-50, 50, 1000)
+        fwdMotors.drive(-50, 50)
         basic.pause(1000)
         // TODO: calibrate duration -- was turn(25) degrees in place
-        fwdMotors.drive(50, 50, 1000)
+        fwdMotors.driveTimed(60, 60, 833)
         basic.pause(1000)
     } else {
         	
@@ -251,15 +251,15 @@ fwdBase.rightServo,
 )
 basic.forever(function () {
     if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         basic.pause(1000)
-        fwdMotors.drive(-50, 50, 1000)
+        fwdMotors.drive(-50, 50)
         basic.pause(1000)
         // TODO: calibrate duration -- was turn(25) degrees in place
-        fwdMotors.drive(50, 50, 1000)
+        fwdMotors.driveTimed(60, 60, 833)
         basic.pause(1000)
     } else {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
     }
 })
 ```
@@ -273,15 +273,15 @@ block inside `||basic:on start||` block. Set bias to `||fwdMotors: 0||`.
 fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         basic.pause(1000)
-        fwdMotors.drive(-50, 50, 1000)
+        fwdMotors.drive(-50, 50)
         basic.pause(1000)
         // TODO: calibrate duration -- was turn(25) degrees in place
-        fwdMotors.drive(50, 50, 1000)
+        fwdMotors.driveTimed(60, 60, 833)
         basic.pause(1000)
     } else {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
     }
 })
 ```

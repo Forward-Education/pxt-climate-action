@@ -1,7 +1,7 @@
 # Forward Education Smart Warehouse Vehicle - Modify Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.1.1
 ```
 
 ```template
@@ -19,13 +19,13 @@ fwdBase.rightServo
 )
 basic.forever(function () {
   if (IsDrivingEnabled == false) {
-      fwdMotors.drive(0, 0, 0)
+      fwdMotors.stop()
       basic.showIcon(IconNames.No)
   }
   if (IsDrivingEnabled == true) {
       if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off) && fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.Off)) {
           basic.showArrow(ArrowNames.North)
-          fwdMotors.drive(20, -20, 1000)
+          fwdMotors.drive(20, -20)
       } else if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off) && fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.On) || fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off) && fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On)) {
           basic.showLeds(`
               . . # . .
@@ -35,11 +35,11 @@ basic.forever(function () {
               . . # . .
               `)
           // TODO: calibrate duration -- was turn(2) degrees in place
-          fwdMotors.drive(50, 50, 1000)
+          fwdMotors.driveTimed(60, 60, 67)
           if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On) && (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.On) && fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On))) {
               basic.showArrow(ArrowNames.East)
               // TODO: calibrate duration -- was turn(1) degrees in place
-              fwdMotors.drive(50, 50, 1000)
+              fwdMotors.driveTimed(60, 60, 33)
           }
       } else if (fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.Off) && fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.On) || fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.Off) && fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
           basic.showLeds(`
@@ -50,14 +50,14 @@ basic.forever(function () {
               . . # . .
               `)
           // TODO: calibrate duration -- was turn(-2) degrees in place
-          fwdMotors.drive(-50, -50, 1000)
+          fwdMotors.driveTimed(-60, -60, 67)
           if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On) && (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.On) && fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On))) {
               basic.showArrow(ArrowNames.West)
               // TODO: calibrate duration -- was turn(-1) degrees in place
-              fwdMotors.drive(-50, -50, 1000)
+              fwdMotors.driveTimed(-60, -60, 33)
           }
       } else {
-          fwdMotors.drive(0, 0, 0)
+          fwdMotors.stop()
           basic.showIcon(IconNames.Square)
       }
   }
@@ -231,7 +231,7 @@ The vehicle is moving forward twice as fast!
 hint~
 
 ```block
-fwdMotors.drive(40, -40, 1000)
+fwdMotors.drive(40, -40)
 ```
 
 ## Modify Step 4
@@ -272,13 +272,13 @@ basic.forever(function () {
                . . # . .
                `)
            // TODO: calibrate duration -- was turn(2) degrees in place
-           fwdMotors.drive(50, 50, 1000)
+           fwdMotors.driveTimed(60, 60, 67)
            //@highlight
            basic.pause(1000)
            if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On) && (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.On) && fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On))) {
                basic.showArrow(ArrowNames.East)
                // TODO: calibrate duration -- was turn(1) degrees in place
-               fwdMotors.drive(50, 50, 1000)
+               fwdMotors.driveTimed(60, 60, 33)
            //@highlight
                basic.pause(1000)
            }
@@ -377,7 +377,7 @@ basic.forever(function () {
       if (fwdSensors.sonar1.isPastThreshold(1, fwdEnums.OverUnder.Over)) {
           if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off) && fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.Off)) {
               basic.showArrow(ArrowNames.North)
-              fwdMotors.drive(20, -20, 1000)
+              fwdMotors.drive(20, -20)
           } else if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off) && fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.On) || fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off) && fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On)) {
               basic.showLeds(`
                   . . # . .
@@ -387,11 +387,11 @@ basic.forever(function () {
                   . . # . .
                   `)
               // TODO: calibrate duration -- was turn(2) degrees in place
-              fwdMotors.drive(50, 50, 1000)
+              fwdMotors.driveTimed(60, 60, 67)
               if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On) && (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.On) && fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On))) {
                   basic.showArrow(ArrowNames.East)
                   // TODO: calibrate duration -- was turn(1) degrees in place
-                  fwdMotors.drive(50, 50, 1000)
+                  fwdMotors.driveTimed(60, 60, 33)
               }
           } else if (fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.Off) && fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.On) || fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.Off) && fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
               basic.showLeds(`
@@ -402,14 +402,14 @@ basic.forever(function () {
                   . . # . .
                   `)
               // TODO: calibrate duration -- was turn(-2) degrees in place
-              fwdMotors.drive(-50, -50, 1000)
+              fwdMotors.driveTimed(-60, -60, 67)
               if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On) && (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.On) && fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On))) {
                   basic.showArrow(ArrowNames.West)
                   // TODO: calibrate duration -- was turn(-1) degrees in place
-                  fwdMotors.drive(-50, -50, 1000)
+                  fwdMotors.driveTimed(-60, -60, 33)
               }
           } else {
-              fwdMotors.drive(0, 0, 0)
+              fwdMotors.stop()
               basic.showIcon(IconNames.Square)
           }
       }
@@ -418,7 +418,7 @@ basic.forever(function () {
          //@highlight
           basic.showIcon(IconNames.Sad)
           //@highlight
-          fwdMotors.drive(0, 0, 0)
+          fwdMotors.stop()
       }
   }
 })
@@ -445,12 +445,12 @@ basic.forever(function () {
       if (fwdSensors.sonar1.isPastThreshold(.3, fwdEnums.OverUnder.Over)) {
           if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off) && fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.Off)) {
               basic.showArrow(ArrowNames.North)
-              fwdMotors.drive(20, -20, 1000)
+              fwdMotors.drive(20, -20)
           }
       }
       else {
           basic.showIcon(IconNames.Sad)
-          fwdMotors.drive(0, 0, 0)
+          fwdMotors.stop()
       }
   }
 })

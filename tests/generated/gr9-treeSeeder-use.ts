@@ -5,15 +5,15 @@
 namespace gr9_treeSeeder_use_template01 {
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         basic.pause(1000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
         fwdMotors.setAngle(fwdBase.middleServo, 45)
         basic.pause(250)
     }
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 fwdMotors.setAngle(fwdBase.middleServo, 45)
 fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
@@ -27,15 +27,15 @@ fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
     // @highlight
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         basic.pause(1000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
         fwdMotors.setAngle(fwdBase.middleServo, 45)
         basic.pause(250)
     }
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 }
 
@@ -46,9 +46,9 @@ fwdMotors.setAngle(fwdBase.middleServo, 45)
 fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         basic.pause(1000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         // @highlight
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
@@ -56,17 +56,17 @@ input.onButtonPressed(Button.A, function () {
         fwdMotors.setAngle(fwdBase.middleServo, 45)
         basic.pause(250)
     }
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 }
 
 // gr9-treeSeeder-use.md :: ```block fence #1
 namespace gr9_treeSeeder_use_block01 {
 for (let index = 0; index < 4; index++) {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         // @highlight
         basic.pause(1000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         // @highlight
         basic.pause(250)
@@ -74,5 +74,5 @@ for (let index = 0; index < 4; index++) {
         // @highlight
         basic.pause(250)
     }
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 }

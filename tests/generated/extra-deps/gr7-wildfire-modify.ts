@@ -5,15 +5,15 @@
 namespace gr7_wildfire_modify_template01 {
 basic.forever(function () {
     if (isDrivingEnabled) {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         if (input.lightLevel() > 135) {
-            fwdMotors.drive(0, 0, 0)
+            fwdMotors.stop()
             music.playTone(262, music.beat(BeatFraction.Breve))
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 
@@ -37,12 +37,12 @@ fwdBase.leftServo
 namespace gr7_wildfire_modify_block01 {
 let isDrivingEnabled = false
 if (isDrivingEnabled) {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         if (input.lightLevel() > 135) {
-            fwdMotors.drive(0, 0, 0)
+            fwdMotors.stop()
             music.playTone(262, music.beat(BeatFraction.Breve))
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         }
     }
 }
@@ -51,10 +51,10 @@ if (isDrivingEnabled) {
 namespace gr7_wildfire_modify_block02 {
 let isDrivingEnabled = false
 if (input.lightLevel() > 1) {
-            fwdMotors.drive(0, 0, 0)
+            fwdMotors.stop()
             music.playTone(262, music.beat(BeatFraction.Breve))
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         }
 }
 
@@ -62,10 +62,10 @@ if (input.lightLevel() > 1) {
 namespace gr7_wildfire_modify_block03 {
 let isDrivingEnabled = false
 if (input.lightLevel() > 250) {
-            fwdMotors.drive(0, 0, 0)
+            fwdMotors.stop()
             music.playTone(262, music.beat(BeatFraction.Breve))
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         }
 }
 
@@ -73,10 +73,10 @@ if (input.lightLevel() > 250) {
 namespace gr7_wildfire_modify_block04 {
 let isDrivingEnabled = false
 if (input.lightLevel() > 135) {
-            fwdMotors.drive(0, 0, 0)
+            fwdMotors.stop()
             music.playTone(262, music.beat(BeatFraction.Breve))
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         }
 }
 
@@ -92,10 +92,10 @@ if (input.soundLevel() > 135) {
 namespace gr7_wildfire_modify_block06 {
 let isDrivingEnabled = false
 if (input.lightLevel() > 135 || input.soundLevel() > 135) {
-            fwdMotors.drive(0, 0, 0)
+            fwdMotors.stop()
             music.playTone(262, music.beat(BeatFraction.Breve))
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         }
 }
 
@@ -103,10 +103,10 @@ if (input.lightLevel() > 135 || input.soundLevel() > 135) {
 namespace gr7_wildfire_modify_block07 {
 let isDrivingEnabled = false
 if (input.lightLevel() > 135 || input.soundLevel() > 135) {
-            fwdMotors.drive(0, 0, 0)
+            fwdMotors.stop()
             music.playTone(262, music.beat(BeatFraction.Breve))
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         }
 }
 
@@ -114,10 +114,10 @@ if (input.lightLevel() > 135 || input.soundLevel() > 135) {
 namespace gr7_wildfire_modify_block08 {
 let isDrivingEnabled = false
 if (input.lightLevel() > 135 && input.soundLevel() > 135) {
-            fwdMotors.drive(0, 0, 0)
+            fwdMotors.stop()
             music.playTone(262, music.beat(BeatFraction.Breve))
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         }
 }
 
@@ -125,7 +125,7 @@ if (input.lightLevel() > 135 && input.soundLevel() > 135) {
 namespace gr7_wildfire_modify_block09 {
 let isDrivingEnabled = false
 if (input.lightLevel() > 135 && input.soundLevel() > 135) {
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
     for (let index = 0; index < 4; index++) {
         music.playTone(262, music.beat(BeatFraction.Double))
         basic.pause(100)
@@ -133,6 +133,6 @@ if (input.lightLevel() > 135 && input.soundLevel() > 135) {
         basic.pause(100)
     }
     // TODO: calibrate duration -- was turn(15) degrees in place
-    fwdMotors.drive(50, 50, 1000)
+    fwdMotors.driveTimed(60, 60, 500)
 }
 }

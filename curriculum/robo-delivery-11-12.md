@@ -1,7 +1,7 @@
 # Warehouse Efficiency using Autonomous Delivery Robots and AI
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.1.1
 ```
 
 ## Step 1 @showdialog
@@ -250,7 +250,7 @@ Click `||Logic:Logic||` drag and drop `||logic:true|` to replace 0 in `||Variabl
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -281,7 +281,7 @@ Click `||fwdMotors:Motors||` drag and drop `||fwdMotors:Stop||` under `||Variabl
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -308,7 +308,7 @@ Click `||logic:Logic||` drag and drop `||logic:if true then else||` block inside
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -341,7 +341,7 @@ Click `||fwdSensors:Sensors||` drag and drop `||fwdSensors:sonar1 distance is un
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -373,7 +373,7 @@ Click `||music:Music||` drag and drop `||Music:music.ringTone||` block within `|
 ```block
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -405,7 +405,7 @@ Click `||basic:Basic||` drag and drop `||basic:pause (ms) 100||` block under `||
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -437,7 +437,7 @@ Click `||music:Music||` drag and drop `||Music:stopall||` block under `||basic:p
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -472,7 +472,7 @@ Click `||logic:Logic||` drag and drop `||logic:if true then||` block inside bloc
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -484,7 +484,7 @@ basic.forever(function () {
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             music.ringTone(494)
-            fwdMotors.drive(-20, 20, 1000)
+            fwdMotors.drive(-20, 20)
         } else {
             if (true) {
             	
@@ -508,7 +508,7 @@ Click `||logic:Logic||` drag and drop `||logic:if true then||` block under the 1
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -544,7 +544,7 @@ Click `||logic:Logic||` drag and drop `||logic:if true then||` block under the 2
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -586,7 +586,7 @@ Click `||fwdSensors:Sensors||` drag and drop `||fwdSensors: line1 state is •||
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -628,7 +628,7 @@ Click `||fwdSensors:Sensors||` drag and drop `||fwdSensors: line2 state is o||` 
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -670,7 +670,7 @@ Click `||fwdSensors:Sensors||` drag and drop `||fwdSensors: line3 state is •||
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -712,7 +712,7 @@ Click `||fwdMotors: Motors||` drag and drop `||fwdMotors: Turn 0 in place||` blo
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -724,10 +724,10 @@ basic.forever(function () {
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             music.ringTone(494)
-            fwdMotors.drive(-20, 20, 1000)
+            fwdMotors.drive(-20, 20)
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-                fwdMotors.drive(0, 0, 0)
+                fwdMotors.stop()
             }
             if (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.Off)) {
             	
@@ -753,7 +753,7 @@ Change `||fwdMotors:Turn 0||` to `||fwdMotors:5||`
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -769,7 +769,7 @@ basic.forever(function () {
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
                 // TODO: calibrate duration -- was turn(5) degrees in place
-                fwdMotors.drive(50, 50, 1000)
+                fwdMotors.driveTimed(60, 60, 167)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off)) {
             	
@@ -798,7 +798,7 @@ Change the `||fwdMotors:Drive forward 50||` to `||fwdMotors:20||`
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -814,10 +814,10 @@ basic.forever(function () {
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
                 // TODO: calibrate duration -- was turn(5) degrees in place
-                fwdMotors.drive(50, 50, 1000)
+                fwdMotors.driveTimed(60, 60, 167)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off)) {
-                fwdMotors.drive(20, -20, 1000)
+                fwdMotors.drive(20, -20)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
             	
@@ -843,7 +843,7 @@ hint~
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -859,14 +859,14 @@ basic.forever(function () {
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
                 // TODO: calibrate duration -- was turn(5) degrees in place
-                fwdMotors.drive(50, 50, 1000)
+                fwdMotors.driveTimed(60, 60, 167)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off)) {
-                fwdMotors.drive(20, -20, 1000)
+                fwdMotors.drive(20, -20)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
                 // TODO: calibrate duration -- was turn(-5) degrees in place
-                fwdMotors.drive(-50, -50, 1000)
+                fwdMotors.driveTimed(-60, -60, 167)
             }
         }
     }
@@ -886,7 +886,7 @@ Click `||basic:Basic||` drag and drop `||basic:pause (ms) 100||` block under `||
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -902,15 +902,15 @@ basic.forever(function () {
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
                 // TODO: calibrate duration -- was turn(5) degrees in place
-                fwdMotors.drive(50, 50, 1000)
+                fwdMotors.driveTimed(60, 60, 167)
                 basic.pause(100)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off)) {
-                fwdMotors.drive(20, -20, 1000)
+                fwdMotors.drive(20, -20)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
                 // TODO: calibrate duration -- was turn(-5) degrees in place
-                fwdMotors.drive(-50, -50, 1000)
+                fwdMotors.driveTimed(-60, -60, 167)
             }
         }
     }
@@ -931,7 +931,7 @@ block under `||fwdMotors:Drive Forward at 20||` block.
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -947,16 +947,16 @@ basic.forever(function () {
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
                 // TODO: calibrate duration -- was turn(5) degrees in place
-                fwdMotors.drive(50, 50, 1000)
+                fwdMotors.driveTimed(60, 60, 167)
                 basic.pause(100)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off)) {
-                fwdMotors.drive(20, -20, 1000)
+                fwdMotors.drive(20, -20)
                 basic.pause(100)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
                 // TODO: calibrate duration -- was turn(-5) degrees in place
-                fwdMotors.drive(-50, -50, 1000)
+                fwdMotors.driveTimed(-60, -60, 167)
             }
         }
     }
@@ -977,7 +977,7 @@ block under `||fwdMotors:Turn -5 in place||` block.
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -993,16 +993,16 @@ basic.forever(function () {
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
                 // TODO: calibrate duration -- was turn(5) degrees in place
-                fwdMotors.drive(50, 50, 1000)
+                fwdMotors.driveTimed(60, 60, 167)
                 basic.pause(100)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off)) {
-                fwdMotors.drive(20, -20, 1000)
+                fwdMotors.drive(20, -20)
                 basic.pause(100)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
                 // TODO: calibrate duration -- was turn(-5) degrees in place
-                fwdMotors.drive(-50, -50, 1000)
+                fwdMotors.driveTimed(-60, -60, 167)
                 basic.pause(100)
             }
         }
@@ -1025,7 +1025,7 @@ Change `||basic:pause (ms) 100||` to `||basic:500||` for all
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -1041,16 +1041,16 @@ basic.forever(function () {
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
                 // TODO: calibrate duration -- was turn(5) degrees in place
-                fwdMotors.drive(50, 50, 1000)
+                fwdMotors.driveTimed(60, 60, 167)
                 basic.pause(500)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off)) {
-                fwdMotors.drive(20, -20, 1000)
+                fwdMotors.drive(20, -20)
                 basic.pause(500)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
                 // TODO: calibrate duration -- was turn(-5) degrees in place
-                fwdMotors.drive(-50, -50, 1000)
+                fwdMotors.driveTimed(-60, -60, 167)
                 basic.pause(500)
             }
         }

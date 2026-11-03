@@ -1,16 +1,16 @@
 # Mobile Irrigation System - Modify Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.1.1
 datalogger=datalogger
 ```
 
 ```template
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
     for (let index = 0; index < 4; index++) {
-        fwdMotors.drive(25, -25, 1000)
+        fwdMotors.drive(25, -25)
         basic.pause(3000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fwdMotors.pump.timedRun(1500)
         basic.pause(3000)
@@ -180,9 +180,9 @@ hint~
 ```blocks
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
     for (let index = 0; index < 4; index++) {
-        fwdMotors.drive(25, -25, 1000)
+        fwdMotors.drive(25, -25)
         basic.pause(3000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fwdMotors.pump.timedRun(1500)
         basic.pause(3000)
@@ -204,10 +204,10 @@ Change the pause duration in one block, `|Download|` the new code and observe ho
 ```block
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
     for (let index = 0; index < 4; index++) {
-        fwdMotors.drive(25, -25, 1000)
+        fwdMotors.drive(25, -25)
         // @highlight
         basic.pause(10000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fwdMotors.pump.timedRun(1500)
         // @highlight
@@ -230,10 +230,10 @@ How do these changes influence the vehicle's watering output? What happens when 
 ```block
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
     for (let index = 0; index < 4; index++) {
-        fwdMotors.drive(25, -25, 1000)
+        fwdMotors.drive(25, -25)
         // @highlight
         basic.pause(10000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fwdMotors.pump.timedRun(1500)
         // @highlight
@@ -294,7 +294,7 @@ basic.forever(function () {
         // @highlight
         fwdLights.ledRing1.setAllPixelsColor(0xff0000)
         // @highlight
-        fwdMotors.drive(25, -25, 1000)
+        fwdMotors.drive(25, -25)
     } else {
     	
     }
@@ -319,7 +319,7 @@ basic.forever(function () {
         // @highlight
         basic.pause(2000)
         // @highlight
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         // @highlight
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         // @highlight
@@ -345,10 +345,10 @@ basic.forever(function () {
     // @highlight
     if (fwdSensors.sonar1.isPastThreshold(0.06, fwdEnums.OverUnder.Over)) {
         fwdLights.ledRing1.setAllPixelsColor(0xff0000)
-        fwdMotors.drive(25, -25, 1000)
+        fwdMotors.drive(25, -25)
     } else {
         basic.pause(2000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fwdMotors.pump.timedRun(1500)
         basic.pause(3000)
@@ -367,11 +367,11 @@ basic.forever(function () {
     // @hightlight
     if (fwdSensors.sonar1.isPastThreshold(0.075, fwdEnums.OverUnder.Over)) {
         fwdLights.ledRing1.setAllPixelsColor(0xff0000)
-        fwdMotors.drive(25, -25, 1000)
+        fwdMotors.drive(25, -25)
     } else {
         // @highlight
         basic.pause(2000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fwdMotors.pump.timedRun(1500)
         basic.pause(3000)

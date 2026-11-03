@@ -1,7 +1,7 @@
 # Wildfire Detection with Autonomous Vehicles - Use
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.1.1
 ```
 
 ## Activity 1: Build Your Project @showdialog
@@ -110,15 +110,15 @@ fwdBase.leftServo
 
 basic.forever(function () {
     if (isDrivingEnabled) {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         if (input.lightLevel() > 200) {
-            fwdMotors.drive(0, 0, 0)
+            fwdMotors.stop()
             music.playTone(262, music.beat(BeatFraction.Breve))
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 ```
@@ -186,9 +186,9 @@ Can you identify the blocks of code that allow the A button to act like our gas 
 let isDrivingEnabled = false
     // @highlight
     if (isDrivingEnabled) {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 
 input.onButtonPressed(Button.A, function () {
@@ -237,10 +237,10 @@ Start your car, then use a flashlight to simulate different light conditions. Ob
 
 ```block
         if (input.lightLevel() > 200) {
-            fwdMotors.drive(0, 0, 0)
+            fwdMotors.stop()
             music.playTone(262, music.beat(BeatFraction.Breve))
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         }
 ```
 

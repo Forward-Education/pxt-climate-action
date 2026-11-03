@@ -1,22 +1,22 @@
 # Replanting Our Forests with Automated Tree Seeders - Modify Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.1.1
 datalogger=datalogger
 ```
 
 ```template
 input.onButtonPressed(Button.A, function () {
     for (let index2 = 0; index2 < 4; index2++) {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         basic.pause(1000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
         fwdMotors.setAngle(fwdBase.middleServo, 45)
         basic.pause(250)
     }
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 // @collapsed
 input.onButtonPressed(Button.B, function () {
@@ -199,9 +199,9 @@ Can you identify the blocks of code below that are responsible for this swinging
 ```blocks
 input.onButtonPressed(Button.A, function () {
     for (let index2 = 0; index2 < 4; index2++) {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         basic.pause(1000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         // @highlight
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
@@ -209,7 +209,7 @@ input.onButtonPressed(Button.A, function () {
         fwdMotors.setAngle(fwdBase.middleServo, 45)
         basic.pause(250)
     }
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 let index = 0
 index = 0
@@ -232,9 +232,9 @@ Download your code and test it out. What happened?
 
 ```block
     for (let index2 = 0; index2 < 4; index2++) {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         basic.pause(1000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         // @highlight
         fwdMotors.setAngle(fwdBase.middleServo, 100)
         basic.pause(250)
@@ -249,9 +249,9 @@ Reset your value to ‘0 degrees’.
 
 ```block
     for (let index2 = 0; index2 < 4; index2++) {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         basic.pause(1000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         // @highlight
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
@@ -274,15 +274,15 @@ What do you think will happen if you modify the number in the `||loops:repeat 4 
 input.onButtonPressed(Button.A, function () {
     // @highlight
     for (let index2 = 0; index2 < 5; index2++) {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         basic.pause(1000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
         fwdMotors.setAngle(fwdBase.middleServo, 45)
         basic.pause(250)
     }
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 ```
 
@@ -301,10 +301,10 @@ What did you observe?
 
 ```block
     for (let index2 = 0; index2 < 5; index2++) {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         // @highlight
         basic.pause(200)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
         fwdMotors.setAngle(fwdBase.middleServo, 45)
@@ -446,10 +446,10 @@ Be sure to change `||variables:list||` to `||variables:seedDensity||`.
 ```block
     for (let index2 = 0; index2 < 4; index2++) {
         let seedDensity: number[] = []
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         // @highlight
         basic.pause(seedDensity[0])
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
         fwdMotors.setAngle(fwdBase.middleServo, 45)
@@ -470,10 +470,10 @@ Go to the `||variables:Variables||` category and replace the ‘0’ value with 
 
 ```block
 for (let index2 = 0; index2 < 4; index2++) {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         // @highlight
         basic.pause(seedDensity[index])
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdMotors.setAngle(fwdBase.middleServo, 0)
         basic.pause(250)
         fwdMotors.setAngle(fwdBase.middleServo, 45)

@@ -1,7 +1,7 @@
 # Harnessing the Sun's Energy with Solar Panels
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.1.1
 ```
 
 ## Step 1 @showdialog

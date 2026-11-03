@@ -20,15 +20,15 @@ fwdBase.leftServo
 
 basic.forever(function () {
     if (isDrivingEnabled) {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
         if (input.lightLevel() > 200) {
-            fwdMotors.drive(0, 0, 0)
+            fwdMotors.stop()
             music.playTone(262, music.beat(BeatFraction.Breve))
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 }
@@ -38,9 +38,9 @@ namespace gr7_wildfire_use_block01 {
 let isDrivingEnabled = false
     // @highlight
     if (isDrivingEnabled) {
-        fwdMotors.drive(50, -50, 1000)
+        fwdMotors.drive(50, -50)
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 
 input.onButtonPressed(Button.A, function () {
@@ -63,9 +63,9 @@ if (input.lightLevel() > 200) {
 namespace gr7_wildfire_use_block03 {
 let isDrivingEnabled = false
 if (input.lightLevel() > 200) {
-            fwdMotors.drive(0, 0, 0)
+            fwdMotors.stop()
             music.playTone(262, music.beat(BeatFraction.Breve))
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         }
 }

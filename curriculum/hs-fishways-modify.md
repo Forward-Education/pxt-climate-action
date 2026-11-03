@@ -1,7 +1,7 @@
 # Forward Education Preserving Fish Migration Routes with Fishways - Modify Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.1.1
 ```
 
 ```template

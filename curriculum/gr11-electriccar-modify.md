@@ -1,7 +1,7 @@
 # Autonomous Electric Vehicles of the Future - Modify Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.1.1
 ```
 
 ## Activity 1: Build Your Project @showdialog
@@ -133,12 +133,12 @@ basic.forever(function () {
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         } else {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 ```
@@ -162,14 +162,14 @@ basic.forever(function () {
         if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             // @highlight
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         } else {
             // @highlight
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
         }
     } else {
         // @highlight
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 ```
@@ -200,9 +200,9 @@ Let’s test this out: unplug your electric vehicle from your computer, place it
 ```block
         if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             // TODO: calibrate duration -- was turn(10) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 333)
         } else {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
         }
 ```
 
@@ -225,9 +225,9 @@ Try it out! Change the value in `||fwdSensors:sonar1 distance is under 0.5 m||` 
 // @highlight
 if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
             // TODO: calibrate duration -- was turn(10) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 333)
         } else {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
         }
 ```
 
@@ -288,9 +288,9 @@ Open the `||basic:Basic||` category, drag and drop the `||Basic:pause (ms) 100||
             // @highlight
             basic.pause(1000)
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
         } else {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
         }
 ```
 
@@ -311,11 +311,11 @@ Click on `||basic:Basic||` , drag and drop another `||basic:pause (ms) 100||` ju
         if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             basic.pause(1000)
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
             // @highlight
             basic.pause(1000)
         } else {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
         }
 ```
 
@@ -335,12 +335,12 @@ Click on `||fwdMotors:Motors||` drag and drop the `||fwdMotors:drive forward at 
         if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             basic.pause(1000)
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
             basic.pause(1000)
             // @highlight
-            fwdMotors.drive(-50, 50, 1000)
+            fwdMotors.drive(-50, 50)
         } else {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
         }
 ```
 
@@ -360,14 +360,14 @@ For an extra challenge, click on `||fwdMotors:Motors||` and drag the `||fwdMotor
 ```block
         if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             // @highlight
-            fwdMotors.drive(0, 0, 0)
+            fwdMotors.stop()
             basic.pause(1000)
             // TODO: calibrate duration -- was turn(15) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 500)
             basic.pause(1000)
-            fwdMotors.drive(-50, 50, 1000)
+            fwdMotors.drive(-50, 50)
         } else {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
         }
 ```
 

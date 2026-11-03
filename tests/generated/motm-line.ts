@@ -130,7 +130,7 @@ fwdBase.rightServo,
 )
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         }
     if (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.Off)) {
             	
@@ -150,7 +150,7 @@ fwdBase.rightServo,
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         // TODO: calibrate duration -- was turn(5) degrees in place
-        fwdMotors.drive(50, 50, 1000)
+        fwdMotors.driveTimed(60, 60, 167)
         }
     if (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.Off)) {
             	
@@ -170,10 +170,10 @@ fwdBase.rightServo,
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         // TODO: calibrate duration -- was turn(5) degrees in place
-        fwdMotors.drive(50, 50, 1000)
+        fwdMotors.driveTimed(60, 60, 167)
             }
     if (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.Off)) {
-        fwdMotors.drive(20, -20, 1000)
+        fwdMotors.drive(20, -20)
         }
     if (fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On)) {
         	
@@ -190,14 +190,14 @@ fwdBase.rightServo,
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         // TODO: calibrate duration -- was turn(5) degrees in place
-        fwdMotors.drive(50, 50, 1000)
+        fwdMotors.driveTimed(60, 60, 167)
             }
     if (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.Off)) {
-        fwdMotors.drive(20, -20, 1000)
+        fwdMotors.drive(20, -20)
         }
     if (fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On)) {
         // TODO: calibrate duration -- was turn(-5) degrees in place
-        fwdMotors.drive(-50, -50, 1000)
+        fwdMotors.driveTimed(-60, -60, 167)
         }
 })
 }
@@ -211,15 +211,15 @@ fwdBase.rightServo,
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         // TODO: calibrate duration -- was turn(5) degrees in place
-        fwdMotors.drive(50, 50, 1000)
+        fwdMotors.driveTimed(60, 60, 167)
         basic.pause(100)
     }
     if (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.Off)) {
-        fwdMotors.drive(20, -20, 1000)
+        fwdMotors.drive(20, -20)
         }
     if (fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On)) {
         // TODO: calibrate duration -- was turn(-5) degrees in place
-        fwdMotors.drive(-50, -50, 1000)
+        fwdMotors.driveTimed(-60, -60, 167)
         }
 })
 }
@@ -233,16 +233,16 @@ fwdBase.rightServo,
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         // TODO: calibrate duration -- was turn(5) degrees in place
-        fwdMotors.drive(50, 50, 1000)
+        fwdMotors.driveTimed(60, 60, 167)
         basic.pause(100)
     }
     if (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.Off)) {
-        fwdMotors.drive(20, -20, 1000)
+        fwdMotors.drive(20, -20)
         basic.pause(100)
     }
     if (fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On)) {
         // TODO: calibrate duration -- was turn(-5) degrees in place
-        fwdMotors.drive(-50, -50, 1000)
+        fwdMotors.driveTimed(-60, -60, 167)
     }
 })
 }
@@ -256,16 +256,16 @@ fwdBase.rightServo,
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         // TODO: calibrate duration -- was turn(5) degrees in place
-        fwdMotors.drive(50, 50, 1000)
+        fwdMotors.driveTimed(60, 60, 167)
         basic.pause(100)
     }
     if (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.Off)) {
-        fwdMotors.drive(20, -20, 1000)
+        fwdMotors.drive(20, -20)
         basic.pause(100)
     }
     if (fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On)) {
         // TODO: calibrate duration -- was turn(-5) degrees in place
-        fwdMotors.drive(-50, -50, 1000)
+        fwdMotors.driveTimed(-60, -60, 167)
         basic.pause(100)
     }
 })
@@ -277,16 +277,16 @@ fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 basic.forever(function () {
     if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
         // TODO: calibrate duration -- was turn(5) degrees in place
-        fwdMotors.drive(50, 50, 1000)
+        fwdMotors.driveTimed(60, 60, 167)
         basic.pause(500)
     }
     if (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.Off)) {
-        fwdMotors.drive(20, -20, 1000)
+        fwdMotors.drive(20, -20)
         basic.pause(500)
     }
     if (fwdSensors.line3.isLineSensorState(fwdEnums.OnOff.On)) {
         // TODO: calibrate duration -- was turn(-5) degrees in place
-        fwdMotors.drive(-50, -50, 1000)
+        fwdMotors.driveTimed(-60, -60, 167)
         basic.pause(500)
     }
 })

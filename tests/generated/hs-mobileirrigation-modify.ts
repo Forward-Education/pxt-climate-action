@@ -5,9 +5,9 @@
 namespace hs_mobileirrigation_modify_template01 {
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
     for (let index = 0; index < 4; index++) {
-        fwdMotors.drive(25, -25, 1000)
+        fwdMotors.drive(25, -25)
         basic.pause(3000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fwdMotors.pump.timedRun(1500)
         basic.pause(3000)
@@ -29,9 +29,9 @@ basic.forever(function () {
 namespace hs_mobileirrigation_modify_blocks01 {
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
     for (let index = 0; index < 4; index++) {
-        fwdMotors.drive(25, -25, 1000)
+        fwdMotors.drive(25, -25)
         basic.pause(3000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fwdMotors.pump.timedRun(1500)
         basic.pause(3000)
@@ -44,10 +44,10 @@ fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
 namespace hs_mobileirrigation_modify_block01 {
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
     for (let index = 0; index < 4; index++) {
-        fwdMotors.drive(25, -25, 1000)
+        fwdMotors.drive(25, -25)
         // @highlight
         basic.pause(10000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fwdMotors.pump.timedRun(1500)
         // @highlight
@@ -61,10 +61,10 @@ fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
 namespace hs_mobileirrigation_modify_block02 {
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
     for (let index = 0; index < 4; index++) {
-        fwdMotors.drive(25, -25, 1000)
+        fwdMotors.drive(25, -25)
         // @highlight
         basic.pause(10000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fwdMotors.pump.timedRun(1500)
         // @highlight
@@ -92,7 +92,7 @@ basic.forever(function () {
         // @highlight
         fwdLights.ledRing1.setAllPixelsColor(0xff0000)
         // @highlight
-        fwdMotors.drive(25, -25, 1000)
+        fwdMotors.drive(25, -25)
     } else {
     	
     }
@@ -108,7 +108,7 @@ basic.forever(function () {
         // @highlight
         basic.pause(2000)
         // @highlight
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         // @highlight
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         // @highlight
@@ -125,10 +125,10 @@ basic.forever(function () {
     // @highlight
     if (fwdSensors.sonar1.isPastThreshold(0.06, fwdEnums.OverUnder.Over)) {
         fwdLights.ledRing1.setAllPixelsColor(0xff0000)
-        fwdMotors.drive(25, -25, 1000)
+        fwdMotors.drive(25, -25)
     } else {
         basic.pause(2000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fwdMotors.pump.timedRun(1500)
         basic.pause(3000)
@@ -142,11 +142,11 @@ basic.forever(function () {
     // @hightlight
     if (fwdSensors.sonar1.isPastThreshold(0.075, fwdEnums.OverUnder.Over)) {
         fwdLights.ledRing1.setAllPixelsColor(0xff0000)
-        fwdMotors.drive(25, -25, 1000)
+        fwdMotors.drive(25, -25)
     } else {
         // @highlight
         basic.pause(2000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fwdMotors.pump.timedRun(1500)
         basic.pause(3000)

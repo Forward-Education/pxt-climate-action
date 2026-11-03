@@ -123,7 +123,7 @@ basic.forever(function () {
 namespace robo_delivery_11_12_blocks09 {
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -145,7 +145,7 @@ basic.forever(function () {
 namespace robo_delivery_11_12_blocks10 {
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -163,7 +163,7 @@ basic.forever(function () {
 namespace robo_delivery_11_12_blocks11 {
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -187,7 +187,7 @@ basic.forever(function () {
 namespace robo_delivery_11_12_blocks12 {
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -209,7 +209,7 @@ basic.forever(function () {
 namespace robo_delivery_11_12_block01 {
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -232,7 +232,7 @@ basic.forever(function () {
 namespace robo_delivery_11_12_blocks13 {
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -255,7 +255,7 @@ basic.forever(function () {
 namespace robo_delivery_11_12_blocks14 {
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -279,7 +279,7 @@ basic.forever(function () {
 namespace robo_delivery_11_12_blocks15 {
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -291,7 +291,7 @@ basic.forever(function () {
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             music.ringTone(494)
-            fwdMotors.drive(-20, 20, 1000)
+            fwdMotors.drive(-20, 20)
         } else {
             if (true) {
             	
@@ -305,7 +305,7 @@ basic.forever(function () {
 namespace robo_delivery_11_12_blocks16 {
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -331,7 +331,7 @@ basic.forever(function () {
 namespace robo_delivery_11_12_blocks17 {
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -363,7 +363,7 @@ basic.forever(function () {
 namespace robo_delivery_11_12_blocks18 {
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -395,7 +395,7 @@ basic.forever(function () {
 namespace robo_delivery_11_12_blocks19 {
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -427,7 +427,7 @@ basic.forever(function () {
 namespace robo_delivery_11_12_blocks20 {
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -459,7 +459,7 @@ basic.forever(function () {
 namespace robo_delivery_11_12_blocks21 {
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -471,10 +471,10 @@ basic.forever(function () {
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             music.ringTone(494)
-            fwdMotors.drive(-20, 20, 1000)
+            fwdMotors.drive(-20, 20)
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
-                fwdMotors.drive(0, 0, 0)
+                fwdMotors.stop()
             }
             if (fwdSensors.line2.isLineSensorState(fwdEnums.OnOff.Off)) {
             	
@@ -491,7 +491,7 @@ basic.forever(function () {
 namespace robo_delivery_11_12_blocks22 {
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -507,7 +507,7 @@ basic.forever(function () {
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
                 // TODO: calibrate duration -- was turn(5) degrees in place
-                fwdMotors.drive(50, 50, 1000)
+                fwdMotors.driveTimed(60, 60, 167)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off)) {
             	
@@ -524,7 +524,7 @@ basic.forever(function () {
 namespace robo_delivery_11_12_blocks23 {
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -540,10 +540,10 @@ basic.forever(function () {
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
                 // TODO: calibrate duration -- was turn(5) degrees in place
-                fwdMotors.drive(50, 50, 1000)
+                fwdMotors.driveTimed(60, 60, 167)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off)) {
-                fwdMotors.drive(20, -20, 1000)
+                fwdMotors.drive(20, -20)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
             	
@@ -557,7 +557,7 @@ basic.forever(function () {
 namespace robo_delivery_11_12_blocks24 {
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -573,14 +573,14 @@ basic.forever(function () {
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
                 // TODO: calibrate duration -- was turn(5) degrees in place
-                fwdMotors.drive(50, 50, 1000)
+                fwdMotors.driveTimed(60, 60, 167)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off)) {
-                fwdMotors.drive(20, -20, 1000)
+                fwdMotors.drive(20, -20)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
                 // TODO: calibrate duration -- was turn(-5) degrees in place
-                fwdMotors.drive(-50, -50, 1000)
+                fwdMotors.driveTimed(-60, -60, 167)
             }
         }
     }
@@ -591,7 +591,7 @@ basic.forever(function () {
 namespace robo_delivery_11_12_blocks25 {
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -607,15 +607,15 @@ basic.forever(function () {
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
                 // TODO: calibrate duration -- was turn(5) degrees in place
-                fwdMotors.drive(50, 50, 1000)
+                fwdMotors.driveTimed(60, 60, 167)
                 basic.pause(100)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off)) {
-                fwdMotors.drive(20, -20, 1000)
+                fwdMotors.drive(20, -20)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
                 // TODO: calibrate duration -- was turn(-5) degrees in place
-                fwdMotors.drive(-50, -50, 1000)
+                fwdMotors.driveTimed(-60, -60, 167)
             }
         }
     }
@@ -626,7 +626,7 @@ basic.forever(function () {
 namespace robo_delivery_11_12_blocks26 {
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -642,16 +642,16 @@ basic.forever(function () {
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
                 // TODO: calibrate duration -- was turn(5) degrees in place
-                fwdMotors.drive(50, 50, 1000)
+                fwdMotors.driveTimed(60, 60, 167)
                 basic.pause(100)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off)) {
-                fwdMotors.drive(20, -20, 1000)
+                fwdMotors.drive(20, -20)
                 basic.pause(100)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
                 // TODO: calibrate duration -- was turn(-5) degrees in place
-                fwdMotors.drive(-50, -50, 1000)
+                fwdMotors.driveTimed(-60, -60, 167)
             }
         }
     }
@@ -662,7 +662,7 @@ basic.forever(function () {
 namespace robo_delivery_11_12_blocks27 {
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -678,16 +678,16 @@ basic.forever(function () {
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
                 // TODO: calibrate duration -- was turn(5) degrees in place
-                fwdMotors.drive(50, 50, 1000)
+                fwdMotors.driveTimed(60, 60, 167)
                 basic.pause(100)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off)) {
-                fwdMotors.drive(20, -20, 1000)
+                fwdMotors.drive(20, -20)
                 basic.pause(100)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
                 // TODO: calibrate duration -- was turn(-5) degrees in place
-                fwdMotors.drive(-50, -50, 1000)
+                fwdMotors.driveTimed(-60, -60, 167)
                 basic.pause(100)
             }
         }
@@ -699,7 +699,7 @@ basic.forever(function () {
 namespace robo_delivery_11_12_blocks28 {
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
@@ -715,16 +715,16 @@ basic.forever(function () {
         } else {
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
                 // TODO: calibrate duration -- was turn(5) degrees in place
-                fwdMotors.drive(50, 50, 1000)
+                fwdMotors.driveTimed(60, 60, 167)
                 basic.pause(500)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.Off)) {
-                fwdMotors.drive(20, -20, 1000)
+                fwdMotors.drive(20, -20)
                 basic.pause(500)
             }
             if (fwdSensors.line1.isLineSensorState(fwdEnums.OnOff.On)) {
                 // TODO: calibrate duration -- was turn(-5) degrees in place
-                fwdMotors.drive(-50, -50, 1000)
+                fwdMotors.driveTimed(-60, -60, 167)
                 basic.pause(500)
             }
         }

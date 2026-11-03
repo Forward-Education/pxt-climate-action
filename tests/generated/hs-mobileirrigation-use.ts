@@ -5,9 +5,9 @@
 namespace hs_mobileirrigation_use_template01 {
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
     for (let index = 0; index < 4; index++) {
-        fwdMotors.drive(25, -25, 1000)
+        fwdMotors.drive(25, -25)
         basic.pause(3000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fwdMotors.pump.timedRun(1500)
         basic.pause(3000)
@@ -22,9 +22,9 @@ fwdLights.ledRing1.setAllPixelsColor(0xff0000)
 namespace hs_mobileirrigation_use_blocks01 {
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
     for (let index = 0; index < 4; index++) {
-        fwdMotors.drive(25, -25, 1000)
+        fwdMotors.drive(25, -25)
         basic.pause(3000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fwdMotors.pump.timedRun(1500)
         basic.pause(3000)

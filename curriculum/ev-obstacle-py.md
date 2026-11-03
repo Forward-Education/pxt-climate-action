@@ -1,7 +1,7 @@
 # Autonomous Electric Vehicles of the Future
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.1.1
 ```
 
 ## Step 1 @showdialog
@@ -65,7 +65,6 @@ Also set `||fwdMotors:bias to 0||`.
 fwdMotors.setupDriving(
 fwdBase.leftServo,
 fwdBase.rightServo,
-0
 )
 ```
 
@@ -78,7 +77,6 @@ Change `||Variables:item = 0||` to `||Variables:IsDrivingEnabled = false||`.
 fwdMotors.setupDriving(
 fwdBase.leftServo,
 fwdBase.rightServo,
-0
 )
 IsDrivingEnabled = false
 ```
@@ -91,7 +89,6 @@ Click `||basic:Basic||` drag and drop `||basic:run code forever||` loop.
 fwdMotors.setupDriving(
 fwdBase.leftServo,
 fwdBase.rightServo,
-0
 )
 IsDrivingEnabled = false
 basic.forever(function () {
@@ -117,7 +114,6 @@ input.onButtonPressed(Button.B, function () {
 fwdMotors.setupDriving(
 fwdBase.leftServo,
 fwdBase.rightServo,
-0
 )
 IsDrivingEnabled = false
 basic.forever(function () {
@@ -141,7 +137,6 @@ input.onButtonPressed(Button.B, function () {
 fwdMotors.setupDriving(
 fwdBase.leftServo,
 fwdBase.rightServo,
-0
 )
 IsDrivingEnabled = false
 basic.forever(function () {
@@ -163,7 +158,6 @@ input.onButtonPressed(Button.B, function () {
 fwdMotors.setupDriving(
 fwdBase.leftServo,
 fwdBase.rightServo,
-0
 )
 IsDrivingEnabled = false
 basic.forever(function () {
@@ -185,7 +179,6 @@ input.onButtonPressed(Button.B, function () {
 fwdMotors.setupDriving(
 fwdBase.leftServo,
 fwdBase.rightServo,
-0
 )
 IsDrivingEnabled = false
 basic.forever(function () {
@@ -208,7 +201,6 @@ input.onButtonPressed(Button.B, function () {
 fwdMotors.setupDriving(
 fwdBase.leftServo,
 fwdBase.rightServo,
-0
 )
 IsDrivingEnabled = false
 basic.forever(function () {
@@ -235,7 +227,6 @@ let IsDrivingEnabled = false
 fwdMotors.setupDriving(
 fwdBase.leftServo,
 fwdBase.rightServo,
-0
 )
 basic.forever(function () {
     if (true) {
@@ -267,7 +258,6 @@ let IsDrivingEnabled = false
 fwdMotors.setupDriving(
 fwdBase.leftServo,
 fwdBase.rightServo,
-0
 )
 basic.forever(function () {
     if (IsDrivingEnabled) {
@@ -298,7 +288,6 @@ let IsDrivingEnabled = false
 fwdMotors.setupDriving(
 fwdBase.leftServo,
 fwdBase.rightServo,
-0
 )
 basic.forever(function () {
     if (IsDrivingEnabled) {
@@ -328,7 +317,6 @@ let IsDrivingEnabled = false
 fwdMotors.setupDriving(
 fwdBase.leftServo,
 fwdBase.rightServo,
-0
 )
 basic.forever(function () {
     if (IsDrivingEnabled) {
@@ -358,7 +346,6 @@ let IsDrivingEnabled = false
 fwdMotors.setupDriving(
 fwdBase.leftServo,
 fwdBase.rightServo,
-0
 )
 basic.forever(function () {
     if (IsDrivingEnabled) {
@@ -389,7 +376,6 @@ let IsDrivingEnabled = false
 fwdMotors.setupDriving(
 fwdBase.leftServo,
 fwdBase.rightServo,
-0
 )
 basic.forever(function () {
     if (IsDrivingEnabled) {
@@ -420,14 +406,13 @@ let IsDrivingEnabled = false
 fwdMotors.setupDriving(
 fwdBase.leftServo,
 fwdBase.rightServo,
-0
 )
 basic.forever(function () {
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             fwdMotors.stop()
             basic.pause(1000)
-            fwdMotors.drive(fwdEnums.ForwardReverse.Reverse, 50)
+            fwdMotors.drive(-50, 50)
     } else {
         }
     } else {
@@ -453,14 +438,13 @@ let IsDrivingEnabled = false
 fwdMotors.setupDriving(
 fwdBase.leftServo,
 fwdBase.rightServo,
-0
 )
 basic.forever(function () {
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             fwdMotors.stop()
             basic.pause(1000)
-            fwdMotors.drive(fwdEnums.ForwardReverse.Reverse, 50)
+            fwdMotors.drive(-50, 50)
             basic.pause(1000)
     } else {
         }
@@ -486,16 +470,16 @@ let IsDrivingEnabled = false
 fwdMotors.setupDriving(
 fwdBase.leftServo,
 fwdBase.rightServo,
-0
 )
 basic.forever(function () {
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             fwdMotors.stop()
             basic.pause(1000)
-            fwdMotors.drive(fwdEnums.ForwardReverse.Reverse, 50)
+            fwdMotors.drive(-50, 50)
             basic.pause(1000)
-            fwdMotors.turn(25)
+            // TODO: calibrate duration -- was turn(25) degrees in place
+            fwdMotors.driveTimed(60, 60, 833)
         } else {
         }
     } else {
@@ -521,16 +505,16 @@ let IsDrivingEnabled = false
 fwdMotors.setupDriving(
 fwdBase.leftServo,
 fwdBase.rightServo,
-0
 )
 basic.forever(function () {
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             fwdMotors.stop()
             basic.pause(1000)
-            fwdMotors.drive(fwdEnums.ForwardReverse.Reverse, 50)
+            fwdMotors.drive(-50, 50)
             basic.pause(1000)
-            fwdMotors.turn(25)
+            // TODO: calibrate duration -- was turn(25) degrees in place
+            fwdMotors.driveTimed(60, 60, 833)
             basic.pause(1000)
         } else {
         }
@@ -557,19 +541,19 @@ let IsDrivingEnabled = false
 fwdMotors.setupDriving(
 fwdBase.leftServo,
 fwdBase.rightServo,
-0
 )
 basic.forever(function () {
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             fwdMotors.stop()
             basic.pause(1000)
-            fwdMotors.drive(fwdEnums.ForwardReverse.Reverse, 50)
+            fwdMotors.drive(-50, 50)
             basic.pause(1000)
-            fwdMotors.turn(25)
+            // TODO: calibrate duration -- was turn(25) degrees in place
+            fwdMotors.driveTimed(60, 60, 833)
             basic.pause(1000)
         } else {
-            fwdMotors.drive(fwdEnums.ForwardReverse.Forward, 50)
+            fwdMotors.drive(50, -50)
         }
     } else {
         fwdMotors.stop()

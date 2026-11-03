@@ -15,14 +15,14 @@ basic.forever(function () {
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             basic.pause(1000)
-            fwdMotors.drive(-50, 50, 1000)
+            fwdMotors.drive(-50, 50)
             // TODO: calibrate duration -- was turn(10) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 333)
         } else {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 }
@@ -45,14 +45,14 @@ basic.forever(function () {
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             basic.pause(1000)
-            fwdMotors.drive(-50, 50, 1000)
+            fwdMotors.drive(-50, 50)
             // TODO: calibrate duration -- was turn(10) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 333)
         } else {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 }
@@ -62,11 +62,11 @@ namespace gr11_electriccar_use_block01 {
 let IsDrivingEnabled = false
 if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             basic.pause(1000)
-            fwdMotors.drive(-50, 50, 1000)
+            fwdMotors.drive(-50, 50)
             // TODO: calibrate duration -- was turn(10) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 333)
         } else {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
         }
 }
 
@@ -77,11 +77,11 @@ if (fwdSensors.sonar1.isPastThreshold(0.5, fwdEnums.OverUnder.Under)) {
             // @highlight
             basic.pause(1000)
             // @highlight
-            fwdMotors.drive(-50, 50, 1000)
+            fwdMotors.drive(-50, 50)
             // @highlight
             // TODO: calibrate duration -- was turn(10) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 333)
         } else {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
         }
 }

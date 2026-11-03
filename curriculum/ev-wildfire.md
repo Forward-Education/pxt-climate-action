@@ -1,7 +1,7 @@
 # Wildfire Tracking with Autonomous Vehicles
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.1.1
 ```
 
 ## Step 1 @showdialog
@@ -283,7 +283,7 @@ basic.forever(function () {
     }
     }
     }else {
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
     }
 })
 ```
@@ -307,7 +307,7 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
            if (true) {
             	
             } else {
@@ -315,7 +315,7 @@ basic.forever(function () {
             }
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 ```
@@ -341,7 +341,7 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
             basic.pause(5000)
            if (true) {
             	
@@ -350,7 +350,7 @@ basic.forever(function () {
             }
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 ```
@@ -375,10 +375,10 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
             basic.pause(5000)
             // TODO: calibrate duration -- was turn(25) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 833)
            if (true) {
             	
             } else {
@@ -386,7 +386,7 @@ basic.forever(function () {
             }
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 ```
@@ -412,10 +412,10 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
             basic.pause(5000)
             // TODO: calibrate duration -- was turn(25) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 833)
            if (0 || 0) {
             	
             } else {
@@ -423,7 +423,7 @@ basic.forever(function () {
             }
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 ```
@@ -448,10 +448,10 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
             basic.pause(5000)
             // TODO: calibrate duration -- was turn(25) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 833)
            if (0 || 0 || 0) {
             	
             } else {
@@ -459,7 +459,7 @@ basic.forever(function () {
             }
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 ```
@@ -484,10 +484,10 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
             basic.pause(5000)
             // TODO: calibrate duration -- was turn(25) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 833)
            if (0 < 0  || 0 || 0) {
             	
             } else {
@@ -495,7 +495,7 @@ basic.forever(function () {
             }
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 ```
@@ -520,10 +520,10 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
             basic.pause(5000)
             // TODO: calibrate duration -- was turn(25) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 833)
            if (0 < 0  || 0 < 0 || 0) {
             	
             } else {
@@ -531,7 +531,7 @@ basic.forever(function () {
             }
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 ```
@@ -556,10 +556,10 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
             basic.pause(5000)
             // TODO: calibrate duration -- was turn(25) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 833)
            if (0 < 0  || 0 < 0 || 0 < 0) {
             	
             } else {
@@ -567,7 +567,7 @@ basic.forever(function () {
             }
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 ```
@@ -592,10 +592,10 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
             basic.pause(5000)
             // TODO: calibrate duration -- was turn(25) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 833)
            if (lightThreshold < 0  || 0 < 0 || 0 < 0) {
             	
             } else {
@@ -603,7 +603,7 @@ basic.forever(function () {
             }
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 ```
@@ -628,10 +628,10 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
             basic.pause(5000)
             // TODO: calibrate duration -- was turn(25) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 833)
            if (lightThreshold < 0  || temperatureThreshold < 0 || 0 < 0) {
             	
             } else {
@@ -639,7 +639,7 @@ basic.forever(function () {
             }
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 ```
@@ -665,10 +665,10 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
             basic.pause(5000)
             // TODO: calibrate duration -- was turn(25) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 833)
            if (lightThreshold < input.lightLevel()  || temperatureThreshold < 0) {
             	
             } else {
@@ -676,7 +676,7 @@ basic.forever(function () {
             }
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 ```
@@ -702,10 +702,10 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
             basic.pause(5000)
             // TODO: calibrate duration -- was turn(25) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 833)
            if (lightThreshold < input.lightLevel()  || temperatureThreshold < input.temperature()) {
             	
             } else {
@@ -713,7 +713,7 @@ basic.forever(function () {
             }
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 ```
@@ -746,10 +746,10 @@ fwdBase.rightServo
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
             basic.pause(5000)
             // TODO: calibrate duration -- was turn(25) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 833)
            if (lightThreshold < input.lightLevel()  || temperatureThreshold < input.temperature()) {
             	
             } else {
@@ -757,7 +757,7 @@ basic.forever(function () {
             }
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 ```
@@ -784,10 +784,10 @@ let temperatureThreshold = 25
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
             basic.pause(5000)
             // TODO: calibrate duration -- was turn(25) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 833)
             if (input.lightLevel() > lightThreshold || input.temperature() > temperatureThreshold) {
                 for (let index = 0; index < 4; index++) {
                     	
@@ -797,7 +797,7 @@ basic.forever(function () {
             }
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 ```
@@ -824,10 +824,10 @@ let temperatureThreshold = 25
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
             basic.pause(5000)
             // TODO: calibrate duration -- was turn(25) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 833)
             if (input.lightLevel() > lightThreshold || input.temperature() > temperatureThreshold) {
                 for (let index = 0; index < 4; index++) {
                     music.playTone(262, music.beat(BeatFraction.Whole))
@@ -838,7 +838,7 @@ basic.forever(function () {
             }
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 ```
@@ -865,10 +865,10 @@ let temperatureThreshold = 25
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
             basic.pause(5000)
             // TODO: calibrate duration -- was turn(25) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 833)
             if (input.lightLevel() > lightThreshold || input.temperature() > temperatureThreshold) {
                 for (let index = 0; index < 4; index++) {
                     music.playTone(262, music.beat(BeatFraction.Whole))
@@ -879,7 +879,7 @@ basic.forever(function () {
             }
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 ```
@@ -906,10 +906,10 @@ let temperatureThreshold = 25
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(50, -50, 1000)
+            fwdMotors.drive(50, -50)
             basic.pause(5000)
             // TODO: calibrate duration -- was turn(25) degrees in place
-            fwdMotors.drive(50, 50, 1000)
+            fwdMotors.driveTimed(60, 60, 833)
             if (input.lightLevel() > lightThreshold || input.temperature() > temperatureThreshold) {
                 for (let index = 0; index < 4; index++) {
                     music.playTone(262, music.beat(BeatFraction.Whole))
@@ -921,7 +921,7 @@ basic.forever(function () {
             basic.pause(1000)
         }
     } else {
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
     }
 })
 ```

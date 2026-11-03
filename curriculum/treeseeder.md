@@ -1,7 +1,7 @@
 # Replanting Our Forests with Automated Tree Seeders
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.1.1
 ```
 
 ## Step 1 @showdialog
@@ -123,7 +123,7 @@ fwdBase.rightServo,
 fwdMotors.setAngle(fwdBase.middleServo, 0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
-    fwdMotors.drive(50, -50, 1000)
+    fwdMotors.drive(50, -50)
     }
 })
 ```
@@ -141,7 +141,7 @@ fwdBase.rightServo,
 fwdMotors.setAngle(fwdBase.middleServo, 0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
-    fwdMotors.drive(50, -50, 1000)
+    fwdMotors.drive(50, -50)
     basic.pause(100)
     }
 })
@@ -159,7 +159,7 @@ fwdBase.rightServo,
 fwdMotors.setAngle(fwdBase.middleServo, 0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
-    fwdMotors.drive(50, -50, 1000)
+    fwdMotors.drive(50, -50)
     basic.pause(2000)
     }
 })
@@ -179,7 +179,7 @@ fwdBase.rightServo,
 fwdMotors.setAngle(fwdBase.middleServo, 0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
-    fwdMotors.drive(50, -50, 1000)
+    fwdMotors.drive(50, -50)
     basic.pause(2000)
     fwdMotors.setAngle(fwdBase.middleServo, 0)
     }
@@ -198,7 +198,7 @@ fwdBase.rightServo,
 fwdMotors.setAngle(fwdBase.middleServo, 0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
-    fwdMotors.drive(50, -50, 1000)
+    fwdMotors.drive(50, -50)
     basic.pause(2000)
     fwdMotors.setAngle(fwdBase.middleServo, 45)
     }
@@ -219,7 +219,7 @@ fwdBase.rightServo,
 fwdMotors.setAngle(fwdBase.middleServo, 0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
-    fwdMotors.drive(50, -50, 1000)
+    fwdMotors.drive(50, -50)
     basic.pause(2000)
     fwdMotors.setAngle(fwdBase.middleServo, 45)
     basic.pause(500)
@@ -241,7 +241,7 @@ fwdBase.rightServo,
 fwdMotors.setAngle(fwdBase.middleServo, 0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
-    fwdMotors.drive(50, -50, 1000)
+    fwdMotors.drive(50, -50)
     basic.pause(2000)
     fwdMotors.setAngle(fwdBase.middleServo, 45)
     basic.pause(500)
@@ -263,13 +263,13 @@ fwdBase.rightServo,
 fwdMotors.setAngle(fwdBase.leftServo, 0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
-    fwdMotors.drive(50, -50, 1000)
+    fwdMotors.drive(50, -50)
     basic.pause(2000)
     fwdMotors.setAngle(fwdBase.middleServo, 45)
     basic.pause(500)
     fwdMotors.setAngle(fwdBase.middleServo, 0)
     }
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 ```
 
@@ -283,13 +283,13 @@ fwdMotors.setupDriving(fwdBase.leftServo, fwdBase.rightServo)
 fwdMotors.setAngle(fwdBase.leftServo, 0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
-        fwdMotors.drive(100, -100, 1000)
+        fwdMotors.drive(100, -100)
         basic.pause(2000)
         fwdMotors.setAngle(fwdBase.middleServo, 45)
         basic.pause(500)
         fwdMotors.setAngle(fwdBase.middleServo, 0)
     }
-    fwdMotors.drive(0, 0, 0)
+    fwdMotors.stop()
 })
 ```
 

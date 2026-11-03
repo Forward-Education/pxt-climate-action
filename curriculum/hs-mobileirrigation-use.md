@@ -1,16 +1,16 @@
 # Mobile Irrigation System - Use Tutorial
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.1.1
 datalogger=datalogger
 ```
 
 ```template
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
     for (let index = 0; index < 4; index++) {
-        fwdMotors.drive(25, -25, 1000)
+        fwdMotors.drive(25, -25)
         basic.pause(3000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fwdMotors.pump.timedRun(1500)
         basic.pause(3000)
@@ -200,9 +200,9 @@ hint~
 ```blocks
 fwdButtons.touch1.onEvent(jacdac.ButtonEvent.Down, function () {
     for (let index = 0; index < 4; index++) {
-        fwdMotors.drive(25, -25, 1000)
+        fwdMotors.drive(25, -25)
         basic.pause(3000)
-        fwdMotors.drive(0, 0, 0)
+        fwdMotors.stop()
         fwdLights.ledRing1.setAllPixelsColor(0x00ff00)
         fwdMotors.pump.timedRun(1500)
         basic.pause(3000)

@@ -1,7 +1,7 @@
 # Powering the Future with Wind Energy
 
 ```package
-fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
+fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.1.1
 ```
 
 ## Activity 1: Building your Protoype @showdialog
