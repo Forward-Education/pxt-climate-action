@@ -17,7 +17,7 @@ servomoteur positionnel.
 
 ## Étape 3 @showdialog
 
-Allume la carte de la trousse Action climatique.
+Allume la plaque de connexion.
 ![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-turn-on.png)
 
 ## Étape 4 @showhint
@@ -37,7 +37,7 @@ les servomoteurs à côté de la pompe.
 
 ## Étape 7 @showhint
 
-Regarde sous le simulateur @boardname@ pour voir la carte Action climatique et les dispositifs connectés. Essaie d'allumer et d'éteindre les moteurs à l'aide
+Regarde sous le simulateur @boardname@ pour voir la plaque de connexion et les dispositifs connectés. Essaie d'allumer et d'éteindre les moteurs à l'aide
 du simulateur et observe les changements.
 ![servo-nocode](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/initial-sim-tree.gif)
 

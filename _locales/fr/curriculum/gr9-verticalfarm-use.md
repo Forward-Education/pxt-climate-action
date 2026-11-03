@@ -178,7 +178,7 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 
 ## Étape de codage 1 @showdialog
 
-IMPORTANT! Assure-toi que la planche d'extension de ta trousse Action Climatique est allumée et que ton micro:bit est branché à ton ordinateur.
+IMPORTANT! Assure-toi que la plaque de connexion est allumée et que ton micro:bit est branché à ton ordinateur.
 
 <img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" alt="Allumer la planche d'extension" style="display: block; width: 40%; margin:auto;">
 

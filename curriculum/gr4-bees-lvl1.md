@@ -35,7 +35,7 @@ For this project, we will use the Touch Sensor to detect when a 'bee' has landed
 
 ## Activity 2: Coding Set up @showdialog
 
-IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
+IMPORTANT! Make sure your Breakout Board is turned on and your micro:bit is plugged into your computer.
 
 ![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp)
 
@@ -61,7 +61,7 @@ This is how the simulators should look after a successful download. You can see 
 
 ## Step 5 @showhint
 
-Look below the @boardname @simulator to see the Climate Action kit Breakout Board and the connected sensors.
+Look below the @boardname @simulator to see the Breakout Board and the connected sensors.
 Try clicking the lights on the virtual simulator for the LED Light. What happens? Can you make it different colours?
 
 ## Step 6 @showhint

@@ -8,7 +8,7 @@ fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.1.1
 
 Welcome to the Level 2 Wind Turbine Project! In this project, you will use the dial to control the servo motor!
 In this tutorial, we will…
-Build our project with the Climate Action Kit
+Build our project with your kit
 Connect our project to the computer
 Code our project to make it interactive
 
@@ -59,7 +59,7 @@ Code our project to make it interactive
 ## Activity 2: Coding set up @showdialog
 
 Step 1
-IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
+IMPORTANT! Make sure your Breakout Board is turned on and your micro:bit is plugged into your computer.
 
 ![plugin](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
 
@@ -91,7 +91,7 @@ This is how the simulators should look after a successful download. You can see 
 
 ## Step 5 @showhint
 
-Look below the @boardname @simulator to see the Climate Action kit Breakout Board and the connected sensors.
+Look below the @boardname @simulator to see the Breakout Board and the connected sensors.
 Try turning the Dial on your project, the virtual simulator will react to it.
 ![wind](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-6-Dial.gif)
 

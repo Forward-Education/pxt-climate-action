@@ -16,7 +16,7 @@ Branche ton câble USB au micro:bit.
 
 ## Étape 3 @showdialog
 
-Insère-le dans la carte de la trousse Action climatique.
+Insère-le dans la plaque de connexion.
 ![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-resized.png)
 
 ## Étape 4 @showhint
@@ -26,7 +26,7 @@ Clique sur les trois points à côté du bouton `|Télécharger|` et suis les é
 
 ## Étape 5 @showhint
 
-Regarde sous le simulateur @boardname@ pour voir la carte Action climatique et les capteurs connectés. Essaie d'interagir avec ton capteur, le simulateur réagira.
+Regarde sous le simulateur @boardname@ pour voir la plaque de connexion et les capteurs connectés. Essaie d'interagir avec ton capteur, le simulateur réagira.
 ![line](https://mbakhtar.github.io/mvp-6-tutorials-update/updated-assets/simulator-5-Line.gif)
 
 ## Étape 6

@@ -54,7 +54,7 @@ Bienvenue au projet de stockage d'énergie de l'éolienne niveau 1! Pour ce proj
 
 # Étape 1
 
-IMPORTANT! Assure-toi que la plaque de connexion de ta trousse d'action climatique est allumée et que ton micro:bit est branché à ton ordinateur.
+IMPORTANT! Assure-toi que la plaque de connexion est allumée et que ton micro:bit est branché à ton ordinateur.
 ![plugingif](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
 
 ## Étape 2 de la préparation du code @showhint
@@ -73,7 +73,7 @@ Voici à quoi les simulateurs devraient ressembler après un téléchargement r�
 
 ## Étape 5 de la préparation du code @showhint
 
-Regarde sous le simulateur @boardname@simulator pour voir la plaque de connexion de la trousse d'action climatique et les capteurs connectés.
+Regarde sous le simulateur @boardname@simulator pour voir la plaque de connexion et les capteurs connectés.
 ![simdial](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-6-Dial.gif)
 
 ## Étape 6 de la préparation du code @showhint

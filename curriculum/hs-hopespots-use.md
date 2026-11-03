@@ -125,7 +125,7 @@ Now that your station is built, let’s connect it to your computer and upload c
 
 ## Code Step 1 @showdialog
 
-IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is connected to your computer.
+IMPORTANT! Make sure your Breakout Board is turned on and your micro:bit is connected to your computer.
 
 <img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 40%; margin:auto;">
 
@@ -275,7 +275,7 @@ if (fwdSensors.sonar1.distance() > 0.1) {
 
 ## Use Step 9
 
-What additional features could make this station more effective at protecting its Hope Spot? How might you use the Climate Action Kit to incorporate these features?
+What additional features could make this station more effective at protecting its Hope Spot? How might you use your kit to incorporate these features?
 
 ~hint Tell me more!
 

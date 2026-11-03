@@ -78,7 +78,7 @@ Le code sera les instructions qui indiquent à notre micro:bit quoi faire.
 
 ## Programmation, étape 1 @showdialog
 
-IMPORTANT! Assure-toi que la plaque de connexion de ta trousse Action Climatique est allumée et que ton micro:bit est branché à ton ordinateur.
+IMPORTANT! Assure-toi que la plaque de connexion est allumée et que ton micro:bit est branché à ton ordinateur.
 
 <img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" alt="Branche le micro:bit dans le port USB de l'ordinateur" style="display: block; width: 40%; margin:auto;">
 
@@ -95,7 +95,7 @@ Clique sur le bouton `|Télécharger|` pour télécharger le code sur ton projet
 
 ## Activité 3 : Utilise ton projet @showdialog
 
-La bibliothèque de leçons de la trousse Action Climatique permet aux élèves de structurer leur apprentissage en trois étapes de projets : **Utiliser, Modifier et Créer.**
+La bibliothèque de leçons de Forward Education permet aux élèves de structurer leur apprentissage en trois étapes de projets : **Utiliser, Modifier et Créer.**
 
 Maintenant que nous avons construit notre éolienne, nous allons commencer par **utiliser** un exemple de code pour voir comment il fonctionne.
 
@@ -117,7 +117,7 @@ Pendant que tu tournes le cadran vers la **droite**, observe ce qui se passe dan
 
 ~hint Dis-m'en plus!
 
--   Tu peux utiliser les simulateurs à gauche de l'espace de travail pour voir ce qui se passe avec ta trousse Action Climatique en temps réel pendant que ton moteur et tes cadrans tournent!
+-   Tu peux utiliser les simulateurs à gauche de l'espace de travail pour voir ce qui se passe avec ta trousse en temps réel pendant que ton moteur et tes cadrans tournent!
 -   Quand nous tournons le cadran vers la droite, le moteur devrait réagir dans le simulateur virtuel **et** sur l'éolienne!
 -   C'est ce qu'on appelle l'**entrée** et la **sortie** du code :
     _ **Entrée** - tourner le cadran vers la droite
@@ -144,7 +144,7 @@ Selon toi, que se passera-t-il quand tu tournes le cadran vers la **gauche**? Es
 
 ## C'est l'heure du défi! @showdialog
 
-La bibliothèque de leçons de la trousse Action Climatique permet aux élèves de **modifier** leur projet grâce à des défis de programmation ou de construction!
+La bibliothèque de leçons de Forward Education permet aux élèves de **modifier** leur projet grâce à des défis de programmation ou de construction!
 
 Maintenant que nous avons **utilisé** du code pour créer une éolienne qui tourne vers la **droite** quand nous tournons le cadran vers la **droite**, nous devons **modifier** notre code pour que l'éolienne tourne **dans les deux directions**.
 
@@ -171,7 +171,7 @@ Sur le bloc du capteur, clique sur le menu déroulant pour changer **leftServo**
 
 ~hint Dis-m'en plus!
 
--   Tu peux utiliser jusqu'à **3 moteurs à la fois** avec la trousse Action Climatique! Nous avons construit notre éolienne en utilisant le port **du milieu** (M), alors nous devons programmer notre capteur en utilisant le servo **du milieu**.
+-   Tu peux utiliser jusqu'à **3 moteurs à la fois** avec la plaque de connexion! Nous avons construit notre éolienne en utilisant le port **du milieu** (M), alors nous devons programmer notre capteur en utilisant le servo **du milieu**.
 -   Le **moteur** est le bloc qui répondra avec notre nouvelle **sortie** (le moteur tournant vers la **gauche**).
     hint~
 
@@ -215,7 +215,7 @@ fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, 
 
 ## Réflexion @showdialog
 
-Comment penses-tu que tu pourrais utiliser la trousse Action Climatique dans ta classe?
+Comment penses-tu que tu pourrais utiliser les trousses Forward Education dans ta classe?
 
 Quelle est une chose que tu aimerais approfondir?
 
@@ -227,4 +227,4 @@ Quelle est une chose que tu aimerais approfondir?
 
 Tu peux cliquer sur le bouton `|Terminé|` pour terminer le tutoriel.
 
-N'oublie pas de consulter la [bibliothèque de leçons de Forward Education](https://learn.forwardedu.com/lesson-library/) pour voir plus de projets que tu peux construire avec la trousse Action Climatique!
+N'oublie pas de consulter la [bibliothèque de leçons de Forward Education](https://learn.forwardedu.com/lesson-library/) pour voir plus de projets que tu peux construire avec les trousses Forward Education!

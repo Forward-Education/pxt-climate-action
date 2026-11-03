@@ -15,7 +15,7 @@ In this coding tutorial we will use the moisture sensor to measure the moisture 
 
 ## Step 3 @showdialog
 
-Turn on the Climate Action Kit board.
+Turn on the Breakout Board.
 ![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-turn-on.png)
 
 ## Step 4 @showhint
@@ -29,7 +29,7 @@ Next, click the `|Download|` button to download the blank project to start-up th
 
 ## Step 6 @showhint
 
-Look below the @boardname@ simulator to see the Climate Action Board and the connected sensors. Try holding the Moisture Sensor or dipping it in a glass of water. See how the virtual simulators react.
+Look below the @boardname@ simulator to see the Breakout Board and the connected sensors. Try holding the Moisture Sensor or dipping it in a glass of water. See how the virtual simulators react.
 ![moisture](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-4-moisture.gif)
 
 ## Step 7

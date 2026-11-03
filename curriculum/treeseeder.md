@@ -17,7 +17,7 @@ positional servo motor.
 
 ## Step 3 @showdialog
 
-Turn on the Climate Action Kit board.
+Turn on the Breakout Board.
 ![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-turn-on.png)
 
 ## Step 4 @showhint
@@ -37,7 +37,7 @@ the Servo Motors along side the Pump.
 
 ## Step 7 @showhint
 
-Look below the @boardname@ simulator to see the Climate Action Board and the connected devices. Try to turn the motors on and off using
+Look below the @boardname@ simulator to see the Breakout Board and the connected devices. Try to turn the motors on and off using
 the simulator and observe the changes.
 ![servo-nocode](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/initial-sim-tree.gif)
 

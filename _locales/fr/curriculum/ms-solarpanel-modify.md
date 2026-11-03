@@ -90,7 +90,7 @@ basic.forever(function () {
 
 ## Étape de codage 1 @showdialog
 
-IMPORTANT ! Assure-toi que ta carte d'extension de la trousse d'action climatique est allumée et que ton micro:bit est branché à ton ordinateur.
+IMPORTANT ! Assure-toi que ta plaque de connexion est allumée et que ton micro:bit est branché à ton ordinateur.
 
 <img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" style="display: block; width: 40%; margin:auto;">
 

@@ -16,7 +16,7 @@ Plug your USB cable into the micro:bit.
 
 ## Step 3 @showdialog
 
-Insert it into the Climate Action Kit board.
+Insert it into the Breakout Board.
 ![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-resized.png)
 
 ## Step 4 @showhint

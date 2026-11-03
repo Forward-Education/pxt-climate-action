@@ -93,7 +93,7 @@ Le code sera l'ensemble des instructions qui indiquent à notre micro:bit quoi f
 
 ## Codage Étape 1 @showdialog
 
-IMPORTANT! Assure-toi que la carte de connexion de ta trousse d'action climatique est allumée et que ton micro:bit est branché à ton ordinateur.
+IMPORTANT! Assure-toi que la plaque de connexion est allumée et que ton micro:bit est branché à ton ordinateur.
 
 <img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" alt="Branche le micro:bit au port USB de l'ordinateur" style="display: block; width: 40%; margin:auto;">
 

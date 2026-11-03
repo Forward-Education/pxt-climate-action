@@ -77,7 +77,7 @@ Nous devons connecter notre projet à l'ordinateur pour le faire prendre vie ave
 
 ## Étape de code 1 @showdialog
 
-IMPORTANT! Assure-toi que la plaque de connexion de ta trousse d'action climatique est allumée et que ton micro:bit est branché à ton ordinateur.
+IMPORTANT! Assure-toi que la plaque de connexion est allumée et que ton micro:bit est branché à ton ordinateur.
 <br><img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" width="400">
 
 ## Étape de code 2 @showdialog

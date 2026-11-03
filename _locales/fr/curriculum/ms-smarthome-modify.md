@@ -62,7 +62,7 @@ Pour l'instant, nous avons un modèle de maison intelligente automatisée avec u
 
 ## Étape 1 @showdialog
 
-IMPORTANT! Assure-toi que la carte d'extension de ta trousse Action climatique est allumée et que ton micro:bit est branché à ton ordinateur.
+IMPORTANT! Assure-toi que la plaque de connexion est allumée et que ton micro:bit est branché à ton ordinateur.
 
 <img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" alt="Branche le micro:bit dans le port USB de l'ordinateur" style="display: block; width: 40%; margin:auto;">
 

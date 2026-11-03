@@ -16,7 +16,7 @@ Use the Dial's button function to stop the wind turbine.
 
 ## Step 3 @showdialog
 
-Turn on the Climate Action Kit board.
+Turn on the Breakout Board.
 ![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-turn-on.png)
 
 ## Step 4 @showhint
@@ -36,7 +36,7 @@ This is how the simulators should look after a successful download. You can see 
 
 ## Step 7 @showhint
 
-Look below the @boardname@ simulator to see the Climate Action kit Breakout Board and the connected sensors.
+Look below the @boardname@ simulator to see the Breakout Board and the connected sensors.
 Try turning the Dial on your project, the virtual simulator will react to it.
 ![wind](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-6-Dial.gif)
 

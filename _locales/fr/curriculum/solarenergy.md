@@ -15,7 +15,7 @@ Dans ce tutoriel de programmation, nous allons déplacer le panneau solaire à l
 
 ## Étape 3 @showdialog
 
-Allume la carte de la trousse Action climatique.
+Allume la plaque de connexion.
 ![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-turn-on.png)
 
 ## Étape 4 @showhint
@@ -30,7 +30,7 @@ Ensuite, clique sur le bouton `|Télécharger|` pour télécharger le projet vie
 
 ## Étape 6 @showhint
 
-Regarde sous le simulateur @boardname@ pour voir la carte Action climatique et les capteurs connectés. Essaie d'interagir avec le capteur solaire de ton projet. Couvre et découvre le capteur pour voir le pourcentage de lumière changer sur ton simulateur virtuel.
+Regarde sous le simulateur @boardname@ pour voir la plaque de connexion et les capteurs connectés. Essaie d'interagir avec le capteur solaire de ton projet. Couvre et découvre le capteur pour voir le pourcentage de lumière changer sur ton simulateur virtuel.
 ![solar](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-8-Solar.gif)
 
 ## Étape 7
