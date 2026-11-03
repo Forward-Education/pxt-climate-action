@@ -15,7 +15,7 @@ In this coding tutorial we will move the solar panel using the positional servo 
 
 ## Step 3 @showdialog
 
-Turn on the Climate Action Kit board.
+Turn on the Breakout Board.
 ![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-turn-on.png)
 
 ## Step 4 @showhint
@@ -30,7 +30,7 @@ Next, click the `|Download|` button to download the blank project to start-up th
 
 ## Step 6 @showhint
 
-Look below the @boardname@ simulator to see the Climate Action Board and the connected sensors. Try interacting with the Solar Sensor on your project. Cover and uncover the sensor to see the light percentage change on your virtual simulator.
+Look below the @boardname@ simulator to see the Breakout Board and the connected sensors. Try interacting with the Solar Sensor on your project. Cover and uncover the sensor to see the light percentage change on your virtual simulator.
 ![solar](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-8-Solar.gif)
 
 ## Step 7

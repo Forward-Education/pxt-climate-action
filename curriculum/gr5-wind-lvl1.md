@@ -54,7 +54,7 @@ Welcome to the Level 1 Wind Turbine Power Storage Project! For this project, we 
 
 # Step 1
 
-IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
+IMPORTANT! Make sure your Breakout Board is turned on and your micro:bit is plugged into your computer.
 ![plugingif](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
 
 ## Coding Setp up Step 2 @showhint
@@ -73,7 +73,7 @@ This is how the simulators should look after a successful download. You can see 
 
 ## Coding Set up Step 5 @showhint
 
-Look below the @boardname@simulator to see the Climate Action kit Breakout Board and the connected sensors.
+Look below the @boardname@simulator to see the Breakout Board and the connected sensors.
 ![simdial](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-6-Dial.gif)
 
 ## Coding Set up Step 6 @showhint

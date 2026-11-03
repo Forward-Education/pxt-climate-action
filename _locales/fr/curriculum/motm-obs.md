@@ -16,7 +16,7 @@ Branche ton câble USB au micro:bit.
 
 ## Étape 3 @showdialog
 
-Insère-le dans la carte de la trousse Action climatique.
+Insère-le dans la plaque de connexion.
 ![plaque de connexion](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-resized.png)
 
 ## Étape 4 @showhint

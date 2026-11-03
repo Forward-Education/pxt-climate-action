@@ -94,7 +94,7 @@ basic.forever(function () {
 
 ## Étape de code 1 @showdialog
 
-Assure-toi que la plaque de connexion de ta trousse d'action climatique est allumée et que ton micro:bit est branché à ton ordinateur.
+Assure-toi que la plaque de connexion est allumée et que ton micro:bit est branché à ton ordinateur.
 <img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" width="400">
 
 ## Étape de code 2 @showdialog

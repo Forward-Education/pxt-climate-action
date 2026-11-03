@@ -15,7 +15,7 @@ Dans ce tutoriel de programmation, nous utiliserons les DEL pour indiquer le niv
 
 ## Étape 3 @showdialog
 
-Allume la carte de la trousse Action climatique.
+Allume la plaque de connexion.
 ![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-turn-on.png)
 
 ## Étape 4
@@ -36,7 +36,7 @@ le capteur tactile et les servomoteurs à côté de la pompe.
 
 ## Étape 7
 
-Regarde sous le simulateur @boardname@ pour voir la carte Action climatique et les capteurs connectés. Essaie de tourner le cadran de ton projet, le simulateur virtuel réagira.
+Regarde sous le simulateur @boardname@ pour voir la plaque de connexion et les capteurs connectés. Essaie de tourner le cadran de ton projet, le simulateur virtuel réagira.
 ![wind](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-6-Dial.gif)
 
 ## Étape 8

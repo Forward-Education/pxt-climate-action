@@ -40,7 +40,7 @@ Ajoutons d'abord du code de départ pour nous assurer que notre poubelle s'ouvre
 
 ## Étape 1 @showdialog
 
-IMPORTANT ! Assure-toi que ta plaque d'interface de la trousse d'action climatique est allumée et que ton micro:bit est branché à ton ordinateur.
+IMPORTANT ! Assure-toi que ta plaque de connexion est allumée et que ton micro:bit est branché à ton ordinateur.
 
 <img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" alt="Brancher le micro:bit dans le port USB de l'ordinateur" style="display: block; width: 60%; margin:auto;">
 
@@ -184,11 +184,11 @@ Notre poubelle intelligente est un **prisme rectangulaire** ! Calculons l'aire, 
 
 ## Étape 10
 
-À l'aide d'une règle ou d'un **cube connecteur dos à dos** de la trousse d'action climatique, détermine la **longueur, la largeur et la hauteur** de notre contenant de poubelle intelligente.
+À l'aide d'une règle ou d'un **cube connecteur dos à dos** de ta trousse, détermine la **longueur, la largeur et la hauteur** de notre contenant de poubelle intelligente.
 
 ~hint Dis-m'en plus !
 
-À l'aide d'un cube connecteur dos à dos de la trousse d'action climatique, nous avons mesuré les valeurs suivantes pour notre prisme rectangulaire :
+À l'aide d'un cube connecteur dos à dos de ta trousse, nous avons mesuré les valeurs suivantes pour notre prisme rectangulaire :
 
 -   Largeur : 3 cubes connecteurs dos à dos
 -   Longueur : 4 cubes connecteurs dos à dos

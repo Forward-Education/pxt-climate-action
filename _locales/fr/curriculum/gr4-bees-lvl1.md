@@ -35,7 +35,7 @@ Pour ce projet, nous utiliserons le capteur tactile pour détecter quand une « 
 
 ## Activité 2 : Préparation du code @showdialog
 
-IMPORTANT! Assure-toi que la plaque de connexion de ta trousse d'action climatique est allumée et que ton micro:bit est branché à ton ordinateur.
+IMPORTANT! Assure-toi que la plaque de connexion est allumée et que ton micro:bit est branché à ton ordinateur.
 
 ![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp)
 
@@ -61,7 +61,7 @@ Voici à quoi les simulateurs devraient ressembler après un téléchargement r�
 
 ## Étape 5 @showhint
 
-Regarde sous le simulateur @boardname @simulator pour voir la plaque de connexion de la trousse d'action climatique et les capteurs connectés.
+Regarde sous le simulateur @boardname @simulator pour voir la plaque de connexion et les capteurs connectés.
 Essaie de cliquer sur les lumières du simulateur virtuel pour la lumière DEL. Que se passe-t-il? Peux-tu la faire changer de couleur?
 
 ## Étape 6 @showhint

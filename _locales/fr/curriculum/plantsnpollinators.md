@@ -15,7 +15,7 @@ Dans ce tutoriel de programmation, nous allons compter le nombre de pollinisateu
 
 ## Étape 3 @showdialog
 
-Allume la carte de la trousse Action climatique.
+Allume la plaque de connexion.
 ![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-turn-on.png)
 
 ## Étape 4 @showhint
@@ -29,7 +29,7 @@ Ensuite, clique sur le bouton `|Télécharger|` pour télécharger le projet vie
 
 ## Étape 6 @showhint
 
-Regarde sous le simulateur @boardname@ pour voir la carte Action climatique et les capteurs connectés. Essaie de toucher le capteur tactile de ton projet. Les simulateurs virtuels réagiront.
+Regarde sous le simulateur @boardname@ pour voir la plaque de connexion et les capteurs connectés. Essaie de toucher le capteur tactile de ton projet. Les simulateurs virtuels réagiront.
 ![touch](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-7-Touch.gif)
 
 ## Étape 7

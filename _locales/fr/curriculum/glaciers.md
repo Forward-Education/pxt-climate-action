@@ -15,7 +15,7 @@ Dans ce tutoriel de programmation, l'appareil mesure continuellement les distanc
 
 ## Étape 3 @showdialog
 
-Allume la carte du kit d'action climatique.
+Allume la plaque de connexion.
 ![carte d'extension](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-turn-on.png)
 
 ## Étape 4 @showhint
@@ -35,7 +35,7 @@ les servomoteurs à côté de la pompe.
 
 ## Étape 7 @showhint
 
-Regarde sous le simulateur @boardname@ pour voir la carte d'action climatique et les appareils connectés. Essaie d'allumer et d'éteindre les moteurs à l'aide
+Regarde sous le simulateur @boardname@ pour voir la plaque de connexion et les appareils connectés. Essaie d'allumer et d'éteindre les moteurs à l'aide
 du simulateur et observe les changements.
 ![servo-sans-code](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/initial-sim-tree.gif)
 

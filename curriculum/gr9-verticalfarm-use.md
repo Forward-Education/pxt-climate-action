@@ -178,7 +178,7 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 
 ## Code Step 1 @showdialog
 
-IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
+IMPORTANT! Make sure your Breakout Board is turned on and your micro:bit is plugged into your computer.
 
 <img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" alt="Turn on breakout board" style="display: block; width: 40%; margin:auto;">
 

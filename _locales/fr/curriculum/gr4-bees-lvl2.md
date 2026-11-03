@@ -8,7 +8,7 @@ fwd-climate-action=github:Forward-Education/pxt-climate-action#v2.0.2
 
 Bienvenue au suivi des abeilles et de la pollinisation avec un compteur de bestioles!
 Dans ce tutoriel, nous allons…
-Construire notre projet avec la trousse d'action climatique
+Construire notre projet avec ta trousse
 Connecter notre projet à l'ordinateur
 Coder notre projet pour le rendre interactif
 
@@ -27,7 +27,7 @@ Coder notre projet pour le rendre interactif
 ## Activité 2 Préparation du code @showdialog
 
 Étape 1 de la préparation du code
-IMPORTANT! Assure-toi que la plaque de connexion de ta trousse d'action climatique est allumée et que ton micro:bit est branché à ton ordinateur.
+IMPORTANT! Assure-toi que la plaque de connexion est allumée et que ton micro:bit est branché à ton ordinateur.
 ![plugin](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp)
 
 ## Étape 2 de la préparation du code @showhint
@@ -47,7 +47,7 @@ Voici à quoi les simulateurs devraient ressembler après un téléchargement r�
 
 ## Étape 5 de la préparation du code @showhint
 
-Regarde sous le simulateur @boardname @simulator pour voir la plaque de connexion de la trousse d'action climatique et les capteurs connectés.
+Regarde sous le simulateur @boardname @simulator pour voir la plaque de connexion et les capteurs connectés.
 Essaie de tourner le cadran sur ton projet, le simulateur virtuel réagira.
 ![simulator](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-6-Dial.gif)
 

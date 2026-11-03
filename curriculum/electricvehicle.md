@@ -16,7 +16,7 @@ Plug your USB cable into the micro:bit.
 
 ## Step 3 @showdialog
 
-Insert it into the Climate Action Kit board.
+Insert it into the Breakout Board.
 ![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-resized.png)
 
 ## Step 4 @showhint
@@ -26,7 +26,7 @@ Click three dots besides `|Download|` button and follow the steps to pair your m
 
 ## Step 5 @showhint
 
-Look below the @boardname@ simulator to see the Climate Action Board and the connected sensors. Try to interact with your sensor and the simulator will react to it.
+Look below the @boardname@ simulator to see the Breakout Board and the connected sensors. Try to interact with your sensor and the simulator will react to it.
 ![line](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-5-Line.gif)
 
 ## Step 6

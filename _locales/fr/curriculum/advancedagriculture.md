@@ -15,7 +15,7 @@ Dans ce tutoriel de codage, tu vas construire un indicateur de niveau d'humidit�
 
 ## Étape 3 @showdialog
 
-Allume la carte de la trousse d'action climatique.
+Allume la plaque de connexion.
 ![carte de connexion](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-turn-on.png)
 
 ## Étape 4 @showhint
@@ -29,7 +29,7 @@ Ensuite, clique sur le bouton `|Télécharger|` pour télécharger le projet vid
 
 ## Étape 6 @showhint
 
-Regarde sous le simulateur @boardname@ pour voir la carte d'action climatique et les capteurs connectés. Essaie de tenir le capteur d'humidité ou de le tremper dans un verre d'eau. Observe comment les simulateurs virtuels réagissent.
+Regarde sous le simulateur @boardname@ pour voir la plaque de connexion et les capteurs connectés. Essaie de tenir le capteur d'humidité ou de le tremper dans un verre d'eau. Observe comment les simulateurs virtuels réagissent.
 ![humidité](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-4-moisture.gif)
 
 ## Étape 7

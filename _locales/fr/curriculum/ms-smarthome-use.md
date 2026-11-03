@@ -64,7 +64,7 @@ Ajoutons du **code de départ** pour lui donner vie!
 
 ## Étape 1 @showdialog
 
-IMPORTANT! Assure-toi que ta plaque d'expérimentation de la trousse d'action climatique est allumée et que ton micro:bit est branché à ton ordinateur.
+IMPORTANT! Assure-toi que ta plaque de connexion est allumée et que ton micro:bit est branché à ton ordinateur.
 
 <img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" alt="Brancher le micro:bit dans le port USB de l'ordinateur" style="display: block; width: 40%; margin:auto;">
 

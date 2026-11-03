@@ -34,7 +34,7 @@ Bienvenue dans L'énergie éolienne, énergie de l'avenir, niveau 1. Pour ce pro
 
 ## Étape 1
 
-IMPORTANT! Assure-toi que la carte d'extension du kit d'action climatique est allumée et que ton micro:bit est branché à ton ordinateur.
+IMPORTANT! Assure-toi que la plaque de connexion est allumée et que ton micro:bit est branché à ton ordinateur.
 ![carte d'extension](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
 
 ## Étape 2 @showhint
@@ -54,7 +54,7 @@ Voici à quoi devraient ressembler les simulateurs après un téléchargement r�
 
 ## Étape 5 @showhint
 
-Regarde sous le simulateur @boardname@ pour voir la carte d'extension du kit d'action climatique et les capteurs connectés.
+Regarde sous le simulateur @boardname@ pour voir la plaque de connexion et les capteurs connectés.
 Essaie de tourner la molette de ton projet; le simulateur virtuel réagira.
 ![vent](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-6-Dial.gif)
 

@@ -15,7 +15,7 @@ Dans ce tutoriel de codage, nous allons compter le nombre de pollinisateurs qui 
 
 ## Étape 3 @showdialog
 
-Allume la carte de la trousse d'action climatique.
+Allume la plaque de connexion.
 ![carte de connexion](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-turn-on.png)
 
 ## Étape 4 @showhint
@@ -29,7 +29,7 @@ Ensuite, clique sur le bouton `|Télécharger|` pour télécharger le projet vid
 
 ## Étape 6 @showhint
 
-Regarde sous le simulateur @boardname@ pour voir le simulateur de la carte d'action climatique et des composants connectés. Essaie de toucher le capteur tactile de ton projet. Les simulateurs virtuels réagiront.
+Regarde sous le simulateur @boardname@ pour voir le simulateur de la plaque de connexion et des composants connectés. Essaie de toucher le capteur tactile de ton projet. Les simulateurs virtuels réagiront.
 ![tactile](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-7-Touch.gif)
 
 ## Étape 7

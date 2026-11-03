@@ -6,7 +6,7 @@ Dans ce tutoriel, tu vas apprendre à programmer un compteur de pas en utilisant
 
 <img src="https://i0.wp.com/learn.forwardedu.com/wp-content/uploads/2024/09/project-step-counter.webp?resize=1170%2C780&ssl=1" alt="Compteur de pas micro:bit attaché à la cheville d'un enfant" style="display: block; width: 50%; margin:auto;">
 
-Ce projet te présentera le format des tutoriels de la trousse Action Climatique, en détaillant comment des étapes structurées et des fonctionnalités comme « Dis-m'en plus! » et les indices de l'ampoule peuvent guider tes élèves à travers le processus de programmation.
+Ce projet te présentera le format des tutoriels de Forward Education, en détaillant comment des étapes structurées et des fonctionnalités comme « Dis-m'en plus! » et les indices de l'ampoule peuvent guider tes élèves à travers le processus de programmation.
 
 Clique sur « Ok » pour commencer!
 

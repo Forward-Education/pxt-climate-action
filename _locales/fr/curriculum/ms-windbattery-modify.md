@@ -104,7 +104,7 @@ Le code sera les instructions qui indiquent à notre micro:bit quoi faire.
 
 ## Programmation, étape 1 @showdialog
 
-IMPORTANT! Assure-toi que la plaque de connexion de ta trousse Action Climatique est allumée et que ton micro:bit est branché à ton ordinateur.
+IMPORTANT! Assure-toi que la plaque de connexion est allumée et que ton micro:bit est branché à ton ordinateur.
 
 <img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" style="display: block; width: 40%; margin:auto;">
 

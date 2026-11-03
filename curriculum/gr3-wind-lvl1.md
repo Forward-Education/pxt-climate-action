@@ -34,7 +34,7 @@ Welcome to Powering the Future with Wind Energy Level 1. For this project, we wi
 
 ## Step 1
 
-IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
+IMPORTANT! Make sure your Breakout Board is turned on and your micro:bit is plugged into your computer.
 ![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
 
 ## Step 2 @showhint
@@ -54,7 +54,7 @@ This is how the simulators should look after a successful download. You can see 
 
 ## Step 5 @showhint
 
-Look below the @boardname@ simulator to see the Climate Action kit Breakout Board and the connected sensors.
+Look below the @boardname@ simulator to see the Breakout Board and the connected sensors.
 Try turning the Dial on your project, the virtual simulator will react to it.
 ![wind](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-6-Dial.gif)
 

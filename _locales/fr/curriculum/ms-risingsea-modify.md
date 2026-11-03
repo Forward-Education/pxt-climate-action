@@ -132,7 +132,7 @@ Le code sera l'ensemble des instructions qui indiquent à notre micro:bit quoi f
 
 ## Étape de code 1 @showdialog
 
-IMPORTANT! Assure-toi que la plaque de connexion de ta trousse Action climatique est allumée et que ton micro:bit est branché à ton ordinateur.
+IMPORTANT! Assure-toi que la plaque de connexion est allumée et que ton micro:bit est branché à ton ordinateur.
 
 <img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" alt="Branche le micro:bit au port USB de l'ordinateur" style="display: block; width: 60%; margin:auto;">
 
@@ -261,7 +261,7 @@ N'oublie pas d'appuyer sur le bouton `|Télécharger|` pour télécharger notre 
 
 ## Étape d'expérience 1
 
-À l'aide de matériaux de bricolage, ou de blocs de construction de la trousse Action climatique, construisons un **plateau de terre** pour que notre glace puisse s'y poser!
+À l'aide de matériaux de bricolage, ou de blocs de construction de ta trousse, construisons un **plateau de terre** pour que notre glace puisse s'y poser!
 
 -   La **glace terrestre**, comme les glaciers, repose gelée sur la terre, et **s'écoule** dans l'océan.
 -   La **glace de mer**, comme les icebergs, flotte dans l'eau, et se trouve **déjà** dans l'océan quand elle fond.

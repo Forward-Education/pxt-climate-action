@@ -15,7 +15,7 @@ In this coding tutorial we will count the number of pollinators visiting your ga
 
 ## Step 3 @showdialog
 
-Turn on the Climate Action Kit board.
+Turn on the Breakout Board.
 ![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-turn-on.png)
 
 ## Step 4 @showhint
@@ -29,7 +29,7 @@ Next, click the `|Download|` button to download the blank project to start-up th
 
 ## Step 6 @showhint
 
-Look below the @boardname@ simulator to see the Climate Action Board’s simulator of the connected components. Try touching the Touch Sensor on your project. The virtual simulators will react to it.
+Look below the @boardname@ simulator to see the Breakout Board’s simulator of the connected components. Try touching the Touch Sensor on your project. The virtual simulators will react to it.
 ![touch](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-7-Touch.gif)
 
 ## Step 7

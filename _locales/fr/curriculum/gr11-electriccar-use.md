@@ -90,7 +90,7 @@ Le code sera l'ensemble des instructions qui indiquent à notre micro:bit quoi f
 
 ## Étape de programmation 1 @showdialog
 
-IMPORTANT! Assure-toi que la carte d'extension du kit d'action climatique est allumée et que ton micro:bit est branché à ton ordinateur.
+IMPORTANT! Assure-toi que la plaque de connexion est allumée et que ton micro:bit est branché à ton ordinateur.
 
 <img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" style="display: block; width: 50%; margin:auto;">
 

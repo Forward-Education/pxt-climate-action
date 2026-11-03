@@ -78,7 +78,7 @@ The code will be the instructions that tell our micro:bit what to do.
 
 ## Code Step 1 @showdialog
 
-IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
+IMPORTANT! Make sure your Breakout Board is turned on and your micro:bit is plugged into your computer.
 
 <img src="https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 40%; margin:auto;">
 
@@ -95,7 +95,7 @@ Click the `|Download|` button to download the code to your project.
 
 ## Activity 3: Use Your Project @showdialog
 
-The Climate Action Kit lesson library allows students to scaffold their learning in three stages of projects: **Use, Modify, and Create.**
+The Forward Education lesson library allows students to scaffold their learning in three stages of projects: **Use, Modify, and Create.**
 
 Now that we've built our wind turbine, we'll start by **using** sample code to see how it works.
 
@@ -117,7 +117,7 @@ As you turn the dial to the **right**, watch what happens in the virtual simulat
 
 ~hint Tell Me More!
 
--   You can use the simulators on the left of the workspace to see what's happening to your Climate Action Kit in real time as your motor and dials turn!
+-   You can use the simulators on the left of the workspace to see what's happening to your kit in real time as your motor and dials turn!
 -   When we turn the dial to the right, the motor should respond in the virtual simulator **and** the wind turbine!
 -   This is what is called the **input** and **output** of the code:
     _ **Input** - turn the dial to the right
@@ -144,7 +144,7 @@ What do you think will happen when you turn the dial to the **left**? Try it now
 
 ## Challenge Time! @showdialog
 
-The Climate Action Kit lesson library allows students to **modify** their project using coding or build challenges!
+The Forward Education lesson library allows students to **modify** their project using coding or build challenges!
 
 Now that we have **used** code to create a wind turbine that turns **right** when we turn the dial **right**, we need to **modify** our code to make the wind turbine turn **both directions**.
 
@@ -171,7 +171,7 @@ On the sensor block, click the dropdown from set **leftServo** to set **middleSe
 
 ~hint Tell Me More!
 
--   You can use up to **3 motors at a time** using the Climate Action Kit! We've built our wind turbine using the **middle** port (M), so we need to program our sensor using the **middle** servo.
+-   You can use up to **3 motors at a time** using the Breakout Board! We've built our wind turbine using the **middle** port (M), so we need to program our sensor using the **middle** servo.
 -   The **motor** is the block that will respond with our new **output** (the motor spinning **left**).
     hint~
 
@@ -215,7 +215,7 @@ fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, 
 
 ## Reflection @showdialog
 
-How do you think that you could use the Climate Action Kit in your classroom?
+How do you think that you could use Forward Education kits in your classroom?
 
 What is one thing you want to learn more about?
 
@@ -227,4 +227,4 @@ In the next step, you can click the `|Done|` button to finish the tutorial.
 
 You can click the `|Done|` button to finish the tutorial.
 
-Don't forget to check out [Forward Education's lesson library](https://learn.forwardedu.com/lesson-library/) to see more projects you can build with the Climate Action Kit!
+Don't forget to check out [Forward Education's lesson library](https://learn.forwardedu.com/lesson-library/) to see more projects you can build with Forward Education kits!

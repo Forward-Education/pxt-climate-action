@@ -15,7 +15,7 @@ In this coding tutorial, we will use the LED lights to indicate the level of 'ch
 
 ## Step 3 @showdialog
 
-Turn on the Climate Action Kit board.
+Turn on the Breakout Board.
 ![breakout board](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/breakout-turn-on.png)
 
 ## Step 4
@@ -36,7 +36,7 @@ the Touch and the Servo Motors along side the Pump.
 
 ## Step 7
 
-Look below the @boardname@ simulator to see the Climate Action Board and the connected sensors. Try turning the Dial on your project, the virtual simulator will react to it.
+Look below the @boardname@ simulator to see the Breakout Board and the connected sensors. Try turning the Dial on your project, the virtual simulator will react to it.
 ![wind](https://raw.githubusercontent.com/forward-education/pxt-climate-action/main/tutorial-assets/simulator-6-Dial.gif)
 
 ## Step 8
